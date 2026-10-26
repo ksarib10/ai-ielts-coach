@@ -1,0 +1,139 @@
+{
+  "executedAtUtc": "2026-10-24T12:43:37.069946+00:00",
+  "status": "PASS_STRUCTURAL_NOT_CONTENT_APPROVAL",
+  "python": "3.14.0",
+  "jsonschema": "4.26.0",
+  "schemasChecked": 16,
+  "jsonDocumentsValidated": 14,
+  "counts": {
+    "objectiveItems": 54,
+    "productiveTasks": 4,
+    "uniqueOptionIds": 216,
+    "formKeyPositions": {
+      "form-a": {
+        "A": 7,
+        "B": 7,
+        "C": 7,
+        "D": 6
+      },
+      "form-b": {
+        "A": 7,
+        "B": 7,
+        "C": 6,
+        "D": 7
+      }
+    },
+    "contentReviewReadyObjective": 44,
+    "audioBlockedObjective": 10,
+    "approvedScoringEligible": 0,
+    "currentlySelectableForms": 0,
+    "authorshipCounts": {
+      "REUSED_WORDING_OPTIONS_REORDERED": 13,
+      "REVISED_LLM_ASSISTED": 4,
+      "NEW_LLM_ASSISTED": 39,
+      "REUSED_PROMPT": 2
+    }
+  },
+  "negativeTests": [
+    {
+      "test": "unknown_correct_option",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "KEY_OPTION_MEMBERSHIP"
+    },
+    {
+      "test": "duplicate_question_identity",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "UNIQUE_58_ITEMS"
+    },
+    {
+      "test": "public_key_leak",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SCHEMA:public/form-a.json:Additional properties are not allowed ('answer' was unexpected)"
+    },
+    {
+      "test": "listening_transcript_in_public",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SCHEMA:public/form-a.json:{'stimulusId': 'stim.a.listening.r1', 'formId': 'form-a', 'domain': 'listening', 'kind': 'AUDIO', 'title': 'A museum volunteer briefing', 'mediaId': 'media.a.listening.r1', 'assetState': 'MISSING', 'assetPath': None, 'sha256': None, '"
+    },
+    {
+      "test": "missing_audio_marked_ready",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SCHEMA:media/listening-asset-manifest.json:'MISSING' was expected"
+    },
+    {
+      "test": "unreviewed_item_marked_eligible",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SCHEMA:private/review-evidence.json:False was expected"
+    },
+    {
+      "test": "wrong_skill_quota",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SKILL_QUOTAS"
+    },
+    {
+      "test": "cross_form_reading_mix",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "STIMULUS_GROUP_MEMBERSHIP"
+    },
+    {
+      "test": "unsupported_evidence_quote",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "EXACT_EVIDENCE_QUOTE"
+    },
+    {
+      "test": "changed_form_without_new_digest",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "PUBLIC_FORM_DIGEST"
+    },
+    {
+      "test": "dropped_baseline_metric",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SCHEMA:policies/metric-compatibility.json:[{'metricId': 'M01', 'exactAcceptedFormula': 'round(100 * validRequiredFields / 7); fields=displayName,studyContext,track,dailyStudyMinutes,englishVariant,explanationLanguage,timeZone', 'bankCompatibility': 'Same appro"
+    },
+    {
+      "test": "productive_grade_added",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SCHEMA:public/form-a.json:Additional properties are not allowed ('score' was unexpected)"
+    },
+    {
+      "test": "changed_script_without_new_digest",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SCRIPT_DIGEST"
+    },
+    {
+      "test": "duplicate_option_label",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "DISTINCT_OPTION_LABELS"
+    },
+    {
+      "test": "changed_approved_metric_formula",
+      "status": "PASS",
+      "actual": "REJECTED",
+      "reason": "SCHEMA:policies/metric-compatibility.json:{'metricId': 'M05-GRAMMAR', 'exactAcceptedFormula': 'correct divided by54', 'bankCompatibility': 'Same formula; use owned pinned selected IDs/denominator/version, never global bank size.'} is not valid under any of the"
+    }
+  ],
+  "negativeTestsRejected": 15,
+  "selectionExecuted": false,
+  "actualAttemptsCreated": 0,
+  "audioProductionOrHumanVerificationPerformed": false,
+  "limitations": [
+    "Schema/reference checks cannot validate English assessment quality or rights.",
+    "LLM self-review is not independent human approval.",
+    "Assignment schema checked only; no eligible form or actual assignment exists.",
+    "No app tests/build rerun: application unchanged and this is content preparation only."
+  ]
+}

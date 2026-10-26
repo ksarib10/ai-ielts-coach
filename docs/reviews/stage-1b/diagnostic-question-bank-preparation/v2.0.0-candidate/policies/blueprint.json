@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "blueprintVersion": "diag-blueprint.2-candidate",
+  "assessmentId": "aiielts-starter-diagnostic",
+  "formIds": [
+    "form-a",
+    "form-b"
+  ],
+  "domainQuotas": {
+    "grammar": 6,
+    "vocabulary": 6,
+    "reading": 5,
+    "listening": 5,
+    "familiarity": 5,
+    "writing": 1,
+    "speaking": 1
+  },
+  "skillQuotas": {
+    "grammar": [
+      {
+        "skill": "subject_verb_agreement",
+        "count": 1
+      },
+      {
+        "skill": "present_perfect",
+        "count": 1
+      },
+      {
+        "skill": "second_conditional",
+        "count": 1
+      },
+      {
+        "skill": "past_perfect",
+        "count": 1
+      },
+      {
+        "skill": "uncountable_nouns",
+        "count": 1
+      },
+      {
+        "skill": "mixed_conditional",
+        "count": 1
+      }
+    ],
+    "vocabulary": [
+      {
+        "skill": "meaning_recognition",
+        "count": 1
+      },
+      {
+        "skill": "word_form",
+        "count": 1
+      },
+      {
+        "skill": "academic_word_choice",
+        "count": 1
+      },
+      {
+        "skill": "meaning_in_context",
+        "count": 1
+      },
+      {
+        "skill": "collocation",
+        "count": 1
+      },
+      {
+        "skill": "contextual_use",
+        "count": 1
+      }
+    ],
+    "reading": [
+      {
+        "skill": "main_idea",
+        "count": 1
+      },
+      {
+        "skill": "specific_information",
+        "count": 1
+      },
+      {
+        "skill": "vocabulary_in_context",
+        "count": 1
+      },
+      {
+        "skill": "inference",
+        "count": 1
+      },
+      {
+        "skill": "paraphrase",
+        "count": 1
+      }
+    ],
+    "listening": [
+      {
+        "skill": "main_idea",
+        "count": 1
+      },
+      {
+        "skill": "specific_information",
+        "count": 1
+      },
+      {
+        "skill": "detail_recognition",
+        "count": 1
+      },
+      {
+        "skill": "inference",
+        "count": 1
+      },
+      {
+        "skill": "overall_understanding",
+        "count": 1
+      }
+    ],
+    "familiarity": [
+      {
+        "skill": "speaking_format",
+        "count": 1
+      },
+      {
+        "skill": "writing_format",
+        "count": 1
+      },
+      {
+        "skill": "speaking_criteria",
+        "count": 1
+      },
+      {
+        "skill": "module_knowledge",
+        "count": 1
+      },
+      {
+        "skill": "score_purpose",
+        "count": 1
+      }
+    ]
+  },
+  "objectiveCountPerForm": 27,
+  "productiveCountPerForm": 2,
+  "groupingRules": [
+    "Select one complete approved form atomically; never splice questions from different Reading/Listening groups.",
+    "Each Reading passage and its5 questions travel together; each Listening asset/script group and its5 questions travel together.",
+    "Persist section/question/option order exactly as authored; no runtime option shuffling.",
+    "All29 items must have required content/rights approvals; all27 objective keys and both Listening asset approvals must resolve before a full form is selectable."
+  ],
+  "difficultyClaim": "UNCLASSIFIED_NOT_CALIBRATED",
+  "crossFormEquivalence": "NOT_ESTABLISHED",
+  "proficiencyClaimsAllowed": false
+}

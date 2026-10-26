@@ -1,0 +1,903 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "assessmentId": "aiielts-starter-diagnostic",
+  "blueprintVersion": "diag-blueprint.2-candidate",
+  "questionSetVersion": "form-a.r1-candidate",
+  "formId": "form-a",
+  "title": "Diagnostic candidate form A",
+  "instructions": "Review candidate only. Not approved for learner scoring. No hints or answer keys belong in a future strict attempt.",
+  "trackApplicability": [
+    "ACADEMIC",
+    "GENERAL_TRAINING",
+    "UNDECIDED"
+  ],
+  "sections": [
+    {
+      "domain": "grammar",
+      "questionIds": [
+        "diagv1.a.g1.r1",
+        "diagv1.a.g02.r1",
+        "diagv1.a.g3.r1",
+        "diagv1.a.g4.r1",
+        "diagv1.a.g5.r1",
+        "diagv1.a.g06.r1"
+      ]
+    },
+    {
+      "domain": "vocabulary",
+      "questionIds": [
+        "diagv1.a.v01.r1",
+        "diagv1.a.v2.r1",
+        "diagv1.a.v3.r1",
+        "diagv1.a.v4.r1",
+        "diagv1.a.v5.r1",
+        "diagv1.a.v6.r1"
+      ]
+    },
+    {
+      "domain": "reading",
+      "questionIds": [
+        "diagv1.a.r01.r1",
+        "diagv1.a.r02.r1",
+        "diagv1.a.r03.r1",
+        "diagv1.a.r04.r1",
+        "diagv1.a.r05.r1"
+      ]
+    },
+    {
+      "domain": "listening",
+      "questionIds": [
+        "diagv1.a.l01.r1",
+        "diagv1.a.l02.r1",
+        "diagv1.a.l03.r1",
+        "diagv1.a.l04.r1",
+        "diagv1.a.l05.r1"
+      ]
+    },
+    {
+      "domain": "writing",
+      "questionIds": [
+        "diagv1.a.writing01.r1"
+      ]
+    },
+    {
+      "domain": "speaking",
+      "questionIds": [
+        "diagv1.a.speaking01.r1"
+      ]
+    },
+    {
+      "domain": "familiarity",
+      "questionIds": [
+        "diagv1.a.i1.r1",
+        "diagv1.a.i2.r1",
+        "diagv1.a.i3.r1",
+        "diagv1.a.i04.r1",
+        "diagv1.a.i5.r1"
+      ]
+    }
+  ],
+  "objectiveItems": [
+    {
+      "questionId": "diagv1.a.g1.r1",
+      "domain": "grammar",
+      "skill": "subject_verb_agreement",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the correct sentence:",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.905bcf0725d7ba9afadb",
+          "label": "She goes to university every day."
+        },
+        {
+          "optionId": "opt.cd8ea76ca57f6b1e19b6",
+          "label": "She go to university every day."
+        },
+        {
+          "optionId": "opt.ecd7bcd3a0e0d67eafe2",
+          "label": "She going to university every day."
+        },
+        {
+          "optionId": "opt.7d147079f7f11ba989f2",
+          "label": "She gone to university every day."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.g02.r1",
+      "domain": "grammar",
+      "skill": "present_perfect",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the present perfect simple form: I ______ English for three years, and I still study it every week.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.5cb0c4bfce363e4b420b",
+          "label": "studied"
+        },
+        {
+          "optionId": "opt.89ca258553922c832e25",
+          "label": "am studying"
+        },
+        {
+          "optionId": "opt.10c8262aa12874691ab7",
+          "label": "have studied"
+        },
+        {
+          "optionId": "opt.13390d6210734dc19f58",
+          "label": "had studied"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.g3.r1",
+      "domain": "grammar",
+      "skill": "second_conditional",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "If I ______ more time, I would learn another language.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.6ce83cacea1626168a98",
+          "label": "have"
+        },
+        {
+          "optionId": "opt.731070e2e90d897c2897",
+          "label": "had"
+        },
+        {
+          "optionId": "opt.08d471640ca70b5c998b",
+          "label": "will have"
+        },
+        {
+          "optionId": "opt.c280f0ddf34c1295ed8a",
+          "label": "would have"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.g4.r1",
+      "domain": "grammar",
+      "skill": "past_perfect",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "By the time we arrived, the lecture ______.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.057dcd2371c4d8e9031a",
+          "label": "starts"
+        },
+        {
+          "optionId": "opt.60a72a8fad3d0e80173e",
+          "label": "has started"
+        },
+        {
+          "optionId": "opt.547331ea6dd59fde2db6",
+          "label": "starting"
+        },
+        {
+          "optionId": "opt.fe30a99a27bcd9860957",
+          "label": "had started"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.g5.r1",
+      "domain": "grammar",
+      "skill": "uncountable_nouns",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the correct sentence:",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.d87c5381ab8fb0134163",
+          "label": "The information are useful."
+        },
+        {
+          "optionId": "opt.bb2c73f2ec1c654443e9",
+          "label": "The information is useful."
+        },
+        {
+          "optionId": "opt.b72149c30d02488ded10",
+          "label": "The informations are useful."
+        },
+        {
+          "optionId": "opt.9bf099a7439bc876ca39",
+          "label": "The informations is useful."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.g06.r1",
+      "domain": "grammar",
+      "skill": "mixed_conditional",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the present-result form of a mixed conditional: If the college had bought more computers last year, students ______ able to use one now.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.9033ebb2ea55e2d84907",
+          "label": "would be"
+        },
+        {
+          "optionId": "opt.b77c02ec3bc47d219620",
+          "label": "would have been"
+        },
+        {
+          "optionId": "opt.650e8fc89d8016f6f129",
+          "label": "will be"
+        },
+        {
+          "optionId": "opt.b74fdca33bff6c2e3894",
+          "label": "had been"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.v01.r1",
+      "domain": "vocabulary",
+      "skill": "meaning_recognition",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "In the phrase \"rapid growth\", rapid is closest in meaning to:",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.26c841b67a513ad7318e",
+          "label": "gradual"
+        },
+        {
+          "optionId": "opt.3a71b0572ed04d428a0d",
+          "label": "uncertain"
+        },
+        {
+          "optionId": "opt.0cd36947b509697baf85",
+          "label": "limited"
+        },
+        {
+          "optionId": "opt.12bb2645e9700f1f2562",
+          "label": "fast"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.v2.r1",
+      "domain": "vocabulary",
+      "skill": "word_form",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "The new policy had a ______ effect on employment.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.c96e601a585f6b6a474c",
+          "label": "significance"
+        },
+        {
+          "optionId": "opt.9646e606ec532314f496",
+          "label": "significant"
+        },
+        {
+          "optionId": "opt.65575f7439a6c3de1ea7",
+          "label": "signify"
+        },
+        {
+          "optionId": "opt.72e7b667b2ef5911cbee",
+          "label": "significantly"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.v3.r1",
+      "domain": "vocabulary",
+      "skill": "academic_word_choice",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "The study provides ______ evidence that air pollution affects health.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.69f96e2b2fc9932d3eba",
+          "label": "convinced"
+        },
+        {
+          "optionId": "opt.952f1ff3331fae047cc1",
+          "label": "convince"
+        },
+        {
+          "optionId": "opt.2e438eb339cac78c0b38",
+          "label": "convincing"
+        },
+        {
+          "optionId": "opt.2ce0b8b901a0a836fb31",
+          "label": "conviction"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.v4.r1",
+      "domain": "vocabulary",
+      "skill": "meaning_in_context",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which word is closest in meaning to \"decline\" in: \"Birth rates have declined significantly.\"",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.0e966201d70925e74782",
+          "label": "decreased"
+        },
+        {
+          "optionId": "opt.d0a350af72bd05cf4db3",
+          "label": "increased"
+        },
+        {
+          "optionId": "opt.41ada69f64c58cdd7f18",
+          "label": "remained stable"
+        },
+        {
+          "optionId": "opt.1f08c6992bade44d8771",
+          "label": "disappeared"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.v5.r1",
+      "domain": "vocabulary",
+      "skill": "collocation",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which collocation is correct?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.4409e5a817b41d7953dd",
+          "label": "make research"
+        },
+        {
+          "optionId": "opt.bfd2dc50b33f8b112c2f",
+          "label": "create research"
+        },
+        {
+          "optionId": "opt.461b6c968cf8d13fef8b",
+          "label": "do research"
+        },
+        {
+          "optionId": "opt.93e952fa9b108aac15fe",
+          "label": "perform researchings"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.v6.r1",
+      "domain": "vocabulary",
+      "skill": "contextual_use",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which sentence uses \"substantial\" correctly?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.4549b6fb6dab381e6a1d",
+          "label": "I substantial my homework yesterday."
+        },
+        {
+          "optionId": "opt.7d2cffdcd8d12d0c851c",
+          "label": "She was substantial to the university."
+        },
+        {
+          "optionId": "opt.5591f135df0f9c021628",
+          "label": "He substantially person."
+        },
+        {
+          "optionId": "opt.4a87375741fcd3730d26",
+          "label": "The project requires a substantial amount of funding."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.r01.r1",
+      "domain": "reading",
+      "skill": "main_idea",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What is the main purpose of the passage?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.b0599be258025811ecf0",
+          "label": "To argue that libraries should stop lending books."
+        },
+        {
+          "optionId": "opt.89e9d831caa499448400",
+          "label": "To explain a trial tool-lending service and how its usefulness will be reviewed."
+        },
+        {
+          "optionId": "opt.108a0c84bdbb5c80abc6",
+          "label": "To describe a business that sells tools to residents."
+        },
+        {
+          "optionId": "opt.2dd745e53a4f8bc4309c",
+          "label": "To report a proven reduction in new tool purchases."
+        }
+      ],
+      "stimulusId": "stim.a.reading.r1"
+    },
+    {
+      "questionId": "diagv1.a.r02.r1",
+      "domain": "reading",
+      "skill": "specific_information",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What must a resident do before borrowing an electric drill?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.8a76bf4e2b65a98ce94d",
+          "label": "Prove that they have never used a drill."
+        },
+        {
+          "optionId": "opt.c4e88e908f8ad32772ed",
+          "label": "Buy a hand tool from the library."
+        },
+        {
+          "optionId": "opt.64c0b05b558f9d8c7563",
+          "label": "Volunteer to write catalogue descriptions."
+        },
+        {
+          "optionId": "opt.02ddf2e0445a98b2beab",
+          "label": "Attend a short safety demonstration."
+        }
+      ],
+      "stimulusId": "stim.a.reading.r1"
+    },
+    {
+      "questionId": "diagv1.a.r03.r1",
+      "domain": "reading",
+      "skill": "vocabulary_in_context",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "In paragraph 2, what does \"modest\" mean in \"a modest initial collection\"?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.7b07c5feefb7df7a1a48",
+          "label": "Limited in size."
+        },
+        {
+          "optionId": "opt.a36dbdff021afdbad8b6",
+          "label": "Difficult to operate."
+        },
+        {
+          "optionId": "opt.26c1e69ced31ef8eb4c6",
+          "label": "Hidden from public view."
+        },
+        {
+          "optionId": "opt.6a9cd0ec95a5aaead90a",
+          "label": "Owned by individual borrowers."
+        }
+      ],
+      "stimulusId": "stim.a.reading.r1"
+    },
+    {
+      "questionId": "diagv1.a.r04.r1",
+      "domain": "reading",
+      "skill": "inference",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Why would it be unsafe to infer that sixty loans prevented sixty purchases?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.8faa46b355c5a11b9bec",
+          "label": "Every loan involved the same person."
+        },
+        {
+          "optionId": "opt.0247a8cc9c1843e98b5d",
+          "label": "The tools could not be used for household jobs."
+        },
+        {
+          "optionId": "opt.6bff9c628a7ddee06c0d",
+          "label": "Some borrowers would have found another way to obtain a tool without buying one."
+        },
+        {
+          "optionId": "opt.328fc9dfa0852e2bb2c9",
+          "label": "The library had already counted all residents' purchases."
+        }
+      ],
+      "stimulusId": "stim.a.reading.r1"
+    },
+    {
+      "questionId": "diagv1.a.r05.r1",
+      "domain": "reading",
+      "skill": "paraphrase",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which statement best paraphrases the final paragraph?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.d54b3cfa92caa649de52",
+          "label": "Volunteers will replace staff for all inspections."
+        },
+        {
+          "optionId": "opt.f1dffd425c23139bb299",
+          "label": "Use and feedback will guide the collection, while trained staff retain responsibility for safety."
+        },
+        {
+          "optionId": "opt.74d786779cdc1adf7448",
+          "label": "The collection will stay unchanged regardless of use."
+        },
+        {
+          "optionId": "opt.0be6b8c80d5211cf2a00",
+          "label": "Loan totals alone will decide whether the service is successful."
+        }
+      ],
+      "stimulusId": "stim.a.reading.r1"
+    },
+    {
+      "questionId": "diagv1.a.l01.r1",
+      "domain": "listening",
+      "skill": "main_idea",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What is the main purpose of the briefing?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.e7ab6827779f29443d9a",
+          "label": "To teach visitors how to buy exhibition tickets."
+        },
+        {
+          "optionId": "opt.33deaf2b3920bf4129b9",
+          "label": "To announce a new cycling route to the museum."
+        },
+        {
+          "optionId": "opt.c54b481bd88cfb5d3484",
+          "label": "To explain volunteers' duties during a museum family session."
+        },
+        {
+          "optionId": "opt.4bfcaeedca672664e9f5",
+          "label": "To recruit guides for the main exhibition tour."
+        }
+      ],
+      "stimulusId": "stim.a.listening.r1"
+    },
+    {
+      "questionId": "diagv1.a.l02.r1",
+      "domain": "listening",
+      "skill": "specific_information",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which entrance should volunteers use when they arrive?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.60c025b5ee6a01c34231",
+          "label": "The side entrance beside the bicycle racks."
+        },
+        {
+          "optionId": "opt.e344730f0bd8f8f4e80c",
+          "label": "The front doors used by visitors."
+        },
+        {
+          "optionId": "opt.48de1a971822883126da",
+          "label": "The doorway behind the picture wall."
+        },
+        {
+          "optionId": "opt.7498720eb2639adf412e",
+          "label": "The exhibition exit beside the ticket desk."
+        }
+      ],
+      "stimulusId": "stim.a.listening.r1"
+    },
+    {
+      "questionId": "diagv1.a.l03.r1",
+      "domain": "listening",
+      "skill": "detail_recognition",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What are volunteers now asked to bring?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.510c3ab55279141dfe4a",
+          "label": "Scissors."
+        },
+        {
+          "optionId": "opt.eca44cd8611db9f8bc8e",
+          "label": "Glue."
+        },
+        {
+          "optionId": "opt.92efeb5d3aa63dba459f",
+          "label": "A set of craft materials."
+        },
+        {
+          "optionId": "opt.d58222fa12c626af9fdd",
+          "label": "A pen."
+        }
+      ],
+      "stimulusId": "stim.a.listening.r1"
+    },
+    {
+      "questionId": "diagv1.a.l04.r1",
+      "domain": "listening",
+      "skill": "inference",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Why are volunteers told to use the picture wall if a table is not ready?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.024fac1806123af1772c",
+          "label": "It allows staff to cancel the whole session."
+        },
+        {
+          "optionId": "opt.efe9023d502cc96ac6e2",
+          "label": "It keeps the group occupied while staff prepare a suitable space."
+        },
+        {
+          "optionId": "opt.d2130a0b6b0fde7c9fab",
+          "label": "It lets volunteers leave the museum early."
+        },
+        {
+          "optionId": "opt.873926ab206ec18cb13b",
+          "label": "It removes the need to prepare the table."
+        }
+      ],
+      "stimulusId": "stim.a.listening.r1"
+    },
+    {
+      "questionId": "diagv1.a.l05.r1",
+      "domain": "listening",
+      "skill": "overall_understanding",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "How will volunteers' final notes be used?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.c97216588a961571c3a7",
+          "label": "To improve planning for the next family session."
+        },
+        {
+          "optionId": "opt.629eb04b899c9547511d",
+          "label": "To rank volunteers by performance."
+        },
+        {
+          "optionId": "opt.ef22d27abdd0ac377c7a",
+          "label": "To replace the attendance sheet."
+        },
+        {
+          "optionId": "opt.5cd9857ca0b18dd1a105",
+          "label": "To decide which visitors can return."
+        }
+      ],
+      "stimulusId": "stim.a.listening.r1"
+    },
+    {
+      "questionId": "diagv1.a.i1.r1",
+      "domain": "familiarity",
+      "skill": "speaking_format",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "How many parts does IELTS Speaking have?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.bfa9c3c0f8ff5f87a324",
+          "label": "2"
+        },
+        {
+          "optionId": "opt.f70f017fcaf13e9cb584",
+          "label": "4"
+        },
+        {
+          "optionId": "opt.d0080af3bc06d82781d9",
+          "label": "5"
+        },
+        {
+          "optionId": "opt.f452bb904f2a315bb1f1",
+          "label": "3"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.i2.r1",
+      "domain": "familiarity",
+      "skill": "writing_format",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which IELTS Writing task generally requires a minimum of 250 words?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.b03ca0472f4d07f334b6",
+          "label": "Task 1"
+        },
+        {
+          "optionId": "opt.0abab1fa3f4eec2a06db",
+          "label": "Both"
+        },
+        {
+          "optionId": "opt.0866db74c3efe8712980",
+          "label": "Task 2"
+        },
+        {
+          "optionId": "opt.a5c6d4c1e145936e9e31",
+          "label": "Neither"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.i3.r1",
+      "domain": "familiarity",
+      "skill": "speaking_criteria",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which of these is an IELTS Speaking assessment criterion?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.766ce0088d2d1e437505",
+          "label": "Pronunciation"
+        },
+        {
+          "optionId": "opt.b802f845e951f7042505",
+          "label": "Creativity"
+        },
+        {
+          "optionId": "opt.9e7cf88372eb198dc1cd",
+          "label": "Handwriting"
+        },
+        {
+          "optionId": "opt.c9a16d8be3fb81751862",
+          "label": "Memorization"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.i04.r1",
+      "domain": "familiarity",
+      "skill": "module_knowledge",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which IELTS section asks you to answer questions about prerecorded spoken conversations and monologues?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.6ff01a9fc9b957b5149d",
+          "label": "Reading"
+        },
+        {
+          "optionId": "opt.b06b9f8baf70733e9ca7",
+          "label": "Listening"
+        },
+        {
+          "optionId": "opt.ecd4a8762d795118189a",
+          "label": "Writing"
+        },
+        {
+          "optionId": "opt.f8a106244cfcf7a69c65",
+          "label": "Speaking"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.a.i5.r1",
+      "domain": "familiarity",
+      "skill": "score_purpose",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What is the main purpose of IELTS band scores?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.f89fb75b7c7962194e7c",
+          "label": "To rank universities"
+        },
+        {
+          "optionId": "opt.efc29bdbe891d7ce7d2b",
+          "label": "To measure intelligence"
+        },
+        {
+          "optionId": "opt.2f200ec73c539aa147df",
+          "label": "To represent English-language proficiency"
+        },
+        {
+          "optionId": "opt.27b6d224ef8d841dcbca",
+          "label": "To determine nationality"
+        }
+      ],
+      "stimulusId": null
+    }
+  ],
+  "productiveTasks": [
+    {
+      "questionId": "diagv1.a.writing01.r1",
+      "domain": "writing",
+      "kind": "WRITTEN_RESPONSE",
+      "prompt": "Some people believe that students should be required to study subjects that are useful for their future careers. Others believe students should be free to choose what they study. Discuss both views and give your own opinion.",
+      "bullets": [],
+      "instructions": "Discuss both views and give your own opinion. Aim for180–250 words for this focused diagnostic; suggested time20 minutes. This is not a full IELTS Writing test.",
+      "captureRequirements": {
+        "responseIdRequired": true,
+        "rawTextPreserved": true,
+        "genuineRecordedEvidenceRequired": false,
+        "preparationSeconds": 0,
+        "maximumRecordingSeconds": null,
+        "targetWordRange": [
+          180,
+          250
+        ],
+        "minimumWordsForPresence": 1,
+        "hardMinimumWordsToSubmit": null,
+        "capturePolicyId": "capture.v1-candidate"
+      }
+    },
+    {
+      "questionId": "diagv1.a.speaking01.r1",
+      "domain": "speaking",
+      "kind": "SPOKEN_RESPONSE",
+      "prompt": "Describe a skill you would like to learn in the future.",
+      "bullets": [
+        "what the skill is",
+        "why you want to learn it",
+        "how you would learn it",
+        "and explain how it could help you"
+      ],
+      "instructions": "Prepare for up to1 minute, then speak for up to2 minutes. A no-microphone fallback supplies no response content.",
+      "captureRequirements": {
+        "responseIdRequired": true,
+        "rawTextPreserved": false,
+        "genuineRecordedEvidenceRequired": true,
+        "preparationSeconds": 60,
+        "maximumRecordingSeconds": 120,
+        "targetWordRange": null,
+        "minimumWordsForPresence": null,
+        "hardMinimumWordsToSubmit": null,
+        "capturePolicyId": "capture.v1-candidate"
+      }
+    }
+  ],
+  "stimuli": [
+    {
+      "stimulusId": "stim.a.reading.r1",
+      "formId": "form-a",
+      "domain": "reading",
+      "kind": "PASSAGE",
+      "title": "Borrowing tools from a library",
+      "paragraphs": [
+        {
+          "paragraphId": "stim.a.reading.r1.p1",
+          "text": "Northbridge Library has added a small tool-lending service to its book collection. Residents can borrow items such as hand saws and electric drills for occasional household jobs. The service is intended to reduce the need to buy equipment that might otherwise remain unused for months. It began as a ten-week trial, not as a promise to supply every tool a resident might need."
+        },
+        {
+          "paragraphId": "stim.a.reading.r1.p2",
+          "text": "Borrowers reserve tools through the library catalogue and return them to a staffed desk. Before borrowing an electric drill, a resident must attend a short safety demonstration, even if that person has used a drill before. Hand tools do not require this demonstration. The library chose a modest initial collection so that staff could inspect each returned item before lending it again."
+        },
+        {
+          "paragraphId": "stim.a.reading.r1.p3",
+          "text": "During the first month, the tools were borrowed sixty times. Organisers considered this encouraging, but they did not count sixty avoided purchases. Some borrowers might have hired a tool, borrowed one from a friend or postponed the job if the service had not existed. Loan records alone therefore could not show how many new purchases the service had prevented."
+        },
+        {
+          "paragraphId": "stim.a.reading.r1.p4",
+          "text": "At the end of the trial, staff will compare loan records with borrowers' comments. Frequently requested tools may be added, while little-used items may be removed. Volunteers can help describe tools in the catalogue, but trained staff will remain responsible for safety checks. The organisers want the collection to respond to actual use while keeping responsibility for its condition clear."
+        }
+      ],
+      "provenanceId": "source-authoring",
+      "fictionalContext": true
+    },
+    {
+      "stimulusId": "stim.a.listening.r1",
+      "formId": "form-a",
+      "domain": "listening",
+      "kind": "AUDIO",
+      "title": "A museum volunteer briefing",
+      "mediaId": "media.a.listening.r1",
+      "assetState": "MISSING",
+      "assetPath": null,
+      "sha256": null,
+      "provenanceId": "source-authoring",
+      "fictionalContext": true
+    }
+  ]
+}

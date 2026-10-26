@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/blueprint.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "blueprintVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assessmentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "formIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "domainQuotas": {
+      "type": "object",
+      "properties": {
+        "grammar": {
+          "const": 6
+        },
+        "vocabulary": {
+          "const": 6
+        },
+        "reading": {
+          "const": 5
+        },
+        "listening": {
+          "const": 5
+        },
+        "familiarity": {
+          "const": 5
+        },
+        "writing": {
+          "const": 1
+        },
+        "speaking": {
+          "const": 1
+        }
+      },
+      "required": [
+        "grammar",
+        "vocabulary",
+        "reading",
+        "listening",
+        "familiarity",
+        "writing",
+        "speaking"
+      ],
+      "additionalProperties": false
+    },
+    "skillQuotas": {
+      "type": "object",
+      "properties": {
+        "grammar": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill": {
+                "type": "string",
+                "minLength": 1
+              },
+              "count": {
+                "const": 1
+              }
+            },
+            "required": [
+              "skill",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "vocabulary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill": {
+                "type": "string",
+                "minLength": 1
+              },
+              "count": {
+                "const": 1
+              }
+            },
+            "required": [
+              "skill",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "reading": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill": {
+                "type": "string",
+                "minLength": 1
+              },
+              "count": {
+                "const": 1
+              }
+            },
+            "required": [
+              "skill",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "listening": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill": {
+                "type": "string",
+                "minLength": 1
+              },
+              "count": {
+                "const": 1
+              }
+            },
+            "required": [
+              "skill",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "familiarity": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill": {
+                "type": "string",
+                "minLength": 1
+              },
+              "count": {
+                "const": 1
+              }
+            },
+            "required": [
+              "skill",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 5,
+          "maxItems": 5
+        }
+      },
+      "required": [
+        "grammar",
+        "vocabulary",
+        "reading",
+        "listening",
+        "familiarity"
+      ],
+      "additionalProperties": false
+    },
+    "objectiveCountPerForm": {
+      "const": 27
+    },
+    "productiveCountPerForm": {
+      "const": 2
+    },
+    "groupingRules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "difficultyClaim": {
+      "const": "UNCLASSIFIED_NOT_CALIBRATED"
+    },
+    "crossFormEquivalence": {
+      "const": "NOT_ESTABLISHED"
+    },
+    "proficiencyClaimsAllowed": {
+      "const": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "blueprintVersion",
+    "assessmentId",
+    "formIds",
+    "domainQuotas",
+    "skillQuotas",
+    "objectiveCountPerForm",
+    "productiveCountPerForm",
+    "groupingRules",
+    "difficultyClaim",
+    "crossFormEquivalence",
+    "proficiencyClaimsAllowed"
+  ],
+  "additionalProperties": false
+}

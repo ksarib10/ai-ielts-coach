@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/validation-report.schema.json",
+  "type": "object",
+  "properties": {
+    "executedAtUtc": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "const": "PASS_STRUCTURAL_NOT_CONTENT_APPROVAL"
+    },
+    "python": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jsonschema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schemasChecked": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "jsonDocumentsValidated": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "objectiveItems": {
+          "const": 54
+        },
+        "productiveTasks": {
+          "const": 4
+        },
+        "uniqueOptionIds": {
+          "const": 216
+        },
+        "formKeyPositions": {
+          "type": "object",
+          "properties": {
+            "form-a": {
+              "type": "object",
+              "properties": {
+                "A": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "B": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "additionalProperties": false
+            },
+            "form-b": {
+              "type": "object",
+              "properties": {
+                "A": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "B": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "form-a",
+            "form-b"
+          ],
+          "additionalProperties": false
+        },
+        "contentReviewReadyObjective": {
+          "const": 44
+        },
+        "audioBlockedObjective": {
+          "const": 10
+        },
+        "approvedScoringEligible": {
+          "const": 0
+        },
+        "currentlySelectableForms": {
+          "const": 0
+        },
+        "authorshipCounts": {
+          "type": "object",
+          "properties": {
+            "REUSED_WORDING_OPTIONS_REORDERED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "REVISED_LLM_ASSISTED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "NEW_LLM_ASSISTED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "REUSED_PROMPT": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "REUSED_WORDING_OPTIONS_REORDERED",
+            "REVISED_LLM_ASSISTED",
+            "NEW_LLM_ASSISTED",
+            "REUSED_PROMPT"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "objectiveItems",
+        "productiveTasks",
+        "uniqueOptionIds",
+        "formKeyPositions",
+        "contentReviewReadyObjective",
+        "audioBlockedObjective",
+        "approvedScoringEligible",
+        "currentlySelectableForms",
+        "authorshipCounts"
+      ],
+      "additionalProperties": false
+    },
+    "negativeTests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "test": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "const": "PASS"
+          },
+          "actual": {
+            "const": "REJECTED"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "test",
+          "status",
+          "actual",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "negativeTestsRejected": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "selectionExecuted": {
+      "const": false
+    },
+    "actualAttemptsCreated": {
+      "const": 0
+    },
+    "audioProductionOrHumanVerificationPerformed": {
+      "const": false
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "properties": {
+        "outputPayloadHashes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "manifestCanonicalSelfDigest": {
+          "const": "PASS"
+        },
+        "preservedInputHashes": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "const": "NOT_REQUESTED"
+            }
+          ]
+        }
+      },
+      "required": [
+        "outputPayloadHashes",
+        "manifestCanonicalSelfDigest",
+        "preservedInputHashes"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "executedAtUtc",
+    "status",
+    "python",
+    "jsonschema",
+    "schemasChecked",
+    "jsonDocumentsValidated",
+    "counts",
+    "negativeTests",
+    "negativeTestsRejected",
+    "selectionExecuted",
+    "actualAttemptsCreated",
+    "audioProductionOrHumanVerificationPerformed",
+    "limitations"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "scoringPolicyVersion": "raw-single-choice.2-candidate",
+  "approvalStatus": "PENDING_OWNER",
+  "objectivePolicy": {
+    "type": "EXACT_STABLE_OPTION_ID",
+    "normalization": "NONE; do not coerce label/letter/index/string-number; validate assigned option membership first",
+    "correctRule": "Exact match to approved proposedCorrectOptionId from pinned private key set",
+    "answeredRule": "One structurally valid assigned choice per objective item, whether correct or wrong",
+    "denominatorRule": "Freeze approved eligible assigned IDs at allocation: grammar6,vocabulary6,reading5,listening5,familiarity5 for a complete form; never shrink after answers/key failures",
+    "percentageRule": "round(100*correct/eligible), display numerator/denominator; no cross-form calibration",
+    "unansweredPolicy": "PROPOSED_PENDING_OWNER: explicit final incomplete-answer confirmation; unanswered counts0 correct and remains in denominator",
+    "invalidSourcePolicy": "Missing/invalid required key, digest, owner or audio verification -> unavailable/invalid result, not0%; no silent dropping or current-key substitution",
+    "preSubmitPolicy": "REQUIRES_VALID_DIAGNOSTIC/null before durable validated submission",
+    "zeroPolicy": "AVAILABLE/0 only for genuine all-wrong valid submitted dimension; zero eligible is UNSUPPORTED/null"
+  },
+  "capturePolicy": {
+    "capturePolicyId": "capture.v1-candidate",
+    "writing": "Preserve private raw text and responseId; nonblank counts presence independently of180-word target; count trim/split whitespace for display only",
+    "speaking": "Explicit RECORDED_SESSION_ONLY/RECORDED_PERSISTED/NO_MIC_FALLBACK/UNKNOWN_LEGACY; valid session/media evidence and finalized usable blob required for provided; duration alone insufficient",
+    "persistence": "Session-only evidence becomes unavailable after session loss; no claim of stored audio without durable owned reference and retention approval",
+    "analytics": "Never store response text, audio, credentials or private media URLs in activity events",
+    "productiveScore": null
+  },
+  "forbiddenOutputs": [
+    "Assessed IELTS band",
+    "Assessed CEFR level",
+    "Calibrated readiness score",
+    "AI Writing/Speaking evaluation",
+    "Trend/proficiency growth from different or repeated forms"
+  ]
+}

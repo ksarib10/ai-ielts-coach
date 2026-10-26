@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "PROJECT_CONTINUITY_AND_DOCUMENTATION_RULES_V1_0.md",
+    "originalPath": "C:\\Users\\ksari\\AppData\\Local\\Temp\\PROJECT_CONTINUITY_AND_DOCUMENTATION_RULES_V1_0.md",
+    "archivedPath": "docs/reviews/stage-1a/inputs/PROJECT_CONTINUITY_AND_DOCUMENTATION_RULES_V1_0.md",
+    "bytes": 5314,
+    "sha256": "5dff10e8d921c92992c0bd8c17548deec2d86b115ebd6857f3262448c674f20d",
+    "readCompletelyBeforeApplicationChanges": true
+  },
+  {
+    "filename": "APPROVED_PLATFORM_FEATURE_SCOPE_V1_0.md",
+    "originalPath": "C:\\Users\\ksari\\AppData\\Local\\Temp\\APPROVED_PLATFORM_FEATURE_SCOPE_V1_0.md",
+    "archivedPath": "docs/reviews/stage-1a/inputs/APPROVED_PLATFORM_FEATURE_SCOPE_V1_0.md",
+    "bytes": 9594,
+    "sha256": "2f2aa1ce48905f3ef6bf4302e0f0f4fd37d42d3f2472e5ac59ac9cffcb3d27fd",
+    "readCompletelyBeforeApplicationChanges": true
+  },
+  {
+    "filename": "CODEX_STAGE_1A_MASTER_EXECUTION_PROMPT_V1_0.md",
+    "originalPath": "C:\\Users\\ksari\\AppData\\Local\\Temp\\CODEX_STAGE_1A_MASTER_EXECUTION_PROMPT_V1_0.md",
+    "archivedPath": "docs/reviews/stage-1a/inputs/CODEX_STAGE_1A_MASTER_EXECUTION_PROMPT_V1_0.md",
+    "bytes": 10032,
+    "sha256": "45813cca1fc4b636c430c6a4f98b5d416e0b32997b9aa12f7c08788c27867d81",
+    "readCompletelyBeforeApplicationChanges": true
+  },
+  {
+    "filename": "DIAGNOSTIC_AND_DASHBOARD_CONTRACT_V1_0.md",
+    "originalPath": "C:\\Users\\ksari\\AppData\\Local\\Temp\\DIAGNOSTIC_AND_DASHBOARD_CONTRACT_V1_0.md",
+    "archivedPath": "docs/reviews/stage-1a/inputs/DIAGNOSTIC_AND_DASHBOARD_CONTRACT_V1_0.md",
+    "bytes": 7808,
+    "sha256": "d72df49ac6a5eba37bb46ed9b53fdf6205dcb898d5e3c74fd27cc91570c2172e",
+    "readCompletelyBeforeApplicationChanges": true
+  }
+]

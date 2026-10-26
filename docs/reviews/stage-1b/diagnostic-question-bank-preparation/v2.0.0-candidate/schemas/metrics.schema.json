@@ -1,0 +1,377 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/metrics.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authoritySha256": {
+      "type": "string",
+      "minLength": 1
+    },
+    "baseline": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M01"
+              },
+              "exactAcceptedFormula": {
+                "const": "round(100 * validRequiredFields / 7); fields=displayName,studyContext,track,dailyStudyMinutes,englishVariant,explanationLanguage,timeZone"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M02"
+              },
+              "exactAcceptedFormula": {
+                "const": "Display track and nullable targetBand exactly; no proficiency conversion"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M03"
+              },
+              "exactAcceptedFormula": {
+                "const": "Display actual lifecycle state, lastSavedAt and deterministic start/resume action"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M04"
+              },
+              "exactAcceptedFormula": {
+                "const": "count distinct assigned items with a structurally valid nonblank response; denominator=served item count; fallback speech not counted as learner content"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M05-GRAMMAR"
+              },
+              "exactAcceptedFormula": {
+                "const": "round(100 * correctAssignedGrammarItems / eligibleAssignedGrammarItems); unanswered=incorrect only under approved complete-submission policy"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M05-VOCABULARY"
+              },
+              "exactAcceptedFormula": {
+                "const": "round(100 * correctAssignedVocabularyItems / eligibleAssignedVocabularyItems); unanswered=incorrect only under approved complete-submission policy"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M05-READING"
+              },
+              "exactAcceptedFormula": {
+                "const": "round(100 * correctAssignedReadingItems / eligibleAssignedReadingItems); unanswered=incorrect only under approved complete-submission policy"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M05-LISTENING"
+              },
+              "exactAcceptedFormula": {
+                "const": "round(100 * correctAssignedListeningItems / eligibleAssignedListeningItems); unanswered=incorrect only under approved complete-submission policy"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M05-FAMILIARITY"
+              },
+              "exactAcceptedFormula": {
+                "const": "round(100 * correctAssignedFamiliarityItems / eligibleAssignedFamiliarityItems); unanswered=incorrect only under approved complete-submission policy"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M06"
+              },
+              "exactAcceptedFormula": {
+                "const": "AVAILABLE after accepted submission; show outcome per item with sourceQuestionId; no invented aggregate grade"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M07"
+              },
+              "exactAcceptedFormula": {
+                "const": "Writing=provided iff nonblank text; wordCount=trim/split whitespace count; Speaking=provided only RECORDED with valid session/owned media evidence; NO_MIC_FALLBACK=not provided; score=null"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M08"
+              },
+              "exactAcceptedFormula": {
+                "const": "count unique (learnerId,eventType,referenceId) where LEARNER_ENTERED, valid timestamp <= now, not diagnostic-only, and successful lesson completion or learner-content-bearing activity submission"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M09"
+              },
+              "exactAcceptedFormula": {
+                "const": "size(unique localDate(event.occurredAt,timeZone) in Monday 00:00 inclusive to next Monday exclusive, and event <= now))"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M10"
+              },
+              "exactAcceptedFormula": {
+                "const": "count unique eligible events whose localDate equals localDate(now,timeZone); no fixed goal of 4 without approved goal policy"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "metricId": {
+                "const": "M11"
+              },
+              "exactAcceptedFormula": {
+                "const": "If today active, count consecutive active dates backwards from today; else if yesterday active, count backwards from yesterday; else 0; do not cross unknown capture boundary"
+              },
+              "bankCompatibility": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "metricId",
+              "exactAcceptedFormula",
+              "bankCompatibility"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 15,
+      "maxItems": 15
+    },
+    "futureGated": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "gate": {
+      "type": "string",
+      "minLength": 1
+    },
+    "crossFormCaution": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "authority",
+    "authoritySha256",
+    "baseline",
+    "futureGated",
+    "gate",
+    "crossFormCaution"
+  ],
+  "additionalProperties": false
+}

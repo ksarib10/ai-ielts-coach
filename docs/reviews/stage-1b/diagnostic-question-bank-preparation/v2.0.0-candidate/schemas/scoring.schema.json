@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/scoring.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "scoringPolicyVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approvalStatus": {
+      "const": "PENDING_OWNER"
+    },
+    "objectivePolicy": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normalization": {
+          "type": "string",
+          "minLength": 1
+        },
+        "correctRule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answeredRule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "denominatorRule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "percentageRule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unansweredPolicy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "invalidSourcePolicy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "preSubmitPolicy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zeroPolicy": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "type",
+        "normalization",
+        "correctRule",
+        "answeredRule",
+        "denominatorRule",
+        "percentageRule",
+        "unansweredPolicy",
+        "invalidSourcePolicy",
+        "preSubmitPolicy",
+        "zeroPolicy"
+      ],
+      "additionalProperties": false
+    },
+    "capturePolicy": {
+      "type": "object",
+      "properties": {
+        "capturePolicyId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "writing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speaking": {
+          "type": "string",
+          "minLength": 1
+        },
+        "persistence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "analytics": {
+          "type": "string",
+          "minLength": 1
+        },
+        "productiveScore": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "capturePolicyId",
+        "writing",
+        "speaking",
+        "persistence",
+        "analytics",
+        "productiveScore"
+      ],
+      "additionalProperties": false
+    },
+    "forbiddenOutputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "scoringPolicyVersion",
+    "approvalStatus",
+    "objectivePolicy",
+    "capturePolicy",
+    "forbiddenOutputs"
+  ],
+  "additionalProperties": false
+}

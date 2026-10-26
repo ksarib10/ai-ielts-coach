@@ -1,0 +1,13 @@
+
+> ai-ielts-coach@1.0.0 build
+> tsc -b && vite build
+
+vite v6.4.3 building for production...
+transforming...
+✓ 1622 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.63 kB │ gzip:   0.38 kB
+dist/assets/index-BynjdJC9.css  101.81 kB │ gzip:  19.30 kB
+dist/assets/index-gh88Nnsr.js   408.75 kB │ gzip: 124.83 kB
+✓ built in 16.32s

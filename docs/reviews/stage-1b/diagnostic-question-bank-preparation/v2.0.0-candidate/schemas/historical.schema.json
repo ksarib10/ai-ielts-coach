@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/historical.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "auditItemId": {
+            "type": "string"
+          },
+          "existingQuestionId": {
+            "type": "string"
+          },
+          "sectionId": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "sourceLocation": {
+            "type": "string"
+          },
+          "questionType": {
+            "type": "string"
+          },
+          "responseMode": {
+            "type": "string"
+          },
+          "wording": {
+            "type": "string"
+          },
+          "instructions": {
+            "type": "string"
+          },
+          "optionsJSON": {
+            "type": "string"
+          },
+          "existingKeyIndex": {
+            "type": "string"
+          },
+          "existingKeyLetter": {
+            "type": "string"
+          },
+          "existingKeyText": {
+            "type": "string"
+          },
+          "existingOptionIdentity": {
+            "type": "string"
+          },
+          "scoring": {
+            "type": "string"
+          },
+          "normalization": {
+            "type": "string"
+          },
+          "stimulus": {
+            "type": "string"
+          },
+          "difficultyLabel": {
+            "type": "string"
+          },
+          "skillLabel": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "string"
+          },
+          "usageRights": {
+            "type": "string"
+          },
+          "contentFinding": {
+            "type": "string"
+          },
+          "contentEligibility": {
+            "type": "string"
+          },
+          "validatedReleaseEligibility": {
+            "type": "string"
+          },
+          "clarificationOrCorrection": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "auditItemId",
+          "existingQuestionId",
+          "sectionId",
+          "domain",
+          "sourceLocation",
+          "questionType",
+          "responseMode",
+          "wording",
+          "instructions",
+          "optionsJSON",
+          "existingKeyIndex",
+          "existingKeyLetter",
+          "existingKeyText",
+          "existingOptionIdentity",
+          "scoring",
+          "normalization",
+          "stimulus",
+          "difficultyLabel",
+          "skillLabel",
+          "provenance",
+          "usageRights",
+          "contentFinding",
+          "contentEligibility",
+          "validatedReleaseEligibility",
+          "clarificationOrCorrection"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 29,
+      "maxItems": 29
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "purpose",
+    "sourceSha256",
+    "items"
+  ],
+  "additionalProperties": false
+}

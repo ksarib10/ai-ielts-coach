@@ -1,0 +1,82 @@
+import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
+import { buildSync } from 'esbuild';
+import path from 'node:path';
+const output = path.resolve('qa/.domain-test.cjs');
+buildSync({ entryPoints: ['src/services/platform.ts'], bundle: true, platform: 'node', format: 'cjs', outfile: output, logLevel: 'silent' });
+const require = createRequire(import.meta.url);
+const store = new Map(); let fail = false;
+globalThis.localStorage = { getItem: key => store.get(key) ?? null, setItem: (key, value) => { if (fail) throw Error('Quota exceeded'); store.set(key, value); }, removeItem: key => store.delete(key) };
+const p = require(output); const resource = p.contentService.resource('gardens');
+assert.ok(resource && resource.activities.length === 5);
+assert.equal(p.isCorrect(' Maintenance. ', 'maintenance'), true);
+assert.equal(p.isCorrect(['B', 'A'], ['A', 'B']), true);
+assert.equal(p.isCorrect(['B', 'A'], ['A', 'B'], true), false);
+assert.equal(p.answered(['answer', '']), false);
+assert.equal(p.answerHasLearnerContent('A real response'), true);
+assert.equal(p.answerHasLearnerContent('Speaking response marked complete with the no-microphone demo fallback (4s). No sample answer was supplied.'), false);
+assert.equal(p.attemptHasLearnerContent({ answers: { speaking: 'Speaking response marked complete with the no-microphone demo fallback (4s). No sample answer was supplied.' } }), false);
+const draft = { answers: Object.fromEntries(resource.activities.map(a => [a.id, a.answer])), flags: ['r1'], startedAt: Date.now() - 30000 };
+p.mutateLearning(s => { s.drafts['test:gardens'] = draft; });
+const result = p.assessmentService.submit(resource, 'test', draft, 30);
+assert.equal(result.correct, 5); assert.equal(result.total, 5);
+assert.equal(p.getLearning().drafts['test:gardens'], undefined);
+assert.equal(p.getLearning().attempts.length, 1);
+assert.equal(p.getLearning().activityLog.filter(event => event.kind === 'attempt').length, 1);
+assert.equal(p.aiService.respond('Explain the answer', { mode: 'test', selectedText: 'maintenance' }).includes('disabled'), true);
+assert.equal(p.aiService.respond('Explain the answer', { mode: 'exam' }).includes('disabled'), true);
+p.aiService.saveWord('maintenance', 'Reading passage'); p.aiService.saveWord('maintenance', 'Reading passage');
+assert.equal(p.getLearning().vocabulary.length, 1);
+assert.match(p.aiService.respond('Explain in Uzbek', { mode: 'learn', selectedText: 'maintenance' }), /parvarish/);
+p.progressService.completeLesson('matching-headings', 'Matching Headings', true);
+p.progressService.completeLesson('matching-headings', 'Matching Headings', true);
+assert.equal(p.getLearning().completedLessons.length, 1);
+assert.equal(p.getLearning().activityLog.filter(event => event.kind === 'lesson').length, 1);
+p.progressService.completeLesson('writing-development', 'Writing idea development', false);
+assert.equal(p.getLearning().completedLessons.includes('writing-development'), false);
+assert.equal(p.progressService.recommendationFor({ ...result, module: 'Writing' }).id, 'writing-development');
+assert.equal(p.progressService.recommendationFor({ ...result, module: 'Speaking' }).id, 'speaking-fluency');
+p.mutateLearning(s => { s.drafts['test:gardens'] = draft; });
+fail = true;
+assert.throws(() => p.assessmentService.submit(resource, 'test', draft, 30), /saved/);
+assert.equal(p.getLearning().attempts.length, 1, 'Failed submission must not create an attempt');
+assert.ok(p.getLearning().drafts['test:gardens'], 'Failed submission must preserve draft');
+fail = false;
+const retry = p.assessmentService.submit(resource, 'test', draft, 31);
+assert.equal(retry.correct, 5); assert.equal(p.getLearning().attempts.length, 2);
+assert.equal(p.getLearning().activityLog.filter(event => event.kind === 'attempt').length, 2);
+const examDraftKey = 'exam:session-1:gardens';
+p.mutateLearning(s => { s.drafts[examDraftKey] = draft; });
+const examAttempt = p.assessmentService.submit(resource, 'exam', draft, 32, {
+  draftKey: examDraftKey,
+  mutate: (s, attempt) => { s.highlights['exam:advanced'] = [attempt.id]; },
+});
+assert.equal(p.getLearning().drafts[examDraftKey], undefined);
+assert.deepEqual(p.getLearning().highlights['exam:advanced'], [examAttempt.id], 'Attempt and exam progression persist atomically');
+const longAttempt = p.assessmentService.submit(resource, 'practice', { answers: {}, flags: [], startedAt: Date.now() }, 999999);
+assert.equal(p.getLearning().activityLog.find(event => event.referenceId === longAttempt.id).minutes, resource.minutes, 'Expired or stale attempt clocks must not inflate study minutes');
+const fixedNow = new Date(2026, 8, 9, 12);
+const fixedLog = [
+  { id: 'one', kind: 'lesson', referenceId: 'one', occurredAt: new Date(2026, 8, 7, 10).toISOString(), minutes: 20 },
+  { id: 'two', kind: 'lesson', referenceId: 'two', occurredAt: new Date(2026, 8, 8, 10).toISOString(), minutes: 25 },
+  { id: 'three', kind: 'attempt', referenceId: 'three', occurredAt: new Date(2026, 8, 9, 10).toISOString(), minutes: 30 },
+];
+const motivation = p.summarizeGamification({ activityLog: fixedLog }, 30, fixedNow);
+assert.equal(motivation.currentStreak, 3);
+assert.equal(motivation.bestStreak, 3);
+assert.equal(motivation.thisWeekDays, 3);
+assert.equal(motivation.todayActivities, 1);
+assert.equal(motivation.weeklyMinutes, 75);
+assert.equal(motivation.weeklyGoalMinutes, 180);
+p.resetLearning();
+assert.deepEqual(p.getLearning().attempts, []);
+assert.deepEqual(p.getLearning().activityLog, []);
+p.loadDemo(); const learner = JSON.parse(store.get('aiIELTSCoach'));
+assert.equal(learner.user.firstName, 'Dilnoza Karimova');
+assert.equal(learner.results.overall, 5.5);
+assert.deepEqual(Object.values(learner.results.moduleScores).map(x => x.band), [5.5, 5, 5, 5]);
+assert.equal(learner.diagnostic.completedSections.length, 7);
+assert.equal(p.getLearning().attempts.length, 0, 'The sample learner must not inherit another learner’s attempts');
+p.mutateLearning(s => { s.attempts.unshift({ id: 'empty-attempt', resourceId: 'speaking-3', module: 'Speaking', mode: 'test', answers: {}, correct: 0, total: 0, seconds: 12, submittedAt: new Date().toISOString() }); });
+assert.equal(p.progressService.recommendations()[0].id, 'writing-development', 'An empty submission must not replace the diagnostic priority recommendation');
+console.log('PASS: scoring, mode restrictions, persistence/retry, vocabulary, mastery, recommendations and canonical learner.');

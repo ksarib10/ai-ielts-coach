@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "authority": "docs/reviews/stage-1a/PERSONALIZED_DASHBOARD_METRIC_MATRIX.csv",
+  "authoritySha256": "2b413cbc9651178762e1991aa145ea04d289df8cf61c1c2a8e5f820f4208251b",
+  "baseline": [
+    {
+      "metricId": "M01",
+      "exactAcceptedFormula": "round(100 * validRequiredFields / 7); fields=displayName,studyContext,track,dailyStudyMinutes,englishVariant,explanationLanguage,timeZone",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M02",
+      "exactAcceptedFormula": "Display track and nullable targetBand exactly; no proficiency conversion",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M03",
+      "exactAcceptedFormula": "Display actual lifecycle state, lastSavedAt and deterministic start/resume action",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M04",
+      "exactAcceptedFormula": "count distinct assigned items with a structurally valid nonblank response; denominator=served item count; fallback speech not counted as learner content",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M05-GRAMMAR",
+      "exactAcceptedFormula": "round(100 * correctAssignedGrammarItems / eligibleAssignedGrammarItems); unanswered=incorrect only under approved complete-submission policy",
+      "bankCompatibility": "Same formula; use owned pinned selected IDs/denominator/version, never global bank size."
+    },
+    {
+      "metricId": "M05-VOCABULARY",
+      "exactAcceptedFormula": "round(100 * correctAssignedVocabularyItems / eligibleAssignedVocabularyItems); unanswered=incorrect only under approved complete-submission policy",
+      "bankCompatibility": "Same formula; use owned pinned selected IDs/denominator/version, never global bank size."
+    },
+    {
+      "metricId": "M05-READING",
+      "exactAcceptedFormula": "round(100 * correctAssignedReadingItems / eligibleAssignedReadingItems); unanswered=incorrect only under approved complete-submission policy",
+      "bankCompatibility": "Same formula; use owned pinned selected IDs/denominator/version, never global bank size."
+    },
+    {
+      "metricId": "M05-LISTENING",
+      "exactAcceptedFormula": "round(100 * correctAssignedListeningItems / eligibleAssignedListeningItems); unanswered=incorrect only under approved complete-submission policy",
+      "bankCompatibility": "Same formula; use owned pinned selected IDs/denominator/version, never global bank size."
+    },
+    {
+      "metricId": "M05-FAMILIARITY",
+      "exactAcceptedFormula": "round(100 * correctAssignedFamiliarityItems / eligibleAssignedFamiliarityItems); unanswered=incorrect only under approved complete-submission policy",
+      "bankCompatibility": "Same formula; use owned pinned selected IDs/denominator/version, never global bank size."
+    },
+    {
+      "metricId": "M06",
+      "exactAcceptedFormula": "AVAILABLE after accepted submission; show outcome per item with sourceQuestionId; no invented aggregate grade",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M07",
+      "exactAcceptedFormula": "Writing=provided iff nonblank text; wordCount=trim/split whitespace count; Speaking=provided only RECORDED with valid session/owned media evidence; NO_MIC_FALLBACK=not provided; score=null",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M08",
+      "exactAcceptedFormula": "count unique (learnerId,eventType,referenceId) where LEARNER_ENTERED, valid timestamp <= now, not diagnostic-only, and successful lesson completion or learner-content-bearing activity submission",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M09",
+      "exactAcceptedFormula": "size(unique localDate(event.occurredAt,timeZone) in Monday 00:00 inclusive to next Monday exclusive, and event <= now))",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M10",
+      "exactAcceptedFormula": "count unique eligible events whose localDate equals localDate(now,timeZone); no fixed goal of 4 without approved goal policy",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    },
+    {
+      "metricId": "M11",
+      "exactAcceptedFormula": "If today active, count consecutive active dates backwards from today; else if yesterday active, count backwards from yesterday; else 0; do not cross unknown capture boundary",
+      "bankCompatibility": "Same approved formula and validity constraints; bank does not replace profile/activity/capture dependencies."
+    }
+  ],
+  "futureGated": [
+    "M12",
+    "M13",
+    "M14",
+    "M15",
+    "M16",
+    "M17"
+  ],
+  "gate": "All15 baseline IDs implemented and human-accepted before Stage2; candidate content does not satisfy gate",
+  "crossFormCaution": "Raw percentages remain descriptive for exact selected content. Two forms are not equated or calibrated; M12 stays unavailable."
+}

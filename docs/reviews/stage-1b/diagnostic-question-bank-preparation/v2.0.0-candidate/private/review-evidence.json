@@ -1,0 +1,1488 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "reviewedAt": "2026-10-24",
+  "reviewerKind": "LLM_ASSISTANT_NOT_INDEPENDENT_ASSESSOR",
+  "entries": [
+    {
+      "questionId": "diagv1.a.g1.r1",
+      "formId": "form-a",
+      "domain": "grammar",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "G1",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g02.r1",
+      "formId": "form-a",
+      "domain": "grammar",
+      "authorship": "REVISED_LLM_ASSISTED",
+      "legacyId": "G2",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Addresses temporal ambiguity by naming the target form; recognition task, not calibrated tense proficiency.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g3.r1",
+      "formId": "form-a",
+      "domain": "grammar",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "G3",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g4.r1",
+      "formId": "form-a",
+      "domain": "grammar",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "G4",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g5.r1",
+      "formId": "form-a",
+      "domain": "grammar",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "G5",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g06.r1",
+      "formId": "form-a",
+      "domain": "grammar",
+      "authorship": "REVISED_LLM_ASSISTED",
+      "legacyId": "G6",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Original G6 remains disputed in historical archive; this new item fixes the requested temporal construction.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v01.r1",
+      "formId": "form-a",
+      "domain": "vocabulary",
+      "authorship": "REVISED_LLM_ASSISTED",
+      "legacyId": "V1",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Removes sudden from the proposed gloss and adds a clear context.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v2.r1",
+      "formId": "form-a",
+      "domain": "vocabulary",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "V2",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v3.r1",
+      "formId": "form-a",
+      "domain": "vocabulary",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "V3",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v4.r1",
+      "formId": "form-a",
+      "domain": "vocabulary",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "V4",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v5.r1",
+      "formId": "form-a",
+      "domain": "vocabulary",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "V5",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v6.r1",
+      "formId": "form-a",
+      "domain": "vocabulary",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "V6",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r01.r1",
+      "formId": "form-a",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r02.r1",
+      "formId": "form-a",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r03.r1",
+      "formId": "form-a",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r04.r1",
+      "formId": "form-a",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r05.r1",
+      "formId": "form-a",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l01.r1",
+      "formId": "form-a",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l02.r1",
+      "formId": "form-a",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l03.r1",
+      "formId": "form-a",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l04.r1",
+      "formId": "form-a",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l05.r1",
+      "formId": "form-a",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i1.r1",
+      "formId": "form-a",
+      "domain": "familiarity",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "I1",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i2.r1",
+      "formId": "form-a",
+      "domain": "familiarity",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "I2",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i3.r1",
+      "formId": "form-a",
+      "domain": "familiarity",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "I3",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i04.r1",
+      "formId": "form-a",
+      "domain": "familiarity",
+      "authorship": "REVISED_LLM_ASSISTED",
+      "legacyId": "I4",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Replaces ambiguous completed through an audio recording phrasing.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i5.r1",
+      "formId": "form-a",
+      "domain": "familiarity",
+      "authorship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "legacyId": "I5",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Historical wording/labels retained; new immutable option order/IDs only. Prior weak-distractor limitations remain; independent human review required.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g01.r1",
+      "formId": "form-b",
+      "domain": "grammar",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g02.r1",
+      "formId": "form-b",
+      "domain": "grammar",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g03.r1",
+      "formId": "form-b",
+      "domain": "grammar",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g04.r1",
+      "formId": "form-b",
+      "domain": "grammar",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g05.r1",
+      "formId": "form-b",
+      "domain": "grammar",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g06.r1",
+      "formId": "form-b",
+      "domain": "grammar",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v01.r1",
+      "formId": "form-b",
+      "domain": "vocabulary",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v02.r1",
+      "formId": "form-b",
+      "domain": "vocabulary",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v03.r1",
+      "formId": "form-b",
+      "domain": "vocabulary",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Overlap with word-form recognition acknowledged; not a complete academic-vocabulary measure.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v04.r1",
+      "formId": "form-b",
+      "domain": "vocabulary",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v05.r1",
+      "formId": "form-b",
+      "domain": "vocabulary",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v06.r1",
+      "formId": "form-b",
+      "domain": "vocabulary",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Malformed alternatives make this an easy recognition task; no calibrated difficulty claim.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r01.r1",
+      "formId": "form-b",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r02.r1",
+      "formId": "form-b",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r03.r1",
+      "formId": "form-b",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r04.r1",
+      "formId": "form-b",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r05.r1",
+      "formId": "form-b",
+      "domain": "reading",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l01.r1",
+      "formId": "form-b",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l02.r1",
+      "formId": "form-b",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l03.r1",
+      "formId": "form-b",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l04.r1",
+      "formId": "form-b",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l05.r1",
+      "formId": "form-b",
+      "domain": "listening",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "BLOCKED_AUDIO",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE",
+        "MISSING_VERIFIED_AUDIO"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i01.r1",
+      "formId": "form-b",
+      "domain": "familiarity",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i02.r1",
+      "formId": "form-b",
+      "domain": "familiarity",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i03.r1",
+      "formId": "form-b",
+      "domain": "familiarity",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i04.r1",
+      "formId": "form-b",
+      "domain": "familiarity",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i05.r1",
+      "formId": "form-b",
+      "domain": "familiarity",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+      "candidateReadiness": "CONTENT_READY_FOR_HUMAN_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "PENDING_HUMAN",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Key/explanation and every distractor self-reviewed; no independent validation claimed.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.writing01.r1",
+      "formId": "form-a",
+      "domain": "writing",
+      "authorship": "REUSED_PROMPT",
+      "legacyId": "TASK-WRITING",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "CAPTURE_TASK_ONLY",
+      "candidateReadiness": "CAPTURE_ONLY_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "NOT_APPLICABLE",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Private response capture only; no rubric, objective key or inferred proficiency.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.a.speaking01.r1",
+      "formId": "form-a",
+      "domain": "speaking",
+      "authorship": "REUSED_PROMPT",
+      "legacyId": "TASK-SPEAKING",
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "CAPTURE_TASK_ONLY",
+      "candidateReadiness": "CAPTURE_ONLY_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "NOT_APPLICABLE",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Private response capture only; no rubric, objective key or inferred proficiency.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring",
+        "source-legacy-data"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.writing01.r1",
+      "formId": "form-b",
+      "domain": "writing",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "CAPTURE_TASK_ONLY",
+      "candidateReadiness": "CAPTURE_ONLY_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "NOT_APPLICABLE",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Private response capture only; no rubric, objective key or inferred proficiency.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    },
+    {
+      "questionId": "diagv1.b.speaking01.r1",
+      "formId": "form-b",
+      "domain": "speaking",
+      "authorship": "NEW_LLM_ASSISTED",
+      "legacyId": null,
+      "contentReviewMethod": "LLM_ASSISTED_SELF_REVIEW",
+      "independentHumanReview": "PENDING",
+      "contentReviewOutcome": "CAPTURE_TASK_ONLY",
+      "candidateReadiness": "CAPTURE_ONLY_REVIEW",
+      "rightsReview": "PENDING_OWNER_ATTESTATION",
+      "keyApproval": "NOT_APPLICABLE",
+      "scoringEligible": false,
+      "blockers": [
+        "HUMAN_CONTENT_REVIEW",
+        "SOURCE_RIGHTS_ATTESTATION",
+        "OWNER_FREEZE"
+      ],
+      "reviewNote": "Private response capture only; no rubric, objective key or inferred proficiency.",
+      "approvedBy": null,
+      "approvedAt": null,
+      "provenanceIds": [
+        "source-authoring"
+      ]
+    }
+  ]
+}

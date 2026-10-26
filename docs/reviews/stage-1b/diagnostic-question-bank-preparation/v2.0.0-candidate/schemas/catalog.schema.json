@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/catalog.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "assessmentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "blueprintVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scoringPolicyVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "formId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relativePath": {
+            "type": "string",
+            "minLength": 1
+          },
+          "questionSetVersion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publicPayloadDigest": {
+            "type": "string",
+            "minLength": 1
+          },
+          "objectiveCount": {
+            "const": 27
+          },
+          "productiveCount": {
+            "const": 2
+          }
+        },
+        "required": [
+          "formId",
+          "relativePath",
+          "questionSetVersion",
+          "publicPayloadDigest",
+          "objectiveCount",
+          "productiveCount"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "currentlySelectableFormIds": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "deliveryBoundary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bankDigest": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "assessmentId",
+    "blueprintVersion",
+    "scoringPolicyVersion",
+    "forms",
+    "currentlySelectableFormIds",
+    "deliveryBoundary",
+    "bankDigest"
+  ],
+  "additionalProperties": false
+}

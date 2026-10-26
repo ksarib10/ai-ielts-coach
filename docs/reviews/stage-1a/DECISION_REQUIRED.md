@@ -1,0 +1,15 @@
+# Decisions requiring owner approval
+
+2026-10-23. All choices below are pending; none authorizes execution until the owner explicitly approves its scope. **STAGE_2_ENTRY = BLOCKED.**
+
+| ID | Decision | Recommendation / alternatives | Effect |
+|---|---|---|---|
+| D01 | Stack and reuse | Retain current React/TypeScript/Vite/Router/npm/CSS and evolve incrementally. Alternative: separately scoped framework migration. Also choose whether to restore known Git history or authorize a new repo later; no history is presently available. | No rewrite, install, Git init or source migration from this review |
+| D02 | Skills | Prefer no additions. Optional: only pinned sickn33 fixing-accessibility, MIT notice, SKILL SHA from matrix; choose approved target/path and usage scope later. All other evaluated skills deferred/rejected. | No skill/agent/MCP install until exact approval |
+| D03 | Sequence and actual Stage 1B scope | Authorize a separate prerequisite Stage 1B using the bounded file/work envelope in the gate decision, or approve renamed stages with the same gate. | Stage 1B does not begin automatically; Stage 2 still needs later approval |
+| D04 | Meaning of complete statistics | Accept the 15 concrete baseline metric IDs in M01–M11 plus honest unavailable states for M12–M17, or require the full future-platform scorecard. | Codex cannot redefine this gate alone; full future metrics require broader scope/data/models |
+| D05 | Identity/persistence and metric definition | Is a clearly labeled local-only, learner-scoped development prototype sufficient for the gate? Approve seven profile fields, event eligibility/coverage rules and null-versus-zero semantics; alternatively require secure authenticated multi-device storage under separate backend approval. | Existing shared local demo stores are insufficient proof of real account isolation/cross-device history |
+| D06 | Diagnostic blueprint/resume/retake | Content reviewer approves a versioned starter set/keys (current observed 27 objective + 2 response tasks is a reuse candidate, not frozen). Resume same assignment/question after skip; restart/retake only as explicit new attempt. Confirm productive fallback and reviewed-raw-result eligibility. | Stable versions and truthful results before statistics implementation |
+| D07 | Data/privacy and continuity policy | Approve timezone source/default (learner IANA timezone; optional Uzbekistan default Asia/Tashkent), tracking start, retention/export/deletion/media/minor-consent policy, legacy preservation/migration approach and optional root AGENTS.md draft. No production auth vendor selected yet. | No secret/content/media ingestion or browser data migration is authorized here |
+
+Review [readiness report](STAGE_1A_READINESS_REPORT.md), [gate/file envelope](STAGE_2_ENTRY_GATE_AND_SEQUENCE_DECISION.md), [skills matrix](SKILL_EVALUATION_MATRIX.csv), [metric matrix](PERSONALIZED_DASHBOARD_METRIC_MATRIX.csv) and [AGENTS proposal](AGENTS_MD_PROPOSAL.md). Scope approval and later implementation acceptance are separate decisions. Merely approving this document does not imply that all options were selected.

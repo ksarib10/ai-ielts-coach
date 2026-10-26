@@ -1,0 +1,44 @@
+# REVIEW DRAFT ONLY. Not applied to the root .gitignore.
+# Merge only after owner approval, from the approved future repository root.
+node_modules/
+/dist/
+*.tsbuildinfo
+qa/.*-test.cjs
+.vercel/
+/.vite/
+/.vite-temp/
+/coverage/
+/playwright-report/
+/test-results/
+*.log
+# Preserve only these already-reviewed Stage 1A evidence logs in the initial baseline.
+!docs/reviews/stage-1a/evidence/test.log
+!docs/reviews/stage-1a/evidence/typescript.log
+!docs/reviews/stage-1a/evidence/production_build.log
+# Secrets: do not automatically permit .env.example without sanitization review.
+.env
+.env.*
+/.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+/.aws/
+/.azure/
+/.ssh/
+# Future private learner/browser outputs must be confined to approved local paths.
+/private/
+/local-data/
+/learner-exports/
+/recordings/
+/browser-profiles/
+# Local snapshots belong outside the repository.
+/backups/
+/local-backups/
+/recovery-artifacts/
+.DS_Store
+Thumbs.db
+Desktop.ini
+# Keep package-lock.json, versioned diagnostic fixtures/keys, CSV matrices,
+# original public/reference/standalone assets and project documentation trackable.
+# Ignore rules are not a security boundary or an approval to export learner data.

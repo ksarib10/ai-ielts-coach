@@ -1,0 +1,22 @@
+# Owner decisions required to freeze Diagnostic V1
+
+2026-10-24 · Decision request only; no approval inferred. D04 all15 metrics, D05 learner-scoped local development and purple dual-theme direction are accepted from the owner's draft. D01/D03/D06/D07 remain unresolved. Seven living docs are preserved as dated history; their older pending D04/D05 language is not rewritten by this audit.
+
+| Decision | Recommendation / exact evidence to approve |
+|---|---|
+| D06-A blueprint | Retain seven-domain27-choice+2-capture structure as a small descriptive diagnostic, pending content/administration fixes. Not a calibrated IELTS/CEFR test. Do not reduce the five-dimension gate to evade Listening. |
+| D06-B four wording reviews | G2 needs an unambiguous temporal context; G6 needs explicit present-result instruction or expert adjudication of the perfect-modal alternative; V1 needs a precise rapid gloss; I4 needs prerecorded-stimulus wording. Approve exact final prompts/options/keys in a separate immutable freeze. No proposed edit applied. |
+| D06-C Reading qualifiers | Accept or refine R4 inference strength and R5 final-paragraph versus whole-passage synthesis; review weak/malformed distractors and answer-position imbalance. A key reviewer must sign each accepted rationale. |
+| D06-D Listening content | Named auditory reviewer/timecoded transcript for exact WAV SHA `0e6c831770433da34f962cb03f9d4ddea33b335316f47b5f32b1640457dcd3c2` with L1–L5 evidence/audibility; otherwise approve replacement in a new version. Decide whether Reading-to-Listening garden-topic leakage is acceptable. Currently all five held. |
+| D06-E provenance/rights | Record author/source/license/redistribution/voice-generation or speaker permission and attribution for all29/stimuli. Format references alone do not license local content or make it official. |
+| D06-F identities/source freeze | Approve assessment/blueprint/questionSet/scoring versions, stable item+option IDs, digest/canonicalization, immutable assignment/attempt history and separate inspectable development keys. Audit projection hashes are not release hashes. |
+| D06-G completion/scoring | Decide final submission with unanswered items versus all-objective required. Recommended explicit incomplete warning with fixed denominator; malformed data/key is error, never unanswered. Productive capture has no grade;180 words is separate navigation/capture policy. Approve rounding/eligibility/review release and per-dimension invalidity. |
+| D06-H replay/accommodation | Approve one-play interruption recovery, ended/error records and accessibility accommodations. Existing played-at-start behavior can consume allowance without completion. |
+| D06-I Speaking evidence | Approve session-only versus durable local media scope, finalized usable recording criteria, fallback labeling and genuine capture availability after reload. Do not count SUBMITTED/duration alone as recorded. No content-quality inference. |
+| D06-J retakes/history | Recommended initially no retake; later explicit new assignment/attempt, preserve prior record. Decide dashboard selected result and comparison limits; repeated same questions cannot establish trend/proficiency growth. |
+| D07 privacy/continuity | Approve learner IANA timezone/default/change handling, consent/retention/export/deletion of private Writing/audio, legacy backup/decoder/rollback and unknown-data recovery. Source backup excludes browser records/session audio. |
+| D01/D03 subsequent work | Accept preservation/new Git baseline and working copy separately; issue explicit Stage1B implementation permission only after source/content decisions. This audit authorizes neither Git nor source edits. |
+
+Freeze evidence package must include final exact public question set, separate key/policy, reviewed eligible list for each of five dimensions, provenance/media attestation, digest and reviewer/date. If any required key/source is missing, affected dimension remains unavailable; do not call0/5 a validated0%. Keep M12–M17 gated and require human acceptance of **all15 concrete M01–M11 IDs** before Stage2. No dashboard graph or historical regression PASS replaces that gate.
+
+Detailed candidates/exclusions: [key audit](DIAGNOSTIC_QUESTION_AND_KEY_AUDIT.csv), [eligibility](DIAGNOSTIC_SCORING_ELIGIBILITY.csv), [metric crosswalk](DIAGNOSTIC_TO_DASHBOARD_METRIC_CROSSWALK.csv). Step2 ends here; approval of audit findings alone is not implementation authorization.

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "scripts": [
+    {
+      "stimulusId": "stim.a.listening.r1",
+      "formId": "form-a",
+      "mediaId": "media.a.listening.r1",
+      "scriptVersion": "script.1-candidate",
+      "title": "A museum volunteer briefing",
+      "segments": [
+        {
+          "segmentId": "stim.a.listening.r1.s1",
+          "text": "Welcome to the Riverside Museum volunteer briefing. Our Saturday family session helps children explore objects through short guided activities. Volunteers support visitors during the activities; you will not be giving the main exhibition tour.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        },
+        {
+          "segmentId": "stim.a.listening.r1.s2",
+          "text": "Please arrive at nine fifteen and use the side entrance beside the bicycle racks. The front doors do not open to visitors until ten. A staff member will meet you at the side entrance and take you to the activity room.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        },
+        {
+          "segmentId": "stim.a.listening.r1.s3",
+          "text": "You may remember that we planned to ask every volunteer to bring scissors. That plan has changed. We will provide all the scissors and glue. Please bring only a pen for signing the attendance sheet; you do not need to bring craft materials.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        },
+        {
+          "segmentId": "stim.a.listening.r1.s4",
+          "text": "If a group arrives before its table is ready, take the group to the picture wall and ask the children to choose an object they would like to learn about. Do not start an extra activity at a crowded table. This gives staff time to prepare the table without making the group wait in the doorway.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        },
+        {
+          "segmentId": "stim.a.listening.r1.s5",
+          "text": "At the end of the session, please write one brief note about an activity that worked well or a visitor question that was difficult to answer. These notes will help us improve the next session. They are for planning, not for ranking the volunteers.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        }
+      ],
+      "productionStatus": "NOT_PRODUCED",
+      "audioSha256": null,
+      "reviewer": null
+    },
+    {
+      "stimulusId": "stim.b.listening.r1",
+      "formId": "form-b",
+      "mediaId": "media.b.listening.r1",
+      "scriptVersion": "script.1-candidate",
+      "title": "A station lost-property message",
+      "segments": [
+        {
+          "segmentId": "stim.b.listening.r1.s1",
+          "text": "This is a message for passengers using Hillford Station's lost-property service. We collect items found on trains and keep them in the station office while their owners arrange collection. The service is for recovering belongings, not for reporting ticket problems.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        },
+        {
+          "segmentId": "stim.b.listening.r1.s2",
+          "text": "The collection desk is open from eleven in the morning until six in the evening, Monday to Friday. On Saturdays, it closes at two in the afternoon. It does not open on Sundays. Please check the day before planning your journey.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        },
+        {
+          "segmentId": "stim.b.listening.r1.s3",
+          "text": "Some older notices tell passengers to email a description of the missing item. We no longer use email for new reports. Please complete the lost-property form on the station website. The form gives you a reference number, which you should keep until your case is closed.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        },
+        {
+          "segmentId": "stim.b.listening.r1.s4",
+          "text": "When you collect an item, bring photo identification and the reference number. If you cannot come in person, a friend may collect it, but only with your signed permission and a copy of your identification. Calling the office alone does not give someone permission to collect another person's belongings.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        },
+        {
+          "segmentId": "stim.b.listening.r1.s5",
+          "text": "Please include a detail that helps us distinguish your item from similar ones, such as a mark inside a bag. A colour alone may not be enough because several bags can look alike. Accurate details help staff return an item to its owner rather than to someone who has simply guessed what it looks like.",
+          "verifiedStartMs": null,
+          "verifiedEndMs": null
+        }
+      ],
+      "productionStatus": "NOT_PRODUCED",
+      "audioSha256": null,
+      "reviewer": null
+    }
+  ]
+}

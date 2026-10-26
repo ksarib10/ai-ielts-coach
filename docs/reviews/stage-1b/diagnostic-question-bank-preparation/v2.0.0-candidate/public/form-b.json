@@ -1,0 +1,903 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "assessmentId": "aiielts-starter-diagnostic",
+  "blueprintVersion": "diag-blueprint.2-candidate",
+  "questionSetVersion": "form-b.r1-candidate",
+  "formId": "form-b",
+  "title": "Diagnostic candidate form B",
+  "instructions": "Review candidate only. Not approved for learner scoring. No hints or answer keys belong in a future strict attempt.",
+  "trackApplicability": [
+    "ACADEMIC",
+    "GENERAL_TRAINING",
+    "UNDECIDED"
+  ],
+  "sections": [
+    {
+      "domain": "grammar",
+      "questionIds": [
+        "diagv1.b.g01.r1",
+        "diagv1.b.g02.r1",
+        "diagv1.b.g03.r1",
+        "diagv1.b.g04.r1",
+        "diagv1.b.g05.r1",
+        "diagv1.b.g06.r1"
+      ]
+    },
+    {
+      "domain": "vocabulary",
+      "questionIds": [
+        "diagv1.b.v01.r1",
+        "diagv1.b.v02.r1",
+        "diagv1.b.v03.r1",
+        "diagv1.b.v04.r1",
+        "diagv1.b.v05.r1",
+        "diagv1.b.v06.r1"
+      ]
+    },
+    {
+      "domain": "reading",
+      "questionIds": [
+        "diagv1.b.r01.r1",
+        "diagv1.b.r02.r1",
+        "diagv1.b.r03.r1",
+        "diagv1.b.r04.r1",
+        "diagv1.b.r05.r1"
+      ]
+    },
+    {
+      "domain": "listening",
+      "questionIds": [
+        "diagv1.b.l01.r1",
+        "diagv1.b.l02.r1",
+        "diagv1.b.l03.r1",
+        "diagv1.b.l04.r1",
+        "diagv1.b.l05.r1"
+      ]
+    },
+    {
+      "domain": "writing",
+      "questionIds": [
+        "diagv1.b.writing01.r1"
+      ]
+    },
+    {
+      "domain": "speaking",
+      "questionIds": [
+        "diagv1.b.speaking01.r1"
+      ]
+    },
+    {
+      "domain": "familiarity",
+      "questionIds": [
+        "diagv1.b.i01.r1",
+        "diagv1.b.i02.r1",
+        "diagv1.b.i03.r1",
+        "diagv1.b.i04.r1",
+        "diagv1.b.i05.r1"
+      ]
+    }
+  ],
+  "objectiveItems": [
+    {
+      "questionId": "diagv1.b.g01.r1",
+      "domain": "grammar",
+      "skill": "subject_verb_agreement",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the sentence with correct subject–verb agreement.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.a6811a436d3fa1bd8ba1",
+          "label": "The laboratory close at six every evening."
+        },
+        {
+          "optionId": "opt.3687af33b3fce59d1fef",
+          "label": "The laboratories closes at six every evening."
+        },
+        {
+          "optionId": "opt.40f40c5aea51e142030b",
+          "label": "The laboratories is closing at six every evening."
+        },
+        {
+          "optionId": "opt.5cdcc1f576cfaeedef59",
+          "label": "The laboratory closes at six every evening."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.g02.r1",
+      "domain": "grammar",
+      "skill": "present_perfect",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the present perfect simple form: The researchers ______ the results, so we can read them now.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.648063db26ac9a67b8e2",
+          "label": "have published"
+        },
+        {
+          "optionId": "opt.05f4d8f68552f548969e",
+          "label": "published"
+        },
+        {
+          "optionId": "opt.d5ad00f8a4383d9a6ba0",
+          "label": "had published"
+        },
+        {
+          "optionId": "opt.bd0823116ac985cb1a11",
+          "label": "are publishing"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.g03.r1",
+      "domain": "grammar",
+      "skill": "second_conditional",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the conventional second-conditional form: If I lived nearer the college, I ______ there every day.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.a4d937f8fd0a0e580aca",
+          "label": "will walk"
+        },
+        {
+          "optionId": "opt.6ec55d606e4126e041f0",
+          "label": "had walked"
+        },
+        {
+          "optionId": "opt.49436cb8bc87659fad57",
+          "label": "am walking"
+        },
+        {
+          "optionId": "opt.e89e72ac5d9a233b1517",
+          "label": "would walk"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.g04.r1",
+      "domain": "grammar",
+      "skill": "past_perfect",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the past perfect simple form: When the bus reached the stop, the passengers ______ a queue.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.026ad0e9a0a6aa0f3c70",
+          "label": "have formed"
+        },
+        {
+          "optionId": "opt.0f1b6426f7d4e68d14a2",
+          "label": "had formed"
+        },
+        {
+          "optionId": "opt.0700d1b6b9f6880ad6f4",
+          "label": "are forming"
+        },
+        {
+          "optionId": "opt.cf86c34d844f9cfeccbc",
+          "label": "will form"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.g05.r1",
+      "domain": "grammar",
+      "skill": "uncountable_nouns",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which sentence uses advice correctly as an uncountable noun?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.bd6c3ee624ab9da7f58c",
+          "label": "The adviser gave me an useful advice."
+        },
+        {
+          "optionId": "opt.2c8035a58acefed414e7",
+          "label": "The adviser gave me many useful advices."
+        },
+        {
+          "optionId": "opt.c65b8cd911c15f572d10",
+          "label": "The adviser gave me some useful advice."
+        },
+        {
+          "optionId": "opt.e6d048e8844053b852e5",
+          "label": "The useful advice were clear."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.g06.r1",
+      "domain": "grammar",
+      "skill": "mixed_conditional",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Choose the present-result form of a mixed conditional: If the town had built the bridge last year, journeys across the river ______ shorter now.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.5165af6164da585c1dbc",
+          "label": "would be"
+        },
+        {
+          "optionId": "opt.a3f92f449cd797d682ce",
+          "label": "would have been"
+        },
+        {
+          "optionId": "opt.fcc7d83946237a5d1c98",
+          "label": "had been"
+        },
+        {
+          "optionId": "opt.833d9dc1ece1259753c3",
+          "label": "will be"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.v01.r1",
+      "domain": "vocabulary",
+      "skill": "meaning_recognition",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "The instructions were concise. What does concise mean here?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.0d884fb503ee964b3dc5",
+          "label": "Repeated several times."
+        },
+        {
+          "optionId": "opt.42107c2345ebb1956990",
+          "label": "Brief while giving the necessary information."
+        },
+        {
+          "optionId": "opt.7bc25bcbfaa61ae4761f",
+          "label": "Difficult to read because of poor handwriting."
+        },
+        {
+          "optionId": "opt.8361ea69e4a893654ecb",
+          "label": "Incomplete because every important step is missing."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.v02.r1",
+      "domain": "vocabulary",
+      "skill": "word_form",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "The new bus route has improved the ______ of the town centre.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.62425c2ad67313d88d0a",
+          "label": "accessible"
+        },
+        {
+          "optionId": "opt.60b5a99f7e2a908a0096",
+          "label": "accessibly"
+        },
+        {
+          "optionId": "opt.4d60ab5d88feab1a447d",
+          "label": "accessing"
+        },
+        {
+          "optionId": "opt.370703903eeab3189398",
+          "label": "accessibility"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.v03.r1",
+      "domain": "vocabulary",
+      "skill": "academic_word_choice",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "The researchers repeated the experiment to check whether its results were ______.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.9d439598e4049d5e3323",
+          "label": "reliably"
+        },
+        {
+          "optionId": "opt.a5c086c6f959f8ab4ce2",
+          "label": "reliance"
+        },
+        {
+          "optionId": "opt.319f4ee005e15f498048",
+          "label": "reliable"
+        },
+        {
+          "optionId": "opt.20a2b710fba42be21b37",
+          "label": "rely"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.v04.r1",
+      "domain": "vocabulary",
+      "skill": "meaning_in_context",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "In \"The council postponed the meeting until Friday\", postponed means:",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.83cc9a8e21ae06b13130",
+          "label": "Ended it permanently."
+        },
+        {
+          "optionId": "opt.691da90ca46ef1904f52",
+          "label": "Moved it to a later time."
+        },
+        {
+          "optionId": "opt.f46061dd554148045e26",
+          "label": "Held it earlier than planned."
+        },
+        {
+          "optionId": "opt.2a829a45e2be823a2f8b",
+          "label": "Changed the place without changing the time."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.v05.r1",
+      "domain": "vocabulary",
+      "skill": "collocation",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Complete the standard collocation: The committee must ______ a decision by Friday.",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.b98d37655dddb7583ec1",
+          "label": "make"
+        },
+        {
+          "optionId": "opt.852f878aa9124d5f1702",
+          "label": "do"
+        },
+        {
+          "optionId": "opt.6b5ee0ff5f079b893219",
+          "label": "perform"
+        },
+        {
+          "optionId": "opt.c507d195bf0560b2fcda",
+          "label": "carry"
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.v06.r1",
+      "domain": "vocabulary",
+      "skill": "contextual_use",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which sentence uses \"feasible\" to mean possible to carry out?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.dc7fc0402cc5c6c25341",
+          "label": "The manager feasible the report before lunch."
+        },
+        {
+          "optionId": "opt.82b065c79ac2dd62a1d5",
+          "label": "The budget was feasibility for the new plan."
+        },
+        {
+          "optionId": "opt.71207f2b2ccf38017c85",
+          "label": "The team worked feasible to finish the report."
+        },
+        {
+          "optionId": "opt.78ac7821f1825b34db61",
+          "label": "The team checked whether the plan was feasible within the available budget."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.r01.r1",
+      "domain": "reading",
+      "skill": "main_idea",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What is the passage mainly about?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.57221c27b3d7e18521dc",
+          "label": "A college trialling a quiet study room and considering how to evaluate it."
+        },
+        {
+          "optionId": "opt.26c1ddf6f707bbb1c448",
+          "label": "A ban on all discussion across the campus."
+        },
+        {
+          "optionId": "opt.b1de07d62d6d8d65fc1a",
+          "label": "A permanent decision to remove online desk booking."
+        },
+        {
+          "optionId": "opt.d921f2593d5bd3dbbae0",
+          "label": "Evidence that quiet rooms have already raised examination scores."
+        }
+      ],
+      "stimulusId": "stim.b.reading.r1"
+    },
+    {
+      "questionId": "diagv1.b.r02.r1",
+      "domain": "reading",
+      "skill": "specific_information",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Why did the college leave most desks unreserved?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.67c32853bfa58d4f6a04",
+          "label": "To prevent students who travel far away from using the room."
+        },
+        {
+          "optionId": "opt.2571662e70f62743d051",
+          "label": "To ensure that only staff could use those desks."
+        },
+        {
+          "optionId": "opt.f4cf3945aa8f03ecf0de",
+          "label": "To accommodate students with unexpected gaps in their timetable."
+        },
+        {
+          "optionId": "opt.59aeb2c4957bd9837bfb",
+          "label": "To reserve the room for group discussions."
+        }
+      ],
+      "stimulusId": "stim.b.reading.r1"
+    },
+    {
+      "questionId": "diagv1.b.r03.r1",
+      "domain": "reading",
+      "skill": "vocabulary_in_context",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "In paragraph 3, \"restrained arrangement\" most nearly means:",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.7439016aa47140a46aea",
+          "label": "A room that students are forbidden to enter."
+        },
+        {
+          "optionId": "opt.5ac70840ed4ff51aa82d",
+          "label": "A schedule limited to staff meetings."
+        },
+        {
+          "optionId": "opt.fd905f09d75dbda65a05",
+          "label": "An expensive design full of displays."
+        },
+        {
+          "optionId": "opt.3a4e1d883c1422724e46",
+          "label": "A simple setup with few decorative or distracting features."
+        }
+      ],
+      "stimulusId": "stim.b.reading.r1"
+    },
+    {
+      "questionId": "diagv1.b.r04.r1",
+      "domain": "reading",
+      "skill": "inference",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What limitation of the first questionnaire do staff identify?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.af19e5f9ee0111a65b54",
+          "label": "It proves that all students dislike silence."
+        },
+        {
+          "optionId": "opt.f324c61b7650dcbe01af",
+          "label": "It may not represent students who chose not to use the room."
+        },
+        {
+          "optionId": "opt.10df03091e68b2dc728c",
+          "label": "It records the examination results of every student."
+        },
+        {
+          "optionId": "opt.2b96f2c281e677933275",
+          "label": "It includes only compulsory responses from staff."
+        }
+      ],
+      "stimulusId": "stim.b.reading.r1"
+    },
+    {
+      "questionId": "diagv1.b.r05.r1",
+      "domain": "reading",
+      "skill": "paraphrase",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which statement best paraphrases the final paragraph?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.e83f0b9569c03c388266",
+          "label": "Early positive feedback is useful, but the decision needs evidence from several sources."
+        },
+        {
+          "optionId": "opt.bdcdc7dfb7104fbb9c9c",
+          "label": "Positive replies alone prove an improvement in learning."
+        },
+        {
+          "optionId": "opt.bdc331c75fd855d2808f",
+          "label": "Desk-use records make all student comments unnecessary."
+        },
+        {
+          "optionId": "opt.2e0cf873a2fbfb396c5e",
+          "label": "The college has already decided to close the room."
+        }
+      ],
+      "stimulusId": "stim.b.reading.r1"
+    },
+    {
+      "questionId": "diagv1.b.l01.r1",
+      "domain": "listening",
+      "skill": "main_idea",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What is the main purpose of the message?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.3df67d0fa64cc07f37c8",
+          "label": "To explain how to claim a ticket refund."
+        },
+        {
+          "optionId": "opt.cb4562f9a132b3a320c3",
+          "label": "To advertise bags for sale at the station."
+        },
+        {
+          "optionId": "opt.55247ef664c12c053349",
+          "label": "To announce changes to train departure times."
+        },
+        {
+          "optionId": "opt.4507cc2de97eafa7c402",
+          "label": "To explain how passengers can recover lost belongings."
+        }
+      ],
+      "stimulusId": "stim.b.listening.r1"
+    },
+    {
+      "questionId": "diagv1.b.l02.r1",
+      "domain": "listening",
+      "skill": "specific_information",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "At what time does the collection desk close on Saturday?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.50c1eec562f32880fb63",
+          "label": "Eleven in the morning."
+        },
+        {
+          "optionId": "opt.6404426eb4611a43da2e",
+          "label": "Two in the afternoon."
+        },
+        {
+          "optionId": "opt.d4a1ffd80a6df81c5d20",
+          "label": "Six in the evening."
+        },
+        {
+          "optionId": "opt.e708531ba7163a438a53",
+          "label": "Ten at night."
+        }
+      ],
+      "stimulusId": "stim.b.listening.r1"
+    },
+    {
+      "questionId": "diagv1.b.l03.r1",
+      "domain": "listening",
+      "skill": "detail_recognition",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "How should a passenger now make a new lost-property report?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.7eda7638d1b672844c0b",
+          "label": "Email a description as older notices suggest."
+        },
+        {
+          "optionId": "opt.a524108dcd4ad336de7a",
+          "label": "Write a description on a train ticket."
+        },
+        {
+          "optionId": "opt.aadd8172ec0571a161d0",
+          "label": "Complete the form on the station website."
+        },
+        {
+          "optionId": "opt.438afd9c2dbadd9acb2b",
+          "label": "Ask a friend to collect an item without making a report."
+        }
+      ],
+      "stimulusId": "stim.b.listening.r1"
+    },
+    {
+      "questionId": "diagv1.b.l04.r1",
+      "domain": "listening",
+      "skill": "inference",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Why is a phone call alone insufficient when a friend collects an item?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.c9f3df2e6f6b134f6412",
+          "label": "The office requires documented permission and identification."
+        },
+        {
+          "optionId": "opt.f41f25f3429eb72f7d9b",
+          "label": "The desk never allows anyone other than the owner to collect items."
+        },
+        {
+          "optionId": "opt.17344c4c11a8b75c7a1a",
+          "label": "The item must first be returned to the train."
+        },
+        {
+          "optionId": "opt.e4ba24633ed17e666c99",
+          "label": "Every collection must take place on Sunday."
+        }
+      ],
+      "stimulusId": "stim.b.listening.r1"
+    },
+    {
+      "questionId": "diagv1.b.l05.r1",
+      "domain": "listening",
+      "skill": "overall_understanding",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What does the final advice about describing an item aim to achieve?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.202a099d5b5fdaa71ace",
+          "label": "Let any passenger collect a bag of the same colour."
+        },
+        {
+          "optionId": "opt.a1206c93ee6eb6e45755",
+          "label": "Reduce the need to record identifying details."
+        },
+        {
+          "optionId": "opt.bf7716f6d341cfd57211",
+          "label": "Help staff distinguish the genuine owner's item from similar belongings."
+        },
+        {
+          "optionId": "opt.e7d30ca13ae16c2fc441",
+          "label": "Encourage passengers to guess what other people have lost."
+        }
+      ],
+      "stimulusId": "stim.b.listening.r1"
+    },
+    {
+      "questionId": "diagv1.b.i01.r1",
+      "domain": "familiarity",
+      "skill": "speaking_format",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "How much preparation time is normally given before the long turn in IELTS Speaking Part 2?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.d475914248ff72b3fbce",
+          "label": "No preparation time."
+        },
+        {
+          "optionId": "opt.1fea77c88437b54c01c3",
+          "label": "One minute."
+        },
+        {
+          "optionId": "opt.92522ee214778c140db4",
+          "label": "Five minutes."
+        },
+        {
+          "optionId": "opt.f9e3403040f2a5d6d14b",
+          "label": "Ten minutes."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.i02.r1",
+      "domain": "familiarity",
+      "skill": "writing_format",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "What is the stated minimum word count for IELTS Writing Task 1?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.7b74b510c1d22f224448",
+          "label": "150 words."
+        },
+        {
+          "optionId": "opt.954af50bd1587aaa6541",
+          "label": "50 words."
+        },
+        {
+          "optionId": "opt.434a0c561050ea2cc325",
+          "label": "100 words."
+        },
+        {
+          "optionId": "opt.9f3d976ffca6cd291d6b",
+          "label": "250 words."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.i03.r1",
+      "domain": "familiarity",
+      "skill": "speaking_criteria",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "Which of these is a named IELTS Speaking assessment criterion?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.a64bbfb94ef85326f946",
+          "label": "Speed of handwriting."
+        },
+        {
+          "optionId": "opt.098466427e4b59360a69",
+          "label": "Number of facts memorised."
+        },
+        {
+          "optionId": "opt.a3461233c839c0113078",
+          "label": "Use of decorative illustrations."
+        },
+        {
+          "optionId": "opt.541c134179dd7cf82d35",
+          "label": "Fluency and coherence."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.i04.r1",
+      "domain": "familiarity",
+      "skill": "module_knowledge",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "In the standard IELTS Listening test, how many times are the recordings played?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.1255894f32d93f10a5d2",
+          "label": "Twice automatically."
+        },
+        {
+          "optionId": "opt.8359ef2208b26bf726a3",
+          "label": "Three times automatically."
+        },
+        {
+          "optionId": "opt.b37294571e4ffe21ee1b",
+          "label": "Once."
+        },
+        {
+          "optionId": "opt.37109e3eca876a488ad9",
+          "label": "As many times as the candidate requests."
+        }
+      ],
+      "stimulusId": null
+    },
+    {
+      "questionId": "diagv1.b.i05.r1",
+      "domain": "familiarity",
+      "skill": "score_purpose",
+      "kind": "SINGLE_CHOICE",
+      "prompt": "An IELTS band descriptor principally describes which aspect of a test taker?",
+      "instructions": "Choose one answer.",
+      "options": [
+        {
+          "optionId": "opt.e62e44093e5be046df55",
+          "label": "Their chances of receiving a particular university scholarship."
+        },
+        {
+          "optionId": "opt.92c296ad62a91e09bee4",
+          "label": "Their ability to use and understand English."
+        },
+        {
+          "optionId": "opt.fbdf3124dc8794abd6a0",
+          "label": "Their knowledge of university league tables."
+        },
+        {
+          "optionId": "opt.0e4fcd5f657af76e4605",
+          "label": "Their preferred career."
+        }
+      ],
+      "stimulusId": null
+    }
+  ],
+  "productiveTasks": [
+    {
+      "questionId": "diagv1.b.writing01.r1",
+      "domain": "writing",
+      "kind": "WRITTEN_RESPONSE",
+      "prompt": "Some people prefer to learn practical skills in an organised class. Others prefer to learn them independently using books or online materials. Discuss both views and give your own opinion.",
+      "bullets": [],
+      "instructions": "Discuss both views and give your own opinion. Aim for180–250 words for this focused diagnostic; suggested time20 minutes. This is not a full IELTS Writing test.",
+      "captureRequirements": {
+        "responseIdRequired": true,
+        "rawTextPreserved": true,
+        "genuineRecordedEvidenceRequired": false,
+        "preparationSeconds": 0,
+        "maximumRecordingSeconds": null,
+        "targetWordRange": [
+          180,
+          250
+        ],
+        "minimumWordsForPresence": 1,
+        "hardMinimumWordsToSubmit": null,
+        "capturePolicyId": "capture.v1-candidate"
+      }
+    },
+    {
+      "questionId": "diagv1.b.speaking01.r1",
+      "domain": "speaking",
+      "kind": "SPOKEN_RESPONSE",
+      "prompt": "Describe a time when you helped someone solve a practical problem.",
+      "bullets": [
+        "who you helped",
+        "what the problem was",
+        "what you did",
+        "and explain what you learned from the experience"
+      ],
+      "instructions": "Prepare for up to1 minute, then speak for up to2 minutes. A no-microphone fallback supplies no response content.",
+      "captureRequirements": {
+        "responseIdRequired": true,
+        "rawTextPreserved": false,
+        "genuineRecordedEvidenceRequired": true,
+        "preparationSeconds": 60,
+        "maximumRecordingSeconds": 120,
+        "targetWordRange": null,
+        "minimumWordsForPresence": null,
+        "hardMinimumWordsToSubmit": null,
+        "capturePolicyId": "capture.v1-candidate"
+      }
+    }
+  ],
+  "stimuli": [
+    {
+      "stimulusId": "stim.b.reading.r1",
+      "formId": "form-b",
+      "domain": "reading",
+      "kind": "PASSAGE",
+      "title": "A room for quiet study",
+      "paragraphs": [
+        {
+          "paragraphId": "stim.b.reading.r1.p1",
+          "text": "Eastmere College opened a quiet study room after students reported difficulty finding places to concentrate between classes. The room is an additional option, not a rule for the whole campus. Students who want to discuss their work can still use the group-study area next door. The college is testing the room for one term before deciding whether to keep it permanently."
+        },
+        {
+          "paragraphId": "stim.b.reading.r1.p2",
+          "text": "Most desks can be used without a reservation. Four desks can be booked online for an hour at a time, giving students who travel from farther away a way to plan their visit. The college deliberately left the other desks unreserved so that students with unexpected gaps in their timetable would also have somewhere to work."
+        },
+        {
+          "paragraphId": "stim.b.reading.r1.p3",
+          "text": "The room has no background music and asks users to silence phone alerts. This restrained arrangement was chosen after a more decorative design divided opinion. Students can use laptops with silent keyboards; they are not required to work only on paper. Staff will review the noise rules if users find that ordinary study activities are being unnecessarily restricted."
+        },
+        {
+          "paragraphId": "stim.b.reading.r1.p4",
+          "text": "A voluntary questionnaire in the first week received forty-two replies, most of them positive. Staff said these replies were useful suggestions, but not proof that students were learning more. People who disliked the room might simply have stayed away and never completed the questionnaire. Before making a decision, the college will combine feedback with desk-use records and comments from students who prefer other study spaces."
+        }
+      ],
+      "provenanceId": "source-authoring",
+      "fictionalContext": true
+    },
+    {
+      "stimulusId": "stim.b.listening.r1",
+      "formId": "form-b",
+      "domain": "listening",
+      "kind": "AUDIO",
+      "title": "A station lost-property message",
+      "mediaId": "media.b.listening.r1",
+      "assetState": "MISSING",
+      "assetPath": null,
+      "sha256": null,
+      "provenanceId": "source-authoring",
+      "fictionalContext": true
+    }
+  ]
+}

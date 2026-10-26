@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "id": "test",
+      "command": "npm test",
+      "exitCode": 0,
+      "workingDirectory": "C:\\Users\\ksari\\.codex\\visualizations\\2026\\09\\08\\01a081bc-7093-7c61-bec5-95261e1587ad\\stage1a_work\\validation_project",
+      "output": "\n> ai-ielts-coach@1.0.0 test\n> node qa/domain.test.mjs && node qa/state.test.mjs && node qa/diagnostic.test.mjs && node qa/readiness.test.mjs && node qa/ielts-reference.test.mjs && node qa/exam.test.mjs\n\nPASS: scoring, mode restrictions, persistence/retry, vocabulary, mastery, recommendations and canonical learner.\nPASS: state migration preserves complete and partial learner progress.\nPASS: diagnostic results derive from saved evidence and remain provisional.\nPASS: readiness is gated by a baseline and derives from saved evidence.\nPASS: IELTS reference model preserves supplied timing, order, and type differences.\nPASS: standalone exam order, shared module timing, completion, and history are consistent.\n"
+    },
+    {
+      "id": "typescript",
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "exitCode": 0,
+      "workingDirectory": "C:\\Users\\ksari\\.codex\\visualizations\\2026\\09\\08\\01a081bc-7093-7c61-bec5-95261e1587ad\\stage1a_work\\validation_project",
+      "output": ""
+    },
+    {
+      "id": "production_build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "workingDirectory": "C:\\Users\\ksari\\.codex\\visualizations\\2026\\09\\08\\01a081bc-7093-7c61-bec5-95261e1587ad\\stage1a_work\\validation_project",
+      "output": "\n> ai-ielts-coach@1.0.0 build\n> tsc -b && vite build\n\nvite v6.4.3 building for production...\ntransforming...\n\u2713 1622 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.63 kB \u2502 gzip:   0.38 kB\ndist/assets/index-BynjdJC9.css  101.81 kB \u2502 gzip:  19.30 kB\ndist/assets/index-gh88Nnsr.js   408.75 kB \u2502 gzip: 124.83 kB\n\u2713 built in 16.32s\n"
+    }
+  ],
+  "wrapperError": "Windows cp1252 stdout could not print build checkmark after child exited 0; logs preserved, collector repaired without rerunning app checks."
+}

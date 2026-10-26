@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "sources": [
+    {
+      "sourceId": "source-authoring",
+      "kind": "LLM_ASSISTED_ORIGINAL_DRAFT",
+      "location": "Prepared in this Step2A session on2026-10-24; authoring receipt hash in validation manifest",
+      "supports": "New/revised item wording, two fictional Reading passages, two fictional Listening scripts, new productive prompts, explanations/distractor analyses",
+      "rightsStatus": "PENDING_OWNER_ATTESTATION",
+      "reviewStatus": "LLM_SELF_REVIEW_ONLY",
+      "notes": "No retrieved question bank or passage copied. Original means newly composed here, not a legal originality certificate or proof against all pre-existing similar text."
+    },
+    {
+      "sourceId": "source-legacy-data",
+      "kind": "PRESERVED_LOCAL_SOURCE",
+      "location": "src/data.ts; prior Step2 inventory source locations",
+      "supports": "Original29 history and13 unchanged objective prompts/options plus2 productive prompts reused",
+      "rightsStatus": "UNKNOWN_LEGACY_AUTHORSHIP",
+      "reviewStatus": "PRIOR_AUDIT_PRESERVED",
+      "notes": "No historical IDs/keys/source files changed; item-specific rights previously unknown."
+    },
+    {
+      "sourceId": "source-ielts-speaking",
+      "kind": "PRIMARY_FORMAT_REFERENCE",
+      "location": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking",
+      "supports": "Speaking parts, Part2 preparation, named assessment criteria",
+      "rightsStatus": "FACT_REFERENCE_ONLY_NO_QUESTION_LICENSE_CLAIM",
+      "reviewStatus": "WEB_CHECKED_2026-10-24",
+      "notes": "Used to verify format facts; not source of local authored question wording or official endorsement."
+    },
+    {
+      "sourceId": "source-ielts-writing",
+      "kind": "PRIMARY_FORMAT_REFERENCE",
+      "location": "https://ielts.org/take-a-test/preparation-resources/writing-test-resources",
+      "supports": "Task1 minimum150; Task2 minimum250; distinguish shortened capture task",
+      "rightsStatus": "FACT_REFERENCE_ONLY_NO_QUESTION_LICENSE_CLAIM",
+      "reviewStatus": "WEB_CHECKED_2026-10-24",
+      "notes": "Candidate Writing180–250/20min guidance is explicitly a shortened diagnostic, not full official Task2."
+    },
+    {
+      "sourceId": "source-ielts-listening",
+      "kind": "PRIMARY_FORMAT_REFERENCE",
+      "location": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening",
+      "supports": "Prerecorded conversations/monologues and standard once-only recordings",
+      "rightsStatus": "FACT_REFERENCE_ONLY_NO_QUESTION_LICENSE_CLAIM",
+      "reviewStatus": "WEB_CHECKED_2026-10-24",
+      "notes": "No official audio reused; proposed scripts are fictional. Access accommodations separately reviewed."
+    },
+    {
+      "sourceId": "source-ielts-bands",
+      "kind": "PRIMARY_FORMAT_REFERENCE",
+      "location": "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail",
+      "supports": "Band descriptors concern command/use/understanding of English",
+      "rightsStatus": "FACT_REFERENCE_ONLY_NO_QUESTION_LICENSE_CLAIM",
+      "reviewStatus": "WEB_CHECKED_2026-10-24",
+      "notes": "No local score conversion, CEFR mapping or calibration supplied."
+    }
+  ],
+  "stimulusAuthorship": [
+    {
+      "stimulusId": "stim.a.reading.r1",
+      "sourceId": "source-authoring",
+      "fictionalContext": true,
+      "authoredAt": "2026-10-24",
+      "humanVerification": "PENDING",
+      "redistributionApproval": "PENDING"
+    },
+    {
+      "stimulusId": "stim.b.reading.r1",
+      "sourceId": "source-authoring",
+      "fictionalContext": true,
+      "authoredAt": "2026-10-24",
+      "humanVerification": "PENDING",
+      "redistributionApproval": "PENDING"
+    },
+    {
+      "stimulusId": "stim.a.listening.r1",
+      "sourceId": "source-authoring",
+      "fictionalContext": true,
+      "authoredAt": "2026-10-24",
+      "humanVerification": "PENDING",
+      "redistributionApproval": "PENDING"
+    },
+    {
+      "stimulusId": "stim.b.listening.r1",
+      "sourceId": "source-authoring",
+      "fictionalContext": true,
+      "authoredAt": "2026-10-24",
+      "humanVerification": "PENDING",
+      "redistributionApproval": "PENDING"
+    }
+  ]
+}

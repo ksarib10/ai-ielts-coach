@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/review.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "reviewedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewerKind": {
+      "const": "LLM_ASSISTANT_NOT_INDEPENDENT_ASSESSOR"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "questionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "formId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "domain": {
+            "enum": [
+              "grammar",
+              "vocabulary",
+              "reading",
+              "listening",
+              "familiarity",
+              "writing",
+              "speaking"
+            ]
+          },
+          "authorship": {
+            "enum": [
+              "NEW_LLM_ASSISTED",
+              "REVISED_LLM_ASSISTED",
+              "REUSED_WORDING_OPTIONS_REORDERED",
+              "REUSED_PROMPT"
+            ]
+          },
+          "legacyId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "contentReviewMethod": {
+            "const": "LLM_ASSISTED_SELF_REVIEW"
+          },
+          "independentHumanReview": {
+            "const": "PENDING"
+          },
+          "contentReviewOutcome": {
+            "enum": [
+              "NO_IDENTIFIED_AMBIGUITY_AFTER_SELF_REVIEW",
+              "CAPTURE_TASK_ONLY"
+            ]
+          },
+          "candidateReadiness": {
+            "enum": [
+              "BLOCKED_AUDIO",
+              "CONTENT_READY_FOR_HUMAN_REVIEW",
+              "CAPTURE_ONLY_REVIEW"
+            ]
+          },
+          "rightsReview": {
+            "const": "PENDING_OWNER_ATTESTATION"
+          },
+          "keyApproval": {
+            "enum": [
+              "PENDING_HUMAN",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "scoringEligible": {
+            "const": false
+          },
+          "blockers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "reviewNote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "approvedBy": {
+            "type": "null"
+          },
+          "approvedAt": {
+            "type": "null"
+          },
+          "provenanceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "questionId",
+          "formId",
+          "domain",
+          "authorship",
+          "legacyId",
+          "contentReviewMethod",
+          "independentHumanReview",
+          "contentReviewOutcome",
+          "candidateReadiness",
+          "rightsReview",
+          "keyApproval",
+          "scoringEligible",
+          "blockers",
+          "reviewNote",
+          "approvedBy",
+          "approvedAt",
+          "provenanceIds"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 58,
+      "maxItems": 58
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "reviewedAt",
+    "reviewerKind",
+    "entries"
+  ],
+  "additionalProperties": false
+}

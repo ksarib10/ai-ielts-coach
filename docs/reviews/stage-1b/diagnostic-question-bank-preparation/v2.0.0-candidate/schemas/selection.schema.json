@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/selection.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "selectionPolicyVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "implementationStatus": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selectionUnit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selectionTime": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seedPolicy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rankingProtocol": {
+      "type": "string",
+      "minLength": 1
+    },
+    "eligibleFormRule": {
+      "type": "string",
+      "minLength": 1
+    },
+    "eligibilitySnapshot": {
+      "type": "string",
+      "minLength": 1
+    },
+    "persistedAssignmentFields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "resumePolicy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retakePolicy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sameSeedLimit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ownership": {
+      "type": "string",
+      "minLength": 1
+    },
+    "providerPorts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "apiReplacement": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "selectionPolicyVersion",
+    "implementationStatus",
+    "selectionUnit",
+    "selectionTime",
+    "seedPolicy",
+    "rankingProtocol",
+    "eligibleFormRule",
+    "eligibilitySnapshot",
+    "persistedAssignmentFields",
+    "resumePolicy",
+    "retakePolicy",
+    "sameSeedLimit",
+    "ownership",
+    "providerPorts",
+    "apiReplacement"
+  ],
+  "additionalProperties": false
+}

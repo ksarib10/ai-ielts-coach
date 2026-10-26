@@ -1,0 +1,31 @@
+[
+  {
+    "package": "esbuild",
+    "version": "0.25.12",
+    "hooks": {
+      "postinstall": "node install.js"
+    }
+  },
+  {
+    "package": "escalade",
+    "version": "3.2.0",
+    "hooks": {
+      "pretest": "npm run build"
+    }
+  },
+  {
+    "package": "semver",
+    "version": "6.3.1",
+    "hooks": {
+      "posttest": "npm run lint"
+    }
+  },
+  {
+    "package": "@jridgewell/resolve-uri",
+    "version": "3.1.2",
+    "hooks": {
+      "prebuild": "rm -rf dist",
+      "pretest": "run-s build:rollup"
+    }
+  }
+]

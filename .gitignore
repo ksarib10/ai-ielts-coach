@@ -1,0 +1,41 @@
+# Dependencies/generated files remain in the verified filesystem copy, outside Git.
+node_modules/
+/dist/
+*.tsbuildinfo
+qa/.*-test.cjs
+/.vercel/
+/.vite/
+/.vite-temp/
+/coverage/
+/playwright-report/
+/test-results/
+**/__pycache__/
+*.py[cod]
+*.log
+!docs/reviews/stage-1a/evidence/test.log
+!docs/reviews/stage-1a/evidence/typescript.log
+!docs/reviews/stage-1a/evidence/production_build.log
+!docs/reviews/stage-1b/slice-1/evidence/*.log
+.env
+.env.*
+/.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+/.aws/
+/.azure/
+/.ssh/
+/private/
+/local-data/
+/learner-exports/
+/recordings/
+/browser-profiles/
+/backups/
+/local-backups/
+/recovery-artifacts/
+.DS_Store
+Thumbs.db
+Desktop.ini
+# docs/**/private is versioned development assessment review content, not credentials.
+# Keep source, lockfiles, sample media, JSON/CSV and legitimate project docs trackable.

@@ -1,0 +1,429 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/public-form.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "assessmentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "blueprintVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "questionSetVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "formId": {
+      "enum": [
+        "form-a",
+        "form-b"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "instructions": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trackApplicability": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "ACADEMIC",
+          "GENERAL_TRAINING",
+          "UNDECIDED"
+        ]
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "domain": {
+            "enum": [
+              "grammar",
+              "vocabulary",
+              "reading",
+              "listening",
+              "familiarity",
+              "writing",
+              "speaking"
+            ]
+          },
+          "questionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "domain",
+          "questionIds"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 7,
+      "maxItems": 7
+    },
+    "objectiveItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "questionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "domain": {
+            "enum": [
+              "grammar",
+              "vocabulary",
+              "reading",
+              "listening",
+              "familiarity"
+            ]
+          },
+          "skill": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "const": "SINGLE_CHOICE"
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "instructions": {
+            "type": "string",
+            "minLength": 1
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "optionId": {
+                  "type": "string",
+                  "pattern": "^opt\\.[0-9a-f]{20}$"
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "optionId",
+                "label"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "stimulusId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "questionId",
+          "domain",
+          "skill",
+          "kind",
+          "prompt",
+          "instructions",
+          "options",
+          "stimulusId"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 27,
+      "maxItems": 27
+    },
+    "productiveTasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "questionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "domain": {
+            "enum": [
+              "writing",
+              "speaking"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "WRITTEN_RESPONSE",
+              "SPOKEN_RESPONSE"
+            ]
+          },
+          "prompt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bullets": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "instructions": {
+            "type": "string",
+            "minLength": 1
+          },
+          "captureRequirements": {
+            "type": "object",
+            "properties": {
+              "responseIdRequired": {
+                "const": true
+              },
+              "rawTextPreserved": {
+                "type": "boolean"
+              },
+              "genuineRecordedEvidenceRequired": {
+                "type": "boolean"
+              },
+              "preparationSeconds": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "maximumRecordingSeconds": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "targetWordRange": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                ]
+              },
+              "minimumWordsForPresence": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "hardMinimumWordsToSubmit": {
+                "type": "null"
+              },
+              "capturePolicyId": {
+                "const": "capture.v1-candidate"
+              }
+            },
+            "required": [
+              "responseIdRequired",
+              "rawTextPreserved",
+              "genuineRecordedEvidenceRequired",
+              "preparationSeconds",
+              "maximumRecordingSeconds",
+              "targetWordRange",
+              "minimumWordsForPresence",
+              "hardMinimumWordsToSubmit",
+              "capturePolicyId"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "questionId",
+          "domain",
+          "kind",
+          "prompt",
+          "bullets",
+          "instructions",
+          "captureRequirements"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "stimuli": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "stimulusId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "formId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "domain": {
+                "const": "reading"
+              },
+              "kind": {
+                "const": "PASSAGE"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "paragraphs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "paragraphId": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "paragraphId",
+                    "text"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 4,
+                "maxItems": 4
+              },
+              "provenanceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "fictionalContext": {
+                "const": true
+              }
+            },
+            "required": [
+              "stimulusId",
+              "formId",
+              "domain",
+              "kind",
+              "title",
+              "paragraphs",
+              "provenanceId",
+              "fictionalContext"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "stimulusId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "formId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "domain": {
+                "const": "listening"
+              },
+              "kind": {
+                "const": "AUDIO"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "mediaId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "assetState": {
+                "const": "MISSING"
+              },
+              "assetPath": {
+                "type": "null"
+              },
+              "sha256": {
+                "type": "null"
+              },
+              "provenanceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "fictionalContext": {
+                "const": true
+              }
+            },
+            "required": [
+              "stimulusId",
+              "formId",
+              "domain",
+              "kind",
+              "title",
+              "mediaId",
+              "assetState",
+              "assetPath",
+              "sha256",
+              "provenanceId",
+              "fictionalContext"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 2,
+      "maxItems": 2
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "assessmentId",
+    "blueprintVersion",
+    "questionSetVersion",
+    "formId",
+    "title",
+    "instructions",
+    "trackApplicability",
+    "sections",
+    "objectiveItems",
+    "productiveTasks",
+    "stimuli"
+  ],
+  "additionalProperties": false
+}

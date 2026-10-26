@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/provenance.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supports": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rightsStatus": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reviewStatus": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "sourceId",
+          "kind",
+          "location",
+          "supports",
+          "rightsStatus",
+          "reviewStatus",
+          "notes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "stimulusAuthorship": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stimulusId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fictionalContext": {
+            "const": true
+          },
+          "authoredAt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "humanVerification": {
+            "const": "PENDING"
+          },
+          "redistributionApproval": {
+            "const": "PENDING"
+          }
+        },
+        "required": [
+          "stimulusId",
+          "sourceId",
+          "fictionalContext",
+          "authoredAt",
+          "humanVerification",
+          "redistributionApproval"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 4,
+      "maxItems": 4
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "sources",
+    "stimulusAuthorship"
+  ],
+  "additionalProperties": false
+}

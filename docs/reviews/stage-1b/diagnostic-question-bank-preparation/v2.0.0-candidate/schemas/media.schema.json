@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/media.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mediaId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stimulusId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "formId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assetState": {
+            "const": "MISSING"
+          },
+          "requiredAssetFilename": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actualAssetPath": {
+            "type": "null"
+          },
+          "audioSha256": {
+            "type": "null"
+          },
+          "actualDurationMs": {
+            "type": "null"
+          },
+          "scriptVersion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scriptDigest": {
+            "type": "string",
+            "minLength": 1
+          },
+          "affectedQuestionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 5,
+            "maxItems": 5
+          },
+          "productionRequirements": {
+            "type": "object",
+            "properties": {
+              "format": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reading": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pace": {
+                "type": "string",
+                "minLength": 1
+              },
+              "voice": {
+                "type": "string",
+                "minLength": 1
+              },
+              "editing": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "format",
+              "reading",
+              "pace",
+              "voice",
+              "editing"
+            ],
+            "additionalProperties": false
+          },
+          "verificationRequirements": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "verification": {
+            "type": "object",
+            "properties": {
+              "auditoryReviewer": {
+                "type": "null"
+              },
+              "verifiedAt": {
+                "type": "null"
+              },
+              "rightsRecord": {
+                "type": "null"
+              },
+              "itemAlignmentApproved": {
+                "const": false
+              },
+              "scoringApproved": {
+                "const": false
+              }
+            },
+            "required": [
+              "auditoryReviewer",
+              "verifiedAt",
+              "rightsRecord",
+              "itemAlignmentApproved",
+              "scoringApproved"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "mediaId",
+          "stimulusId",
+          "formId",
+          "assetState",
+          "requiredAssetFilename",
+          "actualAssetPath",
+          "audioSha256",
+          "actualDurationMs",
+          "scriptVersion",
+          "scriptDigest",
+          "affectedQuestionIds",
+          "productionRequirements",
+          "verificationRequirements",
+          "verification"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "historicalAudio": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "status",
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "assets",
+    "historicalAudio"
+  ],
+  "additionalProperties": false
+}

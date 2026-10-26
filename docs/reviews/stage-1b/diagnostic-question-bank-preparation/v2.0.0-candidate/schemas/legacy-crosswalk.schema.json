@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/legacy-crosswalk.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "legacyAuditId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "existingQuestionId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceLocation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "historicalReviewOutcome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "candidateQuestionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "relationship": {
+            "enum": [
+              "ARCHIVED_NOT_SELECTED",
+              "REUSED_WORDING_OPTIONS_REORDERED",
+              "REUSED_PROMPT",
+              "REVISED_LLM_ASSISTED"
+            ]
+          },
+          "originalBytesChanged": {
+            "const": false
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "legacyAuditId",
+          "existingQuestionId",
+          "sourceLocation",
+          "historicalReviewOutcome",
+          "candidateQuestionIds",
+          "relationship",
+          "originalBytesChanged",
+          "note"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 29,
+      "maxItems": 29
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "entries"
+  ],
+  "additionalProperties": false
+}

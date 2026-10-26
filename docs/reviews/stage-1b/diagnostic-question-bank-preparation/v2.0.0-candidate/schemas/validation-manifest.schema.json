@@ -1,0 +1,416 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/validation-manifest.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "stage": {
+      "const": "STEP_2A_CONTENT_CONTRACT_ONLY"
+    },
+    "date": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bankVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidateRoot": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stage1B": {
+      "const": "NOT_AUTHORIZED"
+    },
+    "stage2": {
+      "const": "BLOCKED"
+    },
+    "inputAuthority": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "preservedInputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "backupIntegrityEvidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "objectiveItems": {
+          "const": 54
+        },
+        "productiveTasks": {
+          "const": 4
+        },
+        "uniqueOptionIds": {
+          "const": 216
+        },
+        "formKeyPositions": {
+          "type": "object",
+          "properties": {
+            "form-a": {
+              "type": "object",
+              "properties": {
+                "A": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "B": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "additionalProperties": false
+            },
+            "form-b": {
+              "type": "object",
+              "properties": {
+                "A": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "B": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "C": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "D": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "form-a",
+            "form-b"
+          ],
+          "additionalProperties": false
+        },
+        "contentReviewReadyObjective": {
+          "const": 44
+        },
+        "audioBlockedObjective": {
+          "const": 10
+        },
+        "approvedScoringEligible": {
+          "const": 0
+        },
+        "currentlySelectableForms": {
+          "const": 0
+        },
+        "authorshipCounts": {
+          "type": "object",
+          "properties": {
+            "REUSED_WORDING_OPTIONS_REORDERED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "REVISED_LLM_ASSISTED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "NEW_LLM_ASSISTED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "REUSED_PROMPT": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "REUSED_WORDING_OPTIONS_REORDERED",
+            "REVISED_LLM_ASSISTED",
+            "NEW_LLM_ASSISTED",
+            "REUSED_PROMPT"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "objectiveItems",
+        "productiveTasks",
+        "uniqueOptionIds",
+        "formKeyPositions",
+        "contentReviewReadyObjective",
+        "audioBlockedObjective",
+        "approvedScoringEligible",
+        "currentlySelectableForms",
+        "authorshipCounts"
+      ],
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "checkId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "SOURCE_REVIEW",
+              "BLOCKED",
+              "FAIL"
+            ]
+          },
+          "actual": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "checkId",
+          "status",
+          "actual"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "validationReport": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contentInputDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "bankDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "sourceScripts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "outputFiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "preservationResult": {
+      "type": "object",
+      "properties": {
+        "existingProjectFilesUnchanged": {
+          "const": 130
+        },
+        "originalSourceFilesUnchanged": {
+          "const": 82
+        },
+        "sevenLivingDocsUnchanged": {
+          "const": 7
+        },
+        "learnerDataAccessedOrMigrated": {
+          "const": false
+        },
+        "gitInitialized": {
+          "const": false
+        },
+        "packagesInstalled": {
+          "const": false
+        },
+        "frontendSelectionImplemented": {
+          "const": false
+        }
+      },
+      "required": [
+        "existingProjectFilesUnchanged",
+        "originalSourceFilesUnchanged",
+        "sevenLivingDocsUnchanged",
+        "learnerDataAccessedOrMigrated",
+        "gitInitialized",
+        "packagesInstalled",
+        "frontendSelectionImplemented"
+      ],
+      "additionalProperties": false
+    },
+    "selfIntegrity": {
+      "type": "object",
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "rawDigestReceipt": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "algorithm",
+        "canonicalSha256",
+        "rawDigestReceipt"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "stage",
+    "date",
+    "bankVersion",
+    "candidateRoot",
+    "stage1B",
+    "stage2",
+    "inputAuthority",
+    "preservedInputs",
+    "backupIntegrityEvidence",
+    "counts",
+    "validation",
+    "validationReport",
+    "contentInputDigest",
+    "bankDigest",
+    "sourceScripts",
+    "outputFiles",
+    "preservationResult",
+    "selfIntegrity"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "assessmentId": "aiielts-starter-diagnostic",
+  "blueprintVersion": "diag-blueprint.2-candidate",
+  "scoringPolicyVersion": "raw-single-choice.2-candidate",
+  "forms": [
+    {
+      "formId": "form-a",
+      "relativePath": "form-a.json",
+      "questionSetVersion": "form-a.r1-candidate",
+      "publicPayloadDigest": "66d9d2edcac2053a7313048017f13e80f4b3f14fa30effc0b81d7bb698008175",
+      "objectiveCount": 27,
+      "productiveCount": 2
+    },
+    {
+      "formId": "form-b",
+      "relativePath": "form-b.json",
+      "questionSetVersion": "form-b.r1-candidate",
+      "publicPayloadDigest": "a43ced18bc43491dff760c21d383f828c160628245c47f5b45a157517b3ae8a2",
+      "objectiveCount": 27,
+      "productiveCount": 2
+    }
+  ],
+  "currentlySelectableFormIds": [],
+  "deliveryBoundary": "Only public form content may be served; never serve private/, policies with keys, review evidence or production scripts. This complete review package is not a secure delivery bundle.",
+  "bankDigest": "9cffdca86d36422af0b6180fb114db4e2e2c96d93476634106b76d77384bea53"
+}

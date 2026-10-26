@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AI IELTS Coach | Onboarding</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2563eb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --brand-50:#eff6ff; --brand-100:#dbeafe; --brand-400:#60a5fa; --brand-500:#3b82f6; --brand-600:#2563eb; --brand-700:#1d4ed8;
+  --ai-50:#faf5ff; --ai-100:#f3e8ff; --ai-500:#a855f7; --ai-600:#9333ea; --ai-700:#7e22ce;
+  --slate-50:#f8fafc; --slate-100:#f1f5f9; --slate-200:#e2e8f0; --slate-300:#cbd5e1; --slate-400:#94a3b8;
+  --slate-500:#64748b; --slate-600:#475569; --slate-700:#334155; --slate-800:#1e293b; --slate-900:#0f172a;
+  --emerald-50:#ecfdf5; --emerald-100:#d1fae5; --emerald-500:#10b981; --emerald-600:#059669; --emerald-700:#047857;
+  --amber-50:#fffbeb; --amber-100:#fef3c7; --amber-500:#f59e0b; --amber-600:#d97706; --amber-700:#b45309;
+  --rose-50:#fff1f2; --rose-100:#ffe4e6; --rose-500:#f43f5e; --rose-600:#e11d48;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.04); --shadow-md:0 10px 30px rgba(15,23,42,.08);
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--slate-800);background:var(--slate-50)}
+body{line-height:1.5}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+button:disabled{cursor:not-allowed;opacity:.55}
+a{text-decoration:none;color:inherit}
+::selection{background:#dbeafe;color:#1e3a8a}
+::-webkit-scrollbar{width:7px;height:7px}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:999px}
+::-webkit-scrollbar-track{background:transparent}
+:focus-visible{outline:3px solid rgba(59,130,246,.28);outline-offset:2px}
+.container{width:min(1120px,calc(100% - 40px));margin:0 auto}
+.card{background:#fff;border:1px solid var(--slate-100);border-radius:18px;box-shadow:var(--shadow-sm)}
+.muted{color:var(--slate-500)}
+.eyebrow{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--slate-400)}
+.btn{border:0;border-radius:12px;padding:12px 18px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:9px;transition:.18s ease}
+.btn-primary{background:var(--brand-600);color:#fff;box-shadow:0 6px 18px rgba(37,99,235,.18)}
+.btn-primary:hover{background:var(--brand-700);transform:translateY(-1px)}
+.btn-secondary{background:#fff;border:1px solid var(--slate-200);color:var(--slate-700)}
+.btn-secondary:hover{background:var(--slate-50)}
+.btn-ai{background:var(--ai-600);color:#fff}
+.btn-ai:hover{background:var(--ai-700)}
+.btn-danger{background:#fff;border:1px solid var(--rose-100);color:var(--rose-600)}
+.btn-ghost{background:transparent;color:var(--slate-600)}
+.btn-ghost:hover{background:var(--slate-100)}
+.field{display:flex;flex-direction:column;gap:7px}
+.field label{font-size:13px;font-weight:700;color:var(--slate-700)}
+.input,.select,.textarea{width:100%;border:1px solid var(--slate-200);border-radius:12px;padding:12px 13px;background:#fff;color:var(--slate-800);transition:.18s}
+.input:focus,.select:focus,.textarea:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(59,130,246,.10);outline:none}
+.textarea{min-height:180px;resize:vertical}
+.error{font-size:12px;color:var(--rose-600);display:none}
+.error.show{display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.choice{position:relative}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.choice label{display:flex;align-items:center;gap:12px;padding:15px;border:1px solid var(--slate-200);border-radius:14px;background:#fff;cursor:pointer;transition:.18s}
+.choice label:hover{border-color:#bfdbfe;background:#f8fbff}
+.choice input:checked+label{border-color:#60a5fa;background:var(--brand-50);box-shadow:inset 0 0 0 1px #60a5fa}
+.choice .choice-icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--slate-100);color:var(--slate-500)}
+.choice input:checked+label .choice-icon{background:#dbeafe;color:var(--brand-700)}
+.progress-line{height:7px;background:var(--slate-100);border-radius:999px;overflow:hidden}
+.progress-line>span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-500),var(--ai-600));border-radius:999px;transition:.25s}
+.notice{padding:12px 14px;border-radius:12px;border:1px solid #dbeafe;background:var(--brand-50);color:#1e40af;font-size:13px}
+.fade{animation:fade .24s ease}
+@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.modal-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.52);backdrop-filter:blur(4px);z-index:100;display:none;padding:20px;align-items:center;justify-content:center}
+.modal-backdrop.show{display:flex}
+.modal{width:min(620px,100%);max-height:calc(100vh - 40px);overflow:auto;background:#fff;border-radius:20px;box-shadow:0 30px 80px rgba(15,23,42,.25);padding:24px}
+.toast{position:fixed;right:20px;bottom:20px;z-index:120;display:none;max-width:380px;padding:12px 15px;border-radius:12px;background:var(--slate-900);color:#fff;font-size:13px;box-shadow:0 15px 40px rgba(15,23,42,.25)}
+.toast.show{display:block;animation:fade .2s ease}
+.small{font-size:12px}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:800}
+.badge-blue{background:var(--brand-50);color:var(--brand-700)}
+.badge-ai{background:var(--ai-50);color:var(--ai-700)}
+.badge-green{background:var(--emerald-50);color:var(--emerald-700)}
+.badge-amber{background:var(--amber-50);color:var(--amber-700)}
+.badge-gray{background:var(--slate-100);color:var(--slate-600)}
+@media(max-width:720px){
+  .container{width:min(100% - 24px,1120px)}
+  .choice-grid{grid-template-columns:1fr}
+}
+</style>
+
+<style>
+body{background:linear-gradient(180deg,#f8fafc 0%,#f7f9fc 70%,#eef5ff 100%)}
+.top{height:70px;background:#fff;border-bottom:1px solid var(--slate-200);display:flex;align-items:center}
+.top-inner{width:min(1180px,calc(100% - 32px));margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--slate-800)}
+.logo-mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand-500),var(--ai-600));color:#fff;display:grid;place-items:center;box-shadow:0 8px 18px rgba(37,99,235,.18)}
+.save-link{font-size:13px;color:var(--slate-500);font-weight:600}
+.main{min-height:calc(100vh - 70px);padding:46px 0 70px}
+.hero{text-align:center;max-width:720px;margin:0 auto 26px}
+.hero h1{font-size:38px;line-height:1.15;margin:8px 0 10px;letter-spacing:-.03em;color:#182230}
+.hero p{margin:0;color:var(--slate-500);font-size:15px}
+.shell{width:min(720px,calc(100% - 24px));margin:auto}
+.progress-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.progress-label{font-size:12px;font-weight:700;color:var(--slate-500)}
+.step-dots{display:flex;gap:5px;margin:0 0 18px}
+.step-dot{height:5px;flex:1;background:#e2e8f0;border-radius:999px}
+.step-dot.active{background:linear-gradient(90deg,var(--brand-600),var(--ai-500))}
+.panel{padding:28px}
+.step{display:none}.step.active{display:block}
+.step h2{font-size:26px;line-height:1.2;margin:0 0 8px;letter-spacing:-.02em}
+.step p.lead{margin:0 0 22px;color:var(--slate-500);font-size:14px}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:26px}
+.actions .right{display:flex;gap:10px}
+.choice.compact label{padding:13px}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.inline-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rating-row{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.rating-row label{padding:12px 8px;text-align:center;border:1px solid var(--slate-200);border-radius:12px;cursor:pointer;font-size:13px;font-weight:700}
+.rating-row input{position:absolute;opacity:0}.rating-row input:checked+label{background:var(--brand-50);border-color:#60a5fa;color:var(--brand-700)}
+.pref-note{margin-top:14px;padding:11px 12px;border:1px solid var(--slate-100);background:var(--slate-50);border-radius:12px;font-size:12px;color:var(--slate-600)}
+.welcome{padding:6px 0 8px}
+.welcome-mark{width:66px;height:66px;margin:4px auto 18px;border-radius:20px;background:linear-gradient(135deg,var(--brand-500),var(--ai-600));color:#fff;display:grid;place-items:center;font-size:27px;box-shadow:0 14px 30px rgba(37,99,235,.2)}
+.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.feature{padding:12px;border:1px solid var(--slate-100);background:var(--slate-50);border-radius:12px;display:flex;align-items:center;gap:9px;font-size:13px}
+.feature i{color:var(--brand-600)}
+.assess-intro{background:linear-gradient(135deg,#eff6ff,#faf5ff);border:1px solid #e0e7ff;padding:18px;border-radius:15px}
+.assess-intro ul{margin:12px 0 0;padding-left:20px;color:var(--slate-600);font-size:13px}
+@media(max-width:640px){
+  .hero h1{font-size:31px}.panel{padding:20px}.info-grid,.inline-grid,.feature-list{grid-template-columns:1fr}.rating-row{grid-template-columns:repeat(5,1fr);gap:6px}.actions{flex-direction:column-reverse;align-items:stretch}.actions .right{display:flex}.actions .right .btn{flex:1}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="logo"><div class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></div><span>AI IELTS Coach</span></div>
+    <button class="save-link" type="button" onclick="saveAndExit()">Save & exit</button>
+  </div>
+</header>
+<main class="main">
+  <div class="hero">
+    <div class="eyebrow">Personalized learning starts here</div>
+    <h1 id="heroTitle">Let’s understand you.</h1>
+    <p id="heroSub">A few focused questions help us tailor your learning experience to your goals, language preferences, and available time.</p>
+  </div>
+
+  <div class="shell">
+    <div class="progress-top"><span class="progress-label" id="stepLabel">Step 1 of 6</span><span class="progress-label" id="saveLabel">Saved locally</span></div>
+    <div class="step-dots" id="stepDots"></div>
+    <section class="card panel" aria-live="polite">
+
+      <div class="step active" data-step="0">
+        <div class="welcome">
+          <div class="welcome-mark"><i class="fa-solid fa-sparkles"></i></div>
+          <div class="eyebrow">Welcome</div>
+          <h2>Let’s build a plan around you.</h2>
+          <p class="lead">AI IELTS Coach is designed to figure out where you are first, then guide you toward where you want to go.</p>
+          <div class="feature-list">
+            <div class="feature"><i class="fa-solid fa-bullseye"></i><span>Set a clear IELTS target</span></div>
+            <div class="feature"><i class="fa-solid fa-language"></i><span>Choose your English variety</span></div>
+            <div class="feature"><i class="fa-solid fa-clock"></i><span>Fit learning into your day</span></div>
+            <div class="feature"><i class="fa-solid fa-chart-line"></i><span>Track what actually improves</span></div>
+          </div>
+        </div>
+        <div class="actions"><span></span><div class="right"><button class="btn btn-primary" onclick="nextStep()">Let’s begin <i class="fa-solid fa-arrow-right"></i></button></div></div>
+      </div>
+
+      <div class="step" data-step="1">
+        <div class="eyebrow">About you</div>
+        <h2>First, a little about you.</h2>
+        <p class="lead">This helps us address you naturally and choose an appropriate starting experience.</p>
+        <div class="info-grid">
+          <div class="field"><label for="firstName">First name <span aria-hidden="true">*</span></label><input id="firstName" class="input" placeholder="e.g. Sarib" autocomplete="given-name"><span class="error" id="err-firstName">Please enter your first name.</span></div>
+          <div class="field"><label for="ageGroup">Age group <span class="muted">(optional)</span></label><select id="ageGroup" class="select"><option value="">Prefer not to say</option><option>Under 18</option><option>18–24</option><option>25–34</option><option>35–44</option><option>45+</option></select></div>
+          <div class="field"><label for="studyContext">Study context <span aria-hidden="true">*</span></label><select id="studyContext" class="select"><option value="">Select one</option><option>School</option><option>College / University</option><option>Working professional</option><option>Preparing independently</option><option>Other</option></select><span class="error" id="err-studyContext">Please choose your study context.</span></div>
+          <div class="field"><label for="occupation">Occupation / status <span class="muted">(optional)</span></label><input id="occupation" class="input" placeholder="e.g. Computer Science student"></div>
+        </div>
+        <div class="actions"><button class="btn btn-secondary" onclick="prevStep()"><i class="fa-solid fa-arrow-left"></i> Back</button><div class="right"><button class="btn btn-primary" onclick="nextStep()">Continue <i class="fa-solid fa-arrow-right"></i></button></div></div>
+      </div>
+
+      <div class="step" data-step="2">
+        <div class="eyebrow">Your IELTS goal</div>
+        <h2>What are you preparing for?</h2>
+        <p class="lead">Your goal changes what we prioritize, from lesson content to test-oriented practice.</p>
+        <div class="field"><label>Test type <span aria-hidden="true">*</span></label><div class="choice-grid" id="testTypeChoices">
+          <div class="choice"><input type="radio" name="testType" id="academic" value="IELTS Academic"><label for="academic"><span class="choice-icon"><i class="fa-solid fa-building-columns"></i></span><span><strong>IELTS Academic</strong><small class="muted">University and academic pathways</small></span></label></div>
+          <div class="choice"><input type="radio" name="testType" id="general" value="IELTS General Training"><label for="general"><span class="choice-icon"><i class="fa-solid fa-briefcase"></i></span><span><strong>IELTS General Training</strong><small class="muted">Work, migration and everyday contexts</small></span></label></div>
+        </div><span class="error" id="err-testType">Please select a test type.</span></div>
+        <div class="inline-grid" style="margin-top:16px">
+          <div class="field"><label for="targetBand">Target band <span aria-hidden="true">*</span></label><select id="targetBand" class="select"><option value="">Select target</option><option>5.0</option><option>5.5</option><option>6.0</option><option>6.5</option><option>7.0</option><option>7.5</option><option>8.0</option><option>8.5</option><option>9.0</option></select><span class="error" id="err-targetBand">Choose a target band.</span></div>
+          <div class="field"><label for="examDate">Desired exam date <span class="muted">(optional)</span></label><input id="examDate" type="date" class="input"></div>
+        </div>
+        <div class="field" style="margin-top:16px"><label>Why are you taking IELTS? <span aria-hidden="true">*</span></label><select id="reason" class="select"><option value="">Choose a reason</option><option>University</option><option>Work</option><option>Immigration</option><option>Professional registration</option><option>Other</option></select><span class="error" id="err-reason">Please choose your main reason.</span></div>
+        <div class="actions"><button class="btn btn-secondary" onclick="prevStep()"><i class="fa-solid fa-arrow-left"></i> Back</button><div class="right"><button class="btn btn-primary" onclick="nextStep()">Continue <i class="fa-solid fa-arrow-right"></i></button></div></div>
+      </div>
+
+      <div class="step" data-step="3">
+        <div class="eyebrow">Language settings</div>
+        <h2>How should English feel on this platform?</h2>
+        <p class="lead">These are two separate settings. One changes the English you learn; the other changes how we explain it.</p>
+        <div class="field"><label>English variety</label><div class="choice-grid">
+          <div class="choice"><input type="radio" name="englishVariant" id="uk" value="UK English"><label for="uk"><span class="choice-icon">🇬🇧</span><span><strong>UK English</strong><small class="muted">Pronunciation, spelling and vocabulary where relevant</small></span></label></div>
+          <div class="choice"><input type="radio" name="englishVariant" id="us" value="US English"><label for="us"><span class="choice-icon">🇺🇸</span><span><strong>US English</strong><small class="muted">Examples, spelling and pronunciation where relevant</small></span></label></div>
+        </div><span class="error" id="err-englishVariant">Choose an English variety.</span></div>
+        <div class="field" style="margin-top:18px"><label>Explanation language</label><div class="choice-grid">
+          <div class="choice"><input type="radio" name="explanationLanguage" id="eng" value="English"><label for="eng"><span class="choice-icon"><i class="fa-solid fa-font"></i></span><span><strong>English</strong><small class="muted">Explanations and feedback in English</small></span></label></div>
+          <div class="choice"><input type="radio" name="explanationLanguage" id="uz" value="Uzbek"><label for="uz"><span class="choice-icon">UZ</span><span><strong>Uzbek</strong><small class="muted">Explanations and feedback in Uzbek</small></span></label></div>
+          <div class="choice"><input type="radio" name="explanationLanguage" id="enguz" value="English + Uzbek"><label for="enguz"><span class="choice-icon"><i class="fa-solid fa-language"></i></span><span><strong>English + Uzbek</strong><small class="muted">English examples with bilingual guidance</small></span></label></div>
+        </div><span class="error" id="err-explanationLanguage">Choose an explanation language.</span></div>
+        <div class="pref-note"><i class="fa-solid fa-circle-info" style="color:var(--brand-600);margin-right:5px"></i> English variety influences pronunciation, spelling, vocabulary variants and later TTS. Explanation language controls how guidance is presented.</div>
+        <div class="actions"><button class="btn btn-secondary" onclick="prevStep()"><i class="fa-solid fa-arrow-left"></i> Back</button><div class="right"><button class="btn btn-primary" onclick="nextStep()">Continue <i class="fa-solid fa-arrow-right"></i></button></div></div>
+      </div>
+
+      <div class="step" data-step="4">
+        <div class="eyebrow">Starting point</div>
+        <h2>How do you see your English today?</h2>
+        <p class="lead">This is a <strong>SELF-ASSESSMENT</strong>, not a diagnostic result. We’ll use actual assessment evidence later.</p>
+        <div class="field"><label>Your self-assessed level <span aria-hidden="true">*</span></label>
+          <div class="rating-row">
+            <div><input type="radio" name="selfAssessment" id="a1" value="A1"><label for="a1">A1</label></div>
+            <div><input type="radio" name="selfAssessment" id="a2" value="A2"><label for="a2">A2</label></div>
+            <div><input type="radio" name="selfAssessment" id="b1" value="B1"><label for="b1">B1</label></div>
+            <div><input type="radio" name="selfAssessment" id="b2" value="B2"><label for="b2">B2</label></div>
+            <div><input type="radio" name="selfAssessment" id="c1" value="C1+"><label for="c1">C1+</label></div>
+          </div>
+          <span class="error" id="err-selfAssessment">Select the level you currently feel closest to.</span>
+        </div>
+        <div class="field" style="margin-top:20px"><label>Study preferences</label>
+          <div class="inline-grid">
+            <div class="field"><label for="dailyMinutes">Available each day</label><select id="dailyMinutes" class="select"><option value="">Choose</option><option>15 minutes</option><option>30 minutes</option><option>45 minutes</option><option>60 minutes</option><option>90+ minutes</option></select></div>
+            <div class="field"><label for="sessionLength">Preferred session length</label><select id="sessionLength" class="select"><option value="">Choose</option><option>10–15 minutes</option><option>20–30 minutes</option><option>30–45 minutes</option><option>45–60 minutes</option></select></div>
+            <div class="field"><label for="intensity">Learning intensity</label><select id="intensity" class="select"><option value="">Choose</option><option>Gentle</option><option>Balanced</option><option>Focused</option><option>Intensive</option></select></div>
+          </div>
+        </div>
+        <div class="actions"><button class="btn btn-secondary" onclick="prevStep()"><i class="fa-solid fa-arrow-left"></i> Back</button><div class="right"><button class="btn btn-primary" onclick="nextStep()">Continue <i class="fa-solid fa-arrow-right"></i></button></div></div>
+      </div>
+
+      <div class="step" data-step="5">
+        <div class="eyebrow">Ready for Phase 2</div>
+        <h2>Next, we’ll understand your current English.</h2>
+        <p class="lead">We’ll use a short diagnostic to collect real evidence and create an initial learning plan around you.</p>
+        <div class="assess-intro">
+          <div style="display:flex;gap:10px;align-items:flex-start"><i class="fa-solid fa-microscope" style="color:var(--brand-600);font-size:20px;margin-top:3px"></i><div><strong>What to expect</strong><ul><li>This is <strong>not</strong> an official IELTS test.</li><li>It creates provisional estimates, not official results.</li><li>Answer independently, without AI hints or answer lookup.</li><li>Your profile will become more accurate as you learn and practise.</li></ul></div></div>
+        </div>
+        <div class="notice" style="margin-top:14px"><i class="fa-solid fa-shield-halved"></i> During the diagnostic, AI assistance, explanations, translation help and answer-revealing support are intentionally disabled.</div>
+        <div class="actions"><button class="btn btn-secondary" onclick="prevStep()"><i class="fa-solid fa-arrow-left"></i> Back</button><div class="right"><button class="btn btn-secondary" onclick="skipDiagnostic()">Skip for now</button><button class="btn btn-primary" onclick="startDiagnostic()">Start assessment <i class="fa-solid fa-arrow-right"></i></button></div></div>
+      </div>
+    </section>
+  </div>
+</main>
+<div id="toast" class="toast"></div>
+
+<script>
+const STORAGE = {
+  root:'aiIELTSCoach',
+  user:'ai_ielts_user_profile',
+  onboarding:'ai_ielts_onboarding_state',
+  diagnostic:'ai_ielts_diagnostic_state',
+  results:'ai_ielts_results'
+};
+const DEFAULT_STATE = {
+  version:1,
+  user:{firstName:'',ageGroup:'',studyContext:'',occupation:''},
+  onboarding:{
+    status:'in_progress', step:0,
+    goal:{testType:'',targetBand:'',examDate:'',reason:''},
+    language:{englishVariant:'',explanationLanguage:''},
+    selfAssessment:'',
+    study:{dailyMinutes:'',sessionLength:'',intensity:''}
+  },
+  diagnostic:{
+    status:'not_started', currentSection:0, currentQuestion:0,
+    responses:{}, completedSections:[], writingText:'',
+    speaking:{status:'READY',duration:0,hasRecording:false,recordingSavedAt:null},
+    startedAt:null, completedAt:null
+  },
+  results:null,
+  ui:{}
+};
+function deepClone(x){return JSON.parse(JSON.stringify(x));}
+function loadState(){
+  let s=deepClone(DEFAULT_STATE);
+  try{
+    const root=JSON.parse(localStorage.getItem(STORAGE.root)||'null');
+    if(root && typeof root==='object') s={...s,...root,user:{...s.user,...(root.user||{})},onboarding:{...s.onboarding,...(root.onboarding||{}),goal:{...s.onboarding.goal,...((root.onboarding||{}).goal||{})},language:{...s.onboarding.language,...((root.onboarding||{}).language||{})},study:{...s.onboarding.study,...((root.onboarding||{}).study||{})}},diagnostic:{...s.diagnostic,...(root.diagnostic||{}),responses:{...s.diagnostic.responses,...((root.diagnostic||{}).responses||{})},speaking:{...s.diagnostic.speaking,...((root.diagnostic||{}).speaking||{})}},results:root.results||null};
+    else{
+      const u=JSON.parse(localStorage.getItem(STORAGE.user)||'null');
+      const o=JSON.parse(localStorage.getItem(STORAGE.onboarding)||'null');
+      const d=JSON.parse(localStorage.getItem(STORAGE.diagnostic)||'null');
+      const r=JSON.parse(localStorage.getItem(STORAGE.results)||'null');
+      if(u) s.user={...s.user,...u};
+      if(o) s.onboarding={...s.onboarding,...o};
+      if(d) s.diagnostic={...s.diagnostic,...d};
+      if(r) s.results=r;
+    }
+  }catch(e){console.warn('State load failed',e);}
+  return s;
+}
+function saveState(s){
+  localStorage.setItem(STORAGE.root,JSON.stringify(s));
+  localStorage.setItem(STORAGE.user,JSON.stringify(s.user));
+  localStorage.setItem(STORAGE.onboarding,JSON.stringify(s.onboarding));
+  localStorage.setItem(STORAGE.diagnostic,JSON.stringify(s.diagnostic));
+  if(s.results) localStorage.setItem(STORAGE.results,JSON.stringify(s.results));
+  else localStorage.removeItem(STORAGE.results);
+}
+function setPage(url){window.location.href=url;}
+function resetDemo(){if(confirm('Reset all AI IELTS Coach demo data?')){Object.values(STORAGE).forEach(k=>localStorage.removeItem(k));window.location.href='01_onboarding.html';}}
+function showToast(msg){const t=document.getElementById('toast'); if(!t)return; t.textContent=msg;t.classList.add('show');clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.classList.remove('show'),2600);}
+function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
+</script>
+
+<script>
+let state=loadState();
+let step=Number(state.onboarding.step||0);
+const TOTAL=6;
+function renderDots(){document.getElementById('stepDots').innerHTML=Array.from({length:TOTAL},(_,i)=>`<span class="step-dot ${i===step?'active':''}"></span>`).join('');}
+function fill(){
+  const u=state.user,o=state.onboarding;
+  document.getElementById('firstName').value=u.firstName||'';
+  document.getElementById('ageGroup').value=u.ageGroup||'';
+  document.getElementById('studyContext').value=u.studyContext||'';
+  document.getElementById('occupation').value=u.occupation||'';
+  if(o.goal.testType) document.querySelector(`input[name="testType"][value="${CSS.escape(o.goal.testType)}"]`)?.click();
+  document.getElementById('targetBand').value=o.goal.targetBand||'';
+  document.getElementById('examDate').value=o.goal.examDate||'';
+  document.getElementById('reason').value=o.goal.reason||'';
+  if(o.language.englishVariant) document.querySelector(`input[name="englishVariant"][value="${CSS.escape(o.language.englishVariant)}"]`)?.click();
+  if(o.language.explanationLanguage) document.querySelector(`input[name="explanationLanguage"][value="${CSS.escape(o.language.explanationLanguage)}"]`)?.click();
+  if(o.selfAssessment) document.querySelector(`input[name="selfAssessment"][value="${CSS.escape(o.selfAssessment)}"]`)?.click();
+  document.getElementById('dailyMinutes').value=o.study.dailyMinutes||'';
+  document.getElementById('sessionLength').value=o.study.sessionLength||'';
+  document.getElementById('intensity').value=o.study.intensity||'';
+}
+function syncFields(){
+  state.user.firstName=document.getElementById('firstName').value.trim();
+  state.user.ageGroup=document.getElementById('ageGroup').value;
+  state.user.studyContext=document.getElementById('studyContext').value;
+  state.user.occupation=document.getElementById('occupation').value.trim();
+  state.onboarding.goal.testType=document.querySelector('input[name="testType"]:checked')?.value||'';
+  state.onboarding.goal.targetBand=document.getElementById('targetBand').value;
+  state.onboarding.goal.examDate=document.getElementById('examDate').value;
+  state.onboarding.goal.reason=document.getElementById('reason').value;
+  state.onboarding.language.englishVariant=document.querySelector('input[name="englishVariant"]:checked')?.value||'';
+  state.onboarding.language.explanationLanguage=document.querySelector('input[name="explanationLanguage"]:checked')?.value||'';
+  state.onboarding.selfAssessment=document.querySelector('input[name="selfAssessment"]:checked')?.value||'';
+  state.onboarding.study.dailyMinutes=document.getElementById('dailyMinutes').value;
+  state.onboarding.study.sessionLength=document.getElementById('sessionLength').value;
+  state.onboarding.study.intensity=document.getElementById('intensity').value;
+  state.onboarding.step=step;
+  saveState(state);
+  document.getElementById('saveLabel').textContent='Saved just now';
+}
+function clearErrors(){document.querySelectorAll('.error').forEach(e=>e.classList.remove('show'))}
+function validateCurrent(){
+  clearErrors(); syncFields();
+  if(step===1){
+    let ok=true;if(!state.user.firstName){document.getElementById('err-firstName').classList.add('show');ok=false}
+    if(!state.user.studyContext){document.getElementById('err-studyContext').classList.add('show');ok=false}return ok;
+  }
+  if(step===2){
+    let ok=true;if(!state.onboarding.goal.testType){document.getElementById('err-testType').classList.add('show');ok=false}
+    if(!state.onboarding.goal.targetBand){document.getElementById('err-targetBand').classList.add('show');ok=false}
+    if(!state.onboarding.goal.reason){document.getElementById('err-reason').classList.add('show');ok=false}return ok;
+  }
+  if(step===3){
+    let ok=true;if(!state.onboarding.language.englishVariant){document.getElementById('err-englishVariant').classList.add('show');ok=false}
+    if(!state.onboarding.language.explanationLanguage){document.getElementById('err-explanationLanguage').classList.add('show');ok=false}return ok;
+  }
+  if(step===4){if(!state.onboarding.selfAssessment){document.getElementById('err-selfAssessment').classList.add('show');return false}return true}
+  return true;
+}
+function render(){
+  document.querySelectorAll('.step').forEach(x=>x.classList.toggle('active',Number(x.dataset.step)===step));
+  document.getElementById('stepLabel').textContent=`Step ${step+1} of ${TOTAL}`;
+  const titles=['Let’s understand you.','A little about you.','Your IELTS goal.','Your language settings.','Your starting point.','Your diagnostic.'];
+  document.getElementById('heroTitle').textContent=titles[step];
+  renderDots();window.scrollTo({top:0,behavior:'smooth'});fill();
+}
+function nextStep(){if(!validateCurrent())return;if(step<TOTAL-1){step++;state.onboarding.step=step;syncFields();render()}else startDiagnostic()}
+function prevStep(){if(step>0){syncFields();step--;state.onboarding.step=step;saveState(state);render()}}
+function saveAndExit(){syncFields();state.onboarding.status='in_progress';saveState(state);showToast('Your progress is saved. Opening your dashboard…');setTimeout(()=>setPage('03_dashboard.html'),450)}
+function startDiagnostic(){syncFields();state.onboarding.status='complete';state.onboarding.step=5;if(state.diagnostic.status==='not_started'){state.diagnostic.status='not_started';state.diagnostic.currentSection=0;state.diagnostic.currentQuestion=0}saveState(state);setPage('02_diagnostic.html')}
+function skipDiagnostic(){syncFields();state.onboarding.status='complete';state.diagnostic.status='not_started';saveState(state);setPage('03_dashboard.html')}
+window.addEventListener('beforeunload',syncFields);
+render();
+</script>
+</body>
+</html>

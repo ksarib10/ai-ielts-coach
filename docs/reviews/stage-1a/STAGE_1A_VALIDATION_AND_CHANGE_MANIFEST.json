@@ -1,0 +1,909 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-23",
+  "timeZone": "Asia/Karachi",
+  "stage1A": "PASS_WITH_REVIEW",
+  "stage1B": "NOT_AUTHORIZED",
+  "stage2": "NOT_AUTHORIZED",
+  "STAGE_2_ENTRY": "BLOCKED",
+  "root": "C:\\Users\\ksari\\OneDrive\\Desktop\\ai_ielts_coach_app",
+  "sourceCommit": null,
+  "sourceBranch": null,
+  "sourceCommitReason": "git status/branch/rev-parse returned not a repository; no Git metadata/history created or changed",
+  "sourceSnapshotSha256": "7ce9e96d2fc07abaee6efe99a1106a6cfb72922e7aea91e6d9fbdef7aac925e3",
+  "inspectedSourceHashes": [
+    {
+      "path": ".gitignore",
+      "bytes": 69,
+      "sha256": "f5e91884873be34b91ae6a81348dc248a82bc5a91e62ee43413ea3e1c2bcc8b9",
+      "lines": 6
+    },
+    {
+      "path": "AUDIT.md",
+      "bytes": 1810,
+      "sha256": "f89215deaa1b9e984fb8f9b50a443b4ea54a5cd96670cd35cadb300ba54af6e3",
+      "lines": 24
+    },
+    {
+      "path": "dist/assets/index-BynjdJC9.css",
+      "bytes": 101805,
+      "sha256": "d8dafea72722b96d7f03c92b83e1385256c743f6ca7e7744750f9526eec2a2fa",
+      "lines": 1
+    },
+    {
+      "path": "dist/assets/index-gh88Nnsr.js",
+      "bytes": 408749,
+      "sha256": "b289c132b2f8a8034219b8155f8f21e548e042e3f0d50b4bb6e24a2e041d5c68",
+      "lines": 261
+    },
+    {
+      "path": "dist/garden-plan.svg",
+      "bytes": 868,
+      "sha256": "990f3ad8cd5edac092803012229c0df249d22fe81781b4faf5cc189992553d26",
+      "lines": 1
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 625,
+      "sha256": "b576e0778d4fe5e2644870075654926e06fd3fe2e9601ac60504f1e66a4fabcc",
+      "lines": 15
+    },
+    {
+      "path": "dist/listening-diagnostic.wav",
+      "bytes": 2378292,
+      "sha256": "0e6c831770433da34f962cb03f9d4ddea33b335316f47b5f32b1640457dcd3c2",
+      "lines": 25524
+    },
+    {
+      "path": "dist/sample-reading.pdf",
+      "bytes": 3605,
+      "sha256": "f2eb2a46d8bbdca15bd78b8f14662f746280b39c5f9a342fee54f679e7c3e391",
+      "lines": 112
+    },
+    {
+      "path": "index.html",
+      "bytes": 527,
+      "sha256": "bb45e8bdcfc42a672c769ed2db6aa457cb35682cb79944c6f4273e48dadf89fe",
+      "lines": 14
+    },
+    {
+      "path": "Memory.md",
+      "bytes": 16297,
+      "sha256": "ff4f8fb56ddbbd70a1b1b5c35e69ef76ab9e72a7037d8e2b36fbe1b1463a0f43",
+      "lines": 79
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 67144,
+      "sha256": "98041f9f2e39eaaa2c8de278b2f235a7532a3fd244f26635baded0485300541b",
+      "lines": 1977
+    },
+    {
+      "path": "package.json",
+      "bytes": 710,
+      "sha256": "c1373755387b83b0220c6a23a0a603e756616d661c411d092143eb16b7b8e567",
+      "lines": 25
+    },
+    {
+      "path": "prototype.html",
+      "bytes": 109151,
+      "sha256": "4b88f0be03ffcb97bc9c842c1b140040ec907330b6de4e5cdb9ecf1c8b2a8a11",
+      "lines": 265
+    },
+    {
+      "path": "public/garden-plan.svg",
+      "bytes": 868,
+      "sha256": "990f3ad8cd5edac092803012229c0df249d22fe81781b4faf5cc189992553d26",
+      "lines": 1
+    },
+    {
+      "path": "public/listening-diagnostic.wav",
+      "bytes": 2378292,
+      "sha256": "0e6c831770433da34f962cb03f9d4ddea33b335316f47b5f32b1640457dcd3c2",
+      "lines": 25524
+    },
+    {
+      "path": "public/sample-reading.pdf",
+      "bytes": 3605,
+      "sha256": "f2eb2a46d8bbdca15bd78b8f14662f746280b39c5f9a342fee54f679e7c3e391",
+      "lines": 112
+    },
+    {
+      "path": "qa/.diagnostic-test.cjs",
+      "bytes": 12913,
+      "sha256": "57d3d6230141a6ad01f271f7046705f229b75bc83069822310cfd49616fc553d",
+      "lines": 154
+    },
+    {
+      "path": "qa/.domain-test.cjs",
+      "bytes": 144536,
+      "sha256": "f7194966af316e476ea305f13c001fda5fb697d6394d7052907df690d795687e",
+      "lines": 2902
+    },
+    {
+      "path": "qa/.exam-test.cjs",
+      "bytes": 7678,
+      "sha256": "e4c207a2abc57f0e0720e6f5d9ca76ba08cf6b32ff9843908eb69c81f04b376f",
+      "lines": 197
+    },
+    {
+      "path": "qa/.ielts-reference-test.cjs",
+      "bytes": 3924,
+      "sha256": "b73805aaf06a2b4fee85dbcfee81f15ba3b24051cd0a20d0920940838db65f6d",
+      "lines": 104
+    },
+    {
+      "path": "qa/.readiness-test.cjs",
+      "bytes": 3288,
+      "sha256": "4cdb157c03e2ce4d65543b3a0a790a932c5f1491518f876e31ec5c47aba5edf6",
+      "lines": 73
+    },
+    {
+      "path": "qa/.state-test.cjs",
+      "bytes": 8864,
+      "sha256": "8fca69d41a9827d91e5322cbe7de43c5cf0c2808ddf449e2a30ce9537b21c691",
+      "lines": 235
+    },
+    {
+      "path": "qa/diagnostic.test.mjs",
+      "bytes": 1735,
+      "sha256": "32178ab902a44e8ceabdbc809b083508fdecdc5254ff9a176b45668873c12a0f",
+      "lines": 40
+    },
+    {
+      "path": "qa/domain.test.mjs",
+      "bytes": 6466,
+      "sha256": "0f33808936d99897b6f7a3f141ae5306610d2480835247bc2851827cfa9a7649",
+      "lines": 82
+    },
+    {
+      "path": "qa/exam.test.mjs",
+      "bytes": 3299,
+      "sha256": "0e359d1242348a0062842628b732078af636888fd839abeb906eb7f6347cf7c9",
+      "lines": 47
+    },
+    {
+      "path": "qa/ielts-reference.test.mjs",
+      "bytes": 1541,
+      "sha256": "63c34ec4353f7530286c419769d973b0199a115139c62c1af7387acfee320b89",
+      "lines": 23
+    },
+    {
+      "path": "qa/readiness.test.mjs",
+      "bytes": 2335,
+      "sha256": "2509c007d3087aed204343c01baf7acd81197c6e971c17099b4634523ef24c6e",
+      "lines": 41
+    },
+    {
+      "path": "qa/state.test.mjs",
+      "bytes": 4008,
+      "sha256": "636f1dd00753f4d300c38bbefde287e12102449c1d7f865a2a22bb590824006e",
+      "lines": 92
+    },
+    {
+      "path": "QA.md",
+      "bytes": 8059,
+      "sha256": "b05177397c4f4d63ef853e8e5f3b3e32befeb67d9694faa4802948e803a03fb5",
+      "lines": 63
+    },
+    {
+      "path": "README.md",
+      "bytes": 5087,
+      "sha256": "fa16f65ea7c04d4d875e376ea550d451449be3ff8465bdc319257af01c0b68cb",
+      "lines": 63
+    },
+    {
+      "path": "README.txt",
+      "bytes": 6495,
+      "sha256": "77274cab0ebdd005fde08fe840f102df5d5f1f137fcd2d7dcf6e265539d95227",
+      "lines": 230
+    },
+    {
+      "path": "reference/01_onboarding_reference.html",
+      "bytes": 31542,
+      "sha256": "227825eff691ff3d99a1365486dcb6de0a9a456d8f7b21da3c2ef32bfc92d91d",
+      "lines": 388
+    },
+    {
+      "path": "reference/02_diagnostic_reference.html",
+      "bytes": 1770436,
+      "sha256": "a54991c6e25e2aad32086aaac1dbbfcf264597bf71517724958efa37be3e14e3",
+      "lines": 428
+    },
+    {
+      "path": "reference/03_dashboard_reference.html",
+      "bytes": 47036,
+      "sha256": "607ac872816e00b802875bcd9d8d4b218fb9768587ee6bdb60cf9281fbf36745",
+      "lines": 311
+    },
+    {
+      "path": "reference/legacy-pages.tsx.txt",
+      "bytes": 70981,
+      "sha256": "0aaa1f29e1a665575bc76ee90efc7bc24c96d80566f4038f2e44c0323cd7d4d7",
+      "lines": 205
+    },
+    {
+      "path": "reference/README_reference.txt",
+      "bytes": 3984,
+      "sha256": "78aeda4ff434172d533e2a645d6cfd25a7b5712428fa3b631feeb0aa941e83cb",
+      "lines": 112
+    },
+    {
+      "path": "SOURCE_AUDIT.md",
+      "bytes": 3487,
+      "sha256": "d3c0e3d5701ba8201a5623f2d7510fd2847cd9cc4c55d0948c955e8a965b3660",
+      "lines": 19
+    },
+    {
+      "path": "src/App.tsx",
+      "bytes": 5478,
+      "sha256": "0d95ac677a2d7746214addd405e4c1bfed65638fc998fa639f394f96f1c949ce",
+      "lines": 61
+    },
+    {
+      "path": "src/components/ActivityRenderer.tsx",
+      "bytes": 4358,
+      "sha256": "608ba1b44bd894e900b5f36d0a88615e84d1860319fe70a8536ddce5dcbf1773",
+      "lines": 29
+    },
+    {
+      "path": "src/components/AIAssistant.tsx",
+      "bytes": 5395,
+      "sha256": "2f3c75d0d9d2ce1b246315f002c9b357866ab51476afaf5161d7ce523cbc5faf",
+      "lines": 17
+    },
+    {
+      "path": "src/components/AppShell.tsx",
+      "bytes": 5445,
+      "sha256": "fab7da8ff87ee3b9bd0144e1d9944193d0d17b45699c7be30b37f6c5607e5be1",
+      "lines": 49
+    },
+    {
+      "path": "src/components/ContentViewer.tsx",
+      "bytes": 3387,
+      "sha256": "8b8974348710ce8fb2a5d46048dde525ddcc42f748420474a1c56dae62d5e930",
+      "lines": 24
+    },
+    {
+      "path": "src/components/DemoResetControl.tsx",
+      "bytes": 3036,
+      "sha256": "27f1cb85cc2f9f655370111f2f2c03b3072ec261d2608c758ec5c423044bb763",
+      "lines": 72
+    },
+    {
+      "path": "src/components/MediaControls.tsx",
+      "bytes": 7009,
+      "sha256": "494b47e689ce8b0b136334a45a6455bb8b075f9abb46803fdf58e11a4229e6f1",
+      "lines": 26
+    },
+    {
+      "path": "src/components/ProgressMotivation.tsx",
+      "bytes": 6923,
+      "sha256": "e6b5faac23aaa833a8dfad370ddf5afbedc73934f3e06df9ea8c2d4293c912a4",
+      "lines": 97
+    },
+    {
+      "path": "src/components/Resilience.tsx",
+      "bytes": 1173,
+      "sha256": "f75a8c00934051ad0339f6a64ae1d6cff0c1df2fc720237a8da8bc3a456404da",
+      "lines": 14
+    },
+    {
+      "path": "src/components/UI.tsx",
+      "bytes": 2413,
+      "sha256": "bbfb101b328724ba621df5661e9a0071aaaa504ccd0093081d86793f125c8729",
+      "lines": 14
+    },
+    {
+      "path": "src/components/UserMenu.tsx",
+      "bytes": 3237,
+      "sha256": "14a27e2f76309747269f786964394c1ccfc215f98aeea73566ac7ea355cf68bb",
+      "lines": 35
+    },
+    {
+      "path": "src/data/activityLibrary.ts",
+      "bytes": 4715,
+      "sha256": "80769d9ca05344513b6254ab3fa12572f690ec69ae1fd2eaa071a4291efb0363",
+      "lines": 21
+    },
+    {
+      "path": "src/data/fixtures.ts",
+      "bytes": 20917,
+      "sha256": "73c598898693a7d72c04ed6393aa72ba388c3d31357711aff2aa377d0f0846a7",
+      "lines": 59
+    },
+    {
+      "path": "src/data/ieltsReference.ts",
+      "bytes": 3160,
+      "sha256": "2c223ffb5737f0c81d0d5d71920f0094ee7211b54d4acd0b7f0be26e3f7920bd",
+      "lines": 83
+    },
+    {
+      "path": "src/data.ts",
+      "bytes": 10827,
+      "sha256": "ab86b83eddba5bc3e1e2601c8b5e49ca6694753a1eea5c358389e82531a25da0",
+      "lines": 73
+    },
+    {
+      "path": "src/domain.ts",
+      "bytes": 3411,
+      "sha256": "125f7cc28c29f15eae3ef0a777c9fca40af62105e705c2ba239368415921dc68",
+      "lines": 36
+    },
+    {
+      "path": "src/features/Account.tsx",
+      "bytes": 7342,
+      "sha256": "7a8623f41a4718b4288ddcef4034dfdc1a2e1c9f6e154d896e8800532959c598",
+      "lines": 18
+    },
+    {
+      "path": "src/features/ActivityLibrary.tsx",
+      "bytes": 3333,
+      "sha256": "614ce6dac90f04dbcca51a81ed35c3d5f2133edaaba2b507a144c9c05ac50756",
+      "lines": 27
+    },
+    {
+      "path": "src/features/Diagnostic.tsx",
+      "bytes": 20290,
+      "sha256": "314f73d80df3a8b9e342aba15f09f3a9b42433a4594f79d1b676752348c43ef4",
+      "lines": 318
+    },
+    {
+      "path": "src/features/Exam.tsx",
+      "bytes": 27112,
+      "sha256": "809c3c548f5a0db26b616f4419a7a820232bde42ee5409ede4efde878006077f",
+      "lines": 311
+    },
+    {
+      "path": "src/features/Learning.tsx",
+      "bytes": 17622,
+      "sha256": "7823e13af4bcae5d4f6d70db191e85be8e79c4f232c71cb38675f84b78a337fb",
+      "lines": 86
+    },
+    {
+      "path": "src/features/Modules.tsx",
+      "bytes": 17661,
+      "sha256": "e6e28394602a000cdb28dc39518771c3040f570e6aacd25a2043e1f20898ab02",
+      "lines": 76
+    },
+    {
+      "path": "src/features/Onboarding.tsx",
+      "bytes": 19802,
+      "sha256": "43d172159cb9ef8a4659b780b01d0c51bc3e73b98848bb28506fe36d94d37e82",
+      "lines": 405
+    },
+    {
+      "path": "src/features/Progress.tsx",
+      "bytes": 18485,
+      "sha256": "9564b898272431fa2fbfb57b28b5542f3cb6d8a82fe95acf33f1c7f57c390a0e",
+      "lines": 419
+    },
+    {
+      "path": "src/features/Public.tsx",
+      "bytes": 7587,
+      "sha256": "0a53c5bab4dfa9ca5f44c4cbddd5c798feaac15bc711396a21a51beb9ea17167",
+      "lines": 23
+    },
+    {
+      "path": "src/features/Results.tsx",
+      "bytes": 10543,
+      "sha256": "eecdbabb33cddba70961429c480dc942f725f7649fa32c35f8033089932f4e2d",
+      "lines": 99
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 722,
+      "sha256": "72e5775274f254da4ffc0c8a91caf3f9cf341a94586f59e9eeccab2177ea0634",
+      "lines": 12
+    },
+    {
+      "path": "src/prototype.css",
+      "bytes": 24489,
+      "sha256": "c60f9d006d7d257baea646acf4bc95456ae5d789a8ca53d911d8fa80aa96c554",
+      "lines": 33
+    },
+    {
+      "path": "src/services/diagnostic.ts",
+      "bytes": 5611,
+      "sha256": "cf23fec876ec4d1e48af66491fcf69d1f2aeaf13239b1c55e6205ebfcbf8df47",
+      "lines": 98
+    },
+    {
+      "path": "src/services/evidence.ts",
+      "bytes": 677,
+      "sha256": "d3554833eefec0d1999a22a6b116561247fc3dce97e9c07b31278ec84281f04e",
+      "lines": 19
+    },
+    {
+      "path": "src/services/exam.ts",
+      "bytes": 4924,
+      "sha256": "c06106e49994d3454302d1c8adef07c2794b1e642afe31263a71305918c6acc0",
+      "lines": 117
+    },
+    {
+      "path": "src/services/platform.ts",
+      "bytes": 14711,
+      "sha256": "78323337c2536b76999ecebfa9188b1dee036f31c16ced77509e2ee34e82b011",
+      "lines": 196
+    },
+    {
+      "path": "src/services/readiness.ts",
+      "bytes": 2011,
+      "sha256": "d072c27864c2e785114b551f645f33ff1434f8e605024ee4e431a64710da4d2d",
+      "lines": 38
+    },
+    {
+      "path": "src/services/session.ts",
+      "bytes": 1250,
+      "sha256": "525d01209d157c4227643f4646edb5825baf024060012482b776a6910a7a4ced",
+      "lines": 48
+    },
+    {
+      "path": "src/state.ts",
+      "bytes": 7679,
+      "sha256": "420586b2e9771c1cef8a64c5740a6a3a6c8be12cec6091653c2021181648f361",
+      "lines": 171
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 79610,
+      "sha256": "6975d31083960cfe55bc7bd995b85e6e7b0827db3d533908bbd52039e5ae92eb",
+      "lines": 178
+    },
+    {
+      "path": "src/types.ts",
+      "bytes": 2620,
+      "sha256": "aedd5819dd0d2e7cdeac5adf07b330ef896dd04b9e9d9c2e20b0de8be05abdd8",
+      "lines": 104
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "lines": 1
+    },
+    {
+      "path": "standalone/index.html",
+      "bytes": 109151,
+      "sha256": "4b88f0be03ffcb97bc9c842c1b140040ec907330b6de4e5cdb9ecf1c8b2a8a11",
+      "lines": 265
+    },
+    {
+      "path": "standalone/listening-diagnostic.wav",
+      "bytes": 2378292,
+      "sha256": "0e6c831770433da34f962cb03f9d4ddea33b335316f47b5f32b1640457dcd3c2",
+      "lines": 25524
+    },
+    {
+      "path": "standalone/sample-reading.pdf",
+      "bytes": 3605,
+      "sha256": "f2eb2a46d8bbdca15bd78b8f14662f746280b39c5f9a342fee54f679e7c3e391",
+      "lines": 112
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 542,
+      "sha256": "cd053a6244bef2612c16da11945c8f6c43a154687e3f7d647b5020b4870b87fc",
+      "lines": 22
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "bytes": 1068,
+      "sha256": "8b210916fe382acdd9a4869ac1c212d343b4d6d9abc7e2b6a61697fdd5acdc39",
+      "lines": 1
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 189,
+      "sha256": "272712abe4970e3c4925b55f585ee6d533ba3b2058d09033b8227cf421648e0d",
+      "lines": 6
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 149,
+      "sha256": "2ca9faf61471bacd96a452a022218acf22d830ea8caa2d577b71f740a24006db",
+      "lines": 7
+    }
+  ],
+  "checksRun": {
+    "checks": [
+      {
+        "id": "test",
+        "command": "npm test",
+        "exitCode": 0,
+        "workingDirectory": "C:\\Users\\ksari\\.codex\\visualizations\\2026\\09\\08\\01a081bc-7093-7c61-bec5-95261e1587ad\\stage1a_work\\validation_project",
+        "output": "\n> ai-ielts-coach@1.0.0 test\n> node qa/domain.test.mjs && node qa/state.test.mjs && node qa/diagnostic.test.mjs && node qa/readiness.test.mjs && node qa/ielts-reference.test.mjs && node qa/exam.test.mjs\n\nPASS: scoring, mode restrictions, persistence/retry, vocabulary, mastery, recommendations and canonical learner.\nPASS: state migration preserves complete and partial learner progress.\nPASS: diagnostic results derive from saved evidence and remain provisional.\nPASS: readiness is gated by a baseline and derives from saved evidence.\nPASS: IELTS reference model preserves supplied timing, order, and type differences.\nPASS: standalone exam order, shared module timing, completion, and history are consistent.\n"
+      },
+      {
+        "id": "typescript",
+        "command": "node node_modules/typescript/bin/tsc --noEmit",
+        "exitCode": 0,
+        "workingDirectory": "C:\\Users\\ksari\\.codex\\visualizations\\2026\\09\\08\\01a081bc-7093-7c61-bec5-95261e1587ad\\stage1a_work\\validation_project",
+        "output": ""
+      },
+      {
+        "id": "production_build",
+        "command": "npm run build",
+        "exitCode": 0,
+        "workingDirectory": "C:\\Users\\ksari\\.codex\\visualizations\\2026\\09\\08\\01a081bc-7093-7c61-bec5-95261e1587ad\\stage1a_work\\validation_project",
+        "output": "\n> ai-ielts-coach@1.0.0 build\n> tsc -b && vite build\n\nvite v6.4.3 building for production...\ntransforming...\n\u2713 1622 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.63 kB \u2502 gzip:   0.38 kB\ndist/assets/index-BynjdJC9.css  101.81 kB \u2502 gzip:  19.30 kB\ndist/assets/index-gh88Nnsr.js   408.75 kB \u2502 gzip: 124.83 kB\n\u2713 built in 16.32s\n"
+      }
+    ],
+    "wrapperError": "Windows cp1252 stdout could not print build checkmark after child exited 0; logs preserved, collector repaired without rerunning app checks."
+  },
+  "browserChecks": {
+    "date": "2026-10-23",
+    "scope": "Read-only isolated production build; no credentials, demo seed, signup, microphone, learner-state edit or data reset",
+    "origin": "http://127.0.0.1:4387",
+    "checks": [
+      {
+        "id": "B01",
+        "observed": "Landing rendered with h1 and Dilnoza sample label; viewportWidth=1274, documentWidth=1274",
+        "result": "PASS_WITHIN_SMOKE_SCOPE"
+      },
+      {
+        "id": "B02",
+        "observed": "Log in link opened #/login; labeled Email/Password and explicit demo notice visible; nothing submitted",
+        "result": "PASS_WITHIN_SMOKE_SCOPE"
+      },
+      {
+        "id": "B03",
+        "observed": "Unauthenticated #/dashboard navigation returned to #/ landing",
+        "result": "PASS_WITHIN_SMOKE_SCOPE"
+      },
+      {
+        "id": "B04",
+        "observed": "IAB error/warn log query returned empty array",
+        "result": "PASS_WITHIN_SMOKE_SCOPE"
+      }
+    ],
+    "notTested": [
+      "New versioned provider/metric implementation",
+      "New end-to-end scenarios",
+      "Dark theme (absent)",
+      "Full responsive/a11y certification",
+      "Physical device/microphone"
+    ],
+    "initialIssue": "Sandbox loopback preview timed out; read-only loopback host process permission resolved it",
+    "cleanup": {
+      "temporaryInspectionTabClosed": true,
+      "loopbackServerStopped": true
+    },
+    "httpObservation": {
+      "applicationAssets": "HTML, JS and CSS returned 200",
+      "minorKnownIssue": "/favicon.ico returned 404; source not modified under Stage 1A"
+    }
+  },
+  "validation": {
+    "requiredCoreDocs": 7,
+    "requiredReviewDeliverablesPresent": 12,
+    "relativeLinksResolved": 73,
+    "jsonExamplesParsed": 2,
+    "featureIds": 18,
+    "decisionIds": 7,
+    "futureAcceptanceCaseIds": 26,
+    "reuseRows": 82,
+    "metricRows": 21,
+    "baselineMetricIds": 15,
+    "futureGatedMetricIds": 6,
+    "externalSkillCandidates": 7,
+    "pinnedSkillFileBlobHashesVerified": 31,
+    "optionalAdoptAfterApproval": 1,
+    "originalSnapshotFileCount": 82,
+    "unchangedOriginalFiles": 82,
+    "unexpectedSourceChanges": [],
+    "unexpectedSourceAdditions": [],
+    "originalDeletions": [],
+    "activeLocalSkillFilesUnchanged": 49,
+    "errors": []
+  },
+  "stageActionCounts": {
+    "skillsInstalled": 0,
+    "agentsInstalledOrSpawned": 0,
+    "mcpRegistrations": 0,
+    "applicationCodeEdits": 0,
+    "applicationConfigurationOrManifestEdits": 0,
+    "originalPrototypeDeletions": 0,
+    "canonicalSourceDataChanges": 0,
+    "backendOrDatabaseWork": 0,
+    "dependencyInstallations": 0,
+    "remoteDeployments": 0,
+    "credentialValuesRead": 0
+  },
+  "counterEvidence": "No installation/account/backend tools invoked; source snapshot unchanged; active user skill-file hashes compared; full plugin cache/CVE certification not claimed",
+  "knownErrorsAndLimitations": [
+    "Sandbox public GitHub DNS failure resolved with read-only network permission",
+    "Initial sandbox loopback browser timeout resolved using loopback host process",
+    "Scratch wrapper Windows stdout encoding failed after successful build; logs retained, collector repaired",
+    "Scratch text-print helper cp1252 output failed; corrected to UTF-8 for source review",
+    "Git metadata absent",
+    "No current vulnerability scan",
+    "No calibrated assessment/readiness model",
+    "No new implementation acceptance tests run",
+    "Rejected nested UI archive not fully security/license cleared; deferred external references not approved"
+  ],
+  "authorityInputs": [
+    {
+      "filename": "PROJECT_CONTINUITY_AND_DOCUMENTATION_RULES_V1_0.md",
+      "originalPath": "C:\\Users\\ksari\\AppData\\Local\\Temp\\PROJECT_CONTINUITY_AND_DOCUMENTATION_RULES_V1_0.md",
+      "archivedPath": "docs/reviews/stage-1a/inputs/PROJECT_CONTINUITY_AND_DOCUMENTATION_RULES_V1_0.md",
+      "bytes": 5314,
+      "sha256": "5dff10e8d921c92992c0bd8c17548deec2d86b115ebd6857f3262448c674f20d",
+      "readCompletelyBeforeApplicationChanges": true
+    },
+    {
+      "filename": "APPROVED_PLATFORM_FEATURE_SCOPE_V1_0.md",
+      "originalPath": "C:\\Users\\ksari\\AppData\\Local\\Temp\\APPROVED_PLATFORM_FEATURE_SCOPE_V1_0.md",
+      "archivedPath": "docs/reviews/stage-1a/inputs/APPROVED_PLATFORM_FEATURE_SCOPE_V1_0.md",
+      "bytes": 9594,
+      "sha256": "2f2aa1ce48905f3ef6bf4302e0f0f4fd37d42d3f2472e5ac59ac9cffcb3d27fd",
+      "readCompletelyBeforeApplicationChanges": true
+    },
+    {
+      "filename": "CODEX_STAGE_1A_MASTER_EXECUTION_PROMPT_V1_0.md",
+      "originalPath": "C:\\Users\\ksari\\AppData\\Local\\Temp\\CODEX_STAGE_1A_MASTER_EXECUTION_PROMPT_V1_0.md",
+      "archivedPath": "docs/reviews/stage-1a/inputs/CODEX_STAGE_1A_MASTER_EXECUTION_PROMPT_V1_0.md",
+      "bytes": 10032,
+      "sha256": "45813cca1fc4b636c430c6a4f98b5d416e0b32997b9aa12f7c08788c27867d81",
+      "readCompletelyBeforeApplicationChanges": true
+    },
+    {
+      "filename": "DIAGNOSTIC_AND_DASHBOARD_CONTRACT_V1_0.md",
+      "originalPath": "C:\\Users\\ksari\\AppData\\Local\\Temp\\DIAGNOSTIC_AND_DASHBOARD_CONTRACT_V1_0.md",
+      "archivedPath": "docs/reviews/stage-1a/inputs/DIAGNOSTIC_AND_DASHBOARD_CONTRACT_V1_0.md",
+      "bytes": 7808,
+      "sha256": "d72df49ac6a5eba37bb46ed9b53fdf6205dcb898d5e3c74fd27cc91570c2172e",
+      "readCompletelyBeforeApplicationChanges": true
+    }
+  ],
+  "documentsProduced": [
+    {
+      "path": "docs/CHANGELOG.md",
+      "change": "ADDED",
+      "sha256": "06962d753ea2394dd7a5dfd54679ebac06755708105b1f1dde3812cc0354be50",
+      "note": ""
+    },
+    {
+      "path": "docs/DATA_CONTRACTS.md",
+      "change": "ADDED",
+      "sha256": "49097f609748ff5d595d97c0d28c516f531efbbb72ac3cad07890d906c733a14",
+      "note": ""
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "change": "ADDED",
+      "sha256": "959480054e69b7c5e4b75a33e6e6aaef761bd3c1bbeb4d1986d7c077ec0cd053",
+      "note": ""
+    },
+    {
+      "path": "docs/FEATURE_REGISTRY.md",
+      "change": "ADDED",
+      "sha256": "0657e94075df48413d8cba410ea8556800ab47eedeee24bcd20aab29f514f1f4",
+      "note": ""
+    },
+    {
+      "path": "docs/PROJECT_OVERVIEW.md",
+      "change": "ADDED",
+      "sha256": "36a92181080796ee9490dd5ae25bdd7f51e92d99a283862c63df8f0768ee77cf",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/AGENTS_MD_PROPOSAL.md",
+      "change": "ADDED",
+      "sha256": "d9b2d72e3440e0d5b2e2ddfd5d1d261d494bd4b26b8fea2939a63fb0c4ec8636",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/ARCHITECTURE_AND_ROUTES_PROPOSAL.md",
+      "change": "ADDED",
+      "sha256": "955c2213343d99021f2d74d2082f572cf5ad654dd2f4468a0f0da46185bb98d7",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/DASHBOARD_ACCEPTANCE_TEST_PLAN.md",
+      "change": "ADDED",
+      "sha256": "fd2fada907cc7ae498c7696327a461a1c5ffb775a1de3cfa8f8ed9d42a6aff32",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/DECISION_REQUIRED.md",
+      "change": "ADDED",
+      "sha256": "41d23e3e51d3ea530f357aa81d459b1affa597ab14bd79ce7e7747041ae66e35",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/DIAGNOSTIC_DYNAMIC_SOURCE_CONTRACT_PROPOSAL.md",
+      "change": "ADDED",
+      "sha256": "53cf9958c9e7f10c336812f40f163faf8e49b7a071d077cfce0f3f0ed15e0a24",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/AUTHORITATIVE_INPUTS.json",
+      "change": "ADDED",
+      "sha256": "8bda4ec4dceae7740b48f47722959e1b8b23d395f09bbdf00391d9e5aa1aa54c",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/BROWSER_SMOKE.json",
+      "change": "ADDED",
+      "sha256": "65c241558c97620d872855a6a3dd70235e9c3917e9e429ddc86f0642d43aa886",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/CHECK_EXECUTION.json",
+      "change": "ADDED",
+      "sha256": "752e65b0ce3b88ff7016bc9f8180fabfb4dfaa01d762324634615b6fbb602bc3",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/DEPENDENCY_LIFECYCLE_HOOKS.json",
+      "change": "ADDED",
+      "sha256": "2b7dfd263d4472fdd048336af7ae7e1fba85e5e04187a17bdbbb08aa56b011cb",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/DEPENDENCY_SUMMARY.json",
+      "change": "ADDED",
+      "sha256": "8357d220f726e993b772203ddb256d1069116c819785d281ceadfa21c8d1be28",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/ENVIRONMENT_PREFLIGHT.json",
+      "change": "ADDED",
+      "sha256": "8d2b6eb0d1c384afe02f7cf2bd727f9b63d80bc37d67d68c04857b2330def7e9",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/production_build.log",
+      "change": "ADDED",
+      "sha256": "4705529bc58497c1228f30d851b0f70e6a6a03f86e2d2d4f7f259750acf2f5cb",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/SKILL_SOURCE_EVIDENCE.json",
+      "change": "ADDED",
+      "sha256": "d37fd428f6f1bf0d3716f8bd0db7c5dbd1bd9f92d9194de29e35d8283bb219f3",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/SOURCE_SNAPSHOT_BEFORE.json",
+      "change": "ADDED",
+      "sha256": "7ce9e96d2fc07abaee6efe99a1106a6cfb72922e7aea91e6d9fbdef7aac925e3",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/test.log",
+      "change": "ADDED",
+      "sha256": "52f8107b39534fb53e778f805b8a2ce38b309987b22bf452e54fa1de7fb4f331",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/evidence/typescript.log",
+      "change": "ADDED",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/inputs/APPROVED_PLATFORM_FEATURE_SCOPE_V1_0.md",
+      "change": "ADDED",
+      "sha256": "2f2aa1ce48905f3ef6bf4302e0f0f4fd37d42d3f2472e5ac59ac9cffcb3d27fd",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/inputs/CODEX_STAGE_1A_MASTER_EXECUTION_PROMPT_V1_0.md",
+      "change": "ADDED",
+      "sha256": "45813cca1fc4b636c430c6a4f98b5d416e0b32997b9aa12f7c08788c27867d81",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/inputs/DIAGNOSTIC_AND_DASHBOARD_CONTRACT_V1_0.md",
+      "change": "ADDED",
+      "sha256": "d72df49ac6a5eba37bb46ed9b53fdf6205dcb898d5e3c74fd27cc91570c2172e",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/inputs/PROJECT_CONTINUITY_AND_DOCUMENTATION_RULES_V1_0.md",
+      "change": "ADDED",
+      "sha256": "5dff10e8d921c92992c0bd8c17548deec2d86b115ebd6857f3262448c674f20d",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/PERSONALIZED_DASHBOARD_METRIC_MATRIX.csv",
+      "change": "ADDED",
+      "sha256": "2b413cbc9651178762e1991aa145ea04d289df8cf61c1c2a8e5f820f4208251b",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/PROTOTYPE_REUSE_MATRIX.csv",
+      "change": "ADDED",
+      "sha256": "6e22d9fb879bb21d2a59cb216484978920580143494fba5f932b151fcdd790b9",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/README.md",
+      "change": "ADDED",
+      "sha256": "f56a1c374e9c39eacd077fe306cd8115f4af37120cfb6d6427be13e53052489c",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/SKILL_EVALUATION_MATRIX.csv",
+      "change": "ADDED",
+      "sha256": "4ef291da0a36ce812f452f7ab0dc913b65e47145f1955870905eadf0663c7662",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/SKILL_SECURITY_REVIEW.md",
+      "change": "ADDED",
+      "sha256": "5db065a60c92355589a0a31a2a49fe071074898cceceaded28e475b142e231e2",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/STAGE_1A_READINESS_REPORT.md",
+      "change": "ADDED",
+      "sha256": "bc4205827032fe4d922d57d5af0e92a9fb1a4d9be1cbd968303531532fd23358",
+      "note": ""
+    },
+    {
+      "path": "docs/reviews/stage-1a/STAGE_1A_VALIDATION_AND_CHANGE_MANIFEST.json",
+      "change": "ADDED",
+      "sha256": null,
+      "note": "Manifest self-hash intentionally omitted"
+    },
+    {
+      "path": "docs/reviews/stage-1a/STAGE_2_ENTRY_GATE_AND_SEQUENCE_DECISION.md",
+      "change": "ADDED",
+      "sha256": "dc80ee2a9835520b49550450d5317f16eb13b0f33723e51e8078aa60de6594be",
+      "note": ""
+    },
+    {
+      "path": "docs/ROUTES_AND_STATES.md",
+      "change": "ADDED",
+      "sha256": "98ade3846522af97545c0e987b226483bf902c0edc813307a3cedeafa1fb8980",
+      "note": ""
+    },
+    {
+      "path": "docs/UI_DESIGN_SYSTEM.md",
+      "change": "ADDED",
+      "sha256": "ac63ddd014184a522a5bd5dd1530b6f1c7d7323d7fdb80088d4f706998bc80ff",
+      "note": ""
+    }
+  ],
+  "exactModifiedFiles": [
+    "docs/CHANGELOG.md",
+    "docs/DATA_CONTRACTS.md",
+    "docs/DECISIONS.md",
+    "docs/FEATURE_REGISTRY.md",
+    "docs/PROJECT_OVERVIEW.md",
+    "docs/reviews/stage-1a/AGENTS_MD_PROPOSAL.md",
+    "docs/reviews/stage-1a/ARCHITECTURE_AND_ROUTES_PROPOSAL.md",
+    "docs/reviews/stage-1a/DASHBOARD_ACCEPTANCE_TEST_PLAN.md",
+    "docs/reviews/stage-1a/DECISION_REQUIRED.md",
+    "docs/reviews/stage-1a/DIAGNOSTIC_DYNAMIC_SOURCE_CONTRACT_PROPOSAL.md",
+    "docs/reviews/stage-1a/evidence/AUTHORITATIVE_INPUTS.json",
+    "docs/reviews/stage-1a/evidence/BROWSER_SMOKE.json",
+    "docs/reviews/stage-1a/evidence/CHECK_EXECUTION.json",
+    "docs/reviews/stage-1a/evidence/DEPENDENCY_LIFECYCLE_HOOKS.json",
+    "docs/reviews/stage-1a/evidence/DEPENDENCY_SUMMARY.json",
+    "docs/reviews/stage-1a/evidence/ENVIRONMENT_PREFLIGHT.json",
+    "docs/reviews/stage-1a/evidence/production_build.log",
+    "docs/reviews/stage-1a/evidence/SKILL_SOURCE_EVIDENCE.json",
+    "docs/reviews/stage-1a/evidence/SOURCE_SNAPSHOT_BEFORE.json",
+    "docs/reviews/stage-1a/evidence/test.log",
+    "docs/reviews/stage-1a/evidence/typescript.log",
+    "docs/reviews/stage-1a/inputs/APPROVED_PLATFORM_FEATURE_SCOPE_V1_0.md",
+    "docs/reviews/stage-1a/inputs/CODEX_STAGE_1A_MASTER_EXECUTION_PROMPT_V1_0.md",
+    "docs/reviews/stage-1a/inputs/DIAGNOSTIC_AND_DASHBOARD_CONTRACT_V1_0.md",
+    "docs/reviews/stage-1a/inputs/PROJECT_CONTINUITY_AND_DOCUMENTATION_RULES_V1_0.md",
+    "docs/reviews/stage-1a/PERSONALIZED_DASHBOARD_METRIC_MATRIX.csv",
+    "docs/reviews/stage-1a/PROTOTYPE_REUSE_MATRIX.csv",
+    "docs/reviews/stage-1a/README.md",
+    "docs/reviews/stage-1a/SKILL_EVALUATION_MATRIX.csv",
+    "docs/reviews/stage-1a/SKILL_SECURITY_REVIEW.md",
+    "docs/reviews/stage-1a/STAGE_1A_READINESS_REPORT.md",
+    "docs/reviews/stage-1a/STAGE_1A_VALIDATION_AND_CHANGE_MANIFEST.json",
+    "docs/reviews/stage-1a/STAGE_2_ENTRY_GATE_AND_SEQUENCE_DECISION.md",
+    "docs/ROUTES_AND_STATES.md",
+    "docs/UI_DESIGN_SYSTEM.md"
+  ],
+  "scopeNote": "Only docs/ added within project. Scratch audit scripts/copies outside project are validation tooling, not frontend implementation or skill installation. Prior root Memory.md/README/QA and all 82 original non-document files remain unchanged."
+}

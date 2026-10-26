@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "entries": [
+    {
+      "legacyAuditId": "G1",
+      "existingQuestionId": "G1",
+      "sourceLocation": "src/data.ts:8:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.g1.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "G2",
+      "existingQuestionId": "G2",
+      "sourceLocation": "src/data.ts:9:5",
+      "historicalReviewOutcome": "DISPUTED",
+      "candidateQuestionIds": [
+        "diagv1.a.g02.r1"
+      ],
+      "relationship": "REVISED_LLM_ASSISTED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "G3",
+      "existingQuestionId": "G3",
+      "sourceLocation": "src/data.ts:10:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.g3.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "G4",
+      "existingQuestionId": "G4",
+      "sourceLocation": "src/data.ts:11:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.g4.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "G5",
+      "existingQuestionId": "G5",
+      "sourceLocation": "src/data.ts:12:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.g5.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "G6",
+      "existingQuestionId": "G6",
+      "sourceLocation": "src/data.ts:13:5",
+      "historicalReviewOutcome": "DISPUTED",
+      "candidateQuestionIds": [
+        "diagv1.a.g06.r1"
+      ],
+      "relationship": "REVISED_LLM_ASSISTED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "V1",
+      "existingQuestionId": "V1",
+      "sourceLocation": "src/data.ts:16:5",
+      "historicalReviewOutcome": "DISPUTED",
+      "candidateQuestionIds": [
+        "diagv1.a.v01.r1"
+      ],
+      "relationship": "REVISED_LLM_ASSISTED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "V2",
+      "existingQuestionId": "V2",
+      "sourceLocation": "src/data.ts:17:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.v2.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "V3",
+      "existingQuestionId": "V3",
+      "sourceLocation": "src/data.ts:18:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.v3.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "V4",
+      "existingQuestionId": "V4",
+      "sourceLocation": "src/data.ts:19:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.v4.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "V5",
+      "existingQuestionId": "V5",
+      "sourceLocation": "src/data.ts:20:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.v5.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "V6",
+      "existingQuestionId": "V6",
+      "sourceLocation": "src/data.ts:21:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.v6.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "R1",
+      "existingQuestionId": "R1",
+      "sourceLocation": "src/data.ts:24:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "R2",
+      "existingQuestionId": "R2",
+      "sourceLocation": "src/data.ts:25:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "R3",
+      "existingQuestionId": "R3",
+      "sourceLocation": "src/data.ts:26:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "R4",
+      "existingQuestionId": "R4",
+      "sourceLocation": "src/data.ts:27:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "R5",
+      "existingQuestionId": "R5",
+      "sourceLocation": "src/data.ts:28:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "L1",
+      "existingQuestionId": "L1",
+      "sourceLocation": "src/data.ts:31:5",
+      "historicalReviewOutcome": "MEDIA_HOLD",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "L2",
+      "existingQuestionId": "L2",
+      "sourceLocation": "src/data.ts:32:5",
+      "historicalReviewOutcome": "MEDIA_HOLD",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "L3",
+      "existingQuestionId": "L3",
+      "sourceLocation": "src/data.ts:33:5",
+      "historicalReviewOutcome": "MEDIA_HOLD",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "L4",
+      "existingQuestionId": "L4",
+      "sourceLocation": "src/data.ts:34:5",
+      "historicalReviewOutcome": "MEDIA_HOLD",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "L5",
+      "existingQuestionId": "L5",
+      "sourceLocation": "src/data.ts:35:5",
+      "historicalReviewOutcome": "MEDIA_HOLD",
+      "candidateQuestionIds": [],
+      "relationship": "ARCHIVED_NOT_SELECTED",
+      "originalBytesChanged": false,
+      "note": "Historical garden-based Reading/Listening retained only in archive; new form-specific stimuli replace them in candidate forms."
+    },
+    {
+      "legacyAuditId": "TASK-WRITING",
+      "existingQuestionId": null,
+      "sourceLocation": "src/data.ts:57; src/features/Diagnostic.tsx:257-264",
+      "historicalReviewOutcome": "PRODUCTIVE_UNSCORED",
+      "candidateQuestionIds": [
+        "diagv1.a.writing01.r1"
+      ],
+      "relationship": "REUSED_PROMPT",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "TASK-SPEAKING",
+      "existingQuestionId": null,
+      "sourceLocation": "src/data.ts:59; src/features/Diagnostic.tsx:267-279",
+      "historicalReviewOutcome": "PRODUCTIVE_UNSCORED",
+      "candidateQuestionIds": [
+        "diagv1.a.speaking01.r1"
+      ],
+      "relationship": "REUSED_PROMPT",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "I1",
+      "existingQuestionId": "I1",
+      "sourceLocation": "src/data.ts:40:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.i1.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "I2",
+      "existingQuestionId": "I2",
+      "sourceLocation": "src/data.ts:41:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.i2.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "I3",
+      "existingQuestionId": "I3",
+      "sourceLocation": "src/data.ts:42:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.i3.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "I4",
+      "existingQuestionId": "I4",
+      "sourceLocation": "src/data.ts:43:5",
+      "historicalReviewOutcome": "DISPUTED",
+      "candidateQuestionIds": [
+        "diagv1.a.i04.r1"
+      ],
+      "relationship": "REVISED_LLM_ASSISTED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    },
+    {
+      "legacyAuditId": "I5",
+      "existingQuestionId": "I5",
+      "sourceLocation": "src/data.ts:44:5",
+      "historicalReviewOutcome": "SUPPORTED_CANDIDATE",
+      "candidateQuestionIds": [
+        "diagv1.a.i5.r1"
+      ],
+      "relationship": "REUSED_WORDING_OPTIONS_REORDERED",
+      "originalBytesChanged": false,
+      "note": "New option order/IDs do not overwrite historical answer-index identities."
+    }
+  ]
+}

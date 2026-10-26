@@ -1,0 +1,716 @@
+[
+  {
+    "repository": "ComposioHQ/awesome-claude-skills",
+    "requestedBranch": "master",
+    "commit": "be2a406907dbc61b73e6827ded415c96139d13a2",
+    "commitDate": "2026-07-24T07:48:01Z",
+    "treeEntries": 2048,
+    "treeTruncated": false,
+    "groups": {
+      "webapp-testing": [
+        "webapp-testing/LICENSE.txt",
+        "webapp-testing/SKILL.md",
+        "webapp-testing/examples/console_logging.py",
+        "webapp-testing/examples/element_discovery.py",
+        "webapp-testing/examples/static_html_automation.py",
+        "webapp-testing/scripts/with_server.py"
+      ],
+      "artifacts-builder": [
+        "artifacts-builder/LICENSE.txt",
+        "artifacts-builder/SKILL.md",
+        "artifacts-builder/scripts/bundle-artifact.sh",
+        "artifacts-builder/scripts/init-artifact.sh",
+        "artifacts-builder/scripts/shadcn-components.tar.gz"
+      ]
+    },
+    "reviewedBundleFiles": [
+      {
+        "path": "webapp-testing/LICENSE.txt",
+        "bytes": 11357,
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      },
+      {
+        "path": "webapp-testing/SKILL.md",
+        "bytes": 3913,
+        "sha256": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2"
+      },
+      {
+        "path": "webapp-testing/examples/console_logging.py",
+        "bytes": 1027,
+        "sha256": "ea46877289acb82da7e7ce59d0bc37c8977cd57e2a006d0c88d7a1c625bf95da"
+      },
+      {
+        "path": "webapp-testing/examples/element_discovery.py",
+        "bytes": 1463,
+        "sha256": "d63c89604a22f8845d724e95dda45db49b1bf57c25ce0a83afbb7b8da3d402f0"
+      },
+      {
+        "path": "webapp-testing/examples/static_html_automation.py",
+        "bytes": 953,
+        "sha256": "9d533aafb875ee3ab8b8ebf8f5b9003ac8d999da3d09b285cce252e623140064"
+      },
+      {
+        "path": "webapp-testing/scripts/with_server.py",
+        "bytes": 3693,
+        "sha256": "b0dcf4918935b795f4eda9821579b9902119235ff4447f687a30286e7d0925fd"
+      },
+      {
+        "path": "artifacts-builder/LICENSE.txt",
+        "bytes": 11357,
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      },
+      {
+        "path": "artifacts-builder/SKILL.md",
+        "bytes": 3079,
+        "sha256": "8455a64e627d203fd7b43df64c83d8870cb98907aae21edce4ec8eeef651d850"
+      },
+      {
+        "path": "artifacts-builder/scripts/bundle-artifact.sh",
+        "bytes": 1517,
+        "sha256": "abf0e480bf6585b56fab8526a407dfb7dc740812bddd70c636e1e8f3df5f9618"
+      },
+      {
+        "path": "artifacts-builder/scripts/init-artifact.sh",
+        "bytes": 9924,
+        "sha256": "355e5dd4382aaaee91f01f1627eaeab30b2676ffa8d9b3ec328a1ae450ebccaa"
+      },
+      {
+        "path": "artifacts-builder/scripts/shadcn-components.tar.gz",
+        "bytes": 19967,
+        "sha256": "1296f069e825de7933de7e8ac63672495cacce3f88f2dc45554dbcddbcbca60f"
+      }
+    ],
+    "externalCodeExecuted": false,
+    "installed": false,
+    "rejectedNestedComponentArchive": [
+      {
+        "path": "components/ui/aspect-ratio.tsx",
+        "bytes": 140,
+        "sha256": "08b0aa0b05efc573c7d63363c03e83d4b101bfeb54140764e96ddea30659cfcc",
+        "imports": [
+          "@radix-ui/react-aspect-ratio"
+        ]
+      },
+      {
+        "path": "components/ui/tabs.tsx",
+        "bytes": 1877,
+        "sha256": "6f74706bc6b53f9e4bcebb5e7ab8743b616aef181edc7758b8ee905f9b2fdcd7",
+        "imports": [
+          "react",
+          "@radix-ui/react-tabs",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/card.tsx",
+        "bytes": 1828,
+        "sha256": "525c4bb2c051987be64df0e92e1d90174912b219bf541e24ffbc4a3406de49e8",
+        "imports": [
+          "react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/slider.tsx",
+        "bytes": 1037,
+        "sha256": "234e38fef59169bd02d8f5b56ca02e5ec13a0bd6846c328927b924e1299f7fb0",
+        "imports": [
+          "react",
+          "@radix-ui/react-slider",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/popover.tsx",
+        "bytes": 1356,
+        "sha256": "69f74cdd76588a1249522ff8009e044eee6080ad8cf26cb08d7a5fc3281f0255",
+        "imports": [
+          "react",
+          "@radix-ui/react-popover",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/progress.tsx",
+        "bytes": 778,
+        "sha256": "62867bfee64030a1b58ff7e18623893d1b626eab65340f160cdedf88b8b52200",
+        "imports": [
+          "react",
+          "@radix-ui/react-progress",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/toaster.tsx",
+        "bytes": 786,
+        "sha256": "05e5b3eb44dce90b44e42ca3b4bdc582c5f4bf1652e38237ff7276aa6bd66d8f",
+        "imports": [
+          "@/hooks/use-toast",
+          "@/components/ui/toast"
+        ]
+      },
+      {
+        "path": "components/ui/hover-card.tsx",
+        "bytes": 1251,
+        "sha256": "dcb793b8b1202b1634d791a993acadca0cfc3043a93b98c91a627fbff794f384",
+        "imports": [
+          "react",
+          "@radix-ui/react-hover-card",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/sheet.tsx",
+        "bytes": 4280,
+        "sha256": "363f8e06aa5b53c6475f445117f60fa9294be79e9e4f1f5bf70886800188124e",
+        "imports": [
+          "react",
+          "@radix-ui/react-dialog",
+          "class-variance-authority",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/scroll-area.tsx",
+        "bytes": 1642,
+        "sha256": "d7d02600effca55d0dcadce8c09c97ebddda3a19c5fa1d52dc9f6f727b26c6b1",
+        "imports": [
+          "react",
+          "@radix-ui/react-scroll-area",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/resizable.tsx",
+        "bytes": 1709,
+        "sha256": "be7df63b7584141a34dcf86648e2528bbd56125661ef0f31850bb961a8e6f9a3",
+        "imports": [
+          "lucide-react",
+          "react-resizable-panels",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/label.tsx",
+        "bytes": 724,
+        "sha256": "2eac8fbb04002c42b0fbc4062d20d131e421796eaf65c37d2049e29e42ecbc5a",
+        "imports": [
+          "react",
+          "@radix-ui/react-label",
+          "class-variance-authority",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/sonner.tsx",
+        "bytes": 880,
+        "sha256": "f93091b355ef5bea646755da13b6f8b87df1be2da4cb0679fe123be99d3d5f04",
+        "imports": [
+          "next-themes",
+          "sonner"
+        ]
+      },
+      {
+        "path": "components/ui/navigation-menu.tsx",
+        "bytes": 5124,
+        "sha256": "a06d96a582ac207ffcd38445d773c05e841d646efb185b5e9b65f73e5bd388c7",
+        "imports": [
+          "react",
+          "@radix-ui/react-navigation-menu",
+          "class-variance-authority",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/accordion.tsx",
+        "bytes": 2001,
+        "sha256": "dcbfb3243a26096fc3e5f54039ccb5c4c23d9bb79a4d5846b4be75bf912f07d9",
+        "imports": [
+          "react",
+          "@radix-ui/react-accordion",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/drawer.tsx",
+        "bytes": 3021,
+        "sha256": "774316527ddc577fc54012a0c898ebcf7cf8f11152126e550828b53004a5b70c",
+        "imports": [
+          "react",
+          "vaul",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/tooltip.tsx",
+        "bytes": 1253,
+        "sha256": "da5e88fd55b605c2f6960813775bd99c635a69c71657b3f7ad5905e7a9c53e04",
+        "imports": [
+          "react",
+          "@radix-ui/react-tooltip",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/alert.tsx",
+        "bytes": 1598,
+        "sha256": "5950ac01377e7eedc94b00eb3fee678745e4cc1a72b5343867f0733d07db6660",
+        "imports": [
+          "react",
+          "class-variance-authority",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/switch.tsx",
+        "bytes": 1162,
+        "sha256": "ab2d009e0fa7366f47ae1a6e0ca35d0aac55c6264c5f61718e12366c196163b4",
+        "imports": [
+          "react",
+          "@radix-ui/react-switch",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/calendar.tsx",
+        "bytes": 7555,
+        "sha256": "12bf2e464080393f253d70ab23acdc126c963a68e0c45d4a7f2b8941552aa404",
+        "imports": [
+          "react",
+          "lucide-react",
+          "react-day-picker",
+          "@/lib/utils",
+          "@/components/ui/button"
+        ]
+      },
+      {
+        "path": "components/ui/breadcrumb.tsx",
+        "bytes": 2712,
+        "sha256": "c3d3dcb0d82fc5e91d8830bac7fead905686fe876f1f42c3ed872bb0a6b6584e",
+        "imports": [
+          "react",
+          "@radix-ui/react-slot",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/radio-group.tsx",
+        "bytes": 1410,
+        "sha256": "9ba7808b7404cdf2159c81883a39290033bc4308f2978eb80797c92b87421301",
+        "imports": [
+          "react",
+          "@radix-ui/react-radio-group",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/command.tsx",
+        "bytes": 4887,
+        "sha256": "5a57ebc119f2357b097098d22865d45de8fda623ee88fe98b99999838c13633b",
+        "imports": [
+          "react",
+          "@radix-ui/react-dialog",
+          "cmdk",
+          "lucide-react",
+          "@/lib/utils",
+          "@/components/ui/dialog"
+        ]
+      },
+      {
+        "path": "components/ui/toggle-group.tsx",
+        "bytes": 1739,
+        "sha256": "11592e3f7673ef518e2f82b939dc4752fe5ef7953f487f35595931c3d16fc37d",
+        "imports": [
+          "react",
+          "@radix-ui/react-toggle-group",
+          "class-variance-authority",
+          "@/lib/utils",
+          "@/components/ui/toggle"
+        ]
+      },
+      {
+        "path": "components/ui/avatar.tsx",
+        "bytes": 1405,
+        "sha256": "fb33bc4865b74d1f0239b1782dbdc4cc2d38690ba6e245e9e3b024c256b14c2b",
+        "imports": [
+          "react",
+          "@radix-ui/react-avatar",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/menubar.tsx",
+        "bytes": 8622,
+        "sha256": "9e6f0abc04c608d29568be5b3f495815c4d708b5fd5b1e5797a2fb41b6f6b376",
+        "imports": [
+          "react",
+          "@radix-ui/react-menubar",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/dialog.tsx",
+        "bytes": 3835,
+        "sha256": "f9c982ed8114c253c6ca738043d3f455e89c6d65569e90c9415776d6b4d6be14",
+        "imports": [
+          "react",
+          "@radix-ui/react-dialog",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/badge.tsx",
+        "bytes": 1140,
+        "sha256": "dab689d836ad3292b41e7f4986b4e68e5d45c6903e4aeaae8972a82d4aebec29",
+        "imports": [
+          "react",
+          "class-variance-authority",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/table.tsx",
+        "bytes": 2859,
+        "sha256": "a4a6972c2d47d465d7f02c1dc4a6cbfeda7a97e46479c1b0cebdaf26bf9b497a",
+        "imports": [
+          "react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/separator.tsx",
+        "bytes": 770,
+        "sha256": "995c54f1c5c688f712a675fe35d55bcada2b31dba561dcc71553a1ad601e59ec",
+        "imports": [
+          "react",
+          "@radix-ui/react-separator",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "bytes": 1902,
+        "sha256": "c2b999a96781e6c932632bd089095368e973bf5602e1b1a62156b7d2b43f1e84",
+        "imports": [
+          "react",
+          "@radix-ui/react-slot",
+          "class-variance-authority",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/toggle.tsx",
+        "bytes": 1486,
+        "sha256": "955fa1bb97505b7a8bba3f7cff1991035a9afa0e1113f5d598147e6369dbf44b",
+        "imports": [
+          "react",
+          "@radix-ui/react-toggle",
+          "class-variance-authority",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/toast.tsx",
+        "bytes": 4832,
+        "sha256": "723d1642dc0505f598126581b27cf8a9f2a1ee383af5b3af06d3b908d9728e4a",
+        "imports": [
+          "react",
+          "@radix-ui/react-toast",
+          "class-variance-authority",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/checkbox.tsx",
+        "bytes": 1026,
+        "sha256": "da3ac46877c697a12e04c8b84e18d408f54c48faf8ccef710231e4f676ddd35e",
+        "imports": [
+          "react",
+          "@radix-ui/react-checkbox",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/collapsible.tsx",
+        "bytes": 315,
+        "sha256": "6f5be8ba164c177759bf63cc25ad4d49391f162f6784ba624d72e5d5c0c0dde2",
+        "imports": [
+          "@radix-ui/react-collapsible"
+        ]
+      },
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "bytes": 7606,
+        "sha256": "dc109123ecd59af01d07aa9f3a8e8a7085bd3f337388c5369799ab1ce6c2d45f",
+        "imports": [
+          "react",
+          "@radix-ui/react-dropdown-menu",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/select.tsx",
+        "bytes": 5731,
+        "sha256": "b8936f21d1af9539d43453a96ac1b65cb188f5d2f8d52e05d6eaaded282b794b",
+        "imports": [
+          "react",
+          "@radix-ui/react-select",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/textarea.tsx",
+        "bytes": 649,
+        "sha256": "ec7c92aaed80f6923a7caa4bfe4eead395b50a7001504fd7fbb0b9381804dae9",
+        "imports": [
+          "react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/input.tsx",
+        "bytes": 768,
+        "sha256": "6299a6a387dc55e528aec4342deaea0b83f1ea3a365c135a31a18ee55334f441",
+        "imports": [
+          "react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/skeleton.tsx",
+        "bytes": 266,
+        "sha256": "87608e7cc815ad3d88e0b9de6c402bb37b58ea1b38636cf69709da1baff6e334",
+        "imports": [
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/context-menu.tsx",
+        "bytes": 7420,
+        "sha256": "dc50f646230af939330e709d1a4f0e6d887e5209ee191451df29ce6bc7ccfca3",
+        "imports": [
+          "react",
+          "@radix-ui/react-context-menu",
+          "lucide-react",
+          "@/lib/utils"
+        ]
+      },
+      {
+        "path": "components/ui/form.tsx",
+        "bytes": 4118,
+        "sha256": "f57dda04514eb2c4bc325cc89eb29513a0f681bb841199f390aae0af23b43fe6",
+        "imports": [
+          "react",
+          "@radix-ui/react-label",
+          "@radix-ui/react-slot",
+          "react-hook-form",
+          "@/lib/utils",
+          "@/components/ui/label"
+        ]
+      },
+      {
+        "path": "components/ui/carousel.tsx",
+        "bytes": 6224,
+        "sha256": "69686986376cbc02a5f907b1ca8a7a759808c4e8df1200517c57ec749e8484cd",
+        "imports": [
+          "react",
+          "embla-carousel-react",
+          "lucide-react",
+          "@/lib/utils",
+          "@/components/ui/button"
+        ]
+      },
+      {
+        "path": "lib/utils.ts",
+        "bytes": 166,
+        "sha256": "7c8c3dfc0cdd370d44932828eb067ef771c8fe7996693221d5d4b90af6d54f2d",
+        "imports": [
+          "clsx",
+          "tailwind-merge"
+        ]
+      },
+      {
+        "path": "hooks/use-toast.ts",
+        "bytes": 3895,
+        "sha256": "5aab0623ee24bddf9420c259a23a06996292e38ea70eccbac2715516f6d01a0b",
+        "imports": [
+          "react",
+          "@/components/ui/toast"
+        ]
+      }
+    ],
+    "nestedArchiveReviewScope": "SHA/import inventory only; not fully safety/license cleared; rejected candidate"
+  },
+  {
+    "repository": "sickn33/agentic-awesome-skills",
+    "requestedBranch": "main",
+    "commit": "dee7acce0658c35cb276154892700811affcfdb2",
+    "commitDate": "2026-10-23T06:48:35Z",
+    "treeEntries": 40157,
+    "treeTruncated": false,
+    "groups": {
+      "skills/react-patterns": [
+        "skills/react-patterns/SKILL.md"
+      ],
+      "skills/fixing-accessibility": [
+        "skills/fixing-accessibility/SKILL.md"
+      ],
+      "skills/api-design-principles": [
+        "skills/api-design-principles/SKILL.md",
+        "skills/api-design-principles/assets/api-design-checklist.md",
+        "skills/api-design-principles/assets/rest-api-template.py",
+        "skills/api-design-principles/references/graphql-schema-design.md",
+        "skills/api-design-principles/references/rest-best-practices.md",
+        "skills/api-design-principles/resources/implementation-playbook.md"
+      ],
+      "skills/architecture-decision-records": [
+        "skills/architecture-decision-records/SKILL.md"
+      ],
+      "skills/systematic-debugging": [
+        "skills/systematic-debugging/CREATION-LOG.md",
+        "skills/systematic-debugging/SKILL.md",
+        "skills/systematic-debugging/condition-based-waiting-example.ts",
+        "skills/systematic-debugging/condition-based-waiting.md",
+        "skills/systematic-debugging/defense-in-depth.md",
+        "skills/systematic-debugging/find-polluter.sh",
+        "skills/systematic-debugging/root-cause-tracing.md",
+        "skills/systematic-debugging/test-academic.md",
+        "skills/systematic-debugging/test-pressure-1.md",
+        "skills/systematic-debugging/test-pressure-2.md",
+        "skills/systematic-debugging/test-pressure-3.md"
+      ]
+    },
+    "reviewedBundleFiles": [
+      {
+        "path": "skills/react-patterns/SKILL.md",
+        "bytes": 4572,
+        "sha256": "ed22416448bd3390a78764c3f121eb46b41f503b420f3eec3b4688c4ca28a82b"
+      },
+      {
+        "path": "skills/fixing-accessibility/SKILL.md",
+        "bytes": 5617,
+        "sha256": "e59eb812d22f4057e84a186922646fe7fc214657b6181c4f4de35b9299e1cdcc"
+      },
+      {
+        "path": "skills/api-design-principles/SKILL.md",
+        "bytes": 1793,
+        "sha256": "9e3a261c94e6b67e386a0c58532a4aedd924683bb8d6bde6bf90c5337a91195d"
+      },
+      {
+        "path": "skills/api-design-principles/assets/api-design-checklist.md",
+        "bytes": 3884,
+        "sha256": "ef98cb8910cdc555514198df7becc6de8b04e1a98e2291b1440bc62e14cd07e5"
+      },
+      {
+        "path": "skills/api-design-principles/assets/rest-api-template.py",
+        "bytes": 5323,
+        "sha256": "b359cda817740ee2cd3c9a901d7d5a14178cc0e2dcb46b75af053e5cc4d6012c"
+      },
+      {
+        "path": "skills/api-design-principles/references/graphql-schema-design.md",
+        "bytes": 9005,
+        "sha256": "0f10cbe2f3d787be9de4ab8dcc88444ac36ab69786973666a229fdbffeb01638"
+      },
+      {
+        "path": "skills/api-design-principles/references/rest-best-practices.md",
+        "bytes": 7571,
+        "sha256": "675fbafdd5a6d5ac2c17ab97e17c90aa0a10c2a5608860128a8be14764130fae"
+      },
+      {
+        "path": "skills/api-design-principles/resources/implementation-playbook.md",
+        "bytes": 13019,
+        "sha256": "01a77e3f69a3e8d82a5ff49fa8ab1a1d0e16046af21c78f2c800e15e397b2321"
+      },
+      {
+        "path": "skills/architecture-decision-records/SKILL.md",
+        "bytes": 13312,
+        "sha256": "081585b1668ffa2691dc0616b86313c8329afda733d3dfb055f5ab6665d534e1"
+      },
+      {
+        "path": "skills/systematic-debugging/CREATION-LOG.md",
+        "bytes": 4491,
+        "sha256": "8e303984dbbecb064fdd5fb7a4179ad6448605152a8508a30a6a47bfbc347050"
+      },
+      {
+        "path": "skills/systematic-debugging/SKILL.md",
+        "bytes": 11372,
+        "sha256": "2043610969aecd8cb2c9526c1b1a07419721c5f6ba436d0954a18fd5af25ffc8"
+      },
+      {
+        "path": "skills/systematic-debugging/condition-based-waiting-example.ts",
+        "bytes": 2239,
+        "sha256": "3b3c9a69cdcb0d1432a9415355017708d263c46ce40e1b342c7153f54ce35e15"
+      },
+      {
+        "path": "skills/systematic-debugging/condition-based-waiting.md",
+        "bytes": 4043,
+        "sha256": "8216dfa7b998a26db6e7d8a6ca402b54007e85935bbbce9d10dea5c85f6ef696"
+      },
+      {
+        "path": "skills/systematic-debugging/defense-in-depth.md",
+        "bytes": 4430,
+        "sha256": "699a39eea90a7ba67c854dd30cb7792ab9be45079dbf465b43bd4664ea9d2814"
+      },
+      {
+        "path": "skills/systematic-debugging/find-polluter.sh",
+        "bytes": 3529,
+        "sha256": "d05b4922ce3909ed1abd85a60a6dfce3b57ab41434b001375df4a6bd35a7eecd"
+      },
+      {
+        "path": "skills/systematic-debugging/root-cause-tracing.md",
+        "bytes": 6037,
+        "sha256": "ca7445f1351528083d394c5f333d4e78c52274a2a469fb8e65474a2b37cb3a2a"
+      },
+      {
+        "path": "skills/systematic-debugging/test-academic.md",
+        "bytes": 876,
+        "sha256": "1e4ac55ef3069e7fba7d68f3c361d4f281e211d7b3ebb32e57d7bde0fe978681"
+      },
+      {
+        "path": "skills/systematic-debugging/test-pressure-1.md",
+        "bytes": 2123,
+        "sha256": "fb898817b4c6cc9aeab8facb558f760708baf94e79916b534bafc5a7fc947faa"
+      },
+      {
+        "path": "skills/systematic-debugging/test-pressure-2.md",
+        "bytes": 2506,
+        "sha256": "56cf0ae6a7330d57fd56fdccde739e8d6375852b8931ade40c185417e299ab9b"
+      },
+      {
+        "path": "skills/systematic-debugging/test-pressure-3.md",
+        "bytes": 2915,
+        "sha256": "980963c46434e54181b885998a4ec5640cb28a14b6dae86da108d5801b257366"
+      }
+    ],
+    "externalCodeExecuted": false,
+    "installed": false,
+    "upstreamAccessibilityLicense": {
+      "repository": "ibelick/ui-skills",
+      "commit": "55363c305097d4c84487bd5f323d29b3f067bf72",
+      "file": "LICENSE",
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    },
+    "missingRelativeReferences": [
+      "skills/api-design-principles/references/api-versioning-strategies.md",
+      "skills/api-design-principles/assets/graphql-schema-template.graphql",
+      "skills/api-design-principles/scripts/openapi-generator.py"
+    ],
+    "unreviewedExternalRequirements": [
+      "Referenced test-driven-development skill",
+      "External Lace project interfaces",
+      "React-patterns external image (not fetched)",
+      "Catalog installer/CLI transitive distribution; not selected"
+    ]
+  }
+]

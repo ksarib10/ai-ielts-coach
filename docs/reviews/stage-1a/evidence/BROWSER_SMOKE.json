@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-23",
+  "scope": "Read-only isolated production build; no credentials, demo seed, signup, microphone, learner-state edit or data reset",
+  "origin": "http://127.0.0.1:4387",
+  "checks": [
+    {
+      "id": "B01",
+      "observed": "Landing rendered with h1 and Dilnoza sample label; viewportWidth=1274, documentWidth=1274",
+      "result": "PASS_WITHIN_SMOKE_SCOPE"
+    },
+    {
+      "id": "B02",
+      "observed": "Log in link opened #/login; labeled Email/Password and explicit demo notice visible; nothing submitted",
+      "result": "PASS_WITHIN_SMOKE_SCOPE"
+    },
+    {
+      "id": "B03",
+      "observed": "Unauthenticated #/dashboard navigation returned to #/ landing",
+      "result": "PASS_WITHIN_SMOKE_SCOPE"
+    },
+    {
+      "id": "B04",
+      "observed": "IAB error/warn log query returned empty array",
+      "result": "PASS_WITHIN_SMOKE_SCOPE"
+    }
+  ],
+  "notTested": [
+    "New versioned provider/metric implementation",
+    "New end-to-end scenarios",
+    "Dark theme (absent)",
+    "Full responsive/a11y certification",
+    "Physical device/microphone"
+  ],
+  "initialIssue": "Sandbox loopback preview timed out; read-only loopback host process permission resolved it",
+  "cleanup": {
+    "temporaryInspectionTabClosed": true,
+    "loopbackServerStopped": true
+  },
+  "httpObservation": {
+    "applicationAssets": "HTML, JS and CSS returned 200",
+    "minorKnownIssue": "/favicon.ico returned 404; source not modified under Stage 1A"
+  }
+}

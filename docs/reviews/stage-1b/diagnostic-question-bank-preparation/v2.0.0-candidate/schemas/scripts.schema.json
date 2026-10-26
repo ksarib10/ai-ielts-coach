@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiielts.invalid/candidate-schemas/scripts.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "bankVersion": {
+      "const": "diagnostic-v1-bank.2.0.0-candidate"
+    },
+    "status": {
+      "const": "CANDIDATE_NOT_APPROVED"
+    },
+    "scripts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stimulusId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "formId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mediaId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scriptVersion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "segments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "segmentId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "verifiedStartMs": {
+                  "type": "null"
+                },
+                "verifiedEndMs": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "segmentId",
+                "text",
+                "verifiedStartMs",
+                "verifiedEndMs"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 5,
+            "maxItems": 5
+          },
+          "productionStatus": {
+            "const": "NOT_PRODUCED"
+          },
+          "audioSha256": {
+            "type": "null"
+          },
+          "reviewer": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "stimulusId",
+          "formId",
+          "mediaId",
+          "scriptVersion",
+          "title",
+          "segments",
+          "productionStatus",
+          "audioSha256",
+          "reviewer"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "bankVersion",
+    "status",
+    "scripts"
+  ],
+  "additionalProperties": false
+}

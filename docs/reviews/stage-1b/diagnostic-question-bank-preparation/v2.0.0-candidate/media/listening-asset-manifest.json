@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "assets": [
+    {
+      "mediaId": "media.a.listening.r1",
+      "stimulusId": "stim.a.listening.r1",
+      "formId": "form-a",
+      "assetState": "MISSING",
+      "requiredAssetFilename": "media.a.listening.r1.wav",
+      "actualAssetPath": null,
+      "audioSha256": null,
+      "actualDurationMs": null,
+      "scriptVersion": "script.1-candidate",
+      "scriptDigest": "5d2b8154ce4fe4708c1566a320f9921cd4ea53d848a8696e2960a1a5597065e2",
+      "affectedQuestionIds": [
+        "diagv1.a.l01.r1",
+        "diagv1.a.l02.r1",
+        "diagv1.a.l03.r1",
+        "diagv1.a.l04.r1",
+        "diagv1.a.l05.r1"
+      ],
+      "productionRequirements": {
+        "format": "WAV PCM16 mono 44100Hz preferred; consistent voice, no music or sound-effect answer cues",
+        "reading": "Read all script segments verbatim in order; do not read headings, keys or questions; preserve contrast markers and number meanings",
+        "pace": "Clear natural speech; target130–150 words/minute is a production guideline, not measured duration",
+        "voice": "Human recording or separately approved TTS; record performer/engine/version, consent/license and redistribution rights; no voice impersonation",
+        "editing": "Remove accidental long gaps only; no semantic cuts; assign new media version/digest for any re-recording"
+      },
+      "verificationRequirements": [
+        "Check complete PCM decoding and real duration after production.",
+        "Independent named human listens to exact hashed final WAV and verifies verbatim transcript.",
+        "Record verified segment start/end timecodes and key evidence span for each affected item.",
+        "Review audibility, ambiguity, number/contrast clarity, accidental answer cues and device playback.",
+        "Approve voice/source/redistribution rights and accessibility/replay/interruption policy.",
+        "Only then record reviewer,date,hash and release approval; missing evidence fails closed."
+      ],
+      "verification": {
+        "auditoryReviewer": null,
+        "verifiedAt": null,
+        "rightsRecord": null,
+        "itemAlignmentApproved": false,
+        "scoringApproved": false
+      }
+    },
+    {
+      "mediaId": "media.b.listening.r1",
+      "stimulusId": "stim.b.listening.r1",
+      "formId": "form-b",
+      "assetState": "MISSING",
+      "requiredAssetFilename": "media.b.listening.r1.wav",
+      "actualAssetPath": null,
+      "audioSha256": null,
+      "actualDurationMs": null,
+      "scriptVersion": "script.1-candidate",
+      "scriptDigest": "2754a183f61e993f037cc16f5a13f095103780bbc3a72be128277373afa49943",
+      "affectedQuestionIds": [
+        "diagv1.b.l01.r1",
+        "diagv1.b.l02.r1",
+        "diagv1.b.l03.r1",
+        "diagv1.b.l04.r1",
+        "diagv1.b.l05.r1"
+      ],
+      "productionRequirements": {
+        "format": "WAV PCM16 mono 44100Hz preferred; consistent voice, no music or sound-effect answer cues",
+        "reading": "Read all script segments verbatim in order; do not read headings, keys or questions; preserve contrast markers and number meanings",
+        "pace": "Clear natural speech; target130–150 words/minute is a production guideline, not measured duration",
+        "voice": "Human recording or separately approved TTS; record performer/engine/version, consent/license and redistribution rights; no voice impersonation",
+        "editing": "Remove accidental long gaps only; no semantic cuts; assign new media version/digest for any re-recording"
+      },
+      "verificationRequirements": [
+        "Check complete PCM decoding and real duration after production.",
+        "Independent named human listens to exact hashed final WAV and verifies verbatim transcript.",
+        "Record verified segment start/end timecodes and key evidence span for each affected item.",
+        "Review audibility, ambiguity, number/contrast clarity, accidental answer cues and device playback.",
+        "Approve voice/source/redistribution rights and accessibility/replay/interruption policy.",
+        "Only then record reviewer,date,hash and release approval; missing evidence fails closed."
+      ],
+      "verification": {
+        "auditoryReviewer": null,
+        "verifiedAt": null,
+        "rightsRecord": null,
+        "itemAlignmentApproved": false,
+        "scoringApproved": false
+      }
+    }
+  ],
+  "historicalAudio": {
+    "path": "public/listening-diagnostic.wav",
+    "sha256": "0e6c831770433da34f962cb03f9d4ddea33b335316f47b5f32b1640457dcd3c2",
+    "status": "EXCLUDED_SEMANTIC_ALIGNMENT_UNVERIFIED",
+    "reason": "Garden audio is not an audio source for either new script. Physical integrity from Step2 does not imply alignment or rights."
+  }
+}

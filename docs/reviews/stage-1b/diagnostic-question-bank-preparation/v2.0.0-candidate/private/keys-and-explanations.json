@@ -1,0 +1,1467 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "diagnostic-v1-bank.2.0.0-candidate",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "scoringPolicyVersion": "raw-single-choice.2-candidate",
+  "approvalStatus": "PENDING_HUMAN",
+  "entries": [
+    {
+      "questionId": "diagv1.a.g1.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.905bcf0725d7ba9afadb",
+      "explanation": "B is the only standard complete present-simple sentence: singular subject agrees with goes. Other options lack agreement or auxiliary. Generic stem repeats G5, but options/construct differ; not a duplicated complete item.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.cd8ea76ca57f6b1e19b6",
+          "rationale": "Base go lacks third-person singular agreement."
+        },
+        {
+          "optionId": "opt.ecd7bcd3a0e0d67eafe2",
+          "rationale": "Going needs an auxiliary in a complete finite clause."
+        },
+        {
+          "optionId": "opt.7d147079f7f11ba989f2",
+          "rationale": "Gone needs an auxiliary and is not simple present."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:8:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g02.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.10c8262aa12874691ab7",
+      "explanation": "Have studied is the present perfect simple form. The instruction fixes the target and the context explicitly continues to now.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.5cb0c4bfce363e4b420b",
+          "rationale": "Past simple is not the requested present perfect form."
+        },
+        {
+          "optionId": "opt.89ca258553922c832e25",
+          "rationale": "This is present continuous, not present perfect simple."
+        },
+        {
+          "optionId": "opt.13390d6210734dc19f58",
+          "rationale": "Past perfect uses a past reference point, not the requested form."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form A G02 revision of historical G2",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g3.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.731070e2e90d897c2897",
+      "explanation": "B is the conventional second-conditional past form with would learn; A/C/D do not form the intended standard conditional.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.6ce83cacea1626168a98",
+          "rationale": "Have does not form the intended second conditional."
+        },
+        {
+          "optionId": "opt.08d471640ca70b5c998b",
+          "rationale": "Will have is not the conventional if-clause form here."
+        },
+        {
+          "optionId": "opt.c280f0ddf34c1295ed8a",
+          "rationale": "Would have belongs in a different construction, not this if-clause."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:10:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g4.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.fe30a99a27bcd9860957",
+      "explanation": "C establishes the lecture starting before the past arrival. A/B have unsuitable tense anchoring; D lacks a finite verb.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.057dcd2371c4d8e9031a",
+          "rationale": "Starts has present-time rather than past-before-past reference."
+        },
+        {
+          "optionId": "opt.60a72a8fad3d0e80173e",
+          "rationale": "Has started is present perfect, not past-before-past."
+        },
+        {
+          "optionId": "opt.547331ea6dd59fde2db6",
+          "rationale": "Starting is not a finite verb phrase."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:11:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g5.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.bb2c73f2ec1c654443e9",
+      "explanation": "C combines uncountable information with singular is. A has disagreement; B/D pluralize an uncountable noun in this sense. Generic stem repeats G1 but tests different content.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.d87c5381ab8fb0134163",
+          "rationale": "Are disagrees with uncountable singular information."
+        },
+        {
+          "optionId": "opt.b72149c30d02488ded10",
+          "rationale": "Informations is not the standard uncountable form."
+        },
+        {
+          "optionId": "opt.9bf099a7439bc876ca39",
+          "rationale": "Both informations and plural agreement are inappropriate here."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:12:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.g06.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.9033ebb2ea55e2d84907",
+      "explanation": "A counterfactual past condition is paired with would plus base be for the explicitly requested present result.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.b77c02ec3bc47d219620",
+          "rationale": "This is a perfect-modal result, not the explicitly requested present-result form."
+        },
+        {
+          "optionId": "opt.650e8fc89d8016f6f129",
+          "rationale": "Will is not the counterfactual present-result modal here."
+        },
+        {
+          "optionId": "opt.b74fdca33bff6c2e3894",
+          "rationale": "Past perfect does not form the required result clause."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form A G06 revision of historical G6",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v01.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.12bb2645e9700f1f2562",
+      "explanation": "Rapid growth is growth happening quickly; rapid does not require a sudden start.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.26c841b67a513ad7318e",
+          "rationale": "Gradual describes slow development rather than rapid growth."
+        },
+        {
+          "optionId": "opt.3a71b0572ed04d428a0d",
+          "rationale": "Uncertain describes lack of certainty, not speed."
+        },
+        {
+          "optionId": "opt.0cd36947b509697baf85",
+          "rationale": "Limited describes extent, not the speed of growth."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form A V01 revision of historical V1",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v2.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.9646e606ec532314f496",
+      "explanation": "A is the adjective modifying effect. B noun, C verb and D adverb do not fit the noun phrase.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.c96e601a585f6b6a474c",
+          "rationale": "Significance is a noun, not the adjective before effect."
+        },
+        {
+          "optionId": "opt.65575f7439a6c3de1ea7",
+          "rationale": "Signify is a verb, not an adjective."
+        },
+        {
+          "optionId": "opt.72e7b667b2ef5911cbee",
+          "rationale": "Significantly is an adverb, not the required noun modifier."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:17:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v3.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.2e438eb339cac78c0b38",
+      "explanation": "A means persuasive when modifying evidence; convinced describes an experiencer, while C/D have the wrong form.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.69f96e2b2fc9932d3eba",
+          "rationale": "Convinced normally describes the person who believes, not persuasive evidence."
+        },
+        {
+          "optionId": "opt.952f1ff3331fae047cc1",
+          "rationale": "Convince is the base verb and cannot modify evidence here."
+        },
+        {
+          "optionId": "opt.2ce0b8b901a0a836fb31",
+          "rationale": "Conviction is a noun and does not supply the intended adjective."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:18:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v4.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.0e966201d70925e74782",
+      "explanation": "C decreased matches declined for birth rates. A is the opposite, B no change and D disappearance is too strong.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.d0a350af72bd05cf4db3",
+          "rationale": "Increased reverses the direction of change."
+        },
+        {
+          "optionId": "opt.41ada69f64c58cdd7f18",
+          "rationale": "Remained stable means no change."
+        },
+        {
+          "optionId": "opt.1f08c6992bade44d8771",
+          "rationale": "Disappeared means ceased to exist, a stronger claim than declined."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:19:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v5.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.461b6c968cf8d13fef8b",
+      "explanation": "B is the standard do research collocation. Other options are not standard in the intended research-activity sense.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.4409e5a817b41d7953dd",
+          "rationale": "Make research is not the conventional collocation for conducting research."
+        },
+        {
+          "optionId": "opt.bfd2dc50b33f8b112c2f",
+          "rationale": "Create research is not the conventional collocation in this isolated expression."
+        },
+        {
+          "optionId": "opt.93e952fa9b108aac15fe",
+          "rationale": "Researchings is not the standard noun for this activity."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:20:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.v6.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.4a87375741fcd3730d26",
+      "explanation": "B uses substantial as an adjective for amount. A uses it as a verb; C/D are ill-formed in their sentences.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.4549b6fb6dab381e6a1d",
+          "rationale": "Substantial is an adjective, not a verb for completing homework."
+        },
+        {
+          "optionId": "opt.7d2cffdcd8d12d0c851c",
+          "rationale": "Substantial to the university is not an appropriate construction here."
+        },
+        {
+          "optionId": "opt.5591f135df0f9c021628",
+          "rationale": "Substantially is an adverb and the sentence lacks a finite verb."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-legacy-data",
+          "locator": "src/data.ts:21:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r01.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.89e9d831caa499448400",
+      "explanation": "All four paragraphs explain the trial, administration, measurement limits and future review.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.b0599be258025811ecf0",
+          "rationale": "Books remain part of the collection; replacement is not proposed."
+        },
+        {
+          "optionId": "opt.108a0c84bdbb5c80abc6",
+          "rationale": "The service lends rather than sells tools."
+        },
+        {
+          "optionId": "opt.2dd745e53a4f8bc4309c",
+          "rationale": "The passage explicitly says loan counts cannot prove avoided purchases."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.reading.r1",
+          "locator": "stim.a.reading.r1.p1",
+          "quote": "It began as a ten-week trial"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r02.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.02ddf2e0445a98b2beab",
+      "explanation": "Paragraph2 states the safety demonstration requirement explicitly.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.8a76bf4e2b65a98ce94d",
+          "rationale": "The requirement applies even to experienced users."
+        },
+        {
+          "optionId": "opt.c4e88e908f8ad32772ed",
+          "rationale": "No tool purchase is required."
+        },
+        {
+          "optionId": "opt.64c0b05b558f9d8c7563",
+          "rationale": "Volunteering is separate from borrowing."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.reading.r1",
+          "locator": "stim.a.reading.r1.p2",
+          "quote": "a resident must attend a short safety demonstration"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r03.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.7b07c5feefb7df7a1a48",
+      "explanation": "The library starts with few enough items for staff to inspect all returns.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.a36dbdff021afdbad8b6",
+          "rationale": "Modest describes the collection size, not tool operation."
+        },
+        {
+          "optionId": "opt.26c1e69ced31ef8eb4c6",
+          "rationale": "The collection is publicly available through the catalogue."
+        },
+        {
+          "optionId": "opt.6a9cd0ec95a5aaead90a",
+          "rationale": "Ownership is not the meaning of modest."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.reading.r1",
+          "locator": "stim.a.reading.r1.p2",
+          "quote": "a modest initial collection so that staff could inspect each returned item"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r04.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.6bff9c628a7ddee06c0d",
+      "explanation": "Alternative actions such as borrowing from a friend mean a loan is not necessarily an avoided purchase.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.8faa46b355c5a11b9bec",
+          "rationale": "The passage provides no such claim."
+        },
+        {
+          "optionId": "opt.0247a8cc9c1843e98b5d",
+          "rationale": "Household jobs are the stated purpose."
+        },
+        {
+          "optionId": "opt.328fc9dfa0852e2bb2c9",
+          "rationale": "Loan records do not include all purchasing behavior."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.reading.r1",
+          "locator": "stim.a.reading.r1.p3",
+          "quote": "Some borrowers might have hired a tool, borrowed one from a friend"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.r05.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.f1dffd425c23139bb299",
+      "explanation": "The final paragraph combines adapting to use with a clear trained-staff safety role.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.d54b3cfa92caa649de52",
+          "rationale": "Staff retain safety responsibility."
+        },
+        {
+          "optionId": "opt.74d786779cdc1adf7448",
+          "rationale": "Tools may be added or removed based on requests/use."
+        },
+        {
+          "optionId": "opt.0be6b8c80d5211cf2a00",
+          "rationale": "Borrower comments are also included."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.reading.r1",
+          "locator": "stim.a.reading.r1.p4",
+          "quote": "respond to actual use while keeping responsibility for its condition clear"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l01.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.c54b481bd88cfb5d3484",
+      "explanation": "The introduction and subsequent instructions concern supporting Saturday family activities.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.e7ab6827779f29443d9a",
+          "rationale": "Ticket purchase instructions are not the subject."
+        },
+        {
+          "optionId": "opt.33deaf2b3920bf4129b9",
+          "rationale": "Bicycle racks identify the entrance; no route is announced."
+        },
+        {
+          "optionId": "opt.4bfcaeedca672664e9f5",
+          "rationale": "The briefing explicitly says volunteers will not give that tour."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.listening.r1",
+          "locator": "stim.a.listening.r1.s1",
+          "quote": "Volunteers support visitors during the activities"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l02.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.60c025b5ee6a01c34231",
+      "explanation": "The second segment identifies the side entrance beside the bicycle racks.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.e344730f0bd8f8f4e80c",
+          "rationale": "The front doors do not open to visitors until ten."
+        },
+        {
+          "optionId": "opt.48de1a971822883126da",
+          "rationale": "The picture wall is an activity location, not the arrival entrance."
+        },
+        {
+          "optionId": "opt.7498720eb2639adf412e",
+          "rationale": "No such entrance is specified."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.listening.r1",
+          "locator": "stim.a.listening.r1.s2",
+          "quote": "use the side entrance beside the bicycle racks"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l03.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.d58222fa12c626af9fdd",
+      "explanation": "The revised instruction asks for only a pen; it contrasts with the cancelled scissors request.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.510c3ab55279141dfe4a",
+          "rationale": "The earlier scissors request is explicitly cancelled."
+        },
+        {
+          "optionId": "opt.eca44cd8611db9f8bc8e",
+          "rationale": "Glue will be supplied by the museum."
+        },
+        {
+          "optionId": "opt.92efeb5d3aa63dba459f",
+          "rationale": "The briefing explicitly says craft materials are not needed."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.listening.r1",
+          "locator": "stim.a.listening.r1.s3",
+          "quote": "Please bring only a pen"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l04.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.efe9023d502cc96ac6e2",
+      "explanation": "The alternative short activity prevents doorway waiting and buys preparation time.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.024fac1806123af1772c",
+          "rationale": "Cancellation is not mentioned."
+        },
+        {
+          "optionId": "opt.d2130a0b6b0fde7c9fab",
+          "rationale": "The instruction concerns guiding a waiting group."
+        },
+        {
+          "optionId": "opt.873926ab206ec18cb13b",
+          "rationale": "The table still needs preparation."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.listening.r1",
+          "locator": "stim.a.listening.r1.s4",
+          "quote": "This gives staff time to prepare the table"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.l05.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.c97216588a961571c3a7",
+      "explanation": "The conclusion says the notes help improve the next session and are for planning.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.629eb04b899c9547511d",
+          "rationale": "The speaker explicitly rules out ranking."
+        },
+        {
+          "optionId": "opt.ef22d27abdd0ac377c7a",
+          "rationale": "The attendance sheet is separate and signed with a pen."
+        },
+        {
+          "optionId": "opt.5cd9857ca0b18dd1a105",
+          "rationale": "No visitor eligibility decision is described."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.a.listening.r1",
+          "locator": "stim.a.listening.r1.s5",
+          "quote": "These notes will help us improve the next session"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i1.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.f452bb904f2a315bb1f1",
+      "explanation": "B: official Speaking format has three parts. Other counts are wrong.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.bfa9c3c0f8ff5f87a324",
+          "rationale": "Two omits one of the three Speaking parts."
+        },
+        {
+          "optionId": "opt.f70f017fcaf13e9cb584",
+          "rationale": "Four is not the Speaking part count."
+        },
+        {
+          "optionId": "opt.d0080af3bc06d82781d9",
+          "rationale": "Five is not the Speaking part count."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-speaking",
+          "locator": "src/data.ts:40:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i2.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.0866db74c3efe8712980",
+      "explanation": "B: official Task 2 requires at least 250 words. Task 1 has a 150-word minimum.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.b03ca0472f4d07f334b6",
+          "rationale": "Task1 has a150-word minimum, not250."
+        },
+        {
+          "optionId": "opt.0abab1fa3f4eec2a06db",
+          "rationale": "The two tasks do not share a250-word minimum."
+        },
+        {
+          "optionId": "opt.a5c6d4c1e145936e9e31",
+          "rationale": "Task2 does require at least250 words."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-writing",
+          "locator": "src/data.ts:41:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i3.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.766ce0088d2d1e437505",
+      "explanation": "B pronunciation is one of the four Speaking assessment criteria; the other options are not named criteria.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.b802f845e951f7042505",
+          "rationale": "Creativity is not one of the four named Speaking criteria."
+        },
+        {
+          "optionId": "opt.9e7cf88372eb198dc1cd",
+          "rationale": "Handwriting is irrelevant to the oral interview criteria."
+        },
+        {
+          "optionId": "opt.c9a16d8be3fb81751862",
+          "rationale": "Memorization is not a named scoring criterion."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-speaking",
+          "locator": "src/data.ts:42:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i04.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.b06b9f8baf70733e9ca7",
+      "explanation": "Listening uses recordings as the source for answers; the wording distinguishes this from recording a Speaking interview.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.6ff01a9fc9b957b5149d",
+          "rationale": "Reading asks questions about written texts, not prerecorded speech."
+        },
+        {
+          "optionId": "opt.ecd4a8762d795118189a",
+          "rationale": "Writing requires written responses to tasks."
+        },
+        {
+          "optionId": "opt.f8a106244cfcf7a69c65",
+          "rationale": "Speaking is an interview; its recording does not make it the prerecorded-stimulus question section."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-listening",
+          "locator": "What is in the Listening paper",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.a.i5.r1",
+      "formId": "form-a",
+      "proposedCorrectOptionId": "opt.2f200ec73c539aa147df",
+      "explanation": "B is consistent with band descriptors of English ability; universities, intelligence and nationality are not the construct.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.f89fb75b7c7962194e7c",
+          "rationale": "Scores describe test-taker language ability, not a university ranking."
+        },
+        {
+          "optionId": "opt.efc29bdbe891d7ce7d2b",
+          "rationale": "IELTS is not an intelligence test."
+        },
+        {
+          "optionId": "opt.27b6d224ef8d841dcbca",
+          "rationale": "Nationality is not the construct measured."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-bands",
+          "locator": "src/data.ts:44:5",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g01.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.5cdcc1f576cfaeedef59",
+      "explanation": "Singular laboratory takes third-person singular closes in the simple present.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.a6811a436d3fa1bd8ba1",
+          "rationale": "A singular subject requires closes, not close."
+        },
+        {
+          "optionId": "opt.3687af33b3fce59d1fef",
+          "rationale": "A plural subject takes close, not closes."
+        },
+        {
+          "optionId": "opt.40f40c5aea51e142030b",
+          "rationale": "Plural laboratories cannot take singular is."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B G01 linguistic analysis",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g02.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.648063db26ac9a67b8e2",
+      "explanation": "Have published is present perfect simple and connects a completed publication to present availability.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.05f4d8f68552f548969e",
+          "rationale": "Past simple is not the requested present perfect form."
+        },
+        {
+          "optionId": "opt.d5ad00f8a4383d9a6ba0",
+          "rationale": "Past perfect is not the requested form."
+        },
+        {
+          "optionId": "opt.bd0823116ac985cb1a11",
+          "rationale": "Present continuous does not state the requested completed present-perfect action."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B G02 linguistic analysis",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g03.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.e89e72ac5d9a233b1517",
+      "explanation": "An unreal present condition with lived takes would plus base walk in the result.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.a4d937f8fd0a0e580aca",
+          "rationale": "Will walk belongs to a different conditional pattern."
+        },
+        {
+          "optionId": "opt.6ec55d606e4126e041f0",
+          "rationale": "Past perfect does not form the intended hypothetical result."
+        },
+        {
+          "optionId": "opt.49436cb8bc87659fad57",
+          "rationale": "Present continuous is not the requested conditional result."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B G03 linguistic analysis",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g04.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.0f1b6426f7d4e68d14a2",
+      "explanation": "Had formed marks a queue formed before the past arrival of the bus.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.026ad0e9a0a6aa0f3c70",
+          "rationale": "Present perfect is not the requested past perfect."
+        },
+        {
+          "optionId": "opt.0700d1b6b9f6880ad6f4",
+          "rationale": "Present continuous does not refer to an earlier completed past action."
+        },
+        {
+          "optionId": "opt.cf86c34d844f9cfeccbc",
+          "rationale": "Future form does not describe the earlier completed action."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B G04 linguistic analysis",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g05.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.c65b8cd911c15f572d10",
+      "explanation": "Some can quantify uncountable advice without pluralizing it.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.bd6c3ee624ab9da7f58c",
+          "rationale": "Advice is uncountable here and does not take an indefinite article."
+        },
+        {
+          "optionId": "opt.2c8035a58acefed414e7",
+          "rationale": "Advices is not the ordinary plural for guidance."
+        },
+        {
+          "optionId": "opt.e6d048e8844053b852e5",
+          "rationale": "Uncountable advice takes singular was, not were."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B G05 linguistic analysis",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.g06.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.5165af6164da585c1dbc",
+      "explanation": "Would be expresses the current counterfactual consequence of a different past decision.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.a3f92f449cd797d682ce",
+          "rationale": "Perfect-modal result is not the explicitly requested present-result form."
+        },
+        {
+          "optionId": "opt.fcc7d83946237a5d1c98",
+          "rationale": "Past perfect is not the result-clause construction requested."
+        },
+        {
+          "optionId": "opt.833d9dc1ece1259753c3",
+          "rationale": "Will is not the counterfactual present result."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B G06 linguistic analysis",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v01.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.42107c2345ebb1956990",
+      "explanation": "Concise describes communicating necessary information in few words.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.0d884fb503ee964b3dc5",
+          "rationale": "Repetition is not brevity."
+        },
+        {
+          "optionId": "opt.7bc25bcbfaa61ae4761f",
+          "rationale": "Concision describes expression, not handwriting quality."
+        },
+        {
+          "optionId": "opt.8361ea69e4a893654ecb",
+          "rationale": "Concise does not mean omitting necessary information."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B V01 meaning review",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v02.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.370703903eeab3189398",
+      "explanation": "Accessibility is the noun for how easily a place can be reached or used.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.62425c2ad67313d88d0a",
+          "rationale": "An adjective does not fit after the before of here."
+        },
+        {
+          "optionId": "opt.60b5a99f7e2a908a0096",
+          "rationale": "An adverb does not supply the needed noun."
+        },
+        {
+          "optionId": "opt.4d60ab5d88feab1a447d",
+          "rationale": "Accessing does not express the intended noun meaning ease of reaching the centre."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B V02 word-form review",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v03.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.319f4ee005e15f498048",
+      "explanation": "Reliable results can be depended on; the sentence requires an adjective after were.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.9d439598e4049d5e3323",
+          "rationale": "An adverb cannot serve as the complement of were in this adjective slot."
+        },
+        {
+          "optionId": "opt.a5c086c6f959f8ab4ce2",
+          "rationale": "Reliance is a noun, not the adjective needed."
+        },
+        {
+          "optionId": "opt.20a2b710fba42be21b37",
+          "rationale": "Rely is a verb, not the required adjective."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B V03 academic word-choice review",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v04.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.691da90ca46ef1904f52",
+      "explanation": "Until Friday supplies a later time for the meeting.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.83cc9a8e21ae06b13130",
+          "rationale": "Postponement changes time, not permanent existence."
+        },
+        {
+          "optionId": "opt.f46061dd554148045e26",
+          "rationale": "This reverses the direction of the change."
+        },
+        {
+          "optionId": "opt.2a829a45e2be823a2f8b",
+          "rationale": "The sentence specifies a new time, not a venue."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B V04 contextual-meaning review",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v05.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.b98d37655dddb7583ec1",
+      "explanation": "Make a decision is the standard collocation for deciding.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.852f878aa9124d5f1702",
+          "rationale": "Do a decision is not the standard collocation."
+        },
+        {
+          "optionId": "opt.6b5ee0ff5f079b893219",
+          "rationale": "Perform a decision is not the standard collocation."
+        },
+        {
+          "optionId": "opt.c507d195bf0560b2fcda",
+          "rationale": "Carry a decision does not express reaching a decision here."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B V05 collocation review",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.v06.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.78ac7821f1825b34db61",
+      "explanation": "A feasible plan is one that can be carried out within practical limits.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.dc7fc0402cc5c6c25341",
+          "rationale": "Feasible is not a verb."
+        },
+        {
+          "optionId": "opt.82b065c79ac2dd62a1d5",
+          "rationale": "Feasibility is a noun, not the adjective needed in this construction."
+        },
+        {
+          "optionId": "opt.71207f2b2ccf38017c85",
+          "rationale": "An adjective cannot serve as the manner adverb after worked here."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-authoring",
+          "locator": "Form B V06 contextual-use review",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r01.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.57221c27b3d7e18521dc",
+      "explanation": "The passage describes the room, access/rules and a cautious evaluation plan.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.26c1ddf6f707bbb1c448",
+          "rationale": "Group discussion remains possible next door."
+        },
+        {
+          "optionId": "opt.b1de07d62d6d8d65fc1a",
+          "rationale": "Four desks can be booked and the room is still a trial."
+        },
+        {
+          "optionId": "opt.d921f2593d5bd3dbbae0",
+          "rationale": "The passage explicitly avoids claiming learning gains."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.reading.r1",
+          "locator": "stim.b.reading.r1.p1",
+          "quote": "testing the room for one term"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r02.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.f4cf3945aa8f03ecf0de",
+      "explanation": "The second paragraph explicitly gives unexpected timetable gaps as the reason.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.67c32853bfa58d4f6a04",
+          "rationale": "Bookable desks support planning for those students."
+        },
+        {
+          "optionId": "opt.2571662e70f62743d051",
+          "rationale": "The desks are for students."
+        },
+        {
+          "optionId": "opt.59aeb2c4957bd9837bfb",
+          "rationale": "Group study is in the adjacent area."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.reading.r1",
+          "locator": "stim.b.reading.r1.p2",
+          "quote": "students with unexpected gaps in their timetable"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r03.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.3a4e1d883c1422724e46",
+      "explanation": "The quiet, minimally distracting setup contrasts with the rejected decorative design.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.7439016aa47140a46aea",
+          "rationale": "Restrained describes the design, not an access ban."
+        },
+        {
+          "optionId": "opt.5ac70840ed4ff51aa82d",
+          "rationale": "The room is for student study."
+        },
+        {
+          "optionId": "opt.fd905f09d75dbda65a05",
+          "rationale": "The setup is contrasted with a more decorative design."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.reading.r1",
+          "locator": "stim.b.reading.r1.p3",
+          "quote": "This restrained arrangement was chosen after a more decorative design"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r04.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.f324c61b7650dcbe01af",
+      "explanation": "Students who stayed away may be missing from the voluntary responses.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.af19e5f9ee0111a65b54",
+          "rationale": "Most respondents were positive; no universal claim is justified."
+        },
+        {
+          "optionId": "opt.10df03091e68b2dc728c",
+          "rationale": "The questionnaire records opinions, not universal examination results."
+        },
+        {
+          "optionId": "opt.2b96f2c281e677933275",
+          "rationale": "It was voluntary and concerned students."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.reading.r1",
+          "locator": "stim.b.reading.r1.p4",
+          "quote": "stayed away and never completed the questionnaire"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.r05.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.e83f0b9569c03c388266",
+      "explanation": "Staff value suggestions but plan to combine them with use records and other students' comments.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.bdcdc7dfb7104fbb9c9c",
+          "rationale": "The paragraph explicitly denies that proof."
+        },
+        {
+          "optionId": "opt.bdc331c75fd855d2808f",
+          "rationale": "Both records and comments will be used."
+        },
+        {
+          "optionId": "opt.2e0cf873a2fbfb396c5e",
+          "rationale": "A later decision is still pending."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.reading.r1",
+          "locator": "stim.b.reading.r1.p4",
+          "quote": "combine feedback with desk-use records and comments"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l01.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.4507cc2de97eafa7c402",
+      "explanation": "The introduction identifies recovering lost items as the service purpose.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.3df67d0fa64cc07f37c8",
+          "rationale": "Ticket problems are explicitly outside this service."
+        },
+        {
+          "optionId": "opt.cb4562f9a132b3a320c3",
+          "rationale": "The belongings are held for their owners, not offered for sale."
+        },
+        {
+          "optionId": "opt.55247ef664c12c053349",
+          "rationale": "No train timetable is announced."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.listening.r1",
+          "locator": "stim.b.listening.r1.s1",
+          "quote": "The service is for recovering belongings"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l02.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.6404426eb4611a43da2e",
+      "explanation": "The speaker contrasts weekday six with Saturday two in the afternoon.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.50c1eec562f32880fb63",
+          "rationale": "Eleven is the opening time described, not the Saturday closing time."
+        },
+        {
+          "optionId": "opt.d4a1ffd80a6df81c5d20",
+          "rationale": "Six is the weekday closing time, contrasted with Saturday."
+        },
+        {
+          "optionId": "opt.e708531ba7163a438a53",
+          "rationale": "This time is not given."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.listening.r1",
+          "locator": "stim.b.listening.r1.s2",
+          "quote": "On Saturdays, it closes at two in the afternoon"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l03.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.aadd8172ec0571a161d0",
+      "explanation": "The new website form replaces the older email instruction.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.7eda7638d1b672844c0b",
+          "rationale": "The old email route is explicitly discontinued for new reports."
+        },
+        {
+          "optionId": "opt.a524108dcd4ad336de7a",
+          "rationale": "No ticket-based report is requested."
+        },
+        {
+          "optionId": "opt.438afd9c2dbadd9acb2b",
+          "rationale": "Collection permission does not replace reporting."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.listening.r1",
+          "locator": "stim.b.listening.r1.s3",
+          "quote": "Please complete the lost-property form on the station website"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l04.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.c9f3df2e6f6b134f6412",
+      "explanation": "Signed permission and a copy of identification are required, so a call alone does not satisfy the conditions.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.f41f25f3429eb72f7d9b",
+          "rationale": "A friend may collect with the stated documents."
+        },
+        {
+          "optionId": "opt.17344c4c11a8b75c7a1a",
+          "rationale": "There is no such procedure."
+        },
+        {
+          "optionId": "opt.e4ba24633ed17e666c99",
+          "rationale": "The desk does not open on Sundays."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.listening.r1",
+          "locator": "stim.b.listening.r1.s4",
+          "quote": "only with your signed permission and a copy of your identification"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.l05.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.bf7716f6d341cfd57211",
+      "explanation": "Specific identifying details reduce the chance of returning an item to someone guessing its appearance.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.202a099d5b5fdaa71ace",
+          "rationale": "Colour alone is explicitly insufficient."
+        },
+        {
+          "optionId": "opt.a1206c93ee6eb6e45755",
+          "rationale": "The speaker asks for more distinguishing detail."
+        },
+        {
+          "optionId": "opt.e7d30ca13ae16c2fc441",
+          "rationale": "Guessing is the problem the advice tries to prevent."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "stim.b.listening.r1",
+          "locator": "stim.b.listening.r1.s5",
+          "quote": "A colour alone may not be enough"
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i01.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.1fea77c88437b54c01c3",
+      "explanation": "The official Part2 description provides one minute to prepare the long turn.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.d475914248ff72b3fbce",
+          "rationale": "Part2 includes a preparation period."
+        },
+        {
+          "optionId": "opt.92522ee214778c140db4",
+          "rationale": "Five exceeds the stated one-minute preparation period."
+        },
+        {
+          "optionId": "opt.f9e3403040f2a5d6d14b",
+          "rationale": "Ten is not the Part2 preparation allowance."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-speaking",
+          "locator": "Part2 long turn",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i02.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.7b74b510c1d22f224448",
+      "explanation": "Official Writing guidance gives at least150 words for Task1 in both Academic and General Training.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.954af50bd1587aaa6541",
+          "rationale": "This is below the stated150-word minimum."
+        },
+        {
+          "optionId": "opt.434a0c561050ea2cc325",
+          "rationale": "This is below the stated150-word minimum."
+        },
+        {
+          "optionId": "opt.9f3d976ffca6cd291d6b",
+          "rationale": "250 is the Task2 minimum, not the Task1 minimum."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-writing",
+          "locator": "General introduction to IELTS Writing",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i03.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.541c134179dd7cf82d35",
+      "explanation": "Fluency and coherence is one of the four named Speaking criteria.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.a64bbfb94ef85326f946",
+          "rationale": "Speaking is oral and handwriting speed is not a named criterion."
+        },
+        {
+          "optionId": "opt.098466427e4b59360a69",
+          "rationale": "Fact memorization is not a named criterion."
+        },
+        {
+          "optionId": "opt.a3461233c839c0113078",
+          "rationale": "Illustrations are not a Speaking criterion."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-speaking",
+          "locator": "Marking criteria",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i04.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.b37294571e4ffe21ee1b",
+      "explanation": "Official Listening format states that recordings are heard once. Access arrangements require separate policy review.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.1255894f32d93f10a5d2",
+          "rationale": "The standard recordings are heard once."
+        },
+        {
+          "optionId": "opt.8359ef2208b26bf726a3",
+          "rationale": "Three is not the standard playback count."
+        },
+        {
+          "optionId": "opt.37109e3eca876a488ad9",
+          "rationale": "The standard test does not offer unlimited requested replays."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-listening",
+          "locator": "What is in the Listening paper",
+          "quote": null
+        }
+      ]
+    },
+    {
+      "questionId": "diagv1.b.i05.r1",
+      "formId": "form-b",
+      "proposedCorrectOptionId": "opt.92c296ad62a91e09bee4",
+      "explanation": "Official descriptors describe command, understanding and use of English, not educational preferences or funding outcomes.",
+      "distractorRationales": [
+        {
+          "optionId": "opt.e62e44093e5be046df55",
+          "rationale": "Band descriptors do not assign scholarship probabilities."
+        },
+        {
+          "optionId": "opt.fbdf3124dc8794abd6a0",
+          "rationale": "Institution rankings are not the described construct."
+        },
+        {
+          "optionId": "opt.0e4fcd5f657af76e4605",
+          "rationale": "Career preference is not what a band descriptor assesses."
+        }
+      ],
+      "evidence": [
+        {
+          "sourceId": "source-ielts-bands",
+          "locator": "Band score descriptors",
+          "quote": null
+        }
+      ]
+    }
+  ]
+}

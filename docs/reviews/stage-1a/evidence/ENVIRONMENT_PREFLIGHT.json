@@ -1,0 +1,118 @@
+{
+  "clientReviewDate": "2026-10-23",
+  "clientTimeZone": "Asia/Karachi",
+  "nativePlatform": "Windows-11-10.0.26200-SP0",
+  "shellObserved": "PowerShell Core 7.6.5",
+  "root": "C:\\Users\\ksari\\OneDrive\\Desktop\\ai_ielts_coach_app",
+  "sourceCommit": null,
+  "sourceCommitReason": "Actual git command reports not a repository",
+  "observations": [
+    {
+      "id": "node",
+      "command": [
+        "node",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "v24.16.0",
+      "stderr": ""
+    },
+    {
+      "id": "npm",
+      "command": [
+        "npm.cmd",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "11.13.0",
+      "stderr": ""
+    },
+    {
+      "id": "python",
+      "command": [
+        "python",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "Python 3.14.0",
+      "stderr": ""
+    },
+    {
+      "id": "git_version",
+      "command": [
+        "git",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "git version 2.52.0.windows.1",
+      "stderr": ""
+    },
+    {
+      "id": "git_status",
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "exitCode": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git"
+    },
+    {
+      "id": "git_branch",
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exitCode": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git"
+    },
+    {
+      "id": "git_commit",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exitCode": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git"
+    },
+    {
+      "id": "wsl",
+      "command": [
+        "wsl",
+        "--list",
+        "--quiet"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "The Windows Subsystem for Linux is not installed. You can install by running 'wsl.exe --install'.\r\r\nFor more information please visit https://aka.ms/wslinstall"
+    }
+  ],
+  "rootEnvFileNames": [],
+  "secretValuesRead": false,
+  "gitMetadataPresent": false,
+  "rootAgentsPresent": false,
+  "rootDocsPreviouslyPresent": false,
+  "availableCapabilities": [
+    "Local shell/files",
+    "IAB browser",
+    "Official OpenAI Docs",
+    "Existing six-suite project checks",
+    "Bundled skill creator/installer (not used to install)",
+    "PR-oriented review connector (no repository/PR attached)",
+    "Other connectors surfaced but account configuration not inspected"
+  ],
+  "configurationOrAccountAccess": "No auth/config secret files opened; no external accounts connected; no MCP servers registered",
+  "historicAgentNames": "Listed by environment only; no agents invoked or created",
+  "knownReviewErrors": [
+    "Sandbox public GitHub DNS failure resolved with read-only network permission",
+    "Initial sandbox loopback browser timeout resolved using loopback host process",
+    "Scratch wrapper Windows stdout encoding failed after successful build; logs retained, collector repaired",
+    "Scratch text-print helper cp1252 output failed; corrected to UTF-8 for source review"
+  ],
+  "automaticApprovalRejections": []
+}
