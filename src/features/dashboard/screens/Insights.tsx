@@ -1,0 +1,20 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { AppShell } from '../../../components/AppShell';
+import { Button, Card, PageHeader } from '../../../components/UI';
+import { AvailabilityCard } from '../components/AvailabilityCard';
+import { browserSavedPresentation, diagnosticAction, futurePresentations, participationLabel, readSavedHistory } from '../services/presentation';
+import type { SavedHistory } from '../types';
+function browserHistory(): SavedHistory { try { return readSavedHistory(window.localStorage); } catch { return { state: 'TEMP_UNAVAILABLE', entries: [] }; } }
+export function Progress() {
+  const [history, setHistory] = useState(browserHistory); const navigate = useNavigate();
+  return <AppShell><PageHeader eyebrow="Progress" title="Keep track of your saved work." description="Prototype history is preserved. Validated trends and activity statistics are still being prepared."/><Card className="foundation-panel"><h2>Saved prototype attempts</h2><p>These are existing device records, not accepted learning-achievement counts or proficiency gains.</p>{history.state === 'TEMP_UNAVAILABLE' ? <div role="alert"><p>History is temporarily unavailable. Existing records have not been reset.</p><Button kind="secondary" onClick={() => setHistory(browserHistory())}>Retry history</Button></div> : history.state === 'EMPTY' ? <p className="empty-history">No readable saved attempt entries are available. You can still explore lessons.</p> : <ul className="saved-history">{history.entries.map(entry => <li key={entry.id}><div><strong>{entry.module} · {entry.mode}</strong><span>{new Date(entry.submittedAt).toLocaleString()}</span></div><Button kind="secondary" onClick={() => navigate(`/results/${encodeURIComponent(entry.id)}`)}>View saved review</Button></li>)}</ul>}<Button kind="ghost" onClick={() => navigate('/learn')}>Explore lessons</Button></Card><div className="availability-grid section-space">{futurePresentations.filter(metric => ['M12', 'M13', 'M17'].includes(metric.id)).map(metric => <AvailabilityCard metric={metric} key={metric.id}/>)}</div></AppShell>;
+}
+export function Readiness() {
+  const navigate = useNavigate();
+  return <AppShell><PageHeader eyebrow="Readiness" title="A useful estimate needs valid evidence." description="The prototype does not yet have an accepted readiness model or calibrated IELTS / CEFR assessment."/><Card className="foundation-panel"><h2>Keep your goal. Build the skills.</h2><p>Your existing goal and work are preserved. Legacy heuristic percentages and bands are not presented as a readiness assessment.</p><div className="button-row"><Button onClick={() => navigate('/learn')}>Explore lessons</Button><Button kind="secondary" onClick={() => navigate('/dashboard')}>Back to dashboard</Button></div></Card><div className="availability-grid section-space">{futurePresentations.map(metric => <AvailabilityCard metric={metric} key={metric.id}/>)}</div></AppShell>;
+}
+export function DiagnosticStatus() {
+  const source = browserSavedPresentation(); const action = diagnosticAction(source); const navigate = useNavigate();
+  return <AppShell><PageHeader eyebrow="Diagnostic status" title={participationLabel(source.diagnostic)} description="Saved participation and scoring validity are separate."/><Card className="foundation-panel"><h2>Assessment validation is pending.</h2><p>The current diagnostic and its saved records remain preserved. Its legacy bands, level estimates and raw accuracy have not been approved as Diagnostic V1 results.</p><p>No candidate questions, new selection or revised scoring are active. You can continue to the dashboard or explore sample lessons.</p><div className="button-row"><Button onClick={() => navigate('/dashboard')}>Go to dashboard</Button><Button kind="secondary" onClick={() => navigate('/learn')}>Explore lessons</Button>{source.diagnostic !== 'complete' && <Button kind="ghost" onClick={() => navigate(action.path)}>{action.label}</Button>}</div></Card></AppShell>;
+}

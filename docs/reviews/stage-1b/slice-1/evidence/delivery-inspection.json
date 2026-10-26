@@ -1,0 +1,60 @@
+{
+  "clientDate": "2026-10-27",
+  "privateDocsDevHTTP": [
+    {
+      "path": "docs/reviews/stage-1b/diagnostic-question-bank-preparation/v2.0.0-candidate/private/keys-and-explanations.json",
+      "httpStatus": 403
+    },
+    {
+      "path": "docs/reviews/stage-1b/diagnostic-question-bank-preparation/v2.0.0-candidate/private/listening-production-scripts.json",
+      "httpStatus": 403
+    }
+  ],
+  "productionDocsDirectoryAbsent": true,
+  "candidateKeyAndScriptMarkersAbsentFromBundle": [
+    "proposedCorrectOptionId",
+    "diagv1.a.g02.r1",
+    "Welcome to the Riverside Museum volunteer briefing.",
+    "This is a message for passengers using Hillford Station"
+  ],
+  "candidateBankImportsInApplication": false,
+  "activeModuleBandAndLessonMasteryPresentationRemoved": true,
+  "sampleWavUnchanged": true,
+  "buildAssets": [
+    {
+      "path": "dist/assets/index-2_HYyINg.css",
+      "bytes": 114101,
+      "sha256": "3124314ae5b13888abd412d45b26cdedd89bcd3832229475e5044ea9479dd0a9"
+    },
+    {
+      "path": "dist/assets/index-DHCjlhMx.js",
+      "bytes": 394666,
+      "sha256": "2b49235c57d40905868299c180e8bb38d830a79cfa7b7ccee9a057f165de50e3"
+    },
+    {
+      "path": "dist/garden-plan.svg",
+      "bytes": 868,
+      "sha256": "990f3ad8cd5edac092803012229c0df249d22fe81781b4faf5cc189992553d26"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 625,
+      "sha256": "58fc4dc8ad48cce61de08f80d496efed4a0393465206ae7ec13a18e32f2722e5"
+    },
+    {
+      "path": "dist/listening-diagnostic.wav",
+      "bytes": 2378292,
+      "sha256": "0e6c831770433da34f962cb03f9d4ddea33b335316f47b5f32b1640457dcd3c2"
+    },
+    {
+      "path": "dist/sample-reading.pdf",
+      "bytes": 3605,
+      "sha256": "f2eb2a46d8bbdca15bd78b8f14662f746280b39c5f9a342fee54f679e7c3e391"
+    }
+  ],
+  "limits": [
+    "Existing legacy data.ts development keys remain inspectable by design; Diagnostic V1 is not released.",
+    "Pattern checks cover named candidate material and imports, not a proof of total bundle secrecy.",
+    "Local Vite403 is not a test of a Vercel deployment; none was created."
+  ]
+}

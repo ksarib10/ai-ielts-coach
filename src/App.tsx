@@ -3,11 +3,12 @@ import { HashRouter, Routes, Route, Navigate, useLocation, useParams } from 'rea
 import { type ReactNode, useEffect } from 'react';
 import { Landing, Auth } from './features/Public';
 import { Onboarding } from './features/Onboarding';
-import { Diagnostic, DiagnosticResults } from './features/Diagnostic';
-import { Dashboard, LearningHub, LessonPage } from './features/Learning';
+import { Diagnostic } from './features/Diagnostic';
+import { DiagnosticStatus, Progress, Readiness } from './features/dashboard/screens/Insights';
+import { Dashboard } from './features/dashboard/screens/Dashboard';
+import { LearningHub, LessonPage } from './features/Learning';
 import { ModuleHub, WorkspaceRoute } from './features/Modules';
 import { AttemptResults } from './features/Results';
-import { Progress, Readiness } from './features/Progress';
 import { ExamAttempt, ExamCenter, ExamResult, ExamSetup, MockTests } from './features/Exam';
 import { CoachPage, Vocabulary, Settings } from './features/Account';
 import { ActivityLibrary } from './features/ActivityLibrary';
@@ -43,7 +44,7 @@ function LegacyTask({ module }: { module: 'writing' | 'speaking' }) {
 }
 export default function App() { return <HashRouter><RoutePolicy><LoadingPreview><PageErrorBoundary><Routes>
   <Route path="/" element={<Landing/>}/><Route path="/login" element={<Auth kind="login"/>}/><Route path="/signup" element={<Auth kind="signup"/>}/><Route path="/register" element={<Navigate to="/signup" replace/>}/><Route path="/forgot-password" element={<Auth kind="forgot"/>}/>
-  <Route path="/onboarding" element={<Onboarding/>}/><Route path="/diagnostic" element={<Diagnostic/>}/><Route path="/diagnostic/results" element={<DiagnosticResults/>}/><Route path="/dashboard" element={<Dashboard/>}/>
+  <Route path="/onboarding" element={<Onboarding/>}/><Route path="/diagnostic" element={<Diagnostic/>}/><Route path="/diagnostic/results" element={<DiagnosticStatus/>}/><Route path="/dashboard" element={<Dashboard/>}/>
   <Route path="/learn" element={<LearningHub/>}/><Route path="/learn/:id" element={<LessonPage/>}/><Route path="/practice" element={<LearningHub practice/>}/><Route path="/practice/activity-library" element={<ActivityLibrary/>}/>
   {modules.map(module => <Route key={module} path={`/${module.toLowerCase()}`} element={<ModuleHub module={module}/>}/>)}
   {modules.map(module => <Route key={`${module}-legacy-exam`} path={`/${module.toLowerCase()}/exam`} element={<Navigate to="/exam" replace/>}/>)}

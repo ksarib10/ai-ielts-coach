@@ -1,0 +1,27 @@
+
+> ai-ielts-coach@1.0.0 test
+> node qa/domain.test.mjs && node qa/state.test.mjs && node qa/diagnostic.test.mjs && node qa/readiness.test.mjs && node qa/ielts-reference.test.mjs && node qa/exam.test.mjs && node qa/foundation.test.mjs
+
+PASS: scoring, mode restrictions, persistence/retry, vocabulary, mastery, recommendations and canonical learner.
+PASS: state migration preserves complete and partial learner progress.
+PASS: diagnostic results derive from saved evidence and remain provisional.
+PASS: readiness is gated by a baseline and derives from saved evidence.
+PASS: IELTS reference model preserves supplied timing, order, and type differences.
+PASS: standalone exam order, shared module timing, completion, and history are consistent.
+C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react-dom\cjs\react-dom-server-legacy.node.development.js:5218
+    throw new Error('Missing getServerSnapshot, which is required for ' + 'server-rendered content. Will revert to client rendering.');
+          ^
+
+Error: Missing getServerSnapshot, which is required for server-rendered content. Will revert to client rendering.
+    at Object.useSyncExternalStore (C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react-dom\cjs\react-dom-server-legacy.node.development.js:5218:11)
+    at useSyncExternalStore (C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react\cjs\react.development.js:1676:21)
+    at useLearning (C:\Users\ksari\source\repos\ai-ielts-coach\qa\.foundation-test.cjs:777:64)
+    at ModuleHub (C:\Users\ksari\source\repos\ai-ielts-coach\qa\.foundation-test.cjs:1697:17)
+    at renderWithHooks (C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react-dom\cjs\react-dom-server-legacy.node.development.js:5662:16)
+    at renderIndeterminateComponent (C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react-dom\cjs\react-dom-server-legacy.node.development.js:5736:15)
+    at renderElement (C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react-dom\cjs\react-dom-server-legacy.node.development.js:5961:7)
+    at renderNodeDestructiveImpl (C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react-dom\cjs\react-dom-server-legacy.node.development.js:6119:11)
+    at renderNodeDestructive (C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react-dom\cjs\react-dom-server-legacy.node.development.js:6091:14)
+    at renderContextProvider (C:\Users\ksari\source\repos\ai-ielts-coach\node_modules\react-dom\cjs\react-dom-server-legacy.node.development.js:5935:3)
+
+Node.js v24.16.0

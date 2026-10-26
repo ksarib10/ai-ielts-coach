@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-27",
+  "origin": "http://127.0.0.1:4391",
+  "profile": "Existing disposable Slice Review profile and saved G1 answer preserved; no reset or learner migration",
+  "checks": [
+    {
+      "id": "R01",
+      "status": "PASS",
+      "detail": "Dark appearance persisted after reload; Light and Dark both rendered."
+    },
+    {
+      "id": "R02",
+      "status": "PASS",
+      "detail": "Existing onboarding resumed at step6; Skip for now reached dashboard with saved goal."
+    },
+    {
+      "id": "R03",
+      "status": "PASS",
+      "detail": "Resume restored checked G1 B answer; strict header had no sidebar or coach. Save and continue later returned to dashboard."
+    },
+    {
+      "id": "R04",
+      "status": "PASS",
+      "detail": "320px drawer focused Close navigation, set main inert; Escape restored Open navigation."
+    },
+    {
+      "id": "R05",
+      "status": "PASS",
+      "detail": "Dark reset dialog used opaque purple/readable text; cancellation preserved data; account-menu Escape restored focus."
+    },
+    {
+      "id": "R06",
+      "status": "PASS",
+      "detail": "All four module hubs showed Not assessed, no numeric diagnostic band.",
+      "observed": [
+        {
+          "hasNumericBand": false,
+          "pageWidth": 1440,
+          "path": "#/reading",
+          "status": "Validation pendingNot assessedValidated score unavailable",
+          "title": "Reading, with a clear purpose.",
+          "viewport": 1440
+        },
+        {
+          "hasNumericBand": false,
+          "pageWidth": 1440,
+          "path": "#/writing",
+          "status": "Validation pendingNot assessedValidated score unavailable",
+          "title": "Writing, with a clear purpose.",
+          "viewport": 1440
+        },
+        {
+          "hasNumericBand": false,
+          "pageWidth": 1440,
+          "path": "#/listening",
+          "status": "Validation pendingNot assessedValidated score unavailable",
+          "title": "Listening, with a clear purpose.",
+          "viewport": 1440
+        },
+        {
+          "hasNumericBand": false,
+          "pageWidth": 1440,
+          "path": "#/speaking",
+          "status": "Validation pendingNot assessedValidated score unavailable",
+          "title": "Speaking, with a clear purpose.",
+          "viewport": 1440
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "status": "PASS",
+      "detail": "Dark module tab contrast corrected and inspected; Progress showed empty history honestly; Readiness values unavailable. Final screenshot review also corrected inherited section-caption text; actual computed dark rgb198/182/215 and light rgb102/84/115 verified at desktop and320px."
+    },
+    {
+      "id": "R08",
+      "status": "PASS",
+      "detail": "Dashboard has no horizontal overflow at all five actual CSS widths.",
+      "observed": [
+        {
+          "mainScrollWidth": 314,
+          "mainWidth": 314,
+          "pageWidth": 320,
+          "width": 320,
+          "pass": true
+        },
+        {
+          "mainScrollWidth": 384,
+          "mainWidth": 384,
+          "pageWidth": 390,
+          "width": 390,
+          "pass": true
+        },
+        {
+          "mainScrollWidth": 762,
+          "mainWidth": 762,
+          "pageWidth": 768,
+          "width": 768,
+          "pass": true
+        },
+        {
+          "mainScrollWidth": 1018,
+          "mainWidth": 1018,
+          "pageWidth": 1024,
+          "width": 1024,
+          "pass": true
+        },
+        {
+          "mainScrollWidth": 1194,
+          "mainWidth": 1194,
+          "pageWidth": 1440,
+          "width": 1440,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "status": "PASS",
+      "detail": "Reading hub narrow reflow",
+      "observed": {
+        "mainScrollWidth": 314,
+        "mainWidth": 314,
+        "pageWidth": 320,
+        "width": 320
+      }
+    },
+    {
+      "id": "R10",
+      "status": "PASS",
+      "detail": "Clean final reload: new console errors",
+      "observed": []
+    }
+  ],
+  "unverified": [
+    "Human visual acceptance and screen-reader audit",
+    "Actual OS forced-colors/reduced-motion and200% text zoom",
+    "Browser storage-denial simulation (unit mocks only)",
+    "Full Exam completion, real microphone and Diagnostic V1 validity"
+  ],
+  "automationNotes": [
+    "UI locator timing mismatches resolved by observing route state; no reset or response replacement.",
+    "Client-only store prevented an initial server-rendering test; pure status component extracted and regression test rerun."
+  ]
+}

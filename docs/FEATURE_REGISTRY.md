@@ -1,5 +1,30 @@
 # Feature registry
 
+## Current implementation-status delta — 2026-10-27
+
+This file is the authoritative feature/status register. The dated Stage 1A inventory below is preserved as history; this delta supersedes its affected implementation descriptions. Implemented, tested and owner-accepted are separate states. **No Slice 1 feature is owner-accepted yet.**
+
+| Feature | Implemented in authorized Slice 1 | Actual testing | Acceptance / remaining boundary |
+|---|---|---|---|
+| F01/F02 public and onboarding | Appearance controls; honest demo and diagnostic-validation wording | Browser restored existing step6, skip-to-dashboard, saved goal; historical state suite | Production identity/recovery and undecided-track work remain future |
+| F03 diagnostic | Existing engine preserved; result route now shows legacy participation/validation status | Saved G1 answer resumed; strict header checked; historical diagnostic suite | Candidate bank inactive; scoring/capture/assignment validity not approved |
+| F04 dashboard | Read-only saved goals/participation; explicit availability for 15 baseline IDs and six future exclusions | Pure adapter/component tests, browser desktop/mobile | All 15 metric definitions still need later implementation and human acceptance; rendering is not metric acceptance |
+| F05–F08 modules / F12 learning | Four hubs show Not assessed; saved goals retained; lesson mastery percentage removed; prototype lock/suggestion copy corrected | All hubs desktop and Reading 320px; pure shared-status tests; historical service suites | Engines, practice gates, scores and records unchanged; no new module features |
+| F09/F10 tests and Exam | Shared shell/theme only; independent assistance-disabled policy preserved | Historical Exam/mode regressions; focused strict-shell rendering | Full browser Exam completion not rerun; result models remain legacy demonstrations |
+| F13 progress/readiness | Safe history metadata, empty/retry states; no heuristic trends, bands, CEFR or readiness scores | Unit states and browser route inspection | M12–M17 UNSUPPORTED/null; no assessment or readiness acceptance |
+| F14 gamification | No achievement/streak percentages promoted into new dashboard | Null/gating tests | Durable scoped events, timezone and validated activity statistics remain pending |
+| F15 Coach | Explicit demo navigation and scripted-sample notice; omitted on overview and strict screens | Navigation/component and existing mode tests | No AI service or automated proficiency evaluation |
+| F16 theme/shell | Purple light/dark/system, separate preference, responsive drawer and honest navigation | Seven-suite run, contrast tests, theme persistence, drawer/account Escape, five viewport widths | Provisional tokens; human and broader accessibility acceptance outstanding |
+| TED/AWL/Grammar/Curriculum | COMING_SOON non-links | Typed navigation/static rendering | No new routes or engines |
+
+M01–M11 formulas and IDs remain governed by the accepted Stage 1A metric matrix. Slice 1 exposes saved preference/participation where readable and keeps unimplemented metrics null; unknown is not zero. D04/D05 scope approval does not validate the prototype's heuristic math. Stage 2 remains blocked. Future route, data, architecture and feature-state changes must update this register and appropriate other living documents within the same slice.
+
+---
+
+## Historical Stage 1A record — 2026-10-23
+
+The dated record below is retained; current deltas above take precedence for the affected Slice 1 scope. Historical review reports are unchanged.
+
 2026-10-23. ACCEPTED_REQUIREMENT: F01–F18 are approved vision. Status below describes current evidence, not delivery permission. STAGE_2_ENTRY = BLOCKED.
 
 Availability vocabulary: AVAILABLE = functioning capability with relevant tests within its declared scope; COMING_SOON = real destination but capability absent; REQUIRES_VALID_DIAGNOSTIC = derived metric lacks reviewed submitted evidence; EMPTY = successful retrieval with no real records; IN_PROGRESS = active real attempt/activity; TEMP_UNAVAILABLE = operational error; PROPOSED/RESEARCH_ONLY = no working destination. These proposed registry values are not implemented centrally today. A tested mock can be available only as an explicitly labeled demo, never as production authentication/AI/scoring.

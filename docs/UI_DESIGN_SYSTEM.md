@@ -1,5 +1,21 @@
 # UI design system
 
+## Implemented provisional purple foundation — 2026-10-27
+
+`src/foundation.css` loads after existing styles; it adds semantic light/dark tokens, layered purple gradients, restrained translucent navigation/cards, opaque diagnostic/editor/content surfaces and a no-blur fallback. It does not replace the existing CSS architecture or introduce a component library. Reading passages, Writing editors and long content retain opaque backgrounds. Existing assessment content/timing behavior is unchanged.
+
+`features/appearance` separates preference types, storage service, provider hook and labeled native select. Values are light/dark/system; default system is resolved before initial render. Preference key is `ielts-appearance-v1`; changes follow system/storage events. Failed persistence leaves an in-memory selection with feedback. Learner stores are not rewritten. `features/shell` separates typed navigation, availability data, drawer focus behavior and sidebar rendering. `features/dashboard/components` owns reusable availability and unassessed-module status presentation.
+
+The new tokens distinguish text, muted text, action/on-action, control border, focus, danger/success and surface roles. Both token sets pass focused text-pair contrast >=4.5:1 and control-border contrast >=3:1 tests; this is not an audit of every historical selector. Visible focus, reduced-motion and forced-colors rules exist. Dark module tabs, reset-dialog contrast and inherited section-caption colors were corrected after browser/screenshot inspection. Native controls keep accessible names and unavailable navigation has no functional link.
+
+Actual browser checks: dashboard reflows without page/main horizontal overflow at 320, 390, 768, 1024 and 1440 CSS px; Reading hub also checked at 320px. At 320px drawer open focuses Close, background is inert and Escape returns Open navigation; account-menu Escape and reset cancellation pass. Light/dark screenshots are in [Slice 1 evidence](reviews/stage-1b/slice-1/evidence/). Human appearance acceptance, screen-reader audit, 200% text zoom, actual OS forced-colors/reduced-motion testing and full legacy-workspace visual audit remain unverified. Exact colors and glass treatment remain provisional pending owner review.
+
+---
+
+## Historical Stage 1A record — 2026-10-23
+
+The dated record below is retained; current deltas above take precedence for the affected Slice 1 scope. Historical review reports are unchanged.
+
 2026-10-23. This document records existing design evidence and draft adoption rules, not permission to restyle the app. STAGE_2_ENTRY = BLOCKED.
 
 ## Observed foundation

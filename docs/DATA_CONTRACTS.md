@@ -1,5 +1,23 @@
 # Data contracts
 
+## Implemented Slice 1 boundaries — 2026-10-27
+
+Only presentation/appearance contracts were added. `features/appearance/types.ts` defines light/dark/system preference and resolved appearance; `services/preference.ts` reads/writes only `ielts-appearance-v1`. Storage denial returns system/default or memory-only selection with feedback. No learner record, diagnostic answer, media or attempt format is changed.
+
+`features/dashboard/types.ts` defines SavedPresentation, SavedHistory and MetricPresentation. `services/presentation.ts` is a **read-only** adapter over the existing master/legacy keys and learning-history key. It validates readable preference/participation fields, excludes legacy result scores, retains null for unknown values, distinguishes missing data from parse/storage errors and exposes only history id/module/mode/submission time. It performs no saves, resets, migration, scoring or achievement calculation. Saved goals are self-declared targets, not assessed bands.
+
+Implemented presentation states: AVAILABLE, EMPTY, IN_PROGRESS, REQUIRES_VALID_DIAGNOSTIC, TEMP_UNAVAILABLE, UNSUPPORTED. All 15 M01–M11 IDs remain represented, but this adapter is not the accepted metric engine. Only readable saved track/goal and legacy participation are surfaced; validated answer count, five accuracies, review, capture and activity metrics remain gated or unsupported. M12–M17 are UNSUPPORTED with value=null. Existing AppState v2, device-wide keys, scoring, Speaking persistence and Exam contracts remain byte-preserved.
+
+`features/shell/types.ts` and navigation service use AVAILABLE/COMING_SOON with explicit Demo metadata and null paths for future destinations. These local UI contracts do not implement the proposed LearnerRepository, DiagnosticQuestionSource or authenticated DashboardProvider below. Future API-backed replacements still require approved immutable assignments, version/digest/scoring policies, learner ownership and recovery contracts. Diagnostic Step 2A V2 files are candidate review documentation only, not imported into app/public assets. Development answer keys are inspectable if bundled; existing legacy fixtures are not secure production marking.
+
+Local demo sign-in remains a shared-device session, not learner isolation, credential verification or cross-device synchronization. D05 permits future learner-scoped local development; it does not imply that migration/isolation was implemented here. D06 content/media/retakes and D07 timezone/privacy/retention/migration remain unresolved. No backend endpoint, environment secret or SDK was introduced.
+
+---
+
+## Historical Stage 1A record — 2026-10-23
+
+The dated record below is retained; current deltas above take precedence for the affected Slice 1 scope. Historical review reports are unchanged.
+
 2026-10-23. All interfaces below are PROPOSED_DESIGN documentation, not new application types or working endpoints. ACCEPTED_REQUIREMENT: separate versioned fixture now, replaceable API provider later, optional diagnostic and valid evidence only. STAGE_2_ENTRY = BLOCKED.
 
 ## Observed contracts and migration boundary

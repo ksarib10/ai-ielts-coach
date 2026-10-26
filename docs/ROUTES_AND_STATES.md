@@ -1,5 +1,23 @@
 # Routes and states
 
+## Current route and flow delta — 2026-10-27
+
+The existing public paths, aliases, guards and HashRouter remain intact. `src/App.tsx` now imports Dashboard from `features/dashboard/screens/Dashboard.tsx` and Progress, Readiness and DiagnosticStatus from `features/dashboard/screens/Insights.tsx`. `/diagnostic/results` retains its historical complete-plus-result guard but displays validation status instead of legacy bands. Old result/screen implementations are preserved as unused historical source.
+
+Current core flow: public/demo session → saved onboarding → start **or skip** `/diagnostic` → `/dashboard`; returning to `/diagnostic` resumes saved answers and position using the existing engine. Diagnostic completion is not a dashboard requirement. Legacy practice locks remain unchanged and are described as prototype completion gates, not proof of a validated assessment. Active Exam route restrictions remain unchanged; independent Test/Exam/diagnostic headers retain assistance-disabled behavior.
+
+The sidebar's existing 14 links remain. AI Coach, Mock tests and Exam Simulation carry Demo labels. TED learning, Academic Word List, Grammar resources and Curriculum & notes are non-link COMING_SOON entries, not new routes. Search still navigates to the existing Learn search. Mobile navigation becomes a modal drawer, isolates background content, closes on navigation/Escape and restores its trigger focus. Theme control is available on public/onboarding/shell/strict headers.
+
+Presentation: EMPTY means no readable record, TEMP_UNAVAILABLE reports read failure with retry, IN_PROGRESS reflects existing diagnostic participation, and unvalidated/unsupported metrics retain null. No learner lifecycle or attempt schema was introduced. The future immutable assignment routes below remain proposals.
+
+This file remains the sole maintained route-flow map. Same-slice changes to routes, guards, redirects, availability or flow must update this map and relevant feature/contracts/decisions entries. Actual smoke evidence is in [browser-smoke.json](reviews/stage-1b/slice-1/evidence/browser-smoke.json); full Exam completion and new Diagnostic V1 lifecycle were not browser-tested or implemented in Slice 1.
+
+---
+
+## Historical Stage 1A record — 2026-10-23
+
+The dated record below is retained; current deltas above take precedence for the affected Slice 1 scope. Historical review reports are unchanged.
+
 2026-10-23. OBSERVED_SOURCE and PROPOSED_DESIGN are deliberately separate. Source: `src/App.tsx`, `src/main.tsx`, `src/state.ts`, feature files and services. Nothing below changes routing. STAGE_2_ENTRY = BLOCKED.
 
 ## Observed route inventory

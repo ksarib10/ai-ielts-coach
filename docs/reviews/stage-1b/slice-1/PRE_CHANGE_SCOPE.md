@@ -1,0 +1,13 @@
+# Slice 1 pre-change scope — 2026-10-26
+
+Phase A passed before application edits. New root: `C:\Users\ksari\source\repos\ai-ielts-coach`; preserved root: `C:\Users\ksari\OneDrive\Desktop\ai_ielts_coach_app`. All 6,318 files /108,366,561 bytes matched before edits. New main baseline: `93dd4a2641753e5afb7f3ad3ccb6d22230502f82`; no remote. Signing/hooks settings retained. Targeted ignore rules are the only baseline source/configuration difference.
+
+Inspected: App/main; AppShell/UserMenu/UI; Public/Onboarding/Learning/Progress/Diagnostic screens; shared media controls; state/session/platform/readiness/diagnostic services; styles/prototype CSS; all six existing suites and Stage 1A/Step 2/Step 2A/backup documentation.
+
+Authorized affected routes: all shared-shell routes for appearance/navigation; landing/auth/onboarding for appearance controls only; dashboard, progress, readiness and diagnostic/results for truthful presentation. Existing route/Exam guards and practice lock behavior stay intact. Legacy estimate presentation will be replaced without recalculating/migrating/deleting saved records. Learning/module engines remain intact.
+
+Planned files: main/App/AppShell; focused appearance types/service/hook/control, shell navigation model/drawer hook/sidebar; dashboard evidence reader/types/availability component/screens; final semantic theme CSS layer; Public/Onboarding appearance insertions; removal of obsolete Dashboard/ModuleCards exports while retaining Learning's moduleIcons/catalog/lesson behavior; focused foundation test suite and npm test command; seven living documents and this review directory. Diagnostic source, scoring, attempt storage, microphone persistence, Exam engines, candidate bank, lockfile and dependency versions are excluded.
+
+Checks: six original suites plus focused theme/storage/navigation/state/component tests, TypeScript, production build, browser desktop/mobile/theme/keyboard/skip/resume/recovery smoke if tooling permits. Separate implementation commit(s) after restored baseline. No installation/backend/audio generation/remote/deployment. Human visual acceptance and all 15 baseline metric acceptance remain outstanding; Stage 2 blocked.
+
+Additional presentation finding, recorded before its edit: module hubs still display legacy diagnostic bands/priority badges. Replace only those labels/values with validation-pending sample copy; preserve the same practice lock, resource selection, workspace code and route behavior. Vite's installed default deny rules will also be retained while excluding review documents from its local development server. No candidate data enters a public asset or adapter.

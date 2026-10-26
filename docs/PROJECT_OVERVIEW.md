@@ -1,5 +1,23 @@
 # AI IELTS Coach — project overview
 
+## Current checkpoint — 2026-10-27, Stage 1B Slice 1
+
+Owner authorization: D01 plus D03-S1 only. Slice 1 implementation and bounded automated/browser validation are complete; **owner acceptance is pending**. Full Stage 1B is incomplete, Diagnostic V1 remains unapproved and Stage 2 remains blocked. No remote, push, deployment, backend, skill installation or dependency upgrade occurred.
+
+Development root: `C:\Users\ksari\source\repos\ai-ielts-coach`. Preserved restored source: `C:\Users\ksari\OneDrive\Desktop\ai_ielts_coach_app`. Independent backup: `C:\Users\ksari\Backups\AI_IELTS_Coach\2026-10-24_PreStage1B_01`. The previously verified copy covered 6,318 files / 108,366,561 bytes. New, honestly dated Git baseline on `main`: `93dd4a2641753e5afb7f3ad3ccb6d22230502f82`; original Git history was absent. Resume verification preserved 166 original non-dependency files, 36 candidate-bank files and the backup's 117 files plus seven supplemental checksum entries. See the [Slice 1 report](reviews/stage-1b/slice-1/SLICE_1_REPORT.md), exact change manifest and [Git checkpoint](reviews/stage-1b/slice-1/GIT_CHECKPOINT.md).
+
+React/TypeScript/Vite/HashRouter and installed dependencies are retained. A feature-based appearance provider, shell navigation/drawer and read-only dashboard presentation now supplement the existing architecture. Light/dark/system appearance persists separately from learner records. Dashboard, Progress, Readiness, diagnostic-result presentation and four module hubs no longer present legacy heuristic proficiency as validated statistics; sample lesson mastery percentages are hidden. Goals and legacy participation remain visible where readable. Original diagnostic/scoring/storage and Exam engines are unchanged.
+
+Seven suites, TypeScript and production build passed; resumed browser checks cover both themes, skip/resume, drawer/account Escape, reset cancellation, all four hubs, Progress/Readiness and 320–1440px dashboard reflow. This is bounded evidence, not diagnostic-quality or WCAG certification. All 15 M01–M11 baseline IDs still require later implementation/verification/human acceptance; M12–M17 are unavailable. Tokens remain provisional, awaiting owner inspection.
+
+Continuity rule: update the appropriate documents among these seven in the same slice whenever routes, data contracts, feature states or architecture change. `ROUTES_AND_STATES.md` is the authoritative route/flow map; `FEATURE_REGISTRY.md` is the implementation-status register. Review reports contain dated evidence, not competing authorities. Preserve historical root Memory.md and audit reports.
+
+---
+
+## Historical Stage 1A record — 2026-10-23
+
+The dated record below is retained; current deltas above take precedence for the affected Slice 1 scope. Historical review reports are unchanged.
+
 Updated: 2026-10-23 (Asia/Karachi). Owner: project owner. Maintainer: assigned frontend engineer, not yet appointed.
 
 ## Authority and current stage

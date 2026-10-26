@@ -1,0 +1,27 @@
+{
+  "resumedClientDate": "2026-10-27",
+  "sourceRoot": "C:\\Users\\ksari\\OneDrive\\Desktop\\ai_ielts_coach_app",
+  "developmentRoot": "C:\\Users\\ksari\\source\\repos\\ai-ielts-coach",
+  "baselineCommit": "93dd4a2641753e5afb7f3ad3ccb6d22230502f82",
+  "originalFilesVerifiedUnchanged": 166,
+  "candidateFilesVerifiedUnchanged": 36,
+  "backupSnapshotFilesVerified": 117,
+  "backupSupplementalHashesVerified": 7,
+  "protectedServiceAndRecordFilesVerified": [
+    "src/data.ts",
+    "src/services/diagnostic.ts",
+    "src/state.ts",
+    "src/types.ts",
+    "src/components/MediaControls.tsx",
+    "src/services/platform.ts",
+    "src/services/exam.ts",
+    "src/features/Diagnostic.tsx",
+    "src/features/Exam.tsx",
+    "src/domain.ts",
+    "package-lock.json",
+    "Memory.md"
+  ],
+  "phaseARestarted": false,
+  "sourceCopiedOrRestoredAgain": false,
+  "learnerStorageInspectedOrMigrated": false
+}

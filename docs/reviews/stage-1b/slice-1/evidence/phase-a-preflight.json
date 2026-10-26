@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-26",
+  "sourceRoot": "C:\\Users\\ksari\\OneDrive\\Desktop\\ai_ielts_coach_app",
+  "developmentRoot": "C:\\Users\\ksari\\source\\repos\\ai-ielts-coach",
+  "stage1AOriginalHashesMatched": 82,
+  "stage1ADocumentHashesMatched": 34,
+  "step2FilesVerified": 10,
+  "step2ACandidateFilesVerified": 36,
+  "backupSnapshotFilesVerified": 117,
+  "backupSupplementalHashesVerified": 7,
+  "completeSourceFileCount": 6318,
+  "completeSourceBytes": 108366561,
+  "nonDependencyFileCount": 166,
+  "intendedVersionedFilesScanned": 153,
+  "redactedSensitiveFindings": [],
+  "candidatePrivateKeys": "Development assessment keys/scripts in docs: reviewed as non-credential, non-learner source; remain versioned, not imported/served.",
+  "sampleRecordings": "Only known project sample WAV assets; no learner recording directories found. Browser storage was not inspected.",
+  "limitations": [
+    "Pattern/name review cannot guarantee absence of every embedded secret.",
+    "Local-only demo source includes illustrative learner fixtures, not secure identity.",
+    "Backup on same C drive; no off-device copy verified."
+  ]
+}

@@ -1,3 +1,4 @@
+import { AppearanceControl } from './appearance/components/AppearanceControl';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -149,7 +150,7 @@ export function Onboarding() {
           <span className="brand-mark"><GraduationCap aria-hidden="true" /></span>
           AI IELTS Coach
         </button>
-        <Button kind="ghost" onClick={saveAndExit}>Save &amp; exit</Button>
+        <div className="onboard-actions"><AppearanceControl/><Button kind="ghost" onClick={saveAndExit}>Save &amp; exit</Button></div>
       </header>
 
       <main className="onboard-main phase-one-main">
@@ -175,7 +176,7 @@ export function Onboarding() {
                 <div className="welcome-mark"><Sparkles size={28} aria-hidden="true" /></div>
                 <Badge tone="green">Takes about 3 minutes</Badge>
                 <h2>Your IELTS goal, your starting point, your plan.</h2>
-                <p className="lead">We’ll ask about what you need, how you prefer to learn and how much time you have. Then you can take a short diagnostic to create your provisional baseline.</p>
+                <p className="lead">We’ll ask about what you need, how you prefer to learn and how much time you have. You can then explore the prototype diagnostic, or skip it and keep learning.</p>
                 <div className="phase-overview" aria-label="What happens next">
                   <div><UserRound aria-hidden="true" /><span><strong>Tell us about you</strong><small>Goals and study context</small></span></div>
                   <div><Clock3 aria-hidden="true" /><span><strong>Choose your pace</strong><small>Time and learning preferences</small></span></div>
@@ -309,7 +310,7 @@ export function Onboarding() {
               <div className="step-content">
                 <div className="phase-step-icon"><Clock3 aria-hidden="true" /></div>
                 <h2>Your starting point and study pace</h2>
-                <p className="lead">Choose the closest fit. The diagnostic will give us stronger evidence later.</p>
+                <p className="lead">Choose the closest fit. This is your self-report, not an assessed CEFR level.</p>
                 <fieldset className="phase-fieldset">
                   <legend>How would you describe your English today?</legend>
                   <ChoiceGrid
@@ -369,7 +370,7 @@ export function Onboarding() {
                 <div className="phase-step-icon"><ClipboardCheck aria-hidden="true" /></div>
                 <Badge tone="ai">Phase 2 · Diagnostic assessment</Badge>
                 <h2>Ready to find your starting point?</h2>
-                <p className="lead">The diagnostic checks Grammar, Vocabulary, Reading, Listening, Writing, Speaking and IELTS Familiarity. Your first estimates are provisional and improve as you provide more evidence.</p>
+                <p className="lead">The diagnostic checks Grammar, Vocabulary, Reading, Listening, Writing, Speaking and IELTS Familiarity. Question, media and scoring validation are pending. This prototype cannot establish a validated baseline.</p>
                 <div className="assess-intro">
                   <div className="assess-list">
                     <p><Check size={17} aria-hidden="true" /> Seven short sections in a clear order</p>

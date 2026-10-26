@@ -1,5 +1,28 @@
 # Decisions
 
+## Dated owner authorization and Slice 1 outcomes — 2026-10-27
+
+This entry supersedes only the current status of affected historical proposals below; it does not backdate approval.
+
+- **D01 APPROVED / EXECUTED for this copy and baseline:** owner approved development root `C:\Users\ksari\source\repos\ai-ielts-coach`, unchanged original/backup and a new honest Git baseline. Baseline `93dd4a2641753e5afb7f3ad3ccb6d22230502f82` is on main, without recovered historical commits or remotes. Existing Git signing/hook configuration was retained; no signing bypass or hooks redirection was used. Preservation evidence is in the Slice 1 review. Private remote/account choices remain unapproved.
+- **D03-S1 APPROVED / IMPLEMENTED_AND_TESTED within bounds, OWNER ACCEPTANCE PENDING:** shell, provisional dual-purple theme and truthful presentation only. This does not authorize full Stage 1B, Diagnostic V1 or Stage 2. Legacy engines/data contracts remain unchanged; no packages/skills installed.
+- **D04 ACCEPTED_REQUIREMENT:** all 15 M01–M11 baseline IDs must be genuinely implemented/verified/human-accepted before Stage 2. This slice does not meet that gate. M12–M17 remain unavailable.
+- **D05 ACCEPTED for local development only:** learner-scoped local persistence is an acceptable later development boundary; current device-wide demo stores were preserved, not migrated into secure identity isolation.
+- **D06 OPEN:** approved question blueprint, keys/provenance/audio verification, immutable assignments, resume/retake/scoring policy and Diagnostic V1 freeze. Step 2A V2 remains candidate content; no runtime activation.
+- **D07 OPEN:** privacy, IANA timezone policy, legacy migration/backups, retention/export/deletion and continuity details. No learner migration was performed.
+- **D02 defaults to NO INSTALLATION.** No third-party skill/agent/MCP installation occurred.
+- **Visual direction APPROVED; exact tokens NOT ACCEPTED yet.** Purple light/dark previews and bounded contrast/keyboard/reflow evidence are ready for inspection. No WCAG certification.
+- **Deployment preparation only:** Vite static-build compatibility recorded; private Git remote, account access, commercial plan, protection configuration, push and deployment require separate authorization. See [Vercel preparation](reviews/stage-1b/slice-1/VERCEL_PREPARATION.md).
+- **Continuity rule ESTABLISHED for future slices:** update the authoritative route map (`ROUTES_AND_STATES.md`), status register (`FEATURE_REGISTRY.md`) and any affected overview/design/contracts/decisions/changelog within the same reviewed slice. No redundant authoritative copies. Preserve historical audits and Memory.md.
+
+Implementation and subsequent evidence-recording commits are recorded in [Git checkpoint](reviews/stage-1b/slice-1/GIT_CHECKPOINT.md). Human acceptance of Slice 1 remains distinct from any next-slice authorization.
+
+---
+
+## Historical Stage 1A record — 2026-10-23
+
+The dated record below is retained; current deltas above take precedence for the affected Slice 1 scope. Historical review reports are unchanged.
+
 2026-10-23. Owner is the final decision maker. Dates below record this review, not implied acceptance. Prior root documentation is preserved. STAGE_2_ENTRY = BLOCKED.
 
 ## ADR-001 — Stage boundary and continuity

@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-10-26–27 — Resume and finish authorized Stage 1B Slice 1
+
+- Resumed the existing verified development copy on main at baseline `93dd4a2641753e5afb7f3ad3ccb6d22230502f82`; no restoration, repository recreation or Phase A repetition. Original source, independent backup, candidate bank and protected diagnostic/storage/Exam files verified unchanged.
+- Added feature-based appearance, shell and read-only dashboard layers; provisional purple light/dark/system preference, responsive navigation, focus/Escape handling, strict header appearance control and unavailable non-links.
+- Replaced active overview/diagnostic-result presentation with honest availability, saved goals/participation and safe history metadata. Removed legacy estimated bands from all four hubs and lesson mastery percentages; retained original calculations, saved data, routes, locks and engines.
+- Corrected dark reset dialog, module-tab contrast and inherited section-caption colors; preserved reset cancellation and saved diagnostic answers. No learner reset/migration or candidate-bank activation occurred.
+- Final checks: all seven suites pass (six historical plus focused foundation), TypeScript no diagnostics, Vite production build succeeds. Resumed browser evidence covers both themes/persistence, onboarding skip, saved G1 resume, strict diagnostic shell, mobile drawer/account Escape, reset cancellation, four hubs, Progress/Readiness and dashboard 320/390/768/1024/1440px reflow. Initial server-rendering test failure preserved and corrected by extracting a pure status component; no store rewrite.
+- Updated these seven living documents and dated Slice 1 review/evidence/change manifests. Historical audits and root Memory.md retained. Git checkpoint is recorded separately after the implementation commit to avoid a self-referential commit hash.
+- Prepared Vercel compatibility/protection/workflow findings only; no remote, push, tooling installation, connected account, backend or deployment.
+
+Status: **Slice 1 ready for bounded human inspection, not owner-accepted. Full Stage 1B incomplete; Diagnostic V1 unapproved; Stage 2 blocked.** Remaining accessibility/visual acceptance and all 15 baseline metric acceptance work are documented in the [Slice 1 report](reviews/stage-1b/slice-1/SLICE_1_REPORT.md).
+
+---
+
+## Historical Stage 1A record — 2026-10-23
+
+The dated record below is retained; current deltas above take precedence for the affected Slice 1 scope. Historical review reports are unchanged.
+
 ## 2026-10-23 — Stage 1A documentation and readiness review
 
 Stage 1A: PASS_WITH_REVIEW. STAGE_2_ENTRY = BLOCKED. Documentation-only delivery; no feature commit was made because the project has no Git metadata.

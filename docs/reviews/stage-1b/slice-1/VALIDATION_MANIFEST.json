@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-27",
+  "scope": "Authorized interrupted Stage 1B Slice 1 only",
+  "baselineCommit": "93dd4a2641753e5afb7f3ad3ccb6d22230502f82",
+  "commands": [
+    {
+      "command": "npm test",
+      "cwd": "C:\\Users\\ksari\\source\\repos\\ai-ielts-coach",
+      "exitCode": 0,
+      "log": "docs/reviews/stage-1b/slice-1/evidence/test.log",
+      "sha256": "f6c822a4195fc2d9155f4f143b822324a766f97d4e3c1115727f4c9ad926bb91",
+      "logModifiedUTC": "2026-10-26T19:54:55.763987+00:00"
+    },
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "cwd": "C:\\Users\\ksari\\source\\repos\\ai-ielts-coach",
+      "exitCode": 0,
+      "log": "docs/reviews/stage-1b/slice-1/evidence/typescript.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "logModifiedUTC": "2026-10-26T19:54:55.798215+00:00"
+    },
+    {
+      "command": "npm run build",
+      "cwd": "C:\\Users\\ksari\\source\\repos\\ai-ielts-coach",
+      "exitCode": 0,
+      "log": "docs/reviews/stage-1b/slice-1/evidence/production_build.log",
+      "sha256": "28c70951e8f6f64f6b4908b978ddac61080baf1a9167211ca3fea2dfe57d2f42",
+      "logModifiedUTC": "2026-10-26T19:55:06.047840+00:00"
+    }
+  ],
+  "browser": {
+    "evidence": "evidence/browser-smoke.json",
+    "checksPassed": 10,
+    "profile": "Disposable Slice Review; no reset/response replacement"
+  },
+  "preservation": "evidence/resume-preservation.json",
+  "copyEquivalence": "evidence/copy-verification.json",
+  "artifactExposure": "evidence/delivery-inspection.json",
+  "exposureInspectionCommand": "python \"C:\\Users\\ksari\\.codex\\visualizations\\2026\\09\\08\\01a081bc-7093-7c61-bec5-95261e1587ad\\slice1_delivery_inspect.py\"",
+  "exposureScriptCopy": "evidence/inspect-delivery.py",
+  "exposureScriptSHA256": "51945726ddd15be1210bdb8a99f812ff515090947679ba056d83e71709ec4163",
+  "gitDiffCheckExitCode": 0,
+  "gitDiffCheckCommand": "git -c core.whitespace=cr-at-eol diff --check (recognizes normal Windows CRLF only; no persistent setting change)",
+  "securityReview": {
+    "changedFileCredentialPatternMatches": [],
+    "sensitiveOrGeneratedPathMatches": [],
+    "configuredAuthorPresent": true,
+    "activeHooks": [],
+    "core.hooksPath": null,
+    "commit.gpgsign": null,
+    "settingsChangedByResume": false,
+    "signingOrHookBypass": false,
+    "remoteCount": 0,
+    "limitations": "Focused high-confidence pattern and file review, not a comprehensive secret/security audit. Existing legacy development answer keys remain inspectable."
+  },
+  "initialFailures": [
+    "New module SSR assertion failed on existing client-only store; pure status component extracted and test passed. Initial failure log retained.",
+    "Initial TypeScript redirection did not execute; successful reruns recorded.",
+    "Restricted default loopback socket denied by environment; explicitly permitted read-only request passed."
+  ],
+  "unverified": [
+    "Human visual and accessibility acceptance",
+    "Screen-reader audit, real OS forced-colors/reduced-motion, 200% text zoom",
+    "Real browser storage-denial (unit mocks exercised)",
+    "Full Exam browser completion and microphone hardware",
+    "Diagnostic V1 validity and all 15 metric acceptance"
+  ],
+  "changes": "CHANGE_MANIFEST.csv",
+  "gitCheckpoint": "GIT_CHECKPOINT.md",
+  "humanAcceptance": "PENDING",
+  "stage2": "BLOCKED",
+  "deployment": "NOT_AUTHORIZED_NOT_EXECUTED",
+  "manifestPolicy": "Change CSV contains every changed/added file except itself. Its integrity is covered by Git. Later Git checkpoint is recorded in a separate documentation commit."
+}
