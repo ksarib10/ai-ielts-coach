@@ -10,6 +10,8 @@ The new tokens distinguish text, muted text, action/on-action, control border, f
 
 Actual browser checks: dashboard reflows without page/main horizontal overflow at 320, 390, 768, 1024 and 1440 CSS px; Reading hub also checked at 320px. At 320px drawer open focuses Close, background is inert and Escape returns Open navigation; account-menu Escape and reset cancellation pass. Light/dark screenshots are in [Slice 1 evidence](reviews/stage-1b/slice-1/evidence/). Human appearance acceptance, screen-reader audit, 200% text zoom, actual OS forced-colors/reduced-motion testing and full legacy-workspace visual audit remain unverified. Exact colors and glass treatment remain provisional pending owner review.
 
+Visual-acceptance corrections (2026-10-27): legacy `.option`, `.diagnostic-progress-panel`, `.coach-context`, `.marketing-cta` and `.auth-links a` now map to semantic surface/text/action tokens (measured 7.7–15:1 in both themes) with forced-colors overrides. On ≤760px the Coach launcher is a static dock below the scroll region instead of a fixed overlay. The navigation drawer reads the 1050px breakpoint via `useSyncExternalStore` and syncs `inert` in a layout effect. Onboarding errors use a stable `onboarding-field-error` id with `aria-invalid`/`aria-describedby` and focus on the first invalid control. Evidence: [correction addendum](reviews/stage-1b/slice-1/visual-acceptance/CORRECTION_ADDENDUM.md); owner acceptance pending.
+
 ---
 
 ## Historical Stage 1A record — 2026-10-23

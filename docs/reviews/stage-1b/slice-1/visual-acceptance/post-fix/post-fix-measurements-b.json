@@ -1,0 +1,46 @@
+{
+  "va05_blankName": {
+    "invalid": "true",
+    "desc": "onboarding-field-error",
+    "focused": true,
+    "value": "",
+    "alert": "Enter your first name to continue.",
+    "alertId": "onboarding-field-error",
+    "descTargetExists": true
+  },
+  "va05_blankContext": {
+    "invalid": "true",
+    "desc": "onboarding-field-error",
+    "focused": true,
+    "value": "",
+    "alert": "Choose the option that best describes what you are doing now.",
+    "alertId": "onboarding-field-error",
+    "descTargetExists": true
+  },
+  "va05_nameRetained": "Kept",
+  "va05_nameInvalidNow": null,
+  "va05_afterFix": "{\"alert\":false,\"invalid\":null}",
+  "steps": [
+    "{\"hash\":\"#/onboarding\",\"h\":\"First, tell us a little about you.\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"Back\",\"Continue\"],\"choices\":0}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue",
+    "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}",
+    "clicked:Continue"
+  ],
+  "finalInfo": "{\"hash\":\"#/onboarding\",\"h\":\"What are you working towards?\",\"btns\":[\"AI IELTS Coach\",\"Save & exit\",\"IELTS AcademicFor university and many professional registrations\",\"IELTS General TrainingFor migration, work and everyday contexts\",\"Study abroad\",\"University admission\",\"Work or career\",\"Migration\",\"Build English first\",\"Personal goal\"],\"choices\":8}"
+}

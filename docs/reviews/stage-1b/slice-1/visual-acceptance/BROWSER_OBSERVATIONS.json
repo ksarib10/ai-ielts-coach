@@ -1,0 +1,892 @@
+{
+  "date": "2026-10-27",
+  "origin": "http://127.0.0.1:4497",
+  "method": "Actual running UI, read-only DOM/style measurements and synthetic UI interactions. No programmatic storage injection or source correction.",
+  "observations": [
+    {
+      "check": "Dark auth links",
+      "observed": [
+        {
+          "color": "rgb(36, 89, 211)",
+          "fontSize": "14px",
+          "surface": "rgb(34, 23, 47)",
+          "text": "Forgot password?"
+        },
+        {
+          "color": "rgb(36, 89, 211)",
+          "fontSize": "14px",
+          "surface": "rgb(34, 23, 47)",
+          "text": "Create an account"
+        }
+      ]
+    },
+    {
+      "check": "Onboarding empty submit",
+      "observed": {
+        "describedby": null,
+        "error": "Enter your first name to continue.",
+        "focused": "Continue",
+        "inputInvalid": null
+      }
+    },
+    {
+      "check": "Onboarding320 clipping",
+      "observed": [
+        {
+          "class": "onboard-main phase-one-main",
+          "overflow": "visible",
+          "scrollWidth": 314,
+          "tag": "MAIN",
+          "text": "Phase 1 of 2 \u00b7 Goals & personalizationOne short assessment. A much clearer plan.Your answers are saved as you go and can be change",
+          "transform": "none",
+          "whiteSpace": "normal",
+          "width": 313.6000061035156,
+          "x": 0
+        },
+        {
+          "class": "onboard-hero",
+          "overflow": "visible",
+          "scrollWidth": 314,
+          "tag": "DIV",
+          "text": "Phase 1 of 2 \u00b7 Goals & personalizationOne short assessment. A much clearer plan.Your answers are saved as you go and can be change",
+          "transform": "none",
+          "whiteSpace": "normal",
+          "width": 313.6000061035156,
+          "x": 0
+        },
+        {
+          "class": "",
+          "overflow": "visible",
+          "scrollWidth": 314,
+          "tag": "H1",
+          "text": "One short assessment. A much clearer plan.",
+          "transform": "none",
+          "whiteSpace": "normal",
+          "width": 313.6000061035156,
+          "x": 0
+        }
+      ]
+    },
+    {
+      "check": "Drawer open",
+      "observed": {
+        "active": "Close navigation",
+        "dialog": "dialog",
+        "mainInert": true,
+        "outline": "rgb(184, 166, 202) none 2.4px"
+      }
+    },
+    {
+      "check": "Drawer Tab ShiftTab Escape",
+      "observed": {
+        "active": "Open navigation",
+        "mainInert": false
+      }
+    },
+    {
+      "check": "Reset cancellation",
+      "observed": {
+        "dialogOpen": false,
+        "focus": "Open user menu",
+        "goal": "Saved track and self-declared goalGeneral Training \u00b7 7.5 goal",
+        "route": "#/dashboard"
+      }
+    },
+    {
+      "check": "Dashboard responsive five widths",
+      "observed": [
+        {
+          "heroColumns": "627.162px 482.438px",
+          "mainScrollWidth": 1194,
+          "mainWidth": 1194,
+          "menuVisible": false,
+          "pageWidth": 1440,
+          "width": 1440
+        },
+        {
+          "heroColumns": "538.987px 414.6px",
+          "mainScrollWidth": 1018,
+          "mainWidth": 1018,
+          "menuVisible": true,
+          "pageWidth": 1024,
+          "width": 1024
+        },
+        {
+          "heroColumns": "394.288px 303.3px",
+          "mainScrollWidth": 762,
+          "mainWidth": 762,
+          "menuVisible": true,
+          "pageWidth": 768,
+          "width": 768
+        },
+        {
+          "heroColumns": "352px",
+          "mainScrollWidth": 384,
+          "mainWidth": 384,
+          "menuVisible": true,
+          "pageWidth": 390,
+          "width": 390
+        },
+        {
+          "heroColumns": "281.6px",
+          "mainScrollWidth": 314,
+          "mainWidth": 314,
+          "menuVisible": true,
+          "pageWidth": 320,
+          "width": 320
+        }
+      ]
+    },
+    {
+      "check": "Dark diagnostic options",
+      "observed": [
+        {
+          "background": "rgb(255, 255, 255)",
+          "children": [
+            {
+              "color": "rgb(211, 197, 226)",
+              "text": "A"
+            },
+            {
+              "color": "rgb(226, 214, 238)",
+              "text": "She go to university every day."
+            }
+          ],
+          "class": "option ",
+          "color": "rgb(226, 214, 238)",
+          "text": "AShe go to university every day."
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "children": [
+            {
+              "color": "rgb(211, 197, 226)",
+              "text": "B"
+            },
+            {
+              "color": "rgb(226, 214, 238)",
+              "text": "She goes to university every day."
+            }
+          ],
+          "class": "option ",
+          "color": "rgb(226, 214, 238)",
+          "text": "BShe goes to university every day."
+        }
+      ]
+    },
+    {
+      "check": "Diagnostic resume",
+      "observed": {
+        "coach": false,
+        "selected": [
+          "BShe goes to university every day."
+        ],
+        "sidebar": false
+      }
+    },
+    {
+      "check": "Writing hub",
+      "observed": {
+        "activeNav": [
+          "Writing"
+        ],
+        "heroBackground": "rgb(56, 38, 76)",
+        "route": "#/writing",
+        "scoreColor": "rgb(184, 166, 202)",
+        "status": "Validation pendingNot assessedValidated score unavailable"
+      }
+    },
+    {
+      "check": "Listening hub",
+      "observed": {
+        "activeNav": "Listening",
+        "route": "#/listening",
+        "status": "Validation pendingNot assessedValidated score unavailable"
+      }
+    },
+    {
+      "check": "Mobile coach overlap",
+      "observed": {
+        "fab": {
+          "h": 44,
+          "w": 114.4000015258789,
+          "x": 189.6000061035156,
+          "y": 740
+        },
+        "overlap": [
+          {
+            "rect": {
+              "bottom": 756.9000244140625,
+              "top": 629.4000244140625
+            },
+            "text": "Lessons remain available now. The current prototype unlocks practice after legacy diagnostic completion. This does not establish a validated assessment score."
+          },
+          {
+            "rect": {
+              "bottom": 814.9000244140625,
+              "top": 770.9000244140625
+            },
+            "text": "Resume initial assessment"
+          }
+        ]
+      }
+    },
+    {
+      "check": "Dark coach context strip",
+      "observed": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "class": "",
+          "color": "rgb(245, 237, 255)",
+          "parentBackground": "rgb(244, 247, 252)",
+          "parentClass": "coach-context"
+        }
+      ]
+    },
+    {
+      "check": "Actual media environment",
+      "observed": {
+        "bodyZoom": "1",
+        "forcedColors": false,
+        "htmlZoom": "1",
+        "reducedMotion": false,
+        "visualScale": 1
+      }
+    },
+    {
+      "check": "Readiness light settled controls",
+      "observed": [
+        {
+          "background": "rgb(105, 51, 181)",
+          "color": "rgb(255, 255, 255)",
+          "disabled": false,
+          "text": "Explore lessons"
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(41, 27, 54)",
+          "disabled": false,
+          "text": "Back to dashboard"
+        }
+      ]
+    },
+    {
+      "check": "Desktop navigation state mismatch after route/resize",
+      "observed": {
+        "compactMedia": false,
+        "menuDisplay": "none",
+        "sidebar": {
+          "ariaHidden": "true",
+          "display": "flex",
+          "inert": true,
+          "width": 240
+        },
+        "width": 1440
+      }
+    },
+    {
+      "check": "Focused route/resize reproduction",
+      "observed": [
+        {
+          "ariaHidden": "true",
+          "compact": false,
+          "inert": true,
+          "route": "#/dashboard",
+          "width": 1440
+        },
+        {
+          "ariaHidden": null,
+          "compact": false,
+          "inert": false,
+          "route": "#/dashboard",
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "check": "Metric and future navigation honesty",
+      "observed": {
+        "baseline": [
+          {
+            "id": "M01",
+            "state": "UNSUPPORTED",
+            "value": "Not available"
+          },
+          {
+            "id": "M02",
+            "state": "AVAILABLE",
+            "value": "General Training \u00b7 goal 7.5"
+          },
+          {
+            "id": "M03",
+            "state": "IN_PROGRESS",
+            "value": "In progress"
+          },
+          {
+            "id": "M04",
+            "state": "REQUIRES_VALID_DIAGNOSTIC",
+            "value": "Not available"
+          },
+          {
+            "id": "M05-GRAMMAR",
+            "state": "REQUIRES_VALID_DIAGNOSTIC",
+            "value": "Not available"
+          },
+          {
+            "id": "M05-VOCABULARY",
+            "state": "REQUIRES_VALID_DIAGNOSTIC",
+            "value": "Not available"
+          },
+          {
+            "id": "M05-READING",
+            "state": "REQUIRES_VALID_DIAGNOSTIC",
+            "value": "Not available"
+          },
+          {
+            "id": "M05-LISTENING",
+            "state": "REQUIRES_VALID_DIAGNOSTIC",
+            "value": "Not available"
+          },
+          {
+            "id": "M05-FAMILIARITY",
+            "state": "REQUIRES_VALID_DIAGNOSTIC",
+            "value": "Not available"
+          },
+          {
+            "id": "M06",
+            "state": "REQUIRES_VALID_DIAGNOSTIC",
+            "value": "Not available"
+          },
+          {
+            "id": "M07",
+            "state": "UNSUPPORTED",
+            "value": "Not available"
+          },
+          {
+            "id": "M08",
+            "state": "UNSUPPORTED",
+            "value": "Not available"
+          },
+          {
+            "id": "M09",
+            "state": "UNSUPPORTED",
+            "value": "Not available"
+          },
+          {
+            "id": "M10",
+            "state": "UNSUPPORTED",
+            "value": "Not available"
+          },
+          {
+            "id": "M11",
+            "state": "UNSUPPORTED",
+            "value": "Not available"
+          }
+        ],
+        "future": [
+          {
+            "id": "M12",
+            "state": "UNSUPPORTED"
+          },
+          {
+            "id": "M13",
+            "state": "UNSUPPORTED"
+          },
+          {
+            "id": "M14",
+            "state": "UNSUPPORTED"
+          },
+          {
+            "id": "M15",
+            "state": "UNSUPPORTED"
+          },
+          {
+            "id": "M16",
+            "state": "UNSUPPORTED"
+          },
+          {
+            "id": "M17",
+            "state": "UNSUPPORTED"
+          }
+        ],
+        "futureNavigation": [
+          {
+            "disabled": "true",
+            "link": "SPAN",
+            "text": "TED learningComing soon"
+          },
+          {
+            "disabled": "true",
+            "link": "SPAN",
+            "text": "Academic Word ListComing soon"
+          },
+          {
+            "disabled": "true",
+            "link": "SPAN",
+            "text": "Grammar resourcesComing soon"
+          },
+          {
+            "disabled": "true",
+            "link": "SPAN",
+            "text": "Curriculum & notesComing soon"
+          }
+        ]
+      }
+    },
+    {
+      "check": "Explore lessons quick action",
+      "observed": {
+        "heading": "Learn what matters for you.",
+        "route": "#/learn"
+      }
+    },
+    {
+      "check": "Public footer",
+      "observed": {
+        "footer": "AI IELTS CoachInteractive prototype \u00b7 original sample content \u00b7 estimates are not official IELTS scores",
+        "pageWidth": 384,
+        "rect": {
+          "bottom": 844.0875244140625,
+          "top": 713.5875244140625
+        },
+        "width": 390
+      }
+    },
+    {
+      "check": "Keyboard focus indicator",
+      "observed": {
+        "focus": "Open user menu",
+        "outline": "rgb(118, 59, 183) solid 2.4px",
+        "visible": true
+      }
+    },
+    {
+      "check": "Final dark persistence",
+      "observed": {
+        "diagnostic": "In progress",
+        "goal": "Saved track and self-declared goalGeneral Training \u00b7 7.5 goal",
+        "theme": "dark"
+      }
+    },
+    {
+      "check": "Settled light diagnostic action",
+      "observed": [
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(41, 27, 54)",
+          "disabled": true,
+          "text": "Back"
+        },
+        {
+          "background": "rgb(105, 51, 181)",
+          "color": "rgb(255, 255, 255)",
+          "disabled": false,
+          "text": "Next question"
+        }
+      ]
+    }
+  ],
+  "contrastCalculations": {
+    "diagnosticOptionOnWhite": 1.39,
+    "authLinkOnDarkCard": 2.8,
+    "coachContextOnPaleStrip": 1.06
+  },
+  "screenshots": [
+    {
+      "file": "landing-dark-1440.png",
+      "height": 900,
+      "pageWidth": 1434,
+      "route": "/",
+      "theme": "dark",
+      "title": "Your next step \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Public hero; sample band labeled illustrative.",
+      "path": "screenshots/landing-dark-1440.png",
+      "issues": [
+        "VA-06"
+      ],
+      "sha256": "cb76aea201a030de4c6d2ca7338ae4df4febd62a5cf159bb561cf82ee25ca7c6"
+    },
+    {
+      "file": "landing-light-390.png",
+      "height": 844,
+      "pageWidth": 384,
+      "route": "/",
+      "theme": "light",
+      "title": "Your next step \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Public/mobile layout and appearance control.",
+      "path": "screenshots/landing-light-390.png",
+      "issues": [],
+      "sha256": "b8cf515f6814b1c675a927ced2c2999cff2844ee7ebad36f0d40cb0a41dd9520"
+    },
+    {
+      "file": "public-footer-dark-390.png",
+      "height": 844,
+      "pageWidth": 384,
+      "route": "#/",
+      "theme": "dark",
+      "title": "Your next step \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Keyboard End review of public footer and final call to action.",
+      "path": "screenshots/public-footer-dark-390.png",
+      "issues": [
+        "VA-01"
+      ],
+      "sha256": "903155c864ea4475f739ecc462c31291b0dcd61ad250bc3ab7fd6bcdc75f0039"
+    },
+    {
+      "file": "login-dark-1440.png",
+      "height": 900,
+      "pageWidth": 1440,
+      "route": "#/login",
+      "theme": "dark",
+      "title": "login \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Demo login form, dark theme.",
+      "path": "screenshots/login-dark-1440.png",
+      "issues": [
+        "VA-02"
+      ],
+      "sha256": "4f5d7e55ffacb5f081922a5888c277a1ac89194e02804bb92aef31b91ef4724d"
+    },
+    {
+      "file": "signup-light-320.png",
+      "height": 800,
+      "pageWidth": 314,
+      "route": "#/signup",
+      "theme": "light",
+      "title": "signup \u00b7 AI IELTS Coach",
+      "width": 320,
+      "note": "Narrow registration; no account created.",
+      "path": "screenshots/signup-light-320.png",
+      "issues": [],
+      "sha256": "6a379c60126d088c77e582533ea2f09a4ffb66f10f73f14b04839bc878ebd4bc"
+    },
+    {
+      "file": "recovery-dark-390.png",
+      "height": 844,
+      "pageWidth": 390,
+      "route": "#/forgot-password",
+      "theme": "dark",
+      "title": "forgot password \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Demo recovery form and low-contrast back link.",
+      "path": "screenshots/recovery-dark-390.png",
+      "issues": [
+        "VA-02"
+      ],
+      "sha256": "486253f637e0b4ce2254b3e425668f96c2e6311b6d5786753973c866c8ffdd11"
+    },
+    {
+      "file": "onboarding-validation-dark-1440.png",
+      "height": 900,
+      "pageWidth": 1434,
+      "route": "#/onboarding",
+      "theme": "dark",
+      "title": "onboarding \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Visible first-name error after Continue; focus remains Continue.",
+      "path": "screenshots/onboarding-validation-dark-1440.png",
+      "issues": [
+        "VA-05",
+        "VA-06"
+      ],
+      "sha256": "3488edb5e61f9b6c2743abd95553c55b15c5b18a277715d7b10b9c7ce7cb0a4c"
+    },
+    {
+      "file": "onboarding-goals-light-390.png",
+      "height": 844,
+      "pageWidth": 384,
+      "route": "#/onboarding",
+      "theme": "light",
+      "title": "onboarding \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Synthetic General Training7.5 goal; long option wrapping.",
+      "path": "screenshots/onboarding-goals-light-390.png",
+      "issues": [],
+      "sha256": "7395f1f8e007770fb104daef9a34f88e912575b562b478708f96fbd19d4bd10d"
+    },
+    {
+      "file": "diagnostic-invitation-dark-320.png",
+      "height": 800,
+      "pageWidth": 314,
+      "route": "#/onboarding",
+      "theme": "dark",
+      "title": "onboarding \u00b7 AI IELTS Coach",
+      "width": 320,
+      "note": "Skippable invitation and disclaimer at320px.",
+      "path": "screenshots/diagnostic-invitation-dark-320.png",
+      "issues": [
+        "VA-07"
+      ],
+      "sha256": "74c05ee5c5d9d6e14c34db86c416509d811e3e4d5a798ab2f7c9fcadeeeb08a3"
+    },
+    {
+      "file": "dashboard-dark-1440.png",
+      "height": 900,
+      "mainScrollWidth": 1194,
+      "mainWidth": 1194,
+      "pageWidth": 1440,
+      "route": "#/dashboard",
+      "theme": "dark",
+      "title": "dashboard \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Settled dark dashboard, active navigation and saved synthetic goal.",
+      "path": "screenshots/dashboard-dark-1440.png",
+      "issues": [],
+      "sha256": "38a926180ba9fd89be63f58139500040c464eda6b9ba121507c8d05a92317563"
+    },
+    {
+      "file": "dashboard-light-1440.png",
+      "height": 900,
+      "mainScrollWidth": 1194,
+      "mainWidth": 1194,
+      "pageWidth": 1440,
+      "route": "#/dashboard",
+      "theme": "light",
+      "title": "dashboard \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Settled light overview with visible keyboard focus on account control.",
+      "path": "screenshots/dashboard-light-1440.png",
+      "issues": [],
+      "sha256": "f24f3d8b254c08fdd68d1161bf21c4ae7c9051b51868ab17d93d42e4725c87e2"
+    },
+    {
+      "file": "dashboard-dark-768.png",
+      "height": 900,
+      "mainScrollWidth": 762,
+      "mainWidth": 762,
+      "pageWidth": 768,
+      "route": "#/dashboard",
+      "theme": "dark",
+      "title": "dashboard \u00b7 AI IELTS Coach",
+      "width": 768,
+      "note": "Responsive breakpoint and card stacking.",
+      "path": "screenshots/dashboard-dark-768.png",
+      "issues": [],
+      "sha256": "28c7e6ae2246cfee324a5a86c1a4c595c9a90fa32207470daff92f01ce89d60d"
+    },
+    {
+      "file": "dashboard-dark-320.png",
+      "height": 800,
+      "mainScrollWidth": 314,
+      "mainWidth": 314,
+      "pageWidth": 320,
+      "route": "#/dashboard",
+      "theme": "dark",
+      "title": "dashboard \u00b7 AI IELTS Coach",
+      "width": 320,
+      "note": "Dashboard after skip; saved synthetic General Training7.5.",
+      "path": "screenshots/dashboard-dark-320.png",
+      "issues": [],
+      "sha256": "dde3771db6d6323e53189bb454ba7be556c93132cefdf60aac0634274fe17e7b"
+    },
+    {
+      "file": "desktop-navigation-inert-light-1440.png",
+      "height": 900,
+      "mainScrollWidth": 1194,
+      "mainWidth": 1194,
+      "pageWidth": 1440,
+      "route": "#/dashboard",
+      "theme": "light",
+      "title": "dashboard \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Visible desktop sidebar remains aria-hidden and inert after mobile route change followed by immediate resize; no visible menu trigger.",
+      "path": "screenshots/desktop-navigation-inert-light-1440.png",
+      "issues": [
+        "VA-03"
+      ],
+      "sha256": "f00046571719a011e3496676a61d672d9cf21c61064430fb61944c22a14de126"
+    },
+    {
+      "file": "navigation-drawer-dark-390.png",
+      "height": 844,
+      "mainScrollWidth": 384,
+      "mainWidth": 384,
+      "pageWidth": 390,
+      "route": "#/dashboard",
+      "theme": "dark",
+      "title": "dashboard \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Drawer open, keyboard focus on close; coming-soon items reached by sidebar scroll.",
+      "path": "screenshots/navigation-drawer-dark-390.png",
+      "issues": [],
+      "sha256": "3a8022f9c116d7ec82a0a73d192362ba924f8279513bf4fd24df1c1223a8e61d"
+    },
+    {
+      "file": "reset-dialog-dark-320.png",
+      "height": 800,
+      "mainScrollWidth": 314,
+      "mainWidth": 314,
+      "pageWidth": 320,
+      "route": "#/dashboard",
+      "theme": "dark",
+      "title": "dashboard \u00b7 AI IELTS Coach",
+      "width": 320,
+      "note": "Confirmation presentation only; destructive action never confirmed.",
+      "path": "screenshots/reset-dialog-dark-320.png",
+      "issues": [],
+      "sha256": "5b6e0add07955a2c15605ba652c970014d5c138f28c24bd2aab1f6e6688b5c88"
+    },
+    {
+      "file": "progress-dark-1440.png",
+      "height": 900,
+      "mainScrollWidth": 1194,
+      "mainWidth": 1194,
+      "pageWidth": 1440,
+      "route": "#/progress",
+      "theme": "dark",
+      "title": "progress \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Empty saved history and unavailable trend/activity insights.",
+      "path": "screenshots/progress-dark-1440.png",
+      "issues": [],
+      "sha256": "6db91da9d8bb7339664ed8ced2491ed66047abad686936ff425480a9fc079934"
+    },
+    {
+      "file": "readiness-light-390.png",
+      "height": 844,
+      "mainScrollWidth": 384,
+      "mainWidth": 384,
+      "pageWidth": 390,
+      "route": "#/readiness",
+      "theme": "light",
+      "title": "readiness \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Settled light-theme readiness; unavailable metric cards and actions.",
+      "path": "screenshots/readiness-light-390.png",
+      "issues": [],
+      "sha256": "9ee1504d3eec61e74f3563e4ba373125e939f7f4e55ce24164b3861860f890db"
+    },
+    {
+      "file": "reading-hub-light-390.png",
+      "height": 844,
+      "mainScrollWidth": 384,
+      "mainWidth": 384,
+      "pageWidth": 390,
+      "route": "#/reading",
+      "theme": "light",
+      "title": "reading \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Reading hub: not assessed, explicit legacy lock, sample navigation.",
+      "path": "screenshots/reading-hub-light-390.png",
+      "issues": [],
+      "sha256": "bce3ca57e0ac4ef4d9be35be69830b84f5f54ea62479d6863d917437d4a6c68f"
+    },
+    {
+      "file": "writing-hub-dark-1440.png",
+      "height": 900,
+      "mainScrollWidth": 1194,
+      "mainWidth": 1194,
+      "pageWidth": 1440,
+      "route": "#/writing",
+      "theme": "dark",
+      "title": "writing \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Dark Writing hub and sample resources; General Training goal.",
+      "path": "screenshots/writing-hub-dark-1440.png",
+      "issues": [],
+      "sha256": "1ab6074f43d18dda030df3bacba99a5e276eee9c79db1d0df5dda026809b0b33"
+    },
+    {
+      "file": "listening-hub-dark-1440.png",
+      "height": 900,
+      "mainScrollWidth": 1194,
+      "mainWidth": 1194,
+      "pageWidth": 1440,
+      "route": "#/listening",
+      "theme": "dark",
+      "title": "listening \u00b7 AI IELTS Coach",
+      "width": 1440,
+      "note": "Listening hub: no diagnostic band or priority estimate.",
+      "path": "screenshots/listening-hub-dark-1440.png",
+      "issues": [],
+      "sha256": "0b80810b779b16406fe49e3b6ca1b9e867026ed1e6094b53a0368cdbce83d3db"
+    },
+    {
+      "file": "speaking-hub-dark-320.png",
+      "height": 800,
+      "mainScrollWidth": 314,
+      "mainWidth": 314,
+      "pageWidth": 320,
+      "route": "#/speaking",
+      "theme": "dark",
+      "title": "speaking \u00b7 AI IELTS Coach",
+      "width": 320,
+      "note": "Speaking hub narrow layout and visible navigation controls.",
+      "path": "screenshots/speaking-hub-dark-320.png",
+      "issues": [
+        "VA-04"
+      ],
+      "sha256": "0c49da6d9e648dbbfee50a42d25ca537c9cab1e17c0a2fb1a5153e61c635e492"
+    },
+    {
+      "file": "diagnostic-options-dark-320.png",
+      "height": 800,
+      "mainScrollWidth": 314,
+      "mainWidth": 314,
+      "pageWidth": 320,
+      "route": "#/diagnostic",
+      "theme": "dark",
+      "title": "diagnostic \u00b7 AI IELTS Coach",
+      "width": 320,
+      "note": "Selected/unselected answer choices; pale text on white defect.",
+      "path": "screenshots/diagnostic-options-dark-320.png",
+      "issues": [
+        "VA-01"
+      ],
+      "sha256": "e8df4d9dcc39c8aa7824f488ab60001374596fad7937172f2c41832e5aec3636"
+    },
+    {
+      "file": "diagnostic-options-light-390.png",
+      "height": 844,
+      "mainScrollWidth": 384,
+      "mainWidth": 384,
+      "pageWidth": 390,
+      "route": "#/diagnostic",
+      "theme": "light",
+      "title": "diagnostic \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Settled light counterpart; selected answer retained, visible keyboard focus.",
+      "path": "screenshots/diagnostic-options-light-390.png",
+      "issues": [],
+      "sha256": "8c368b93e057f494cecc43fbf88a040eb55e3349d76b6cf0d511555f07de1ada"
+    },
+    {
+      "file": "coach-panel-dark-320.png",
+      "height": 800,
+      "mainScrollWidth": 314,
+      "mainWidth": 314,
+      "pageWidth": 320,
+      "route": "#/speaking",
+      "theme": "dark",
+      "title": "speaking \u00b7 AI IELTS Coach",
+      "width": 320,
+      "note": "Coach disclosure and mobile panel controls; no query submitted.",
+      "path": "screenshots/coach-panel-dark-320.png",
+      "issues": [
+        "VA-01"
+      ],
+      "sha256": "5300c3dd4de8575d92dc874bb092faf89d8f924cdb6b6639fcb93799a84b60c4"
+    },
+    {
+      "file": "settings-dark-390.png",
+      "height": 844,
+      "mainScrollWidth": 384,
+      "mainWidth": 384,
+      "pageWidth": 390,
+      "route": "#/settings",
+      "theme": "dark",
+      "title": "settings \u00b7 AI IELTS Coach",
+      "width": 390,
+      "note": "Account form, saved track and goal; no settings saved.",
+      "path": "screenshots/settings-dark-390.png",
+      "issues": [
+        "VA-04"
+      ],
+      "sha256": "5830929da36b5dd05be397d6200e85f9a0534c196aef203d5d2983c47a4029fd"
+    }
+  ],
+  "captureNote": "Only representative distinct and defect captures are packaged. Latest settled recaptures replace early theme-transition captures. Screenshot-only evidence cannot demonstrate an inert attribute; use the paired DOM observations for VA-03."
+}

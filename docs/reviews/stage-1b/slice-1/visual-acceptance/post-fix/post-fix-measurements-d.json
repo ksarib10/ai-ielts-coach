@@ -1,0 +1,135 @@
+{
+  "login": {
+    "inputs": 2,
+    "type": [
+      "email",
+      "password"
+    ],
+    "button": [
+      "Log in"
+    ],
+    "links": [
+      "Forgot password?",
+      "Create an account"
+    ],
+    "h1": "Welcome back."
+  },
+  "login_links_dark": [
+    {
+      "sel": ".auth-links a",
+      "color": "rgb(197, 163, 255)",
+      "bg": "rgb(34,23,47)",
+      "ratio": 8.17,
+      "ownBackgroundImage": false
+    },
+    {
+      "sel": ".auth-links a",
+      "color": "rgb(197, 163, 255)",
+      "bg": "rgb(34,23,47)",
+      "ratio": 8.17,
+      "ownBackgroundImage": false
+    }
+  ],
+  "login_focus_dark": {
+    "text": "Forgot password?",
+    "outline": "none 3px rgb(197, 163, 255)"
+  },
+  "forgot_links_dark": [
+    {
+      "sel": ".auth-links a",
+      "color": "rgb(197, 163, 255)",
+      "bg": "rgb(34,23,47)",
+      "ratio": 8.17,
+      "ownBackgroundImage": false
+    }
+  ],
+  "forgot_focus_dark": {
+    "text": "Back to login",
+    "outline": "none 3px rgb(197, 163, 255)"
+  },
+  "login_links_light": {
+    "sel": ".auth-links a",
+    "color": "rgb(105, 51, 181)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 7.66,
+    "ownBackgroundImage": false
+  },
+  "login_focus_light": {
+    "outline": "none 3px rgb(105, 51, 181)"
+  },
+  "diag_dark_panelExists": true,
+  "diag_dark_panelText": {
+    "sel": ".diagnostic-progress-panel",
+    "color": "rgb(245, 237, 255)",
+    "bg": "rgb(34,23,47)",
+    "ratio": 14.97,
+    "ownBackgroundImage": false
+  },
+  "diag_dark_focus": {
+    "active": "A:Skip to content"
+  },
+  "diag_dark_selectedFocusMeasure": {
+    "sel": ".option.selected",
+    "color": "rgb(245, 237, 255)",
+    "bg": "rgb(56,38,76)",
+    "ratio": 11.9,
+    "ownBackgroundImage": false
+  },
+  "diag_light_panelExists": true,
+  "diag_light_panelText": {
+    "sel": ".diagnostic-progress-panel",
+    "color": "rgb(41, 27, 54)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 16.1,
+    "ownBackgroundImage": false
+  },
+  "diag_light_focus": {
+    "active": "A:Skip to content"
+  },
+  "diag_light_selectedFocusMeasure": {
+    "sel": ".option.selected",
+    "color": "rgb(41, 27, 54)",
+    "bg": "rgb(238,228,248)",
+    "ratio": 13.1,
+    "ownBackgroundImage": false
+  },
+  "va04_speaking_320": {
+    "positions": 24,
+    "anyVisibleOverlap": false,
+    "overlaps": [],
+    "fabBelowScroll": true,
+    "fabTop": 746,
+    "scrollBottom": 738
+  },
+  "va04_settings_390": {
+    "positions": 12,
+    "anyVisibleOverlap": false,
+    "overlaps": [],
+    "fabBelowScroll": true,
+    "fabTop": 746,
+    "scrollBottom": 738
+  },
+  "va04_speaking_390": {
+    "positions": 22,
+    "anyVisibleOverlap": false,
+    "overlaps": [],
+    "fabBelowScroll": true,
+    "fabTop": 746,
+    "scrollBottom": 738
+  },
+  "va03_cycles": 10,
+  "va03_visibleInertOrHiddenCounts": {
+    "m2d": {
+      "0": 0,
+      "100": 0,
+      "350": 0,
+      "1500": 0
+    },
+    "d2m2d": {
+      "0": 0,
+      "100": 0,
+      "350": 0,
+      "1500": 0
+    }
+  }
+}

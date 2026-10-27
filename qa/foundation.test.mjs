@@ -4,7 +4,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { buildSync } from 'esbuild';
 const output = path.resolve('qa/.foundation-test.cjs');
-buildSync({ stdin: { contents: `export * from './src/features/appearance/services/preference'; export * from './src/features/appearance/hooks/AppearanceProvider'; export * from './src/features/appearance/components/AppearanceControl'; export * from './src/features/dashboard/services/presentation'; export * from './src/features/dashboard/components/AvailabilityCard'; export * from './src/features/shell/services/navigation'; export * from './src/features/shell/components/SidebarNavigation'; export * from './src/components/AppShell'; export * from './src/features/dashboard/components/ModuleAssessmentStatus';`, resolveDir: process.cwd(), loader: 'ts' }, bundle: true, packages: 'external', platform: 'node', format: 'cjs', outfile: output, logLevel: 'silent' });
+buildSync({ stdin: { contents: `export * from './src/features/onboarding/services/validation'; export * from './src/features/appearance/services/preference'; export * from './src/features/appearance/hooks/AppearanceProvider'; export * from './src/features/appearance/components/AppearanceControl'; export * from './src/features/dashboard/services/presentation'; export * from './src/features/dashboard/components/AvailabilityCard'; export * from './src/features/shell/services/navigation'; export * from './src/features/shell/components/SidebarNavigation'; export * from './src/components/AppShell'; export * from './src/features/dashboard/components/ModuleAssessmentStatus';`, resolveDir: process.cwd(), loader: 'ts' }, bundle: true, packages: 'external', platform: 'node', format: 'cjs', outfile: output, logLevel: 'silent' });
 const require = createRequire(import.meta.url); const p = require(output);
 const React = require('react'); const { renderToStaticMarkup } = require('react-dom/server'); const { MemoryRouter } = require('react-router-dom');
 const store = new Map(); const writes = [];
@@ -78,4 +78,17 @@ assert.equal(fs.readFileSync('src/features/Modules.tsx','utf8').includes('module
 assert.ok(fs.readFileSync('vite.config.ts','utf8').includes('**/docs/**'));
 assert.equal(fs.readFileSync('src/features/Learning.tsx','utf8').includes('state.mastery[l.check.skill]}%'),false);
 assert.equal(before.get('aiIELTSCoach').includes('8.5'), true); // Synthetic legacy payload retained; never migrated by presentation.
+
+// Onboarding recovery advances to the first remaining invalid control without mutating input.
+const draftProfile = { user:{firstName:'',studyContext:''}, onboarding:{reason:'',selfAssessment:''} };
+let issue=p.onboardingIssue(draftProfile,1); assert.equal(issue.field,'firstName');
+let focused='';
+const root={querySelector(selector){return {matches(){return !selector.includes('reason')},focus(){focused=selector},querySelector(){return {focus(){focused='first reason choice'}}}}}};
+p.focusOnboardingIssue(root,issue); assert.ok(focused.includes('firstName'));
+draftProfile.user.firstName='Kept name';issue=p.onboardingIssue(draftProfile,1);assert.equal(issue.field,'studyContext');p.focusOnboardingIssue(root,issue);assert.ok(focused.includes('studyContext'));assert.equal(draftProfile.user.firstName,'Kept name');
+draftProfile.user.studyContext='Preparing independently';assert.equal(p.onboardingIssue(draftProfile,1),null);
+issue=p.onboardingIssue(draftProfile,2);p.focusOnboardingIssue(root,issue);assert.equal(focused,'first reason choice');
+draftProfile.onboarding.reason='Personal goal';assert.equal(p.onboardingIssue(draftProfile,2),null);
+assert.equal(p.onboardingIssue(draftProfile,4).field,'selfAssessment');draftProfile.onboarding.selfAssessment='B1';assert.equal(p.onboardingIssue(draftProfile,4),null);
+
 console.log('PASS: appearance persistence/system/failure, read-only evidence/null gating, all metric IDs, navigation/unavailable states, strict shell, component semantics and provisional token contrast.');

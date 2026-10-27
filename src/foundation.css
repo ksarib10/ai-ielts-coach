@@ -169,3 +169,31 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
 .practice-tabs button:hover,.practice-tabs button.active,.practice-tabs button[aria-pressed=true] { background:var(--color-soft); color:var(--color-text); border-color:var(--color-action); }
 .practice-tabs button:disabled { color:var(--color-muted); background:var(--color-surface); }
 .ai-fab { background:var(--color-action); color:var(--color-on-action); }
+
+/* Visual acceptance correction: pair actual opaque surfaces with semantic text. */
+.option,.diagnostic-progress-panel,.coach-context,.marketing-cta { background:var(--color-surface); color:var(--color-text); border-color:var(--color-control-border); }
+.option:hover,.option.selected { background:var(--color-soft); color:var(--color-text); border-color:var(--color-action); }
+.option.selected { box-shadow:inset 0 0 0 1px var(--color-action); }
+.option .option-letter,.option.selected .option-letter { background:var(--color-soft); color:var(--color-text); }
+.option input { accent-color:var(--color-action); }
+.option:focus-within { outline:3px solid var(--color-focus); outline-offset:3px; }
+.diagnostic-progress-panel .small { color:var(--color-muted); }
+.coach-context blockquote,.marketing-cta h2 { color:var(--color-text); }
+.marketing-cta p { color:var(--color-muted); }
+.marketing-cta>svg { color:var(--color-action); }
+.auth-links a { color:var(--color-action); text-decoration:underline; text-underline-offset:3px; }
+.auth-links a:hover,.auth-links a:focus-visible { color:var(--color-action-hover); }
+
+@media(max-width:760px) {
+  .main-area.has-coach .main-scroll { min-height:0; scroll-padding-bottom:16px; }
+  .main-area.has-coach>.ai-fab { position:static; flex:0 0 auto; align-self:flex-end; margin:8px 16px max(10px,env(safe-area-inset-bottom)); max-width:calc(100% - 32px); }
+}
+/* VA-07: local hero gutters only; existing progress treatment is deferred. */
+@media(max-width:430px) { .phase-one-main .onboard-hero { padding-inline:16px; box-sizing:border-box; } }
+.input[aria-invalid=true],.select[aria-invalid=true],.phase-choice[aria-invalid=true] { border-color:var(--color-danger); }
+@media(forced-colors:active) {
+  .option,.diagnostic-progress-panel,.coach-context,.marketing-cta { background:Canvas; color:CanvasText; border-color:ButtonText; }
+  .option:hover,.option.selected,.option .option-letter,.coach-context blockquote,.marketing-cta h2,.marketing-cta p { background:Canvas; color:CanvasText; }
+  .option:focus-within { outline-color:Highlight; }
+  .auth-links a,.auth-links a:hover { color:LinkText; }
+}

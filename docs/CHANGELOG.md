@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-27 — Slice 1 visual-acceptance corrections (VA-01–VA-05)
+
+- Focused corrections after the visual audit: semantic surface/text pairing for `.option`, diagnostic progress panel, Coach context and public CTA; readable underlined auth links; drawer breakpoint state via `useSyncExternalStore` with layout-effect inert/aria-hidden sync; mobile Coach launcher docked below the scroll region (`has-coach`); onboarding errors linked to the invalid field (`aria-invalid`, `aria-describedby`, focus) through `features/onboarding/services/validation.ts`; local 16px hero gutter at ≤430px. VA-06 deferred.
+- No scoring, question, storage, route or learner-record changes. Technical evidence: [correction addendum](reviews/stage-1b/slice-1/visual-acceptance/CORRECTION_ADDENDUM.md). Human visual acceptance remains pending.
+
 ## 2026-10-26–27 — Resume and finish authorized Stage 1B Slice 1
 
 - Resumed the existing verified development copy on main at baseline `93dd4a2641753e5afb7f3ad3ccb6d22230502f82`; no restoration, repository recreation or Phase A repetition. Original source, independent backup, candidate bank and protected diagnostic/storage/Exam files verified unchanged.

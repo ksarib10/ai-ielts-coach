@@ -1,0 +1,10 @@
+{
+  "dark": {
+    "onOption": true,
+    "outline": "solid 3px rgb(222, 200, 255)",
+    "bg": "rgb(34, 23, 47)"
+  },
+  "light": {
+    "active": "BODY"
+  }
+}

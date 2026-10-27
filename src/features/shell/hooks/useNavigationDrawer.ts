@@ -1,18 +1,20 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from 'react';
+const query = '(max-width: 1050px)';
+export const navigationIsCompact = () => typeof window !== 'undefined' && window.matchMedia(query).matches;
+export function subscribeNavigationBreakpoint(changed: () => void) {
+  const media = window.matchMedia(query);
+  media.addEventListener('change', changed);
+  return () => media.removeEventListener('change', changed);
+}
 export function useNavigationDrawer(pathname: string) {
   const [open, setOpen] = useState(false);
-  const [compact, setCompact] = useState(() => typeof window !== 'undefined' && window.matchMedia('(max-width: 1050px)').matches);
+  const compact = useSyncExternalStore(subscribeNavigationBreakpoint, navigationIsCompact, () => false);
   const drawer = useRef<HTMLElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
   const content = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const media = window.matchMedia('(max-width: 1050px)');
-    const update = () => { setCompact(media.matches); if (!media.matches) setOpen(false); };
-    media.addEventListener('change', update);
-    return () => media.removeEventListener('change', update);
-  }, []);
+  useEffect(() => { if (!compact) setOpen(false); }, [compact]);
   useEffect(() => { setOpen(false); }, [pathname]);
-  useEffect(() => {
+  useLayoutEffect(() => {
     drawer.current?.toggleAttribute('inert', compact && !open);
     content.current?.toggleAttribute('inert', compact && open);
     return () => { drawer.current?.removeAttribute('inert'); content.current?.removeAttribute('inert'); };

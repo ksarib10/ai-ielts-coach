@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-27",
+  "auditedCommit": "f95fc5898a3048f01e9384e336c543de6cb1f505",
+  "branch": "main",
+  "remotes": [],
+  "sourceAndSevenLivingDocumentsChanged": false,
+  "initialGitStatus": "",
+  "reviewOnlyAddition": "docs/reviews/stage-1b/slice-1/visual-acceptance",
+  "serverCommand": "npm run dev -- --host 127.0.0.1 --port 4497 --strictPort",
+  "technicalSuitePolicy": "Reused prior committed logs; no new suite/build execution",
+  "visualRoutes": 14,
+  "onboardingStepStates": 6,
+  "additionalDestinationOnlyRoutes": [
+    "/learn"
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "requestedWidthsInspected": [
+    1440,
+    1024,
+    768,
+    390,
+    320
+  ],
+  "issueCounts": {
+    "P0": 0,
+    "P1": 3,
+    "P2": 2,
+    "P3": 2
+  },
+  "screenshotCount": 26,
+  "humanAcceptance": "PENDING",
+  "codeCorrections": false,
+  "gitCommitCreated": false,
+  "files": [
+    {
+      "path": "BROWSER_OBSERVATIONS.json",
+      "bytes": 26361,
+      "sha256": "29587e2a778049f29cd88bbd350ca9d1ea76e261d9177a6c65d94477ace1d5f5"
+    },
+    {
+      "path": "OWNER_VISUAL_ACCEPTANCE_CHECKLIST.md",
+      "bytes": 3475,
+      "sha256": "aecf418119b46e62a8cff63ad1c1b1ca231f63919c38aca2069f1fb20ec273ad"
+    },
+    {
+      "path": "SCREENSHOT_INDEX.md",
+      "bytes": 5416,
+      "sha256": "d71fadd0945da790864adb9ac0dbd35e4ac7993505de31c404f45030c4977617"
+    },
+    {
+      "path": "screenshots/coach-panel-dark-320.png",
+      "bytes": 30399,
+      "sha256": "5300c3dd4de8575d92dc874bb092faf89d8f924cdb6b6639fcb93799a84b60c4"
+    },
+    {
+      "path": "screenshots/dashboard-dark-1440.png",
+      "bytes": 104308,
+      "sha256": "38a926180ba9fd89be63f58139500040c464eda6b9ba121507c8d05a92317563"
+    },
+    {
+      "path": "screenshots/dashboard-dark-320.png",
+      "bytes": 36113,
+      "sha256": "dde3771db6d6323e53189bb454ba7be556c93132cefdf60aac0634274fe17e7b"
+    },
+    {
+      "path": "screenshots/dashboard-dark-768.png",
+      "bytes": 74116,
+      "sha256": "28c7e6ae2246cfee324a5a86c1a4c595c9a90fa32207470daff92f01ce89d60d"
+    },
+    {
+      "path": "screenshots/dashboard-light-1440.png",
+      "bytes": 106428,
+      "sha256": "f24f3d8b254c08fdd68d1161bf21c4ae7c9051b51868ab17d93d42e4725c87e2"
+    },
+    {
+      "path": "screenshots/desktop-navigation-inert-light-1440.png",
+      "bytes": 104705,
+      "sha256": "f00046571719a011e3496676a61d672d9cf21c61064430fb61944c22a14de126"
+    },
+    {
+      "path": "screenshots/diagnostic-invitation-dark-320.png",
+      "bytes": 38599,
+      "sha256": "74c05ee5c5d9d6e14c34db86c416509d811e3e4d5a798ab2f7c9fcadeeeb08a3"
+    },
+    {
+      "path": "screenshots/diagnostic-options-dark-320.png",
+      "bytes": 30997,
+      "sha256": "e8df4d9dcc39c8aa7824f488ab60001374596fad7937172f2c41832e5aec3636"
+    },
+    {
+      "path": "screenshots/diagnostic-options-light-390.png",
+      "bytes": 37469,
+      "sha256": "8c368b93e057f494cecc43fbf88a040eb55e3349d76b6cf0d511555f07de1ada"
+    },
+    {
+      "path": "screenshots/landing-dark-1440.png",
+      "bytes": 78359,
+      "sha256": "cb76aea201a030de4c6d2ca7338ae4df4febd62a5cf159bb561cf82ee25ca7c6"
+    },
+    {
+      "path": "screenshots/landing-light-390.png",
+      "bytes": 35021,
+      "sha256": "b8cf515f6814b1c675a927ced2c2999cff2844ee7ebad36f0d40cb0a41dd9520"
+    },
+    {
+      "path": "screenshots/listening-hub-dark-1440.png",
+      "bytes": 98647,
+      "sha256": "0b80810b779b16406fe49e3b6ca1b9e867026ed1e6094b53a0368cdbce83d3db"
+    },
+    {
+      "path": "screenshots/login-dark-1440.png",
+      "bytes": 2849,
+      "sha256": "4f5d7e55ffacb5f081922a5888c277a1ac89194e02804bb92aef31b91ef4724d"
+    },
+    {
+      "path": "screenshots/navigation-drawer-dark-390.png",
+      "bytes": 29820,
+      "sha256": "3a8022f9c116d7ec82a0a73d192362ba924f8279513bf4fd24df1c1223a8e61d"
+    },
+    {
+      "path": "screenshots/onboarding-goals-light-390.png",
+      "bytes": 31510,
+      "sha256": "7395f1f8e007770fb104daef9a34f88e912575b562b478708f96fbd19d4bd10d"
+    },
+    {
+      "path": "screenshots/onboarding-validation-dark-1440.png",
+      "bytes": 62869,
+      "sha256": "3488edb5e61f9b6c2743abd95553c55b15c5b18a277715d7b10b9c7ce7cb0a4c"
+    },
+    {
+      "path": "screenshots/progress-dark-1440.png",
+      "bytes": 93574,
+      "sha256": "6db91da9d8bb7339664ed8ced2491ed66047abad686936ff425480a9fc079934"
+    },
+    {
+      "path": "screenshots/public-footer-dark-390.png",
+      "bytes": 27315,
+      "sha256": "903155c864ea4475f739ecc462c31291b0dcd61ad250bc3ab7fd6bcdc75f0039"
+    },
+    {
+      "path": "screenshots/readiness-light-390.png",
+      "bytes": 43486,
+      "sha256": "9ee1504d3eec61e74f3563e4ba373125e939f7f4e55ce24164b3861860f890db"
+    },
+    {
+      "path": "screenshots/reading-hub-light-390.png",
+      "bytes": 45713,
+      "sha256": "bce3ca57e0ac4ef4d9be35be69830b84f5f54ea62479d6863d917437d4a6c68f"
+    },
+    {
+      "path": "screenshots/recovery-dark-390.png",
+      "bytes": 21872,
+      "sha256": "486253f637e0b4ce2254b3e425668f96c2e6311b6d5786753973c866c8ffdd11"
+    },
+    {
+      "path": "screenshots/reset-dialog-dark-320.png",
+      "bytes": 29118,
+      "sha256": "5b6e0add07955a2c15605ba652c970014d5c138f28c24bd2aab1f6e6688b5c88"
+    },
+    {
+      "path": "screenshots/settings-dark-390.png",
+      "bytes": 36694,
+      "sha256": "5830929da36b5dd05be397d6200e85f9a0534c196aef203d5d2983c47a4029fd"
+    },
+    {
+      "path": "screenshots/signup-light-320.png",
+      "bytes": 26663,
+      "sha256": "6a379c60126d088c77e582533ea2f09a4ffb66f10f73f14b04839bc878ebd4bc"
+    },
+    {
+      "path": "screenshots/speaking-hub-dark-320.png",
+      "bytes": 38705,
+      "sha256": "0c49da6d9e648dbbfee50a42d25ca537c9cab1e17c0a2fb1a5153e61c635e492"
+    },
+    {
+      "path": "screenshots/writing-hub-dark-1440.png",
+      "bytes": 104362,
+      "sha256": "1ab6074f43d18dda030df3bacba99a5e276eee9c79db1d0df5dda026809b0b33"
+    },
+    {
+      "path": "UI_ISSUES_REGISTER.csv",
+      "bytes": 5774,
+      "sha256": "27eb9fa655eb7da0cf4f9e154694c26f2740ee078783ab6172396263636d8130"
+    },
+    {
+      "path": "VISUAL_ACCEPTANCE_REPORT.md",
+      "bytes": 12316,
+      "sha256": "faf3aa886f05eeec474c9156bbb04e5b3cb65045d806bfb4eff5b033126fda49"
+    }
+  ],
+  "selfHashPolicy": "This manifest excludes itself. All review files remain uncommitted for owner review."
+}

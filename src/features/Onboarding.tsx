@@ -1,5 +1,6 @@
 import { AppearanceControl } from './appearance/components/AppearanceControl';
-import { useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
+import { focusOnboardingIssue, onboardingIssue, ONBOARDING_ERROR_ID, type OnboardingField, type OnboardingIssue } from './onboarding/services/validation';
 import { useNavigate } from 'react-router-dom';
 import {
   ArrowLeft,
@@ -33,14 +34,18 @@ function ChoiceGrid<T extends string | number>({
   selected,
   onChange,
   className = '',
+  validationField,
+  invalid = false,
 }: {
   items: Choice<T>[];
   selected: T;
   onChange: (value: T) => void;
   className?: string;
+  validationField?: OnboardingField;
+  invalid?: boolean;
 }) {
   return (
-    <div className={`choice-grid ${className}`}>
+    <div className={`choice-grid ${className}`} data-onboarding-field={validationField}>
       {items.map((item) => {
         const active = selected === item.value;
         return (
@@ -48,6 +53,8 @@ function ChoiceGrid<T extends string | number>({
             type="button"
             key={item.value}
             aria-pressed={active}
+            aria-invalid={invalid || undefined}
+            aria-describedby={invalid ? ONBOARDING_ERROR_ID : undefined}
             className={`choice-card phase-choice ${active ? 'selected' : ''}`}
             onClick={() => onChange(item.value)}
           >
@@ -69,12 +76,16 @@ export function Onboarding() {
   const [state, setState] = useState(initial);
   const [step, setStep] = useState(Math.max(0, Math.min(5, initial.onboarding.step || 0)));
   const [error, setError] = useState('');
+  const [issue, setIssue] = useState<OnboardingIssue | null>(null);
+  const page = useRef<HTMLDivElement>(null);
+  useLayoutEffect(() => { if (issue && page.current) focusOnboardingIssue(page.current, issue); }, [issue]);
 
   const save = (mutator: (next: AppState) => void) => {
     try {
       const next = updateState(mutator);
       setState(next);
       setError('');
+      setIssue(null);
       return true;
     } catch {
       setError('Your progress could not be saved on this device. Check browser storage and try again.');
@@ -95,24 +106,10 @@ export function Onboarding() {
   };
 
   const validate = () => {
-    if (step === 1 && !state.user.firstName.trim()) {
-      setError('Enter your first name to continue.');
-      return false;
-    }
-    if (step === 1 && !state.user.studyContext.trim()) {
-      setError('Choose the option that best describes what you are doing now.');
-      return false;
-    }
-    if (step === 2 && !state.onboarding.reason) {
-      setError('Choose your main reason for taking IELTS.');
-      return false;
-    }
-    if (step === 4 && !state.onboarding.selfAssessment) {
-      setError('Choose the English level that feels closest to your starting point.');
-      return false;
-    }
-    setError('');
-    return true;
+    const nextIssue = onboardingIssue(state, step);
+    setIssue(nextIssue);
+    setError(nextIssue?.message ?? '');
+    return !nextIssue;
   };
 
   const moveTo = (nextStep: number) => {
@@ -144,7 +141,7 @@ export function Onboarding() {
   };
 
   return (
-    <div className="onboard-page">
+    <div ref={page} className="onboard-page">
       <header className="onboard-top">
         <button className="brand-btn" onClick={saveAndExit} aria-label="Save progress and return home">
           <span className="brand-mark"><GraduationCap aria-hidden="true" /></span>
@@ -193,7 +190,7 @@ export function Onboarding() {
                 <div className="form-stack">
                   <label className="field">
                     <span>First name</span>
-                    <input className="input" autoFocus autoComplete="given-name" value={state.user.firstName} onChange={(event) => updateUser('firstName', event.target.value)} placeholder="e.g. Dilnoza" />
+                    <input data-onboarding-field="firstName" aria-invalid={issue?.field === 'firstName' || undefined} aria-describedby={issue?.field === 'firstName' ? ONBOARDING_ERROR_ID : undefined} className="input" autoFocus autoComplete="given-name" value={state.user.firstName} onChange={(event) => updateUser('firstName', event.target.value)} placeholder="e.g. Dilnoza" />
                   </label>
                   <div className="inline-grid">
                     <label className="field">
@@ -209,7 +206,7 @@ export function Onboarding() {
                     </label>
                     <label className="field">
                       <span>What are you doing now?</span>
-                      <select className="select" value={state.user.studyContext} onChange={(event) => updateUser('studyContext', event.target.value)}>
+                      <select data-onboarding-field="studyContext" aria-invalid={issue?.field === 'studyContext' || undefined} aria-describedby={issue?.field === 'studyContext' ? ONBOARDING_ERROR_ID : undefined} className="select" value={state.user.studyContext} onChange={(event) => updateUser('studyContext', event.target.value)}>
                         <option value="">Choose one</option>
                         <option value="School student">School student</option>
                         <option value="University student">University student</option>
@@ -267,6 +264,7 @@ export function Onboarding() {
                       { value: 'Improve English first', label: 'Build English first' },
                       { value: 'Personal goal', label: 'Personal goal' },
                     ]}
+                    validationField="reason" invalid={issue?.field === 'reason'}
                     selected={state.onboarding.reason}
                     onChange={(value) => choose('reason', value)}
                   />
@@ -314,7 +312,7 @@ export function Onboarding() {
                 <fieldset className="phase-fieldset">
                   <legend>How would you describe your English today?</legend>
                   <ChoiceGrid
-                    className="phase-level-grid"
+                    className="phase-level-grid" validationField="selfAssessment" invalid={issue?.field === 'selfAssessment'}
                     items={[
                       { value: 'A1', label: 'A1 · Beginner', detail: 'A few basic words and phrases' },
                       { value: 'A2', label: 'A2 · Elementary', detail: 'Simple everyday exchanges' },
@@ -383,7 +381,7 @@ export function Onboarding() {
               </div>
             )}
 
-            {error && <p className="error-box" role="alert">{error}</p>}
+            {error && <p id={ONBOARDING_ERROR_ID} className="error-box" role="alert">{error}</p>}
 
             <div className={`onboard-actions ${step === 5 ? 'phase-final-actions' : ''}`}>
               {step > 0 ? (
