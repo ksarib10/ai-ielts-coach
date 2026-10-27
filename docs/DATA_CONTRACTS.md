@@ -1,5 +1,15 @@
 # Data contracts
 
+## Slice 2 UI metadata boundary — 2026-10-28
+
+`src/features/discovery/types.ts` defines CatalogEntry, LearnCategory/actions, SkillActivity/SkillTarget and CatalogSource. The metadata service supplies only titles, descriptions, icons, local availability and existing-route targets. Routes/builders live separately from rendering. CatalogSource is a **local UI metadata seam**, not a finalized content-record, backend or database contract. No CSV rows, Oxford bank, external media, answer keys or candidate scripts are imported. Future normalized records/API adapters still require their own approved source/schema/provider work.
+
+SAMPLE, PLANNED and REFERENCE_PENDING apply only to catalog availability. Runtime presentation translates these to Sample available, Coming soon or Reference pending; the existing practice guard can show Assessment required. This does not alter accepted metric formulas, IDs, availability envelopes, eligible denominators or assessment meaning.
+
+All learner stores/keys, AppState/domain types, scoring/services, diagnostic source/order/capture, Exam timing and workspace engine remain unchanged. Only existing profile track and baseline-presence predicate are read for Task 1 routing and practice-label accuracy. No catalog persistence, migration, random assignment or provider network call is added. Existing legacy bundled marking remains inspectable; no secure production assessment claim is made. D06/D07 and all 15 baseline-metric acceptance work remain open.
+
+---
+
 ## Implemented Slice 1 boundaries — 2026-10-27
 
 Only presentation/appearance contracts were added. `features/appearance/types.ts` defines light/dark/system preference and resolved appearance; `services/preference.ts` reads/writes only `ielts-appearance-v1`. Storage denial returns system/default or memory-only selection with feedback. No learner record, diagnostic answer, media or attempt format is changed.

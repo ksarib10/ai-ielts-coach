@@ -1,0 +1,2529 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://127.0.0.1:4497",
+  "profile": "Existing disposable Visual Audit, General Training, saved G1 B unchanged",
+  "initialAutomation": "First create-tab call timed out; existing created tab recovered successfully. Some initial immediate reads were superseded after waiting for visible content.",
+  "foundAndFixed": "Mobile preview disclosure left=-110 at390/-129 at320. Localized fixed positioning verified left16/right304 at320 and contained at390.",
+  "observations": [
+    {
+      "label": "Learn initial desktop",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/learn",
+      "width": 1440
+    },
+    {
+      "label": "Learn light desktop",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn",
+      "width": 1440
+    },
+    {
+      "label": "category Explore: Vocabulary",
+      "headings": [
+        "Vocabulary",
+        "Start with the available samples."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/vocabulary",
+      "width": 1440
+    },
+    {
+      "label": "category View availability: Academic Word List (AWL)",
+      "headings": [
+        "Academic Word List (AWL)",
+        "This collection is not available yet."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/awl",
+      "width": 1440
+    },
+    {
+      "label": "category View availability: TED Talk Learning",
+      "headings": [
+        "TED Talk Learning",
+        "This collection is not available yet."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/ted",
+      "width": 1440
+    },
+    {
+      "label": "category Explore: Grammar & Tenses",
+      "headings": [
+        "Grammar & Tenses",
+        "Start with the available samples."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/grammar-tenses",
+      "width": 1440
+    },
+    {
+      "label": "category View availability: Phrasal Verbs",
+      "headings": [
+        "Phrasal Verbs",
+        "This collection is not available yet."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/phrasal-verbs",
+      "width": 1440
+    },
+    {
+      "label": "category View availability: Idioms",
+      "headings": [
+        "Idioms",
+        "This collection is not available yet."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/idioms",
+      "width": 1440
+    },
+    {
+      "label": "category View availability: Irregular Verbs",
+      "headings": [
+        "Irregular Verbs",
+        "This collection is not available yet."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/irregular-verbs",
+      "width": 1440
+    },
+    {
+      "label": "category View availability: Collocations",
+      "headings": [
+        "Collocations",
+        "This collection is not available yet."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/collocations",
+      "width": 1440
+    },
+    {
+      "label": "category View availability: Linking Words & Connectors",
+      "headings": [
+        "Linking Words & Connectors",
+        "This collection is not available yet."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/linking-words",
+      "width": 1440
+    },
+    {
+      "label": "category View availability: British vs American English",
+      "headings": [
+        "British vs American English",
+        "This collection is not available yet."
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/category/british-american",
+      "width": 1440
+    },
+    {
+      "label": "Grammar category filter",
+      "headings": [
+        "Learn what matters for you.",
+        "Build a clear everyday sentence",
+        "Explore your learning path"
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/lessons?category=Grammar",
+      "width": 1440
+    },
+    {
+      "label": "Listening hub",
+      "headings": [
+        "Listening",
+        "Mini Listening Practice",
+        "Part Practice",
+        "Full Listening Tests",
+        "Listening Lessons",
+        "Listening Strategies & Tips",
+        "Listening Scoring Criteria"
+      ],
+      "nav": [
+        {
+          "href": "#/dashboard",
+          "text": "Dashboard"
+        },
+        {
+          "href": "#/learn",
+          "text": "Learn"
+        },
+        {
+          "href": "#/listening",
+          "text": "Listening"
+        },
+        {
+          "href": "#/reading",
+          "text": "Reading"
+        },
+        {
+          "href": "#/writing",
+          "text": "Writing"
+        },
+        {
+          "href": "#/speaking",
+          "text": "Speaking"
+        },
+        {
+          "href": "#/exam",
+          "text": "Complete IELTS Exam"
+        },
+        {
+          "href": "#/progress",
+          "text": "Progress"
+        },
+        {
+          "href": "#/ielts-about",
+          "text": "IELTS About"
+        },
+        {
+          "href": "#/settings",
+          "text": "Settings"
+        }
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening",
+      "width": 1440
+    },
+    {
+      "label": "Reading hub desktop",
+      "headings": [
+        "Reading",
+        "Mini Reading Practice",
+        "Passage Practice",
+        "Full Reading Tests",
+        "Reading Lessons",
+        "Reading Strategies & Tips",
+        "Reading Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading",
+      "width": 1440
+    },
+    {
+      "label": "Writing hub desktop",
+      "headings": [
+        "Writing",
+        "Writing Task 1",
+        "Writing Task 2",
+        "Timed Writing Practice",
+        "Model Essays",
+        "Writing Strategies & Tips",
+        "Writing Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing",
+      "width": 1440
+    },
+    {
+      "label": "Speaking hub desktop",
+      "headings": [
+        "Speaking",
+        "Speaking Part 1",
+        "Speaking Part 2",
+        "Speaking Part 3",
+        "Speaking Simulation",
+        "Speaking Strategies & Tips",
+        "Speaking Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking",
+      "width": 1440
+    },
+    {
+      "label": "About desktop",
+      "headings": [
+        "IELTS About",
+        "What is IELTS?",
+        "IELTS Academic vs General Training",
+        "Test format",
+        "Test sections and duration",
+        "Band-score overview",
+        "Registration and test-day information",
+        "IELTS on Computer / Paper",
+        "Accessibility and arrangements",
+        "FAQs"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "What is IELTS?",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/what-is-ielts",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "IELTS Academic vs General Training",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/academic-general",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "Test format",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/test-format",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "Test sections and duration",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/sections-duration",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "Band-score overview",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/bands",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "Registration and test-day information",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/registration-test-day",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "IELTS on Computer / Paper",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/computer-paper",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "Accessibility and arrangements",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/accessibility",
+      "width": 1440
+    },
+    {
+      "label": "About topic",
+      "headings": [
+        "FAQs",
+        "Verified information is being prepared."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about/faqs",
+      "width": 1440
+    },
+    {
+      "label": "Listening card destination",
+      "headings": [
+        "Complete your initial assessment first.",
+        "Personalized practice is waiting for your baseline."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening/practice/listening-gardens",
+      "width": 1440
+    },
+    {
+      "label": "Listening card destination",
+      "headings": [
+        "Part Practice",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening/activities/parts",
+      "width": 1440
+    },
+    {
+      "label": "Listening card destination",
+      "headings": [
+        "Full Listening Tests",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening/activities/full-tests",
+      "width": 1440
+    },
+    {
+      "label": "Listening card destination",
+      "headings": [
+        "Learn what matters for you.",
+        "Build a clear everyday sentence",
+        "Explore your learning path"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/lessons?category=Listening%20Skills",
+      "width": 1440
+    },
+    {
+      "label": "Listening card destination",
+      "headings": [
+        "Listening Strategies & Tips",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening/activities/tips",
+      "width": 1440
+    },
+    {
+      "label": "Listening card destination",
+      "headings": [
+        "Listening Scoring Criteria",
+        "Verified scoring references are not available here yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening/scoring-criteria",
+      "width": 1440
+    },
+    {
+      "label": "Reading card destination",
+      "headings": [
+        "Complete your initial assessment first.",
+        "Personalized practice is waiting for your baseline."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading/practice/gardens",
+      "width": 1440
+    },
+    {
+      "label": "Reading card destination",
+      "headings": [
+        "Complete your initial assessment first.",
+        "Personalized practice is waiting for your baseline."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading/practice/gardens",
+      "width": 1440
+    },
+    {
+      "label": "Reading card destination",
+      "headings": [
+        "Full Reading Tests",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading/activities/full-tests",
+      "width": 1440
+    },
+    {
+      "label": "Reading card destination",
+      "headings": [
+        "Learn what matters for you.",
+        "Build a clear everyday sentence",
+        "Explore your learning path"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/lessons?category=Reading%20Skills",
+      "width": 1440
+    },
+    {
+      "label": "Reading card destination",
+      "headings": [
+        "Reading Strategies & Tips",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading/activities/tips",
+      "width": 1440
+    },
+    {
+      "label": "Reading card destination",
+      "headings": [
+        "Reading Scoring Criteria",
+        "Verified scoring references are not available here yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading/scoring-criteria",
+      "width": 1440
+    },
+    {
+      "label": "Writing card destination",
+      "headings": [
+        "A letter to the community centre",
+        "Ready to submit?"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/learn/writing-letter",
+      "width": 1440
+    },
+    {
+      "label": "Writing card destination",
+      "headings": [
+        "Education and career choices",
+        "Discuss both views and give your opinion",
+        "Ready to submit?"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/learn/writing-2",
+      "width": 1440
+    },
+    {
+      "label": "Writing card destination",
+      "headings": [
+        "Education and career choices",
+        "Discuss both views and give your opinion",
+        "Ready to submit?"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/test/writing-2",
+      "width": 1440
+    },
+    {
+      "label": "Writing card destination",
+      "headings": [
+        "Model Essays",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/activities/models",
+      "width": 1440
+    },
+    {
+      "label": "Writing card destination",
+      "headings": [
+        "Writing Strategies & Tips",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/activities/tips",
+      "width": 1440
+    },
+    {
+      "label": "Writing card destination",
+      "headings": [
+        "Writing Scoring Criteria",
+        "Verified scoring references are not available here yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/scoring-criteria",
+      "width": 1440
+    },
+    {
+      "label": "Speaking card destination",
+      "headings": [
+        "Your hometown and daily life",
+        "Tell me about your hometown.",
+        "Ready to submit?"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking/learn/speaking-1",
+      "width": 1440
+    },
+    {
+      "label": "Speaking card destination",
+      "headings": [
+        "A skill you would like to learn",
+        "Describe a skill you would like to learn.",
+        "Ready to submit?"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking/learn/speaking-2",
+      "width": 1440
+    },
+    {
+      "label": "Speaking card destination",
+      "headings": [
+        "Skills in a changing world",
+        "How has technology changed the skills people need at work?",
+        "Ready to submit?"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking/learn/speaking-3",
+      "width": 1440
+    },
+    {
+      "label": "Speaking card destination",
+      "headings": [
+        "Speaking Simulation",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking/activities/simulation",
+      "width": 1440
+    },
+    {
+      "label": "Speaking card destination",
+      "headings": [
+        "Speaking Strategies & Tips",
+        "This activity collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking/activities/tips",
+      "width": 1440
+    },
+    {
+      "label": "Speaking card destination",
+      "headings": [
+        "Speaking Scoring Criteria",
+        "Verified scoring references are not available here yet."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking/scoring-criteria",
+      "width": 1440
+    },
+    {
+      "label": "Progress to Readiness",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress/readiness",
+      "width": 1440
+    },
+    {
+      "label": "Legacy Readiness redirect",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress/readiness",
+      "width": 1440
+    },
+    {
+      "label": "Complete IELTS Exam center",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/exam",
+      "width": 1440
+    },
+    {
+      "label": "Learn light mobile390",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn",
+      "width": 390,
+      "superseded": true,
+      "reason": "Initial read happened before rendering settled or inspected boolean attribute rather than checked property; corrected observation follows."
+    },
+    {
+      "label": "Learn light390 settled",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn",
+      "width": 390
+    },
+    {
+      "label": "Learn light320",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn",
+      "width": 320
+    },
+    {
+      "label": "Dark persistence320",
+      "headings": [],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/learn",
+      "width": 320,
+      "superseded": true,
+      "reason": "Initial read happened before rendering settled or inspected boolean attribute rather than checked property; corrected observation follows."
+    },
+    {
+      "label": "Reading via mobile drawer320",
+      "headings": [
+        "Reading",
+        "Mini Reading Practice",
+        "Passage Practice",
+        "Full Reading Tests",
+        "Reading Lessons",
+        "Reading Strategies & Tips",
+        "Reading Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/reading",
+      "width": 320
+    },
+    {
+      "label": "Writing dark390",
+      "headings": [
+        "Writing",
+        "Writing Task 1",
+        "Writing Task 2",
+        "Timed Writing Practice",
+        "Model Essays",
+        "Writing Strategies & Tips",
+        "Writing Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/writing",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/learn",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "Listening",
+        "Mini Listening Practice",
+        "Part Practice",
+        "Full Listening Tests",
+        "Listening Lessons",
+        "Listening Strategies & Tips",
+        "Listening Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/listening",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "Reading",
+        "Mini Reading Practice",
+        "Passage Practice",
+        "Full Reading Tests",
+        "Reading Lessons",
+        "Reading Strategies & Tips",
+        "Reading Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/reading",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "Writing",
+        "Writing Task 1",
+        "Writing Task 2",
+        "Timed Writing Practice",
+        "Model Essays",
+        "Writing Strategies & Tips",
+        "Writing Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/writing",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "Speaking",
+        "Speaking Part 1",
+        "Speaking Part 2",
+        "Speaking Part 3",
+        "Speaking Simulation",
+        "Speaking Strategies & Tips",
+        "Speaking Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/speaking",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "IELTS About",
+        "What is IELTS?",
+        "IELTS Academic vs General Training",
+        "Test format",
+        "Test sections and duration",
+        "Band-score overview",
+        "Registration and test-day information",
+        "IELTS on Computer / Paper",
+        "Accessibility and arrangements",
+        "FAQs"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/ielts-about",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "Keep track of your saved work.",
+        "Saved prototype attempts"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/progress",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/progress/readiness",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 390",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/exam",
+      "width": 390
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/learn",
+      "width": 320
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "Listening",
+        "Mini Listening Practice",
+        "Part Practice",
+        "Full Listening Tests",
+        "Listening Lessons",
+        "Listening Strategies & Tips",
+        "Listening Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/listening",
+      "width": 320
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "Reading",
+        "Mini Reading Practice",
+        "Passage Practice",
+        "Full Reading Tests",
+        "Reading Lessons",
+        "Reading Strategies & Tips",
+        "Reading Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/reading",
+      "width": 320
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "Writing",
+        "Writing Task 1",
+        "Writing Task 2",
+        "Timed Writing Practice",
+        "Model Essays",
+        "Writing Strategies & Tips",
+        "Writing Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/writing",
+      "width": 320
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "Speaking",
+        "Speaking Part 1",
+        "Speaking Part 2",
+        "Speaking Part 3",
+        "Speaking Simulation",
+        "Speaking Strategies & Tips",
+        "Speaking Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/speaking",
+      "width": 320
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "IELTS About",
+        "What is IELTS?",
+        "IELTS Academic vs General Training",
+        "Test format",
+        "Test sections and duration",
+        "Band-score overview",
+        "Registration and test-day information",
+        "IELTS on Computer / Paper",
+        "Accessibility and arrangements",
+        "FAQs"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/ielts-about",
+      "width": 320
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "Keep track of your saved work.",
+        "Saved prototype attempts"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/progress",
+      "width": 320
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/progress/readiness",
+      "width": 320
+    },
+    {
+      "label": "responsive dark 320",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/exam",
+      "width": 320
+    },
+    {
+      "label": "About light320",
+      "headings": [
+        "IELTS About",
+        "What is IELTS?",
+        "IELTS Academic vs General Training",
+        "Test format",
+        "Test sections and duration",
+        "Band-score overview",
+        "Registration and test-day information",
+        "IELTS on Computer / Paper",
+        "Accessibility and arrangements",
+        "FAQs"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "Listening",
+        "Mini Listening Practice",
+        "Part Practice",
+        "Full Listening Tests",
+        "Listening Lessons",
+        "Listening Strategies & Tips",
+        "Listening Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "Reading",
+        "Mini Reading Practice",
+        "Passage Practice",
+        "Full Reading Tests",
+        "Reading Lessons",
+        "Reading Strategies & Tips",
+        "Reading Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "Writing",
+        "Writing Task 1",
+        "Writing Task 2",
+        "Timed Writing Practice",
+        "Model Essays",
+        "Writing Strategies & Tips",
+        "Writing Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "Speaking",
+        "Speaking Part 1",
+        "Speaking Part 2",
+        "Speaking Part 3",
+        "Speaking Simulation",
+        "Speaking Strategies & Tips",
+        "Speaking Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "IELTS About",
+        "What is IELTS?",
+        "IELTS Academic vs General Training",
+        "Test format",
+        "Test sections and duration",
+        "Band-score overview",
+        "Registration and test-day information",
+        "IELTS on Computer / Paper",
+        "Accessibility and arrangements",
+        "FAQs"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "Keep track of your saved work.",
+        "Saved prototype attempts"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress/readiness",
+      "width": 320
+    },
+    {
+      "label": "responsive light 320",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/exam",
+      "width": 320
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn",
+      "width": 390
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "Listening",
+        "Mini Listening Practice",
+        "Part Practice",
+        "Full Listening Tests",
+        "Listening Lessons",
+        "Listening Strategies & Tips",
+        "Listening Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening",
+      "width": 390
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "Reading",
+        "Mini Reading Practice",
+        "Passage Practice",
+        "Full Reading Tests",
+        "Reading Lessons",
+        "Reading Strategies & Tips",
+        "Reading Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading",
+      "width": 390
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "Writing",
+        "Writing Task 1",
+        "Writing Task 2",
+        "Timed Writing Practice",
+        "Model Essays",
+        "Writing Strategies & Tips",
+        "Writing Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing",
+      "width": 390
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "Speaking",
+        "Speaking Part 1",
+        "Speaking Part 2",
+        "Speaking Part 3",
+        "Speaking Simulation",
+        "Speaking Strategies & Tips",
+        "Speaking Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking",
+      "width": 390
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "IELTS About",
+        "What is IELTS?",
+        "IELTS Academic vs General Training",
+        "Test format",
+        "Test sections and duration",
+        "Band-score overview",
+        "Registration and test-day information",
+        "IELTS on Computer / Paper",
+        "Accessibility and arrangements",
+        "FAQs"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about",
+      "width": 390
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "Keep track of your saved work.",
+        "Saved prototype attempts"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress",
+      "width": 390
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress/readiness",
+      "width": 390
+    },
+    {
+      "label": "responsive light 390",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/exam",
+      "width": 390
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn",
+      "width": 1440
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "Listening",
+        "Mini Listening Practice",
+        "Part Practice",
+        "Full Listening Tests",
+        "Listening Lessons",
+        "Listening Strategies & Tips",
+        "Listening Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening",
+      "width": 1440
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "Reading",
+        "Mini Reading Practice",
+        "Passage Practice",
+        "Full Reading Tests",
+        "Reading Lessons",
+        "Reading Strategies & Tips",
+        "Reading Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading",
+      "width": 1440
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "Writing",
+        "Writing Task 1",
+        "Writing Task 2",
+        "Timed Writing Practice",
+        "Model Essays",
+        "Writing Strategies & Tips",
+        "Writing Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing",
+      "width": 1440
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "Speaking",
+        "Speaking Part 1",
+        "Speaking Part 2",
+        "Speaking Part 3",
+        "Speaking Simulation",
+        "Speaking Strategies & Tips",
+        "Speaking Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking",
+      "width": 1440
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "IELTS About",
+        "What is IELTS?",
+        "IELTS Academic vs General Training",
+        "Test format",
+        "Test sections and duration",
+        "Band-score overview",
+        "Registration and test-day information",
+        "IELTS on Computer / Paper",
+        "Accessibility and arrangements",
+        "FAQs"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ielts-about",
+      "width": 1440
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "Keep track of your saved work.",
+        "Saved prototype attempts"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress",
+      "width": 1440
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress/readiness",
+      "width": 1440
+    },
+    {
+      "label": "responsive light 1440",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/exam",
+      "width": 1440
+    },
+    {
+      "label": "Readiness light settled",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/progress/readiness",
+      "width": 1440
+    },
+    {
+      "label": "Saved diagnostic before",
+      "answer": "",
+      "superseded": true,
+      "reason": "Initial read happened before rendering settled or inspected boolean attribute rather than checked property; corrected observation follows."
+    },
+    {
+      "label": "Skip and save/resume original G1 B",
+      "checked": true
+    },
+    {
+      "label": "Existing header search",
+      "headings": [
+        "Learn what matters for you.",
+        "Build a clear everyday sentence",
+        "Explore your learning path"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn?search=contrast",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /practice",
+      "headings": [
+        "Practice unlocks after your starting assessment.",
+        "Your diagnostic work is saved."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/practice",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /mock-tests",
+      "headings": [
+        "Test one IELTS skill at a time.",
+        "Focused checks and the complete simulation serve different goals.",
+        "Choose a module test"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/mock-tests",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /saved",
+      "headings": [
+        "Words worth coming back to."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/saved",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /vocabulary",
+      "headings": [
+        "Words worth coming back to."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/vocabulary",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /ai-coach",
+      "headings": [
+        "A conversation with context."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/ai-coach",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /learn/foundations",
+      "headings": [
+        "Build a clear everyday sentence",
+        "Describe a daily routine with a subject and verb.",
+        "The idea",
+        "Compare the examples",
+        "Check your understanding"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn/foundations",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /reading/practice",
+      "headings": [
+        "Complete your initial assessment first.",
+        "Personalized practice is waiting for your baseline."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading/practice/gardens",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /writing/task/2",
+      "headings": [
+        "Complete your initial assessment first.",
+        "Personalized practice is waiting for your baseline."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/practice/writing-2",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /speaking/part/1",
+      "headings": [
+        "Complete your initial assessment first.",
+        "Personalized practice is waiting for your baseline."
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking/practice/speaking-1",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /exam-simulation",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/exam",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /reading/exam",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/exam",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /listening/library",
+      "headings": [
+        "Listening, with a clear purpose.",
+        "Complete your initial assessment to unlock personalized practice.",
+        "Choose how to work",
+        "Build the underlying skill",
+        "Recent listening attempts"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/listening/library",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /reading/library",
+      "headings": [
+        "Reading, with a clear purpose.",
+        "Complete your initial assessment to unlock personalized practice.",
+        "Choose how to work",
+        "Build the underlying skill",
+        "Recent reading attempts"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/reading/library",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /writing/library",
+      "headings": [
+        "Writing, with a clear purpose.",
+        "Complete your initial assessment to unlock personalized practice.",
+        "Choose how to work",
+        "Build the underlying skill",
+        "Recent writing attempts"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/library",
+      "width": 1440
+    },
+    {
+      "label": "Legacy deep link /speaking/library",
+      "headings": [
+        "Speaking, with a clear purpose.",
+        "Complete your initial assessment to unlock personalized practice.",
+        "Choose how to work",
+        "Build the underlying skill",
+        "Recent speaking attempts"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/speaking/library",
+      "width": 1440
+    },
+    {
+      "label": "Strict timed writing retained",
+      "headings": [
+        "Education and career choices",
+        "Discuss both views and give your opinion",
+        "Ready to submit?"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/writing/test/writing-2",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/learn",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "Listening",
+        "Mini Listening Practice",
+        "Part Practice",
+        "Full Listening Tests",
+        "Listening Lessons",
+        "Listening Strategies & Tips",
+        "Listening Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/listening",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "Reading",
+        "Mini Reading Practice",
+        "Passage Practice",
+        "Full Reading Tests",
+        "Reading Lessons",
+        "Reading Strategies & Tips",
+        "Reading Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/reading",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "Writing",
+        "Writing Task 1",
+        "Writing Task 2",
+        "Timed Writing Practice",
+        "Model Essays",
+        "Writing Strategies & Tips",
+        "Writing Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/writing",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "Speaking",
+        "Speaking Part 1",
+        "Speaking Part 2",
+        "Speaking Part 3",
+        "Speaking Simulation",
+        "Speaking Strategies & Tips",
+        "Speaking Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/speaking",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "IELTS About",
+        "What is IELTS?",
+        "IELTS Academic vs General Training",
+        "Test format",
+        "Test sections and duration",
+        "Band-score overview",
+        "Registration and test-day information",
+        "IELTS on Computer / Paper",
+        "Accessibility and arrangements",
+        "FAQs"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/ielts-about",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "Keep track of your saved work.",
+        "Saved prototype attempts"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/progress",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "A useful estimate needs valid evidence.",
+        "Keep your goal. Build the skills."
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/progress/readiness",
+      "width": 1440
+    },
+    {
+      "label": "responsive dark1440",
+      "headings": [
+        "Bring all four skills into one controlled journey.",
+        "General Training Complete IELTS Exam",
+        "Strict simulation conditions",
+        "Clear prototype boundaries"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/exam",
+      "width": 1440
+    },
+    {
+      "label": "Criteria dark desktop",
+      "headings": [
+        "Writing Scoring Criteria",
+        "Verified scoring references are not available here yet."
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/writing/scoring-criteria",
+      "width": 1440
+    },
+    {
+      "label": "Drawer keyboard focus and resize",
+      "cycles": [
+        {
+          "hiddenAncestor": false,
+          "inertAncestor": false
+        },
+        {
+          "hiddenAncestor": false,
+          "inertAncestor": false
+        },
+        {
+          "hiddenAncestor": false,
+          "inertAncestor": false
+        }
+      ],
+      "observed": "Close navigation initially focused; Tab moves to Dashboard; Settings Tab wraps to brand link (first focusable); Escape returns Open navigation; background wrapper inert while open."
+    },
+    {
+      "label": "Speaking dark390 settled",
+      "headings": [
+        "Speaking",
+        "Speaking Part 1",
+        "Speaking Part 2",
+        "Speaking Part 3",
+        "Speaking Simulation",
+        "Speaking Strategies & Tips",
+        "Speaking Scoring Criteria"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/speaking",
+      "width": 390
+    },
+    {
+      "label": "Vocabulary tools from Learn",
+      "headings": [
+        "Words worth coming back to."
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/saved",
+      "width": 390
+    },
+    {
+      "label": "Planned collection dark390",
+      "headings": [
+        "Academic Word List (AWL)",
+        "This collection is not available yet."
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/learn/category/awl",
+      "width": 390
+    },
+    {
+      "label": "Light theme persistence reload",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "url": "#/learn",
+      "width": 1440
+    },
+    {
+      "label": "Dark theme persistence reload",
+      "headings": [
+        "Build the language behind your IELTS goal.",
+        "Vocabulary",
+        "Academic Word List (AWL)",
+        "TED Talk Learning",
+        "Grammar & Tenses",
+        "Phrasal Verbs",
+        "Idioms",
+        "Irregular Verbs",
+        "Collocations",
+        "Linking Words & Connectors",
+        "British vs American English"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "url": "#/learn",
+      "width": 1440
+    }
+  ],
+  "limitations": [
+    "No independent screen reader or hardware testing",
+    "No completed Exam browser journey; existing regression suite retained",
+    "No dataset integration, Diagnostic V1 validation or human acceptance"
+  ]
+}

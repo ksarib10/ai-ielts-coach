@@ -1,5 +1,24 @@
 # Feature registry
 
+## Current implementation-status delta — 2026-10-28, Slice 2
+
+This dated entry supersedes the affected Slice 1 descriptions below. **Implemented/tested does not mean owner-accepted; Slice 2 acceptance PENDING.**
+
+| Feature | Slice 2 implementation | Evidence / remaining boundary |
+|---|---|---|
+| F12 Learn | Ten typed category cards; Vocabulary/Grammar connect existing samples; eight collections Coming soon | All ten destinations checked; no CSV/Excel/resource bank imported |
+| F05–F08 skills | Six shared cards per hub; existing sample links, practice gates, retained libraries | All 24 card targets checked; full tests/models/simulation/tips remain unavailable where absent |
+| IELTS information | Nine IELTS About topics and four distinct scoring-reference screens | Actual pending screens checked; no unverified official policy/descriptors or scoring validity claims |
+| F13 Progress/Readiness | Overview/Readiness tabs, canonical child path, old alias | Both routes/redirect checked; existing null/unsupported states unchanged |
+| F09/F10 assessment | Complete IELTS Exam display name; existing Mock Tests reachable within skills | Engine/service unchanged, historical Exam suite passes; no new full Exam implementation |
+| F16 shell | Ten links in four groups; persistent accessible Development Preview disclosure | Both themes, responsive layout, visible keyboard focus, drawer/Escape/three resize cycles; mobile disclosure clipping fixed |
+| F03/F04 diagnostic/dashboard | Preserved existing behavior and truthful unavailable metrics | Saved G1 B skip/save/resume observed; no assessment or metric acceptance implied |
+| F15 Coach/auth identity | Scripted Coach and shared-device sign-in explicitly disclosed | Existing destination/function retained; strict timed Writing has no Coach launcher; no real AI/auth added |
+
+Catalog-specific SAMPLE means an existing short sample, PLANNED means Coming soon, REFERENCE_PENDING means no verified reference content. These are UI metadata states, not replacements for the M01–M11 metric availability model. Diagnostic V1 remains unapproved; all 15 baseline metrics await later genuine implementation and human acceptance, M12–M17 remain unavailable, Stage 2 remains blocked. [Slice 2 evidence](reviews/stage-1b/slice-2/SLICE_2_IMPLEMENTATION_REPORT.md).
+
+---
+
 ## Current implementation-status delta — 2026-10-27
 
 This file is the authoritative feature/status register. The dated Stage 1A inventory below is preserved as history; this delta supersedes its affected implementation descriptions. Implemented, tested and owner-accepted are separate states. **No Slice 1 feature is owner-accepted yet.**

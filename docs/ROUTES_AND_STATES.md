@@ -1,5 +1,30 @@
 # Routes and states
 
+## Current route and navigation delta — 2026-10-28, Slice 2
+
+This dated entry supersedes affected route descriptions below. HashRouter, session/onboarding/active-Exam guards, workspace validation and diagnostic skip/resume are retained. Sidebar now has ten links: Main (Dashboard, Learn); IELTS Skills (Listening, Reading, Writing, Speaking); Assessment & Progress (Complete IELTS Exam, Progress); Information (IELTS About, Settings). Removed sidebar links do not remove engines or old URLs.
+
+| Path / family | Current behavior |
+|---|---|
+| `/learn` | Ten-category Learn catalog; nonempty `?search=` retains existing lesson search |
+| `/learn/category/:categoryId` | Vocabulary/Grammar sample tools or explicit planned collection; unknown ID recovers |
+| `/learn/lessons?category=…` | Original sample LearningHub with initial category filter; manual filters remain local UI state |
+| `/learn/:id` | Original lesson deep link unchanged |
+| `/{skill}` | Six typed activity cards; supported short samples, original practice gate or pending information |
+| `/{skill}/library` | Original module hub retained as sample library, including its modes/history/bookmarks |
+| `/{skill}/activities/:activityId` | Planned activity information; unknown ID recovery |
+| `/{skill}/scoring-criteria` | Distinct per-skill educational reference, content pending |
+| `/ielts-about`, `/ielts-about/:topicId` | Nine-topic catalog and source-pending information screens |
+| `/progress`, `/progress/readiness` | Overview/Readiness subnavigation; sidebar Progress stays active |
+| `/readiness` | Redirect to `/progress/readiness` |
+| `/exam` | Existing Exam Center displayed as Complete IELTS Exam, with shortened-sample limitations retained |
+
+`{skill}` means listening, reading, writing or speaking. Vocabulary links through Learn to `/saved` and existing vocabulary lessons. Mock Tests remains reachable from each skill hub. `/practice`, `/practice/activity-library`, `/mock-tests`, `/saved`, `/vocabulary`, `/ai-coach`, all existing `/{skill}/:mode/:id`, result routes and legacy task/exam aliases remain registered. No existing route guard/destination was removed. Timed Writing routes to the existing strict Task 2 **test** workspace, not an untimed practice engine. Academic/General Training Task 1 follows the saved track.
+
+The persistent shell disclosure is Development Preview. Non-strict repeated mode/demo banners are consolidated; strict assistance-disabled labeling and material sample/identity/data limitations remain. This file is the authoritative maintained route-flow map. Exact paths/targets and actual checks: [route manifest](reviews/stage-1b/slice-2/ROUTE_MANIFEST.md), [browser evidence](reviews/stage-1b/slice-2/evidence/BROWSER_OBSERVATIONS.json).
+
+---
+
 ## Current route and flow delta — 2026-10-27
 
 The existing public paths, aliases, guards and HashRouter remain intact. `src/App.tsx` now imports Dashboard from `features/dashboard/screens/Dashboard.tsx` and Progress, Readiness and DiagnosticStatus from `features/dashboard/screens/Insights.tsx`. `/diagnostic/results` retains its historical complete-plus-result guard but displays validation status instead of legacy bands. Old result/screen implementations are preserved as unused historical source.

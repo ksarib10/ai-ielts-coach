@@ -12,7 +12,7 @@ import { hasDiagnosticBaseline, readState } from '../state';
 import { policies, type Attempt, type Draft, type LearningState, type Mode, type Module, type Resource } from '../domain';
 import { defaultResource, moduleIcons } from './Learning';
 
-export function ModuleHub({ module }: { module: Module }) {
+export function ModuleLibrary({ module }: { module: Module }) {
   const navigate = useNavigate();
   const state = useLearning();
   const learner = readState();
