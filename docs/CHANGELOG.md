@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-28 — Stage 1B Slice 2 navigation and learning architecture
+
+- Continued base `65a25bbacc97a021d728946839da5404d262924e` on `feat/stage-1b-slice-2-navigation`; preserved four pre-existing untracked handoff reports and prior corrections. No restoration or earlier QA repeated.
+- Added typed discovery metadata/routes/shared cards/screens: ten Learn categories, 24 skill activity cards, nine About topics and four pending scoring-reference pages. Retained original sample libraries, workspaces, practice locks and URLs; added initial lesson category filtering.
+- Simplified sidebar to ten links/four groups, nested Readiness under Progress with old redirect, renamed Exam display labels to Complete IELTS Exam. Consolidated shell prototype clutter into Development Preview while preserving material limitations and strict no-assistance header.
+- Browser QA found preview-panel clipping at 320/390px, corrected with a localized mobile inset rule. Actual checks: both themes at 1440/390/320px on affected screens, destination/deep-link navigation, theme persistence, drawer focus/Escape/three breakpoint cycles, strict timed Writing and unchanged G1 B skip/save/resume. Initial navigation timeout/stale reads are recorded rather than counted as application passes.
+- Final `npm test`: eight suites PASS; TypeScript `--noEmit`: exit 0; `npm run build`: exit 0. Historical scoring suite passes certify unchanged prototype regressions only, not Diagnostic V1 validity or metric acceptance. Exact logs, screenshots, preservation hashes and file/route manifests: [Slice 2 review](reviews/stage-1b/slice-2/SLICE_2_IMPLEMENTATION_REPORT.md).
+- Updated all seven living documents. No package/lockfile, question/candidate, diagnostic/scoring/persistence/capture, Exam engine, backend, ingestion or learner migration change. Human acceptance PENDING; Stage 2 blocked. Local feature checkpoint only; no merge/push/deploy in this slice.
+
+---
+
 ## 2026-10-27 — Slice 1 visual-acceptance corrections (VA-01–VA-05)
 
 - Focused corrections after the visual audit: semantic surface/text pairing for `.option`, diagnostic progress panel, Coach context and public CTA; readable underlined auth links; drawer breakpoint state via `useSyncExternalStore` with layout-effect inert/aria-hidden sync; mobile Coach launcher docked below the scroll region (`has-coach`); onboarding errors linked to the invalid field (`aria-invalid`, `aria-describedby`, focus) through `features/onboarding/services/validation.ts`; local 16px hero gutter at ≤430px. VA-06 deferred.

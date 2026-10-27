@@ -1,5 +1,15 @@
 # UI design system
 
+## Slice 2 discovery and navigation components — 2026-10-28
+
+Existing provisional purple light/dark/system tokens, opaque assessment surfaces and CSS architecture are retained. `CatalogCard` reuses shared `Card`, Lucide icons, h2/description, truthful availability and uniquely named links. Discovery grids use three columns, two at ≤1050px, one at ≤760px; min-width:0, wrapping titles, 44px action targets and semantic text/action/surface tokens support narrow layouts. Category/info and Progress subnavigation share the existing visual language; no dashboard redesign.
+
+`DevelopmentPreview` is a native keyboard-operable disclosure in AppShell (including strict headers). It consolidates repeated shell demo/sample warnings, explains shared-device identity, browser-only saves, scripted Coach and unvalidated diagnostic, and links Settings. Escape closes it and returns focus. QA found the initially right-anchored panel clipped left at 390/320px; a localized ≤760px fixed inset panel now stays inside the viewport with bounded height/scrolling. Existing mobile Coach dock and navigation focus protections remain unchanged.
+
+Actual browser DOM/reflow checks cover Learn, four hubs, IELTS About, Progress, Readiness and Exam at 1440/390/320px in both themes; representative screenshots support visual inspection. No page-level horizontal overflow observed. Card keyboard focus is visible; native drawer keyboard behavior and three mobile/desktop cycles passed. Theme reload persistence passed. Existing foundation contrast tests pass, but no independent screen-reader/hardware/WCAG certification is claimed. Exact aesthetics and new Slice 2 owner acceptance remain pending. Evidence: [screenshot index](reviews/stage-1b/slice-2/SCREENSHOT_INDEX.md).
+
+---
+
 ## Implemented provisional purple foundation — 2026-10-27
 
 `src/foundation.css` loads after existing styles; it adds semantic light/dark tokens, layered purple gradients, restrained translucent navigation/cards, opaque diagnostic/editor/content surfaces and a no-blur fallback. It does not replace the existing CSS architecture or introduce a component library. Reading passages, Writing editors and long content retain opaque backgrounds. Existing assessment content/timing behavior is unchanged.

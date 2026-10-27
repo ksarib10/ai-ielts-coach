@@ -1,5 +1,19 @@
 # Decisions
 
+## Owner-authorized Slice 2 UI architecture — 2026-10-28
+
+- **APPROVED SCOPE / IMPLEMENTED_AND_TESTED, HUMAN ACCEPTANCE PENDING:** Stage 1B Slice 2 frontend navigation/catalog restructuring only, per the owner's pasted instruction. This is not Stage 2 authorization.
+- **Navigation decision:** exact ten-link/four-group sidebar; Readiness inside Progress; vocabulary inside Learn; original engines/deep links retained. Exam Simulation display becomes Complete IELTS Exam with original sample limitations.
+- **Catalog decision:** typed metadata, pure route builders, reusable card and separate screens in `features/discovery`. SAMPLE/PLANNED/REFERENCE_PENDING avoid pretending unavailable datasets or full tests work. Existing module hubs are retained as libraries; no framework/provider rewrite.
+- **Information decision:** About topics and distinct scoring references are structural pending destinations until verified content approval. No policy research/ingestion or rubrics fabricated.
+- **Disclosure decision:** consolidate repeated non-strict shell demo/sample banners into one accessible Development Preview, retaining material shared-device identity, local-save, scripted-AI and invalid-assessment limitations. Strict assistance-disabled presentation stays.
+- **Checkpoint reconciliation:** owner handoff reports Slice 1 corrections completed by Google Antigravity, existing private GitHub connection/push and Vercel frontend deployment. Base `65a25bbacc97a021d728946839da5404d262924e` matches the local origin/main reference at preflight. Earlier no-remote/deployment statements below describe historical stages. This slice does not fetch, push, merge, reconnect accounts, change remotes or deploy. Four existing untracked GitHub/Vercel reports are preserved and excluded from the Slice 2 commit.
+- **Still OPEN:** owner review of Slice 2 and provisional appearance, D06 Diagnostic V1 freeze/keys/media/assignments/retakes, D07 privacy/timezone/retention/migration, all 15 M01–M11 genuine baseline metrics and human acceptance. D01 established baseline remains preserved; D05 local-only permission does not create secure identity. M12–M17 remain unavailable. No new package/skill/backend/AI/data migration. Publishing this slice requires separate authorization.
+
+Same-slice updates to authoritative routes, feature status, architecture/contracts and related living documents remain mandatory. [Implementation/evidence report](reviews/stage-1b/slice-2/SLICE_2_IMPLEMENTATION_REPORT.md).
+
+---
+
 ## Dated owner authorization and Slice 1 outcomes — 2026-10-27
 
 This entry supersedes only the current status of affected historical proposals below; it does not backdate approval.

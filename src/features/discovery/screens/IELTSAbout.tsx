@@ -1,0 +1,8 @@
+import { Link,useParams } from 'react-router-dom';
+import { AppShell } from '../../../components/AppShell';
+import { Card,EmptyState,PageHeader } from '../../../components/UI';
+import { CatalogCard } from '../components/CatalogCard';
+import { localCatalogSource } from '../services/catalog';
+import { aboutHref } from '../routes';
+export function IELTSAbout(){return <AppShell><PageHeader eyebrow="Information" title="IELTS About" description="Find the information you need for your preparation. These reference sections are awaiting verified source content."/><div className="discovery-grid">{localCatalogSource.about().map(item=><CatalogCard key={item.id} item={item} href={aboutHref(item.id)}/>)}</div></AppShell>;}
+export function IELTSAboutTopic(){const {topicId}=useParams();const item=localCatalogSource.about().find(t=>t.id===topicId);return <AppShell><Link className="discovery-back" to="/ielts-about">Back to IELTS About</Link>{item?<><PageHeader eyebrow="IELTS information" title={item.title} description={item.description}/><Card className="discovery-information"><span className="availability-label">Reference pending</span><h2>Verified information is being prepared.</h2><p>The IELTS Information CSVs have not been integrated. This page does not yet provide official policies, current registration instructions or scoring rules. Source and content verification will precede publication.</p><Link className="btn btn-secondary" to="/ielts-about">Browse information topics</Link></Card></>:<EmptyState title="Information topic not found" detail="Use IELTS About to choose an available topic."/>}</AppShell>;}

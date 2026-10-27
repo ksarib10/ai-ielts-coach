@@ -1,0 +1,97 @@
+{
+  "base": "65a25bbacc97a021d728946839da5404d262924e",
+  "protected_checks": [
+    {
+      "path": "GITHUB_CONNECTION_REPORT.md",
+      "before": "98a9d6752ebb698e2417cf75a21eaae5dbe73c8fe7590551476cc9be85902b17",
+      "after": "98a9d6752ebb698e2417cf75a21eaae5dbe73c8fe7590551476cc9be85902b17",
+      "equal": true
+    },
+    {
+      "path": "VERCEL_DEPLOYMENT_REPORT.md",
+      "before": "d4409cb653ac235e879c5342d9362f6a9a6dd0d8aa31c60009c06a93739008ea",
+      "after": "d4409cb653ac235e879c5342d9362f6a9a6dd0d8aa31c60009c06a93739008ea",
+      "equal": true
+    },
+    {
+      "path": "src/state.ts",
+      "before": "420586b2e9771c1cef8a64c5740a6a3a6c8be12cec6091653c2021181648f361",
+      "after": "420586b2e9771c1cef8a64c5740a6a3a6c8be12cec6091653c2021181648f361",
+      "equal": true
+    },
+    {
+      "path": "src/data.ts",
+      "before": "ab86b83eddba5bc3e1e2601c8b5e49ca6694753a1eea5c358389e82531a25da0",
+      "after": "ab86b83eddba5bc3e1e2601c8b5e49ca6694753a1eea5c358389e82531a25da0",
+      "equal": true
+    },
+    {
+      "path": "src/services/diagnostic.ts",
+      "before": "cf23fec876ec4d1e48af66491fcf69d1f2aeaf13239b1c55e6205ebfcbf8df47",
+      "after": "cf23fec876ec4d1e48af66491fcf69d1f2aeaf13239b1c55e6205ebfcbf8df47",
+      "equal": true
+    },
+    {
+      "path": "src/services/exam.ts",
+      "before": "c06106e49994d3454302d1c8adef07c2794b1e642afe31263a71305918c6acc0",
+      "after": "c06106e49994d3454302d1c8adef07c2794b1e642afe31263a71305918c6acc0",
+      "equal": true
+    },
+    {
+      "path": "src/services/platform.ts",
+      "before": "78323337c2536b76999ecebfa9188b1dee036f31c16ced77509e2ee34e82b011",
+      "after": "78323337c2536b76999ecebfa9188b1dee036f31c16ced77509e2ee34e82b011",
+      "equal": true
+    },
+    {
+      "path": "src/features/Diagnostic.tsx",
+      "before": "314f73d80df3a8b9e342aba15f09f3a9b42433a4594f79d1b676752348c43ef4",
+      "after": "314f73d80df3a8b9e342aba15f09f3a9b42433a4594f79d1b676752348c43ef4",
+      "equal": true
+    },
+    {
+      "path": "src/components/MediaControls.tsx",
+      "before": "494b47e689ce8b0b136334a45a6455bb8b075f9abb46803fdf58e11a4229e6f1",
+      "after": "494b47e689ce8b0b136334a45a6455bb8b075f9abb46803fdf58e11a4229e6f1",
+      "equal": true
+    },
+    {
+      "path": "src/domain.ts",
+      "before": "125f7cc28c29f15eae3ef0a777c9fca40af62105e705c2ba239368415921dc68",
+      "after": "125f7cc28c29f15eae3ef0a777c9fca40af62105e705c2ba239368415921dc68",
+      "equal": true
+    },
+    {
+      "path": "src/types.ts",
+      "before": "aedd5819dd0d2e7cdeac5adf07b330ef896dd04b9e9d9c2e20b0de8be05abdd8",
+      "after": "aedd5819dd0d2e7cdeac5adf07b330ef896dd04b9e9d9c2e20b0de8be05abdd8",
+      "equal": true
+    },
+    {
+      "path": "package-lock.json",
+      "before": "98041f9f2e39eaaa2c8de278b2f235a7532a3fd244f26635baded0485300541b",
+      "after": "98041f9f2e39eaaa2c8de278b2f235a7532a3fd244f26635baded0485300541b",
+      "equal": true
+    },
+    {
+      "path": "WorkspaceRoute-and-engine",
+      "before": "feedbb2a51120556f73e8c1a9555926a4e6a3d9e6ab726b8ce57c59edd5eb95e",
+      "after": "feedbb2a51120556f73e8c1a9555926a4e6a3d9e6ab726b8ce57c59edd5eb95e",
+      "equal": true
+    },
+    {
+      "path": "docs/reviews/stage-1b/slice-1/GITHUB_CONNECTION_REPORT.md",
+      "before_matches_preserved_root_copy": true,
+      "after": "98a9d6752ebb698e2417cf75a21eaae5dbe73c8fe7590551476cc9be85902b17"
+    },
+    {
+      "path": "docs/reviews/stage-1b/slice-1/VERCEL_DEPLOYMENT_REPORT.md",
+      "before_matches_preserved_root_copy": true,
+      "after": "d4409cb653ac235e879c5342d9362f6a9a6dd0d8aa31c60009c06a93739008ea"
+    }
+  ],
+  "candidate_files_unchanged_against_base": 36,
+  "original_and_backup": "No write operations performed on original restored source or independent backup during this slice.",
+  "remote_operations": "None; pre-existing remote preserved.",
+  "learner_data": "No reset, migration or store-format change. Browser interactions only on existing disposable Visual Audit localhost profile."
+}

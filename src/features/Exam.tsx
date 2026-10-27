@@ -54,7 +54,7 @@ export function MockTests() {
         <div className="mock-format-list">
           <div><strong>Module Test</strong><span>One timed skill sample with AI disabled and an immediate per-attempt result.</span></div>
           <div><strong>Mock Tests page</strong><span>A flexible place to choose those independent samples in any order and leave between tests.</span></div>
-          <div><strong>Exam Simulation</strong><span>All four skills in source-timed sequence, under strict conditions, with combined evidence held until the end.</span></div>
+          <div><strong>Complete IELTS Exam</strong><span>All four skills in source-timed sequence, under strict conditions, with combined evidence held until the end.</span></div>
         </div>
       </div>
       <aside className="mock-exam-referral">
@@ -62,7 +62,7 @@ export function MockTests() {
         <span className="eyebrow">Need the complete journey?</span>
         <strong>171–174 minutes across four skills</strong>
         <p>Open the separate Exam Center for setup, source-backed timers and held combined results.</p>
-        <Button onClick={() => navigate('/exam')}>Open Exam Simulation<ArrowRight size={16}/></Button>
+        <Button onClick={() => navigate('/exam')}>Open Complete IELTS Exam<ArrowRight size={16}/></Button>
       </aside>
     </Card>
 
@@ -102,11 +102,11 @@ export function ExamCenter() {
     .filter((exam, index, all) => all.findIndex(item => item.id === exam.id) === index);
 
   return <AppShell>
-    <PageHeader eyebrow="IELTS-style Exam Simulation" title="Bring all four skills into one controlled journey." description="A complete simulation using IELTS reference structure and timing with original shortened sample tasks."/>
+    <PageHeader eyebrow="IELTS-style exam" title="Bring all four skills into one controlled journey." description="A complete simulation using IELTS reference structure and timing with original shortened sample tasks."/>
     <section className="exam-center-hero" aria-labelledby="exam-center-title">
       <div>
         <Badge tone="blue">Selected profile · {learner.onboarding.ieltsType}</Badge>
-        <h2 id="exam-center-title">{learner.onboarding.ieltsType} Exam Simulation</h2>
+        <h2 id="exam-center-title">{learner.onboarding.ieltsType} Complete IELTS Exam</h2>
         <p>Listening, Reading and Writing follow one continuous paper-style session. Speaking is included in this walkthrough and may be scheduled separately in an IELTS test.</p>
         <div className="button-row">
           {current && !current.complete
@@ -143,7 +143,7 @@ export function ExamCenter() {
 
     <Card className="padded section-space exam-source-note"><strong>{formatExamCommitment()}.</strong><span>Listening and Speaking are common to both test types. Reading material and Writing Task 1 differ for Academic and General Training.</span></Card>
 
-    {completed.length > 0 && <section className="section-space" aria-labelledby="exam-history-title"><div className="section-heading compact"><div><span className="eyebrow">Saved on this device</span><h2 id="exam-history-title">Completed simulations</h2></div></div><div className="exam-history-list">{completed.map(exam => <button className="history-row card" key={exam.id} onClick={() => navigate(`/exam/result/${exam.id}`)}><span><strong>{exam.type} Exam Simulation</strong><small>{exam.completedAt ? new Date(exam.completedAt).toLocaleString() : 'Completed'} · {exam.attemptIds.length} sample sections saved</small></span><span>View combined result →</span></button>)}</div></section>}
+    {completed.length > 0 && <section className="section-space" aria-labelledby="exam-history-title"><div className="section-heading compact"><div><span className="eyebrow">Saved on this device</span><h2 id="exam-history-title">Completed simulations</h2></div></div><div className="exam-history-list">{completed.map(exam => <button className="history-row card" key={exam.id} onClick={() => navigate(`/exam/result/${exam.id}`)}><span><strong>{exam.type} Complete IELTS Exam</strong><small>{exam.completedAt ? new Date(exam.completedAt).toLocaleString() : 'Completed'} · {exam.attemptIds.length} sample sections saved</small></span><span>View combined result →</span></button>)}</div></section>}
   </AppShell>;
 }
 
@@ -289,7 +289,7 @@ export function ExamResult() {
   };
 
   return <AppShell>
-    <PageHeader eyebrow="Exam Simulation · Combined result" title="Your complete four-skill evidence is saved." description={`${exam.type} · completed ${exam.completedAt ? new Date(exam.completedAt).toLocaleString() : 'on this device'}`}/>
+    <PageHeader eyebrow="Complete IELTS Exam · Combined result" title="Your complete four-skill evidence is saved." description={`${exam.type} · completed ${exam.completedAt ? new Date(exam.completedAt).toLocaleString() : 'on this device'}`}/>
     <section className="exam-result-hero" aria-labelledby="exam-result-title">
       <div><Badge tone="green"><CheckCircle2 size={14}/>Full journey complete</Badge><h2 id="exam-result-title">{attempts.length} of {sections.length} sample sections submitted</h2><p>Listening, Reading, Writing and Speaking are held together in one simulated result. The tasks are shortened original samples, so no overall IELTS band is inferred.</p></div>
       <div className="exam-result-score" aria-label={total ? `${correct} of ${total} objective answers correct` : 'Responses saved'}><span>Objective evidence</span><strong>{total ? `${correct}/${total}` : 'Saved'}</strong><small>Raw sample result · not a band score</small></div>
