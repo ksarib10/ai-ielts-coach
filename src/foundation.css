@@ -249,3 +249,26 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
 @media(max-width:760px) {
   .preview-disclosure { position:fixed; top:66px; left:16px; right:16px; width:auto; max-height:calc(100dvh - 90px); overflow:auto; }
 }
+
+/* Appearance picker: progressive enhancement; unsupported browsers keep native UI. */
+@supports (appearance:base-select) {
+  .appearance-control select,
+  .appearance-control select::picker(select) { appearance:base-select; }
+  .appearance-control select::picker(select) {
+    background:var(--color-surface); color:var(--color-text);
+    border:1px solid var(--color-control-border); border-radius:12px;
+    padding:6px; margin-block-start:6px; box-shadow:var(--shadow-md);
+    min-width:120px;
+  }
+  .appearance-control option {
+    padding:9px 12px; border-radius:7px; min-height:40px;
+  }
+  .appearance-control option:hover,
+  .appearance-control option:checked { background:var(--color-soft); color:var(--color-text); }
+  .appearance-control option:focus-visible { outline:2px solid var(--color-focus); outline-offset:-2px; }
+  .appearance-control option::checkmark { color:var(--color-action); }
+}
+@media(forced-colors:active) {
+  .appearance-control select::picker(select),.appearance-control option { background:Canvas; color:CanvasText; border-color:ButtonText; }
+  .appearance-control option:checked { background:Highlight; color:HighlightText; }
+}

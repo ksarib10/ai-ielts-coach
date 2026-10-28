@@ -57,3 +57,7 @@ Stage 1A: PASS_WITH_REVIEW. STAGE_2_ENTRY = BLOCKED. Documentation-only delivery
 No migration, breaking runtime change, backend work, source-data change, deployment or new feature is included. Historical implementation evidence remains in the original root documents; it is not rewritten as new-stage acceptance.
 
 [Manifest](reviews/stage-1a/STAGE_1A_VALIDATION_AND_CHANGE_MANIFEST.json) · [report](reviews/stage-1a/STAGE_1A_READINESS_REPORT.md) · [owner decisions](reviews/stage-1a/DECISION_REQUIRED.md).
+
+## 2026-10-28 — Appearance picker progressive enhancement
+
+Scoped CSS uses customizable native select support where available: rounded popup, semantic purple surfaces, hover/checked/focus and checkmark styling, plus forced-colors handling. Unsupported browsers retain their usable OS-native popup, whose selected highlight may remain system-controlled. No JS control, preference/persistence, dependency or unrelated style changes. Focused foundation/theme checks and TypeScript validation recorded in the local fix handoff; no browser audit or deployment.
