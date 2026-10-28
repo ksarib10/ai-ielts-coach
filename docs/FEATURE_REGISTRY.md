@@ -1,5 +1,11 @@
 # Feature registry
 
+## IELTS About content integration — 2026-10-28, Content Pack v1.1
+
+All nine `/ielts-about/:topicId` routes (`what-is-ielts`, `academic-general`, `test-format`, `sections-duration`, `bands`, `registration-test-day`, `computer-paper`, `accessibility`, `faqs`) now render structured, source-linked educational content from static versioned JSON (`src/content/ielts-about/`). All 66 prepared starter highlights are represented across their intended pages, and `/ielts-about/test-format` includes four WAI-ARIA skill tabs (`Listening | Reading | Writing | Speaking`) with six expandable Listening question types and eleven expandable Academic Reading question types from `test-format-question-types.json`. General Training Reading question-type details remain explicitly disclosed as pending verification so Academic Reading details are not mislabelled. The 2026 paper-delivery transition and IELTS Online policies carry prominent verification notices, and `bands` explicitly states that educational score-reporting explanations do not validate platform scores. Content remains tagged `DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED`; `REFERENCE_PENDING` catalog metadata is preserved until owner editorial and visual acceptance. No raw CSV archive, source-review folders or manifests are bundled into the client.
+
+---
+
 ## Presentation quality delta — 2026-10-28, theme remediation
 
 Theme-only correction for F03/F05–F10/F12/F13/F16 and shared public/onboarding/settings surfaces: legacy colors now consume semantic roles; existing routes, actions, engines, data and feature availability are unchanged. Full disposable Exam setup/seven sections/combined result and diagnostic/shared states were browser-inspected in dark/light at 1440/390/320px. Nine-suite regression, TypeScript and production build PASS. This is tested presentation, not new assessment validity, secure identity, calibrated readiness, content availability or owner acceptance. Exact boundaries/limitations: [report](reviews/stage-1b/theme-consistency/THEME_CONSISTENCY_REMEDIATION_REPORT.md). M01–M11 gate unchanged, M12–M17 unavailable, Stage2 blocked.

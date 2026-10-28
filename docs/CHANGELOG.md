@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-28 — IELTS About frontend content integration (v1.1)
+
+- Integrated `IELTS_ABOUT_9_CARD_CONTENT_PACK_V1_1` static JSON into `src/content/ielts-about/` (9 card JSON files + `test-format-question-types.json`, typed loader, URL safety checks and structural validator). Excluded raw 458-row CSV archive, `01_by_card` and `03_manifests` from client assets.
+- Implemented all nine `/ielts-about/:topicId` pages in `src/features/discovery/about/AboutPages.tsx` and shared accessible primitives in `src/features/discovery/about/AboutComponents.tsx`, rendering all 66 starter highlights with traceable `data-highlight-id` attributes and external `https:` official source links.
+- Implemented the four-tab `Test Format` screen (`Listening | Reading | Writing | Speaking`) with 6 expandable Listening question types and 11 expandable Academic Reading question types, plus explicit General Training Reading pending-verification disclosure.
+- Extended `qa/discovery.test.mjs` to validate all 9 cards, 66 highlights, 6+11 question types and rendered markup. All 9 test suites (`npm test`), TypeScript (`npx tsc -b`), production build (`npm run build`), and 1440px (dark/light) + 390px browser checks PASS with zero contrast or overflow failures. Owner visual and editorial acceptance pending.
+
+---
+
 ## 2026-10-28 — Comprehensive theme consistency and contrast remediation
 
 - Corrected legacy hard-coded pale/white surfaces and fixed blue-gray text at source in styles.css/prototype.css; semantic surface/text/action/status/disabled/highlight roles and eleven missing compatibility aliases in foundation.css. Exam hero/stepper/choices/timers/audio/table/footer/results and diagnostic/shared surfaces now follow the active theme; existing layouts preserved.

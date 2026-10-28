@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "accessibility",
+  "route": "/ielts-about/accessibility",
+  "title": "Accessibility and arrangements",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "support overview + accessible assistance categories + contact-early banner",
+    "section_groups": [
+      "Getting support",
+      "Vision",
+      "Hearing and speech",
+      "Learning differences",
+      "Exemptions"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "accessibility-01",
+      "section": "Getting support",
+      "heading": "Request arrangements early",
+      "text": "Ask your test centre about access arrangements well in advance; some requests need around six weeks of preparation.",
+      "original_topic_ids": [
+        "ielts_special_requirements_003"
+      ],
+      "source_urls": [
+        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
+        "https://ielts.org/take-a-test/booking-your-test/special-requirements"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "accessibility-02",
+      "section": "Getting support",
+      "heading": "Approval process",
+      "text": "Support arrangements depend on individual needs and are subject to approval.",
+      "original_topic_ids": [
+        "ielts_special_requirements_007"
+      ],
+      "source_urls": [
+        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
+        "https://ielts.org/take-a-test/booking-your-test/special-requirements"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "accessibility-03",
+      "section": "Vision",
+      "heading": "Visual access support",
+      "text": "Depending on eligibility, support may include accessible text, larger print, Braille or assistive tools.",
+      "original_topic_ids": [
+        "ielts_special_requirements_005"
+      ],
+      "source_urls": [
+        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
+        "https://ielts.org/take-a-test/booking-your-test/special-requirements"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "accessibility-04",
+      "section": "Hearing and speech",
+      "heading": "Hearing support",
+      "text": "Candidates who are deaf or hard of hearing can request information about specific test arrangements.",
+      "original_topic_ids": [
+        "ielts_special_requirements_019"
+      ],
+      "source_urls": [
+        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
+        "https://ielts.org/take-a-test/booking-your-test/special-requirements"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "accessibility-05",
+      "section": "Learning differences",
+      "heading": "Learning-related support",
+      "text": "Candidates with a documented learning difference may ask the centre about appropriate access arrangements.",
+      "original_topic_ids": [
+        "ielts_special_requirements_032"
+      ],
+      "source_urls": [
+        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
+        "https://ielts.org/take-a-test/booking-your-test/special-requirements"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "accessibility-06",
+      "section": "Exemptions",
+      "heading": "Specific exemptions",
+      "text": "Official arrangements may include an exemption in limited approved circumstances; contact the test centre for eligibility.",
+      "original_topic_ids": [
+        "ielts_special_requirements_043"
+      ],
+      "source_urls": [
+        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
+        "https://ielts.org/take-a-test/booking-your-test/special-requirements"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 46,
+  "sourceArchiveFile": "01_by_card/08_accessibility/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

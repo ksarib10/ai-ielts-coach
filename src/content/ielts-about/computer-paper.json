@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "computer-paper",
+  "route": "/ielts-about/computer-paper",
+  "title": "IELTS on Computer / Paper",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "current-delivery update banner + computer-vs-online comparison + practical requirements",
+    "section_groups": [
+      "2026 update",
+      "Test centre computer delivery",
+      "IELTS Online",
+      "Legacy paper guidance"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "computer-paper-01",
+      "section": "2026 update",
+      "heading": "2026 IELTS delivery change",
+      "text": "IELTS announced that standard paper-based delivery would be phased out from mid-2026; exact dates differ by market, with Writing on Paper offered in selected places.",
+      "original_topic_ids": [
+        "ielts_how_it_works_006"
+      ],
+      "source_urls": [
+        "https://ielts.org/news-and-insights/updates-to-ielts-test-delivery",
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION",
+      "note": "Externally verified current update (2026-03-05). Supersedes historical universal paper-test assumptions in CSV archive."
+    },
+    {
+      "id": "computer-paper-02",
+      "section": "Test centre computer delivery",
+      "heading": "Check local availability",
+      "text": "Verify current local test-delivery options with the official booking provider.",
+      "original_topic_ids": [
+        "ielts_general_training_002"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "computer-paper-03",
+      "section": "IELTS Online",
+      "heading": "Academic online option",
+      "text": "IELTS Online is an Academic test taken remotely where the service is available and accepted by the receiving institution.",
+      "original_topic_ids": [
+        "ielts_online_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "computer-paper-04",
+      "section": "IELTS Online",
+      "heading": "Remote Speaking",
+      "text": "IELTS Online Speaking uses a live video call with an examiner.",
+      "original_topic_ids": [
+        "ielts_online_003"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "computer-paper-05",
+      "section": "IELTS Online",
+      "heading": "Equipment",
+      "text": "Online testing requires a compatible computer, camera and microphone, alongside other requirements.",
+      "original_topic_ids": [
+        "ielts_online_019"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "computer-paper-06",
+      "section": "IELTS Online",
+      "heading": "Acceptance",
+      "text": "Check with the receiving institution whether it accepts IELTS Online before booking.",
+      "original_topic_ids": [
+        "ielts_online_045"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 72,
+  "sourceArchiveFile": "01_by_card/07_computer-paper/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "bands",
+  "route": "/ielts-about/bands",
+  "title": "Band-score overview",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "band ladder + calculation explainer + criterion accordions + raw-to-band caveat",
+    "section_groups": [
+      "Band scale",
+      "Overall score calculation",
+      "Section scoring",
+      "Writing and Speaking criteria"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "bands-01",
+      "section": "Band scale",
+      "heading": "0 to 9",
+      "text": "IELTS reports scores on a band scale from 0 to 9.",
+      "original_topic_ids": [
+        "ielts_assessment_criteria_014"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "bands-02",
+      "section": "Overall score calculation",
+      "heading": "Four section scores",
+      "text": "The reported overall band is calculated from Listening, Reading, Writing and Speaking section bands.",
+      "original_topic_ids": [
+        "ielts_scoring_detail_002"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "bands-03",
+      "section": "Overall score calculation",
+      "heading": "Averaging",
+      "text": "The four section bands are averaged, then rounded to the nearest half band according to IELTS rules.",
+      "original_topic_ids": [
+        "ielts_scoring_detail_003"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "bands-04",
+      "section": "Overall score calculation",
+      "heading": "Quarter boundary",
+      "text": "An average ending in .25 is rounded upward to the next half band.",
+      "original_topic_ids": [
+        "ielts_scoring_detail_004"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "bands-05",
+      "section": "Section scoring",
+      "heading": "Objective sections",
+      "text": "Listening and Reading normally contain 40 scored questions each; exact band conversions can vary by test version.",
+      "original_topic_ids": [
+        "ielts_scoring_detail_011"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "bands-06",
+      "section": "Writing and Speaking criteria",
+      "heading": "Writing weighting",
+      "text": "Writing Task 2 contributes more to the Writing band than Task 1.",
+      "original_topic_ids": [
+        "ielts_assessment_criteria_001"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "bands-07",
+      "section": "Writing and Speaking criteria",
+      "heading": "Speaking criteria",
+      "text": "Fluency/coherence, vocabulary, grammar and pronunciation are each part of Speaking assessment.",
+      "original_topic_ids": [
+        "ielts_assessment_criteria_007"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "bands-08",
+      "section": "Writing and Speaking criteria",
+      "heading": "Not an automated grade",
+      "text": "This page explains official score reporting; it does not validate scores produced by this platform.",
+      "original_topic_ids": [
+        "ielts_scoring_detail_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 73,
+  "sourceArchiveFile": "01_by_card/05_bands/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

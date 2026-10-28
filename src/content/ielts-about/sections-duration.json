@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "sections-duration",
+  "route": "/ielts-about/sections-duration",
+  "title": "Test sections and duration",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "four duration tiles + journey timeline + delivery-mode note",
+    "section_groups": [
+      "Core durations",
+      "Test sequence",
+      "Delivery-specific timing"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "sections-duration-01",
+      "section": "Core durations",
+      "heading": "Listening",
+      "text": "Listening takes approximately 30 minutes, with exact administration details depending on delivery mode.",
+      "original_topic_ids": [
+        "ielts_academic_format_016"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION",
+      "note": "Do not automatically add the historical paper-only 10-minute answer transfer to computer-based IELTS."
+    },
+    {
+      "id": "sections-duration-02",
+      "section": "Core durations",
+      "heading": "Reading",
+      "text": "Reading lasts 60 minutes.",
+      "original_topic_ids": [
+        "ielts_academic_format_046"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "sections-duration-03",
+      "section": "Core durations",
+      "heading": "Writing",
+      "text": "Writing lasts 60 minutes across two tasks.",
+      "original_topic_ids": [
+        "ielts_general_training_008"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "sections-duration-04",
+      "section": "Core durations",
+      "heading": "Speaking",
+      "text": "Speaking lasts approximately 11–14 minutes.",
+      "original_topic_ids": [
+        "ielts_general_training_009"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "sections-duration-05",
+      "section": "Core durations",
+      "heading": "Task 1 planning",
+      "text": "Candidates are usually advised to spend about 20 minutes on Writing Task 1.",
+      "original_topic_ids": [
+        "ielts_academic_writing_004"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "sections-duration-06",
+      "section": "Core durations",
+      "heading": "Task 2 planning",
+      "text": "Candidates are usually advised to spend around 40 minutes on Writing Task 2.",
+      "original_topic_ids": [
+        "ielts_academic_writing_017"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "sections-duration-07",
+      "section": "Test sequence",
+      "heading": "At the test centre",
+      "text": "Listening, Reading and Writing generally run as one session; Speaking scheduling can differ.",
+      "original_topic_ids": [
+        "ielts_how_it_works_016"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 17,
+  "sourceArchiveFile": "01_by_card/04_sections-duration/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

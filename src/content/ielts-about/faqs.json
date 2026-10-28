@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "faqs",
+  "route": "/ielts-about/faqs",
+  "title": "FAQs",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "searchable category-filtered FAQ accordion + source links",
+    "section_groups": [
+      "Basics",
+      "Format",
+      "Scoring",
+      "Test day",
+      "Access and delivery"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "faqs-01",
+      "section": "Basics",
+      "heading": "What does IELTS stand for?",
+      "text": "International English Language Testing System.",
+      "original_topic_ids": [
+        "ielts_about_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/about-ielts"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-02",
+      "section": "Basics",
+      "heading": "Which four skills are tested?",
+      "text": "Listening, Reading, Writing and Speaking.",
+      "original_topic_ids": [
+        "ielts_how_it_works_002"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-03",
+      "section": "Format",
+      "heading": "How are Academic and General Training different?",
+      "text": "Listening and Speaking are shared; Reading and Writing differ.",
+      "original_topic_ids": [
+        "ielts_general_training_005"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-04",
+      "section": "Format",
+      "heading": "How long is the Speaking test?",
+      "text": "About 11–14 minutes.",
+      "original_topic_ids": [
+        "ielts_general_training_009"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-05",
+      "section": "Scoring",
+      "heading": "What is the highest IELTS band?",
+      "text": "Band 9.",
+      "original_topic_ids": [
+        "ielts_assessment_criteria_014"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-06",
+      "section": "Scoring",
+      "heading": "How is the overall band calculated?",
+      "text": "The four component bands are averaged, then rounded according to IELTS rules.",
+      "original_topic_ids": [
+        "ielts_scoring_detail_002"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-07",
+      "section": "Test day",
+      "heading": "What ID should I bring?",
+      "text": "Generally the same ID document used during registration; confirm your test-provider instructions.",
+      "original_topic_ids": [
+        "ielts_test_day_003"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-08",
+      "section": "Test day",
+      "heading": "Is there one universal minimum score?",
+      "text": "No. Each institution or receiving authority determines its own requirement.",
+      "original_topic_ids": [
+        "ielts_assessment_criteria_015"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-09",
+      "section": "Access and delivery",
+      "heading": "Can I request access arrangements?",
+      "text": "Yes. Contact the official test centre early to discuss eligibility and available support.",
+      "original_topic_ids": [
+        "ielts_special_requirements_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/special-requirements"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "faqs-10",
+      "section": "Access and delivery",
+      "heading": "Is IELTS still available entirely on paper?",
+      "text": "IELTS announced a transition away from traditional paper-based testing beginning mid-2026. Check local delivery options; some markets may offer Writing on Paper.",
+      "original_topic_ids": [
+        "ielts_how_it_works_006"
+      ],
+      "source_urls": [
+        "https://ielts.org/news-and-insights/updates-to-ielts-test-delivery",
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 0,
+  "sourceArchiveFile": "01_by_card/09_faqs/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "test-format",
+  "route": "/ielts-about/test-format",
+  "title": "Test format",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "four skill tabs, expandable question-type examples, track-aware Writing panel",
+    "section_groups": [
+      "Listening",
+      "Reading",
+      "Writing",
+      "Speaking"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "test-format-01",
+      "section": "Listening",
+      "heading": "Four parts",
+      "text": "The Listening test contains four parts, with contexts ranging from everyday situations to educational discussions.",
+      "original_topic_ids": [
+        "ielts_academic_format_004"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-02",
+      "section": "Listening",
+      "heading": "Question types",
+      "text": "Listening tasks may include multiple choice, matching, completion and map or diagram labels.",
+      "original_topic_ids": [
+        "ielts_academic_format_018"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-03",
+      "section": "Reading",
+      "heading": "Academic reading materials",
+      "text": "Academic Reading uses texts intended to assess reading for higher education contexts.",
+      "original_topic_ids": [
+        "ielts_academic_format_040"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-04",
+      "section": "Reading",
+      "heading": "Reading response types",
+      "text": "Reading can involve identifying information, matching headings and completing sentences or summaries.",
+      "original_topic_ids": [
+        "ielts_academic_format_053"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-05",
+      "section": "Writing",
+      "heading": "Two tasks",
+      "text": "Both IELTS Writing formats contain two tasks.",
+      "original_topic_ids": [
+        "ielts_academic_writing_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-06",
+      "section": "Writing",
+      "heading": "Task 2",
+      "text": "Writing Task 2 requires an essay responding to a viewpoint, argument or problem.",
+      "original_topic_ids": [
+        "ielts_academic_writing_014"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-07",
+      "section": "Writing",
+      "heading": "Task 1 minimum",
+      "text": "Writing Task 1 generally requires at least 150 words.",
+      "original_topic_ids": [
+        "ielts_academic_writing_003"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-08",
+      "section": "Writing",
+      "heading": "Task 2 minimum",
+      "text": "Writing Task 2 generally requires at least 250 words.",
+      "original_topic_ids": [
+        "ielts_academic_writing_016"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-09",
+      "section": "Speaking",
+      "heading": "Three parts",
+      "text": "The Speaking test has three parts: an interview, an individual long turn and a discussion.",
+      "original_topic_ids": [
+        "ielts_academic_format_114"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "test-format-10",
+      "section": "Speaking",
+      "heading": "Human examiner",
+      "text": "The official Speaking test is conducted as an interview with an IELTS examiner.",
+      "original_topic_ids": [
+        "ielts_how_it_works_014"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 178,
+  "sourceArchiveFile": "01_by_card/03_test-format/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

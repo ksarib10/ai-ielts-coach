@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "what-is-ielts",
+  "route": "/ielts-about/what-is-ielts",
+  "title": "What is IELTS?",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "hero + purpose tiles + recognitions + background accordion",
+    "section_groups": [
+      "Overview",
+      "Purpose and recognition",
+      "History and IELTS partners"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "what-is-ielts-01",
+      "section": "Overview",
+      "heading": "The name",
+      "text": "IELTS stands for International English Language Testing System.",
+      "original_topic_ids": [
+        "ielts_about_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/about-ielts"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-02",
+      "section": "Overview",
+      "heading": "Four language skills",
+      "text": "The test measures Listening, Reading, Writing and Speaking.",
+      "original_topic_ids": [
+        "ielts_how_it_works_002"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-03",
+      "section": "Purpose and recognition",
+      "heading": "Why people take it",
+      "text": "IELTS is used to demonstrate English ability for study, work and some migration pathways.",
+      "original_topic_ids": [
+        "ielts_how_it_works_001"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-04",
+      "section": "Purpose and recognition",
+      "heading": "Recognition",
+      "text": "Universities, employers and other organizations use IELTS results, although acceptance requirements differ.",
+      "original_topic_ids": [
+        "ielts_why_choose_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/why-choose-ielts/what-can-ielts-do-for-you"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-05",
+      "section": "Purpose and recognition",
+      "heading": "Requirements vary",
+      "text": "Always check the exact test type and minimum score required by the institution or authority you are applying to.",
+      "original_topic_ids": [
+        "ielts_why_choose_004"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/why-choose-ielts/what-can-ielts-do-for-you"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-06",
+      "section": "History and IELTS partners",
+      "heading": "Partners",
+      "text": "IELTS is associated with the British Council, IDP and Cambridge English organizations.",
+      "original_topic_ids": [
+        "ielts_about_006"
+      ],
+      "source_urls": [
+        "https://ielts.org/about-ielts"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 36,
+  "sourceArchiveFile": "01_by_card/01_what-is-ielts/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

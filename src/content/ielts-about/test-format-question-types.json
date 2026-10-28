@@ -1,0 +1,362 @@
+{
+  "schemaVersion": "1.1.0",
+  "contentType": "illustrative-format-question-types",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
+  "lastReviewed": "2026-10-28",
+  "deliveryNotes": [
+    "The question-type menu represents format information, not an exercise/test.",
+    "The title What skills are tested? is educational; it is not a proficiency score.",
+    "Listening applies to both IELTS Academic and General Training; this Reading list is specifically Academic Reading.",
+    "Only show content supported by the mapped source rows and the linked official format pages."
+  ],
+  "sections": [
+    {
+      "skillId": "listening",
+      "title": "Listening",
+      "questionTypes": [
+        {
+          "id": "listening-multiple-choice",
+          "order": 1,
+          "title": "Multiple choice",
+          "whatIsInvolved": "Select the correct option for a question or sentence ending. Some items require more than one selection; check the instructions.",
+          "skillsTested": "Understand both particular details and the central ideas of what you hear.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Choose exactly the number of answers requested.",
+          "sourceTopicIds": [
+            "ielts_academic_format_018",
+            "ielts_academic_format_019",
+            "ielts_academic_format_020",
+            "ielts_academic_format_021"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "listening-matching",
+          "order": 2,
+          "title": "Matching",
+          "whatIsInvolved": "Connect items mentioned in the recording to the relevant options or descriptions.",
+          "skillsTested": "Follow conversations, locate details and understand connections between facts.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Look for relationships, not only repeated words.",
+          "sourceTopicIds": [
+            "ielts_academic_format_022",
+            "ielts_academic_format_023"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "listening-plan-map-diagram",
+          "order": 3,
+          "title": "Plan/map/diagram labelling",
+          "whatIsInvolved": "Complete labels on a plan, map, picture or diagram using the available options or wording from the recording.",
+          "skillsTested": "Follow descriptions of locations and relate spoken information to a visual.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Check whether to choose from listed options or type words.",
+          "sourceTopicIds": [
+            "ielts_academic_format_024",
+            "ielts_academic_format_025"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "listening-form-note-table-flow",
+          "order": 4,
+          "title": "Form/note/table/flow-chart completion",
+          "whatIsInvolved": "Fill missing information in a form, notes, table or a sequence of process steps.",
+          "skillsTested": "Identify key facts, categorize details and follow an explanation or process.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Respect the exact answer-length instructions.",
+          "sourceTopicIds": [
+            "ielts_academic_format_026",
+            "ielts_academic_format_029",
+            "ielts_academic_format_030",
+            "ielts_academic_format_031",
+            "ielts_academic_format_032",
+            "ielts_academic_format_033"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "listening-sentence-completion",
+          "order": 5,
+          "title": "Sentence completion",
+          "whatIsInvolved": "Fill gaps in sentences using information from the recording.",
+          "skillsTested": "Recognize essential details and relationships such as cause and effect.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Use the permitted number of words or numerals.",
+          "sourceTopicIds": [
+            "ielts_academic_format_026",
+            "ielts_academic_format_034",
+            "ielts_academic_format_035"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "listening-short-answer",
+          "order": 6,
+          "title": "Short-answer questions",
+          "whatIsInvolved": "Write short factual answers based on the recording; some questions request more than one item.",
+          "skillsTested": "Identify specific information such as times, prices or locations.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Use only the requested number of answers and respect word limits.",
+          "sourceTopicIds": [
+            "ielts_academic_format_026",
+            "ielts_academic_format_036",
+            "ielts_academic_format_037",
+            "ielts_academic_format_038"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        }
+      ],
+      "officialReference": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening"
+    },
+    {
+      "skillId": "academic-reading",
+      "title": "Academic Reading",
+      "questionTypes": [
+        {
+          "id": "academic-reading-multiple-choice",
+          "order": 1,
+          "title": "Multiple choice",
+          "whatIsInvolved": "Choose the option or sentence ending best supported by the passage; some questions request multiple answers.",
+          "skillsTested": "Read for precise facts or the overall meaning of a section.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Read the instructions to determine the number of choices.",
+          "sourceTopicIds": [
+            "ielts_academic_format_050",
+            "ielts_academic_format_052"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-true-false-not-given",
+          "order": 2,
+          "title": "Identifying information (True/False/Not Given)",
+          "whatIsInvolved": "Classify each statement as supported, contradicted, or not established by the passage.",
+          "skillsTested": "Distinguish explicit evidence from missing information.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Use the passage, not personal knowledge.",
+          "sourceTopicIds": [
+            "ielts_academic_format_053",
+            "ielts_academic_format_054",
+            "ielts_academic_format_055"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-yes-no-not-given",
+          "order": 3,
+          "title": "Identifying writer views (Yes/No/Not Given)",
+          "whatIsInvolved": "Decide whether a statement agrees with, opposes or is not addressed by the writer’s view.",
+          "skillsTested": "Recognize expressed opinions and claims.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "A missing opinion is not automatically a disagreement.",
+          "sourceTopicIds": [
+            "ielts_academic_format_056",
+            "ielts_academic_format_057",
+            "ielts_academic_format_058"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-matching-information",
+          "order": 4,
+          "title": "Matching information",
+          "whatIsInvolved": "Locate a requested fact, explanation or example in the correct paragraph or section.",
+          "skillsTested": "Scan for specific details and reasons.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "A paragraph can sometimes be used more than once when allowed.",
+          "sourceTopicIds": [
+            "ielts_academic_format_059",
+            "ielts_academic_format_060",
+            "ielts_academic_format_061"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-matching-headings",
+          "order": 5,
+          "title": "Matching headings",
+          "whatIsInvolved": "Assign an appropriate heading to each paragraph or section, with extra headings left unused.",
+          "skillsTested": "Identify paragraph-level main ideas rather than individual details.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Some headings are distractors; a heading is not reused.",
+          "sourceTopicIds": [
+            "ielts_academic_format_062",
+            "ielts_academic_format_063",
+            "ielts_academic_format_064",
+            "ielts_academic_format_065"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-matching-features",
+          "order": 6,
+          "title": "Matching features",
+          "whatIsInvolved": "Link statements to named people, things, dates or other features in the passage.",
+          "skillsTested": "Trace relationships between facts and opinions using scanning and careful reading.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Options may repeat if the instructions permit.",
+          "sourceTopicIds": [
+            "ielts_academic_format_066",
+            "ielts_academic_format_067",
+            "ielts_academic_format_068"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-matching-endings",
+          "order": 7,
+          "title": "Matching sentence endings",
+          "whatIsInvolved": "Complete sentence beginnings by choosing the ending that matches the passage.",
+          "skillsTested": "Understand main ideas expressed across a sentence.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "There are more endings than beginnings.",
+          "sourceTopicIds": [
+            "ielts_academic_format_069",
+            "ielts_academic_format_070",
+            "ielts_academic_format_071",
+            "ielts_academic_format_072"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-sentence-completion",
+          "order": 8,
+          "title": "Sentence completion",
+          "whatIsInvolved": "Use words from the passage to complete sentences with gaps.",
+          "skillsTested": "Find relevant details accurately.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Follow the word limit exactly.",
+          "sourceTopicIds": [
+            "ielts_academic_format_073",
+            "ielts_academic_format_074",
+            "ielts_academic_format_075",
+            "ielts_academic_format_076"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-summary-note-table-flow",
+          "order": 9,
+          "title": "Summary/note/table/flow-chart completion",
+          "whatIsInvolved": "Complete a summary or structured outline using passage words or an allowed option list.",
+          "skillsTested": "Understand details, key ideas and what type of word fits a gap.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Answers may not follow passage order.",
+          "sourceTopicIds": [
+            "ielts_academic_format_077",
+            "ielts_academic_format_078",
+            "ielts_academic_format_079",
+            "ielts_academic_format_080",
+            "ielts_academic_format_081",
+            "ielts_academic_format_082"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-diagram-labelling",
+          "order": 10,
+          "title": "Diagram label completion",
+          "whatIsInvolved": "Supply missing labels on a diagram using information from the passage.",
+          "skillsTested": "Connect a detailed written description to its visual representation.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Answers need not occur in textual order.",
+          "sourceTopicIds": [
+            "ielts_academic_format_083",
+            "ielts_academic_format_084",
+            "ielts_academic_format_085",
+            "ielts_academic_format_086"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        },
+        {
+          "id": "academic-reading-short-answer",
+          "order": 11,
+          "title": "Short-answer questions",
+          "whatIsInvolved": "Answer factual questions using short words or numbers from the passage.",
+          "skillsTested": "Find and understand specific information.",
+          "questionCount": "Variable: there is no fixed number assigned to this type.",
+          "practicalNote": "Observe word limits and the question instructions.",
+          "sourceTopicIds": [
+            "ielts_academic_format_087",
+            "ielts_academic_format_088",
+            "ielts_academic_format_089",
+            "ielts_academic_format_090",
+            "ielts_academic_format_091"
+          ],
+          "sourceUrls": [
+            "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+            "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+          ],
+          "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED"
+        }
+      ],
+      "officialReference": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading"
+    }
+  ]
+}

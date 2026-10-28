@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "registration-test-day",
+  "route": "/ielts-about/registration-test-day",
+  "title": "Registration and test-day information",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "before/during/after checklist + official source links",
+    "section_groups": [
+      "Before booking",
+      "On test day",
+      "Results and enquiries"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "registration-test-day-01",
+      "section": "Before booking",
+      "heading": "Check the requirement",
+      "text": "Confirm with your university, employer or immigration authority which IELTS version and band it accepts.",
+      "original_topic_ids": [
+        "ielts_assessment_criteria_015"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "registration-test-day-02",
+      "section": "On test day",
+      "heading": "Verify your details",
+      "text": "Confirm the scheduled venue, time and instructions supplied by your test provider.",
+      "original_topic_ids": [
+        "ielts_test_day_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "registration-test-day-03",
+      "section": "On test day",
+      "heading": "Take the correct ID",
+      "text": "Bring the same identity document you used when registering, following your provider’s instructions.",
+      "original_topic_ids": [
+        "ielts_test_day_003"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "registration-test-day-04",
+      "section": "On test day",
+      "heading": "Arrive prepared",
+      "text": "Allow enough time to travel and complete check-in procedures.",
+      "original_topic_ids": [
+        "ielts_test_day_002"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "registration-test-day-05",
+      "section": "On test day",
+      "heading": "Electronic devices",
+      "text": "Exam rooms usually restrict personal electronics; follow staff instructions about where to leave them.",
+      "original_topic_ids": [
+        "ielts_test_day_009"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "registration-test-day-06",
+      "section": "On test day",
+      "heading": "Follow instructions",
+      "text": "Read task directions and follow the supervisor’s instructions carefully.",
+      "original_topic_ids": [
+        "ielts_test_day_014"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "registration-test-day-07",
+      "section": "Results and enquiries",
+      "heading": "Score review",
+      "text": "An Enquiry on Results service is described in the official materials; verify the current deadline and process with your provider.",
+      "original_topic_ids": [
+        "ielts_assessment_criteria_018"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION",
+      "note": "Live policy, eligibility and fees vary; do not present archive timing as universally current."
+    }
+  ],
+  "sourceRecordCount": 22,
+  "sourceArchiveFile": "01_by_card/06_registration-test-day/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

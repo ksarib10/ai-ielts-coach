@@ -1,5 +1,11 @@
 # UI design system
 
+## IELTS About reference components and question-type accordions — 2026-10-28
+
+`src/features/discovery/about/AboutComponents.tsx` and `.about-*` rules in `src/foundation.css` add reusable semantic-token components for the nine IELTS About guides: `HighlightCard`, `SourceLinks` (host-badged external pill links distinguished from internal navigation), `AboutTabs` (roving-tabindex WAI-ARIA `tablist`/`tab`/`tabpanel`), `AccordionItem` (`h3`/`h4 > button[aria-expanded]` controlling a labelled `role="region"` panel with subtle chevron rotation respecting `prefers-reduced-motion`), `AboutSection` and `AboutNotice` (info/warning semantic surfaces). `.about-question-types` matches the clean separator-row layout and typography for the 6 Listening and 11 Academic Reading question types (`What's involved?`, `What skills are tested?`, `How many questions are there?`, `Practical note`, and official sources). Responsive grids collapse cleanly at `≤1050px` and `≤760px`, with `forced-colors` support and zero horizontal overflow verified at 1440px (dark/light) and 390px.
+
+---
+
 ## Theme consistency remediation — 2026-10-28
 
 Source-level correction supersedes affected Slice 1 color mappings below. `styles.css` and `prototype.css` legacy component declarations now use semantic surfaces/foregrounds instead of hard-coded white/pale/blue-gray colors. `foundation.css` remains the final theme/token layer; it adds opaque/subtle surfaces, shared hero gradient, success/warning/error surfaces, disabled and highlight pairings, and resolves eleven missing legacy aliases. Light/dark/System application and storage provider are unchanged. Existing layout, React architecture and approved purple direction are retained; no additional framework, blanket background rule or route-specific override pile.

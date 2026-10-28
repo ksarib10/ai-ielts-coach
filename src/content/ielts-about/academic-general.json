@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "academic-general",
+  "route": "/ielts-about/academic-general",
+  "title": "IELTS Academic vs General Training",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "two-column Academic vs General Training comparison + shared sections",
+    "section_groups": [
+      "Which test?",
+      "Academic",
+      "General Training",
+      "Common and different"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "academic-general-01",
+      "section": "Which test?",
+      "heading": "Academic",
+      "text": "IELTS Academic is commonly used when applying for university-level study or some professional registration routes.",
+      "original_topic_ids": [
+        "ielts_academic_format_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "academic-general-02",
+      "section": "Which test?",
+      "heading": "General Training",
+      "text": "IELTS General Training is generally intended for migration, workplace or below-degree training contexts.",
+      "original_topic_ids": [
+        "ielts_general_training_001"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "academic-general-03",
+      "section": "Common and different",
+      "heading": "Common sections",
+      "text": "Listening and Speaking use the same test formats in Academic and General Training.",
+      "original_topic_ids": [
+        "ielts_general_training_005"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "academic-general-04",
+      "section": "Common and different",
+      "heading": "Different sections",
+      "text": "Reading and Writing differ between the two IELTS test types.",
+      "original_topic_ids": [
+        "ielts_academic_format_003"
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "academic-general-05",
+      "section": "Academic",
+      "heading": "Writing Task 1",
+      "text": "Academic Writing Task 1 focuses on describing visual information such as charts, graphs, tables or processes.",
+      "original_topic_ids": [
+        "ielts_academic_writing_002"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "academic-general-06",
+      "section": "General Training",
+      "heading": "Writing Task 1",
+      "text": "General Training Writing Task 1 requires a letter responding to a given situation.",
+      "original_topic_ids": [
+        "ielts_general_writing_002"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training/general-training-writing"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 14,
+  "sourceArchiveFile": "01_by_card/02_academic-general/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}
