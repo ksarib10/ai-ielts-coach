@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "1.2.0",
+  "cardId": "computer-paper",
+  "title": "IELTS on Computer / Paper",
+  "slug": "computer-paper",
+  "route": "/ielts-about/computer-paper",
+  "source_review_count": 72,
+  "lastReviewed": "2026-10-28",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
+  "display": {
+    "primary_guidance": "https://ielts.org/news-and-insights/updates-to-ielts-test-delivery",
+    "primary_guidance_label": "Official 2026 test delivery update",
+    "section_groups": [
+      "Current delivery",
+      "IELTS Online",
+      "Test security and privacy"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "computer-paper-01",
+      "heading": "2026 update: paper-based IELTS is being phased out",
+      "text": "On March 5, 2026, the IELTS partners announced that standard paper-based IELTS testing will be phased out starting from mid-2026 across global markets. Delivery is transitioning primarily to IELTS on Computer. In selected markets, a hybrid 'Writing on Paper' option will be retained alongside computer-based Listening and Reading. Check your local test center's available options before booking.",
+      "bullets": [
+        "Global transition: Paper-based IELTS is being phased out progressively market-by-market from mid-2026.",
+        "Writing on Paper option: Retained in designated locations for candidates who prefer handwriting their essays.",
+        "Legacy transfer time note: Historical paper test rules provided 10 minutes at the end of Listening to transfer answers; computer-delivered testing provides 2 minutes to review typed answers."
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format",
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_how_it_works_006",
+        "ielts_academic_format_014",
+        "ielts_academic_format_045"
+      ],
+      "section": "Current delivery"
+    },
+    {
+      "id": "computer-paper-02",
+      "heading": "IELTS on Computer at a test centre",
+      "text": "IELTS on Computer offers the exact same test content, difficulty, question types, and scoring standards as paper-based testing, with added digital convenience and significantly faster results.",
+      "bullets": [
+        "Rapid results: Official results delivered in just 1 to 5 calendar days.",
+        "Typing advantages: Built-in live word counter for Writing; seamless cut, copy, paste, and text editing without messy eraser marks.",
+        "Enhanced audio: High-quality individual headphones with customizable volume control for Listening.",
+        "Interactive tools: Screen split-view for Reading texts, on-screen text highlighting, and margin note-taking features.",
+        "Human examiner: The Speaking test remains a personal interview with a certified human examiner (conducted face-to-face or via high-definition video call in the centre)."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-on-computer"
+      ],
+      "original_topic_ids": [
+        "ielts_online_003",
+        "ielts_online_011"
+      ],
+      "section": "Current delivery"
+    },
+    {
+      "id": "computer-paper-03",
+      "heading": "IELTS Online remote testing overview",
+      "text": "IELTS Online allows candidates aged 18 and older to take the IELTS Academic test remotely from their home or private office. It features the same test format, timings, scoring, and question types as in-centre testing, but is delivered entirely over the internet using specialized proctoring software.",
+      "bullets": [
+        "Academic test only: IELTS Online is available exclusively for IELTS Academic; it is NOT available for General Training.",
+        "Higher education focus: Designed for international university admissions; NOT currently accepted for UKVI or government immigration pathways (e.g. Canada Express Entry, Australia visas).",
+        "Age requirement: Candidates must be at least 18 years of age.",
+        "Speaking delivery: Conducted live via one-on-one video call with an official IELTS examiner, usually scheduled before the written sections."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "original_topic_ids": [
+        "ielts_online_001",
+        "ielts_online_002",
+        "ielts_online_004",
+        "ielts_online_005",
+        "ielts_online_006",
+        "ielts_online_007",
+        "ielts_online_008",
+        "ielts_online_009",
+        "ielts_online_010"
+      ],
+      "section": "IELTS Online"
+    },
+    {
+      "id": "computer-paper-04",
+      "heading": "One Skill Retake (computer only)",
+      "text": "IELTS One Skill Retake (OSR) allows candidates who took IELTS on Computer at a test centre to retake any one single component (Listening, Reading, Writing, or Speaking) if they did not achieve their desired score, without having to retake the other three skills.",
+      "bullets": [
+        "Computer-exclusive: Available only to candidates who sat a full test on computer at an authorised test centre.",
+        "60-day window: The retake must be booked and completed within 60 days of your original test date.",
+        "Updated TRF: You receive a new Test Report Form showing your updated score alongside the preserved scores from your original attempt.",
+        "Institutional recognition: Check whether your target university or professional body accepts One Skill Retake scores before booking."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/one-skill-retake"
+      ],
+      "original_topic_ids": [
+        "ielts_online_058"
+      ],
+      "section": "Current delivery"
+    },
+    {
+      "id": "computer-paper-05",
+      "heading": "Technical and environment requirements for IELTS Online",
+      "text": "IELTS Online enforces strict technical, hardware, and physical environment standards to maintain international security credentials.",
+      "bullets": [
+        "Computer requirements: Desktop or laptop with Windows 10/11 or macOS. Multiple monitors, Chromebooks, iPads, and tablets are strictly prohibited.",
+        "Software portal: Runs within the secure Inspera Exam Portal, which locks down the operating system and disables all background applications and browsers.",
+        "Audio devices: Working computer speakers and microphone required. HEADPHONES AND EARPHONES ARE STRICTLY PROHIBITED during the test.",
+        "Webcam and mobile room scan: A functional webcam is required, plus a secondary mobile device (smartphone or tablet) used during check-in to perform a 360-degree room scan.",
+        "Private testing room: Must be a quiet, private space with a closed door, clear desk, no other people present, and reliable high-speed internet (LAN or stable Wi-Fi)."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "original_topic_ids": [
+        "ielts_online_017",
+        "ielts_online_018",
+        "ielts_online_019",
+        "ielts_online_020",
+        "ielts_online_021",
+        "ielts_online_022",
+        "ielts_online_023",
+        "ielts_online_024",
+        "ielts_online_025",
+        "ielts_online_026",
+        "ielts_online_027",
+        "ielts_online_028",
+        "ielts_online_029",
+        "ielts_online_030",
+        "ielts_online_031",
+        "ielts_online_032",
+        "ielts_online_033",
+        "ielts_online_034",
+        "ielts_online_067",
+        "ielts_online_068",
+        "ielts_online_069",
+        "ielts_online_070",
+        "ielts_online_071",
+        "ielts_online_072"
+      ],
+      "section": "IELTS Online"
+    },
+    {
+      "id": "computer-paper-06",
+      "heading": "Results delivery and institutional acceptance",
+      "text": "IELTS Online results are delivered electronically within 3 to 6 days. However, because IELTS Online is not universally recognized by all universities and is excluded from government immigration pathways, candidates must confirm acceptance prior to booking.",
+      "bullets": [
+        "Electronic TRF: Delivered digitally within 3 to 6 days; no paper certificate is issued.",
+        "Verification portal: Universities verify scores using the exact same centralized IELTS electronic verification portal used for in-centre exams.",
+        "Immigration exclusion: NOT accepted for visa applications or immigration by UKVI, Australia, Canada, or New Zealand.",
+        "Institutional confirmation: Always check the official IELTS recognizing organizations list or contact your admissions office directly before choosing IELTS Online."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "original_topic_ids": [
+        "ielts_online_042",
+        "ielts_online_043",
+        "ielts_online_044",
+        "ielts_online_045",
+        "ielts_online_046",
+        "ielts_online_047",
+        "ielts_online_048",
+        "ielts_online_049",
+        "ielts_online_050",
+        "ielts_online_051",
+        "ielts_online_052"
+      ],
+      "section": "IELTS Online"
+    },
+    {
+      "id": "computer-paper-07",
+      "heading": "IELTS Online test security, proctoring, and technical issues",
+      "text": "IELTS Online utilizes a multi-layered security framework combining live human invigilators with artificial intelligence monitoring to safeguard test integrity.",
+      "bullets": [
+        "Human and AI proctoring: A live proctor monitors your webcam, audio feed, and computer screen in real time, assisted by AI detection algorithms.",
+        "Communication with proctor: Live chat is available within the Inspera portal if you have technical concerns or questions.",
+        "Restroom break restrictions: Unscheduled breaks are prohibited during Listening, Reading, and Writing; bathroom visits are not permitted while sections are underway.",
+        "Technical interruptions: If internet connection drops momentarily, you can reconnect and resume; test timers pause, and additional time is granted for verified technical disruptions.",
+        "Severe technical failure: If a technical malfunction cannot be resolved during your session, you are eligible for a free reschedule."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "original_topic_ids": [
+        "ielts_online_012",
+        "ielts_online_013",
+        "ielts_online_014",
+        "ielts_online_015",
+        "ielts_online_016",
+        "ielts_online_035",
+        "ielts_online_036",
+        "ielts_online_037",
+        "ielts_online_038",
+        "ielts_online_039",
+        "ielts_online_040",
+        "ielts_online_041",
+        "ielts_online_053",
+        "ielts_online_054",
+        "ielts_online_055",
+        "ielts_online_056",
+        "ielts_online_057"
+      ],
+      "section": "Test security and privacy"
+    },
+    {
+      "id": "computer-paper-08",
+      "heading": "Data privacy, recording retention, and personal data access",
+      "text": "Video and audio recordings of your test session are captured and retained in accordance with strict international data protection laws to support scoring validation, fraud prevention, and Enquiry on Results investigations.",
+      "bullets": [
+        "Audio and video retention: Recordings of the Listening, Reading, and Writing sessions and the Speaking video interview are held securely for quality control, examiner training, and re-marking.",
+        "Data protection: Managed in compliance with GDPR and relevant international privacy legislation by the British Council and IDP Education.",
+        "Privacy enquiries: Test takers can contact the official British Council or IDP Data Protection Officers to exercise statutory data access rights."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "original_topic_ids": [
+        "ielts_online_059",
+        "ielts_online_060",
+        "ielts_online_061",
+        "ielts_online_062",
+        "ielts_online_063",
+        "ielts_online_064",
+        "ielts_online_065",
+        "ielts_online_066"
+      ],
+      "section": "Test security and privacy"
+    }
+  ]
+}

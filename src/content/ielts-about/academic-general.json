@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "1.2.0",
+  "cardId": "academic-general",
+  "title": "IELTS Academic vs General Training",
+  "slug": "academic-general",
+  "route": "/ielts-about/academic-general",
+  "source_review_count": 14,
+  "lastReviewed": "2026-10-28",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
+  "display": {
+    "primary_guidance": "https://ielts.org/take-a-test/test-types/ielts-academic-test",
+    "primary_guidance_label": "Official Academic format guide",
+    "section_groups": [
+      "Academic",
+      "General Training",
+      "Common and different"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "academic-general-01",
+      "heading": "IELTS Academic overview",
+      "text": "IELTS Academic evaluates whether your level of English language proficiency is suitable for an academic environment. It assesses whether you are ready to begin studying at undergraduate or postgraduate level in an English-medium institution, or whether you meet the linguistic demands required for professional registration in fields such as medicine, nursing, engineering, or law.",
+      "bullets": [
+        "Primary purpose: Admission to undergraduate, master's, or doctoral degree courses at universities worldwide.",
+        "Professional licensing: Required by medical councils (e.g. GMC, NMC), engineering institutions, and accounting bodies.",
+        "Focus: Academic discourse, scientific reasoning, data interpretation, and complex argumentative essays.",
+        "Content register: Uses authentic excerpts from academic textbooks, scientific journals, research reports, and newspapers."
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_001",
+        "ielts_how_it_works_003",
+        "ielts_how_it_works_012"
+      ],
+      "section": "Academic"
+    },
+    {
+      "id": "academic-general-02",
+      "heading": "IELTS General Training overview",
+      "text": "IELTS General Training evaluates English language proficiency in a practical, everyday context. The tasks and texts reflect workplace scenarios, social survival skills, and broad general interest topics. It is required for migration to Australia, Canada, New Zealand, and the UK, as well as for secondary school admissions, vocational training, and employment programs.",
+      "bullets": [
+        "Primary purpose: Migration and visa applications to Australia, Canada, New Zealand, and the United Kingdom.",
+        "Vocational education: Study or training below degree level (diplomas, apprenticeships, secondary education).",
+        "Focus: Everyday communication, workplace survival skills, social interactions, and practical letter writing.",
+        "Content register: Draws from employee handbooks, notices, public advertisements, timetables, and general magazines."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training",
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "original_topic_ids": [
+        "ielts_general_training_001",
+        "ielts_general_training_003",
+        "ielts_how_it_works_004",
+        "ielts_how_it_works_013"
+      ],
+      "section": "General Training"
+    },
+    {
+      "id": "academic-general-03",
+      "heading": "Shared test components: Listening and Speaking",
+      "text": "The Listening and Speaking components are 100% identical for both IELTS Academic and IELTS General Training candidates. Regardless of which test you book, you will complete the exact same Listening audio, answer the same 40 questions, and participate in an identical face-to-face or video-call Speaking interview evaluated under the exact same public band criteria.",
+      "bullets": [
+        "Listening parity: 40 questions, 4 recorded parts, identical accents, timing (~30 minutes), and conversion scales.",
+        "Speaking parity: 11–14 minutes, 3 interactive parts with a live examiner, evaluated on the same 4 criteria.",
+        "Scoring integrity: Performance standards and scoring benchmarks for Listening and Speaking are uniform across both tracks."
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training",
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_002",
+        "ielts_academic_format_003",
+        "ielts_general_training_004",
+        "ielts_general_training_005",
+        "ielts_how_it_works_015"
+      ],
+      "section": "Common and different"
+    },
+    {
+      "id": "academic-general-04",
+      "heading": "Components that differ: Reading and Writing",
+      "text": "The difference between IELTS Academic and IELTS General Training lies entirely in the Reading and Writing components. The two tracks feature distinct reading materials, differing task requirements in Task 1 writing, and tailored scoring conversions in Reading reflecting passage difficulty.",
+      "bullets": [
+        "Reading difference: Academic presents 3 long analytical texts (2,150–2,750 words total); General Training features 3 sections ranging from short factual notices to workplace texts and one longer general interest passage.",
+        "Writing Task 1 difference: Academic candidates describe visual data (graph, chart, diagram, or map) in 150+ words; General Training candidates write a practical letter (personal, semi-formal, or formal) in 150+ words.",
+        "Writing Task 2: Both tracks require a 250+ word essay (academic discursive style for Academic; general discussion for GT).",
+        "Grading difference: In Reading, because General Training passages are more accessible, candidates must achieve a higher number of correct answers (raw marks) to attain the same band score as Academic candidates."
+      ],
+      "table": {
+        "caption": "Component comparison between Academic and General Training",
+        "headers": [
+          "Component",
+          "IELTS Academic",
+          "IELTS General Training"
+        ],
+        "rows": [
+          [
+            "Listening",
+            "Identical (40 questions, ~30 mins)",
+            "Identical (40 questions, ~30 mins)"
+          ],
+          [
+            "Reading",
+            "3 long academic passages, analytical focus",
+            "3 sections: everyday survival, workplace, general"
+          ],
+          [
+            "Reading Scoring",
+            "Raw ~30/40 = Band 7.0",
+            "Raw ~34/40 = Band 7.0 (higher raw mark needed)"
+          ],
+          [
+            "Writing Task 1",
+            "Report on visual data (graph/process) (150 words)",
+            "Letter to person/organisation (150 words)"
+          ],
+          [
+            "Writing Task 2",
+            "Formal academic essay (250 words)",
+            "General interest essay (250 words)"
+          ],
+          [
+            "Speaking",
+            "Identical (11–14 mins, 3 parts)",
+            "Identical (11–14 mins, 3 parts)"
+          ]
+        ]
+      },
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training",
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_003",
+        "ielts_general_training_005",
+        "ielts_how_it_works_012",
+        "ielts_how_it_works_013",
+        "ielts_how_it_works_015"
+      ],
+      "section": "Common and different"
+    },
+    {
+      "id": "academic-general-05",
+      "heading": "Academic Writing focus",
+      "text": "Academic Writing assesses your capability to present factual visual data objectively and to formulate structured, academically defensible arguments. It consists of two tasks completed within 60 minutes.",
+      "bullets": [
+        "Task 1 (at least 150 words, ~20 mins): Objectively describe, summarize, or explain visual information (bar chart, line graph, pie chart, table, process diagram, or map). No personal opinions are permitted.",
+        "Task 2 (at least 250 words, ~40 mins): Write a formal discursive essay responding to a point of view, argument, or problem. Must present clear positions with supporting evidence.",
+        "Weighting: Task 2 contributes twice as much as Task 1 toward the final Writing band score."
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format",
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_how_it_works_012",
+        "ielts_academic_format_001"
+      ],
+      "section": "Academic"
+    },
+    {
+      "id": "academic-general-06",
+      "heading": "General Training Writing focus",
+      "text": "General Training Writing assesses your ability to communicate effectively in everyday workplace and social scenarios. It consists of two tasks completed within 60 minutes.",
+      "bullets": [
+        "Task 1 (at least 150 words, ~20 mins): Write a letter responding to a practical situation (e.g. requesting information from a college accommodation officer, apologizing to a manager, or writing to a friend). Tone must be correctly chosen: personal/informal, semi-formal, or formal.",
+        "Task 2 (at least 250 words, ~40 mins): Write an essay on a topic of general interest (e.g. education, community life, lifestyle choices). A slightly more personal style is acceptable compared to Academic Task 2.",
+        "Weighting: Task 2 contributes twice as much as Task 1 toward the final Writing band score."
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "original_topic_ids": [
+        "ielts_how_it_works_013",
+        "ielts_general_training_001"
+      ],
+      "section": "General Training"
+    },
+    {
+      "id": "academic-general-07",
+      "heading": "Test selection guidance and UKVI requirements",
+      "text": "It is crucial to verify which test your receiving organization requires before booking. Educational institutions requiring Academic will not accept General Training, and immigration programs requiring General Training may reject Academic scores. Furthermore, if you are applying for a UK visa, you must select the specialized 'IELTS for UKVI' test session.",
+      "bullets": [
+        "Confirm requirements: Always verify the exact test version and minimum band score directly with your university admissions office or immigration case officer.",
+        "IELTS for UKVI: Approved by UK Visas and Immigration; identical in content, format, and scoring to standard IELTS, but administered with enhanced administrative safeguards in authorized UKVI test centers.",
+        "Test delivery location: General Training is available at authorized physical test centres (on computer and paper where still available); it is NOT available via IELTS Online."
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+      ],
+      "original_topic_ids": [
+        "ielts_how_it_works_005",
+        "ielts_general_training_002"
+      ],
+      "section": "General Training"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0.0",
+  "cardId": "what-is-ielts",
+  "route": "/ielts-about/what-is-ielts",
+  "title": "What is IELTS?",
+  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
+  "lastCompiled": "2026-10-28",
+  "display": {
+    "layout": "hero + purpose tiles + recognitions + background accordion",
+    "section_groups": [
+      "Overview",
+      "Purpose and recognition",
+      "History and IELTS partners"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "what-is-ielts-01",
+      "section": "Overview",
+      "heading": "The name",
+      "text": "IELTS stands for International English Language Testing System. It is the world's most widely recognized high-stakes English language assessment, trusted by over 12,500 organizations globally.",
+      "bullets": [
+        "Global benchmark: Established to assess English language proficiency for study, work, and migration.",
+        "Origins and history: Launched in 1980 (initially as ELTS) and restructured into the international partnership in 1989.",
+        "Joint ownership: Co-owned by the British Council, IDP: IELTS Australia, and Cambridge University Press & Assessment."
+      ],
+      "original_topic_ids": [
+        "ielts_about_001",
+        "ielts_about_003",
+        "ielts_about_004"
+      ],
+      "source_urls": [
+        "https://ielts.org/about-ielts"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-02",
+      "section": "Overview",
+      "heading": "Four language skills",
+      "text": "The test measures Listening, Reading, Writing and Speaking to ensure candidates can communicate effectively in English-speaking academic and professional environments.",
+      "bullets": [
+        "Comprehensive assessment: Assesses both receptive skills (listening and reading comprehension) and productive skills (writing and live interactive speech).",
+        "Section scoring: Each individual section receives a band score from 0 to 9, which combines into an overall composite band score.",
+        "Communicative validity: Questions simulate authentic language tasks encountered in higher education, workplaces, and daily life."
+      ],
+      "original_topic_ids": [
+        "ielts_how_it_works_002",
+        "ielts_about_005"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format",
+        "https://ielts.org/about-ielts"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-03",
+      "section": "Purpose and recognition",
+      "heading": "Why people take it",
+      "text": "IELTS is taken by millions of candidates worldwide each year to unlock academic opportunities, advance global careers, or fulfill immigration and visa requirements.",
+      "bullets": [
+        "University admissions: Required by undergraduate, postgraduate, and doctoral degree programs across English-speaking countries.",
+        "Immigration and visas: Used by government departments in the UK, Australia, Canada, and New Zealand for skilled worker, permanent residency, and student visas.",
+        "Professional licensing: Required by regulatory boards in healthcare (doctors, nurses, pharmacists), accounting, engineering, law, and education."
+      ],
+      "original_topic_ids": [
+        "ielts_how_it_works_001",
+        "ielts_why_choose_002",
+        "ielts_why_choose_003",
+        "ielts_why_choose_006",
+        "ielts_why_choose_012",
+        "ielts_why_choose_013",
+        "ielts_why_choose_016",
+        "ielts_why_choose_017"
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format",
+        "https://ielts.org/take-a-test/why-choose-ielts/what-can-ielts-do-for-you"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-04",
+      "section": "Purpose and recognition",
+      "heading": "Recognition",
+      "text": "Over 12,500 institutions, governments, employers, and professional registration bodies worldwide recognize IELTS results as dependable evidence of English ability.",
+      "bullets": [
+        "Global reach: Accepted across more than 140 countries worldwide, including all universities in Australia and New Zealand, over 3,400 US institutions, and all UK universities.",
+        "Electronic verification: Receiving institutions verify candidate Test Report Forms (TRFs) directly and securely via the centralized IELTS verification service.",
+        "Employment credentials: Demonstrates proven international communication capability to multinational employers in finance, aviation, energy, hospitality, and tech."
+      ],
+      "original_topic_ids": [
+        "ielts_why_choose_001",
+        "ielts_why_choose_005",
+        "ielts_why_choose_007",
+        "ielts_why_choose_008",
+        "ielts_why_choose_009",
+        "ielts_why_choose_010",
+        "ielts_why_choose_011",
+        "ielts_why_choose_015"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/why-choose-ielts/what-can-ielts-do-for-you"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-05",
+      "section": "Purpose and recognition",
+      "heading": "Requirements vary",
+      "text": "There is no single pass or fail score in IELTS. Each university, employer, or government department establishes its own minimum band score criteria.",
+      "bullets": [
+        "Institution criteria: Score requirements reflect the language demands of the specific course of study or professional occupation.",
+        "Component minimums: Many universities require not only an overall band (e.g. Band 6.5 or 7.0) but also minimum individual sub-scores in Writing or Speaking.",
+        "Verify before booking: Always check the exact IELTS version (Academic, General Training, or UKVI) and score profile demanded by your target institution before registering."
+      ],
+      "original_topic_ids": [
+        "ielts_why_choose_004",
+        "ielts_why_choose_014"
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/why-choose-ielts/what-can-ielts-do-for-you"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    },
+    {
+      "id": "what-is-ielts-06",
+      "section": "History and IELTS partners",
+      "heading": "Partners",
+      "text": "IELTS is jointly managed by three distinguished organizations with extensive expertise in education, testing research, and international cultural relations.",
+      "bullets": [
+        "British Council: The UK's international organization for educational and cultural relations, delivering IELTS across hundreds of test centres in over 140 countries.",
+        "IDP: IELTS Australia: Global education services provider operating in over 50 countries, administering IELTS testing and student placement services globally.",
+        "Cambridge University Press & Assessment: World leader in language assessment, responsible for test development, research validation, question design, and grading rubrics."
+      ],
+      "original_topic_ids": [
+        "ielts_about_006",
+        "ielts_about_007",
+        "ielts_about_008",
+        "ielts_about_009",
+        "ielts_about_011",
+        "ielts_about_012",
+        "ielts_about_015",
+        "ielts_about_016",
+        "ielts_about_017"
+      ],
+      "source_urls": [
+        "https://ielts.org/about-ielts"
+      ],
+      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+    }
+  ],
+  "sourceRecordCount": 36,
+  "sourceArchiveFile": "01_by_card/01_what-is-ielts/SOURCE_FACTS_FOR_REVIEW.csv",
+  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+}

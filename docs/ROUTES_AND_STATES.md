@@ -1,5 +1,11 @@
 # Routes and states
 
+## IELTS About route content delta — 2026-10-28, Content Pack v1.1
+
+All nine `/ielts-about/:topicId` slugs (`what-is-ielts`, `academic-general`, `test-format`, `sections-duration`, `bands`, `registration-test-day`, `computer-paper`, `accessibility`, `faqs`) remain unchanged and render comprehensive, self-contained educational reference guides via `AboutTopicBody` (`src/features/discovery/about/AboutPages.tsx`). Unknown `/ielts-about/:topicId` paths continue to recover safely via `UnknownDiscoveryScreen`. `/ielts-about/test-format` provides client-side skill tabs (`Listening`, `Reading`, `Writing`, `Speaking`) and keyboard-accessible question-type accordions (6 Listening, 11 Academic Reading). `/ielts-about/faqs` provides client-side search and topic-chip filtering across 18 FAQ items (categorized under Basics, Format, Scoring, Test day, Access and delivery) with distinct purple block buttons and Show/Hide toggle indicators. Internal navigation links connect related About guides (e.g. from Format FAQs to Test format and Duration). All external source links are validated as `https:` and open with `target="_blank" rel="noopener noreferrer"`.
+
+---
+
 ## Current route and navigation delta — 2026-10-28, Slice 2
 
 This dated entry supersedes affected route descriptions below. HashRouter, session/onboarding/active-Exam guards, workspace validation and diagnostic skip/resume are retained. Sidebar now has ten links: Main (Dashboard, Learn); IELTS Skills (Listening, Reading, Writing, Speaking); Assessment & Progress (Complete IELTS Exam, Progress); Information (IELTS About, Settings). Removed sidebar links do not remove engines or old URLs.

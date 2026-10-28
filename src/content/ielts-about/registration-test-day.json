@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.2.0",
+  "cardId": "registration-test-day",
+  "title": "Registration and test-day information",
+  "slug": "registration-test-day",
+  "route": "/ielts-about/registration-test-day",
+  "source_review_count": 22,
+  "lastReviewed": "2026-10-28",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
+  "display": {
+    "primary_guidance": "https://ielts.org/take-a-test/booking-your-test/test-day-advice",
+    "primary_guidance_label": "Official test-day checklist",
+    "section_groups": [
+      "Before booking",
+      "On test day",
+      "Results and enquiries"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "registration-test-day-01",
+      "heading": "Choosing your test and booking in advance",
+      "text": "Careful preparation starts long before test day. Choose the right test format (Academic, General Training, or IELTS for UKVI) according to the precise guidelines of your receiving institution. Book your session well ahead of application deadlines, and plan your journey so you arrive calm and punctual.",
+      "bullets": [
+        "Confirm test track: Verify whether your university, professional licensing body, or visa office requires Academic, General Training, or a UKVI-approved session.",
+        "Verify application deadlines: Results take 1 to 5 days (computer) or 13 days (paper). Schedule your test date with comfortable contingency time.",
+        "Plan your travel: Confirm test center address, public transport routes, parking availability, and set alarms to avoid rushing."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "original_topic_ids": [
+        "ielts_test_day_001",
+        "ielts_test_day_002"
+      ],
+      "section": "Before booking"
+    },
+    {
+      "id": "registration-test-day-02",
+      "heading": "Valid identification requirements",
+      "text": "You must bring the exact same physical identification document (valid passport or national ID card) that you registered with when booking the test. Digital scans, photocopies, student cards, or expired documents are strictly rejected.",
+      "bullets": [
+        "Physical original ID required: Must be valid and current on the day of the test.",
+        "Exact document match: Must match the registration details provided during online booking.",
+        "No exceptions rule: Candidates who forget their ID or present an unapproved document will NOT be allowed to sit the test and will forfeit their test fee."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "original_topic_ids": [
+        "ielts_test_day_003",
+        "ielts_test_day_004"
+      ],
+      "section": "On test day"
+    },
+    {
+      "id": "registration-test-day-03",
+      "heading": "Arrival time and check-in procedures",
+      "text": "Plan to arrive at the test venue at least 30 to 45 minutes before the scheduled start time. Check-in involves strict security verification, secure personal belongings storage, identity checks, and room briefing.",
+      "bullets": [
+        "Arrival window: Arrive 30–45 minutes prior to your test session. Test centers enforce a strict cutoff; latecomers will not be admitted under any circumstances.",
+        "Identity verification: Staff will verify your ID document, capture your official test-day photograph (which appears on your TRF), and take a digital finger-scan.",
+        "Online test check-in: For IELTS Online, log in early to complete automated system checks, identity scans, and room inspection before your start time."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "original_topic_ids": [
+        "ielts_test_day_001",
+        "ielts_test_day_002",
+        "ielts_test_day_007"
+      ],
+      "section": "On test day"
+    },
+    {
+      "id": "registration-test-day-04",
+      "heading": "Prohibited and permitted items",
+      "text": "To protect test integrity, strict security protocols govern what items may enter the examination room. All unauthorized possessions must be stored in secure lockers or designated storage rooms outside the test area.",
+      "bullets": [
+        "All watches strictly prohibited: Both analog and digital watches, smartwatches, and fitness trackers are banned from the test room.",
+        "Mobile phones and electronics: Mobile phones, tablets, recording devices, and smart keys must be completely switched off and stored outside.",
+        "Food and drinks: Food is not permitted in the testing room. Water is allowed only in a completely clear, transparent plastic bottle with all labels removed.",
+        "Permitted items: Your valid physical ID, clear plastic water bottle, and wooden pencils and erasers (if pencil writing is permitted or required)."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "original_topic_ids": [
+        "ielts_test_day_008",
+        "ielts_test_day_009",
+        "ielts_test_day_012",
+        "ielts_test_day_013",
+        "ielts_test_day_019"
+      ],
+      "section": "On test day"
+    },
+    {
+      "id": "registration-test-day-05",
+      "heading": "Test room rules, supervision, and clocks",
+      "text": "Once inside the examination room, invigilators provide clear verbal instructions. Candidates must maintain total silence and adhere to all examination protocols throughout testing.",
+      "bullets": [
+        "Room clock: Every test room features a clearly visible wall clock or on-screen timer. You do not need a personal watch.",
+        "Supervisor instructions: Listen attentively to all supervisor announcements. Do not open test booklets or begin typing until explicitly instructed.",
+        "Pacing and question reading: Read all instructions and questions carefully before writing answers to prevent easily avoidable errors.",
+        "Assistance during testing: If you need help, experience a computer problem, or need additional paper, raise your hand silently."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "original_topic_ids": [
+        "ielts_test_day_014",
+        "ielts_test_day_015",
+        "ielts_test_day_016",
+        "ielts_test_day_020",
+        "ielts_test_day_022"
+      ],
+      "section": "On test day"
+    },
+    {
+      "id": "registration-test-day-06",
+      "heading": "Accessing test results and TRF delivery",
+      "text": "Results are released rapidly following test completion. Candidates can view an unofficial online preview of their scores, followed by official electronic or physical Test Report Form (TRF) issuance.",
+      "bullets": [
+        "IELTS on Computer results: Accessible online through the Test Taker Portal in 1 to 5 calendar days.",
+        "Paper-based results: Available online and via physical TRF collection or mail in 13 calendar days.",
+        "IELTS Online results: Accessible as an electronic TRF (eTRF) in 3 to 6 days.",
+        "Institutional copies: Up to 5 official TRF copies can be sent directly to universities or employers free of charge if requested during registration or within one month."
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "original_topic_ids": [
+        "ielts_assessment_criteria_016",
+        "ielts_assessment_criteria_017"
+      ],
+      "section": "Results and enquiries"
+    },
+    {
+      "id": "registration-test-day-07",
+      "heading": "Enquiry on Results (EOR) / Re-marking process",
+      "text": "If you believe your performance was scored incorrectly, you can request an official Enquiry on Results (EOR) to have your test re-marked by senior examiners who have no knowledge of your original scores.",
+      "bullets": [
+        "Timeframe: An EOR application must be submitted within 6 weeks of your test date.",
+        "Component selection: You can choose to have one, several, or all four sections re-marked.",
+        "Fee and refund: You pay an administration fee; this fee is FULLY REFUNDED if your band score increases in any section.",
+        "Independent review: Re-marking is performed by senior Cambridge-trained examiners who are blind to your initial scores.",
+        "Outcome timing: Outcomes are typically delivered between 2 to 21 days depending on the number of sections being reviewed."
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "original_topic_ids": [
+        "ielts_assessment_criteria_018",
+        "ielts_assessment_criteria_019",
+        "ielts_assessment_criteria_020",
+        "ielts_assessment_criteria_021",
+        "ielts_assessment_criteria_022"
+      ],
+      "section": "Results and enquiries"
+    }
+  ]
+}

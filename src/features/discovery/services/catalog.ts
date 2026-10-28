@@ -23,14 +23,14 @@ const skills:Record<Module,readonly SkillActivity[]>={
  Speaking:[activity('part-1','Speaking Part 1','Open the existing interview-style learning sample.','speaking',{kind:'workspace',mode:'learn',resourceId:'speaking-1'}),activity('part-2','Speaking Part 2','Prepare a response with the existing long-turn sample.','speaking',{kind:'workspace',mode:'learn',resourceId:'speaking-2'}),activity('part-3','Speaking Part 3','Explore the existing discussion-style learning sample.','speaking',{kind:'workspace',mode:'learn',resourceId:'speaking-3'}),activity('simulation','Speaking Simulation','A dedicated complete interview simulation is not available yet.','clock',{kind:'planned'}),tips('Speaking'),criteria('Speaking')],
 };
 const about:readonly CatalogEntry[]=[
- ['what-is-ielts','What is IELTS?','An introduction to the test and its purpose.'],
- ['academic-general','IELTS Academic vs General Training','A future guide to choosing and understanding the two tracks.'],
- ['test-format','Test format','A future overview of the test structure.'],
- ['sections-duration','Test sections and duration','Verified timing and section information will be organized here.'],
- ['bands','Band-score overview','A future educational explanation of reported scores.'],
- ['registration-test-day','Registration and test-day information','Current procedures require verified source content.'],
- ['computer-paper','IELTS on Computer / Paper','A future comparison of delivery formats.'],
- ['accessibility','Accessibility and arrangements','Verified information on arrangements will be organized here.'],
- ['faqs','FAQs','Reviewed answers to common preparation questions.'],
-].map<CatalogEntry>(([id,title,description])=>({id,title,description,icon:'book',availability:'REFERENCE_PENDING'}));
+ ['what-is-ielts','What is IELTS?','The name, the four skills and why IELTS results are used.','globe'],
+ ['academic-general','IELTS Academic vs General Training','Which test fits your goal, and what is shared or different.','layers'],
+ ['test-format','Test format','Four skill tabs with detailed Listening and Academic Reading question types.','book'],
+ ['sections-duration','Test sections and duration','Section timings, Writing time planning and the test-day sequence.','clock'],
+ ['bands','Band-score overview','The 0–9 scale, overall band rounding and how sections are assessed.','criteria'],
+ ['registration-test-day','Registration and test-day information','Before booking, test-day and results checklists.','criteria'],
+ ['computer-paper','IELTS on Computer / Paper','The 2026 delivery update, test-centre computer and IELTS Online.','layers'],
+ ['accessibility','Accessibility and arrangements','Access arrangements by need, and why to contact the centre early.','link'],
+ ['faqs','FAQs','Searchable answers to ten common questions.','book'],
+].map<CatalogEntry>(([id,title,description,icon])=>({id,title,description,icon:icon as CatalogIcon,availability:'REFERENCE_PENDING'}));
 export const localCatalogSource:CatalogSource={learn:()=>learn,skills:module=>skills[module],about:()=>about};

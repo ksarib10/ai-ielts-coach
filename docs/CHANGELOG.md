@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-28 — IELTS About complete content enrichment (v1.1)
+
+- Ingested, analyzed and mapped all 458 records from the 13 original source CSVs in `src/content/ielts-about/coverage.ts`: 439 included in candidate-facing educational explanations, 14 consolidated duplicates (Task 2 criteria overlap across Academic and General Training Writing), and 5 withheld for documented policy/promotional reasons (March 2026 paper phaseout and marketing reach claims).
+- Substantially expanded all nine `/ielts-about/:topicId` guides into self-contained educational resources with 83 rich highlights (preserving all 66 original starter IDs), bulleted breakdowns, comparison tables, and inter-topic navigation links.
+- Expanded the FAQ guide to 18 comprehensive entries (10 preserved + 4 visual reference questions under Format with inline explanations and internal links + 4 high-value CSV additions). Implemented custom purple block buttons with dynamic Show/Hide toggle indicators matching reference screenshots in dark and light themes.
+- Enriched `/ielts-about/test-format` with detailed question-type explanations for all 6 Listening and 11 Academic Reading types, word limit rules, and scoring notes.
+- Resolved excessive bottom scrolling bug across long IELTS About pages (Bands, Computer/Paper, Sections/Duration): added `position: relative` to `.main-scroll` and `top: 0; left: 0;` to `.sr-only` utility in `src/foundation.css`, preventing absolute accessibility spans from escaping to `<html>`'s containing block and creating phantom outer-window scrollbars. Viewport height is strictly preserved at 900px with natural bottom spacing.
+- Updated `qa/discovery.test.mjs` to assert 83 highlights, 458 records coverage, and screenshot FAQs. All 9 test suites (`npm test`), TypeScript checking (`npx tsc -b`), production build (`npm run build`), and headless Chrome 18-point contrast/viewport audits PASS with zero errors, zero contrast failures, and zero horizontal overflow at 390px. Owner review pending; no push, merge, or deployment.
+
+---
+
 ## 2026-10-28 — Comprehensive theme consistency and contrast remediation
 
 - Corrected legacy hard-coded pale/white surfaces and fixed blue-gray text at source in styles.css/prototype.css; semantic surface/text/action/status/disabled/highlight roles and eleven missing compatibility aliases in foundation.css. Exam hero/stepper/choices/timers/audio/table/footer/results and diagnostic/shared surfaces now follow the active theme; existing layouts preserved.
