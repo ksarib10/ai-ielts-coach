@@ -1,12 +1,15 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.2.0",
   "cardId": "accessibility",
-  "route": "/ielts-about/accessibility",
   "title": "Accessibility and arrangements",
-  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
-  "lastCompiled": "2026-10-28",
+  "slug": "accessibility",
+  "route": "/ielts-about/accessibility",
+  "source_review_count": 46,
+  "lastReviewed": "2026-10-28",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
   "display": {
-    "layout": "support overview + accessible assistance categories + contact-early banner",
+    "primary_guidance": "https://ielts.org/take-a-test/booking-your-test/access-arrangements",
+    "primary_guidance_label": "Official access arrangements policy",
     "section_groups": [
       "Getting support",
       "Vision",
@@ -18,90 +21,153 @@
   "highlights": [
     {
       "id": "accessibility-01",
-      "section": "Getting support",
-      "heading": "Request arrangements early",
-      "text": "Ask your test centre about access arrangements well in advance; some requests need around six weeks of preparation.",
-      "original_topic_ids": [
-        "ielts_special_requirements_003"
+      "heading": "Purpose of access arrangements and equal opportunity",
+      "text": "IELTS provides comprehensive access arrangements to ensure that all candidates, regardless of physical disabilities, sensory impairments, learning differences, or temporary medical conditions, are evaluated fairly without barrier or disadvantage. Accommodations adjust how the test is administered without altering what is assessed or compromising linguistic standards.",
+      "bullets": [
+        "Equal opportunity: Designed to enable full participation without modifying test difficulty, linguistic validity, or score standards.",
+        "Eligible conditions: Long-term physical, visual, hearing, or speech impairments; specific learning differences (dyslexia, dyspraxia, ADHD); and acute temporary conditions (such as a broken arm or hospital recovery).",
+        "Individualised accommodations: Approved arrangements are tailored specifically to the verified needs of each individual candidate."
       ],
       "source_urls": [
-        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
         "https://ielts.org/take-a-test/booking-your-test/special-requirements"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_special_requirements_001",
+        "ielts_special_requirements_002",
+        "ielts_special_requirements_004",
+        "ielts_special_requirements_006",
+        "ielts_special_requirements_007",
+        "ielts_special_requirements_008"
+      ],
+      "section": "Getting support"
     },
     {
       "id": "accessibility-02",
-      "section": "Getting support",
-      "heading": "Approval process",
-      "text": "Support arrangements depend on individual needs and are subject to approval.",
-      "original_topic_ids": [
-        "ielts_special_requirements_007"
+      "heading": "Notice periods and medical evidence requirements",
+      "text": "Access arrangements require advance approval and specialized logistical preparation. Candidates must contact their local test centre well before their intended test date and supply current medical or psychological documentation.",
+      "bullets": [
+        "Notice timeframe: Contact your test centre at least 6 weeks prior to your test date (and up to 3 months in advance for customized modified materials like Braille or enlarged test booklets).",
+        "Medical documentation: Provide an official medical certificate or psychological assessment report issued by a qualified practitioner.",
+        "Learning difficulty reports: Reports for specific learning differences must be issued when the candidate was aged 13 or older, must specify recognized diagnostic tests, and must be dated within 2 to 3 years."
       ],
       "source_urls": [
-        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
         "https://ielts.org/take-a-test/booking-your-test/special-requirements"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_special_requirements_003",
+        "ielts_special_requirements_009",
+        "ielts_special_requirements_032",
+        "ielts_special_requirements_033"
+      ],
+      "section": "Getting support"
     },
     {
       "id": "accessibility-03",
-      "section": "Vision",
-      "heading": "Visual access support",
-      "text": "Depending on eligibility, support may include accessible text, larger print, Braille or assistive tools.",
-      "original_topic_ids": [
-        "ielts_special_requirements_005"
+      "heading": "Visual impairment support and modified materials",
+      "text": "A wide range of specialized accommodations is available for blind and partially sighted test takers, including modified test materials, technological aids, and human assistants.",
+      "bullets": [
+        "Braille papers: Available in standard Grade 1 (uncontracted) or Grade 2 (contracted) Braille with tactile or text descriptions of visual materials.",
+        "Modified Large Print (MLP): Test booklets printed in 18pt bold, 24pt, or customized A3 formats with optimized line spacing.",
+        "Computer display adaptation: Screen magnification software and enlarged monitor displays at computer-delivered centres.",
+        "Human assistants: An amanuensis (scribe/transcriber) to transcribe dictated writing responses, or an official reader to read questions aloud.",
+        "Timing and scheduling: Extra time (from 25% up to 100%), supervised rest breaks, or splitting the test across two consecutive days."
       ],
       "source_urls": [
-        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
         "https://ielts.org/take-a-test/booking-your-test/special-requirements"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_special_requirements_005",
+        "ielts_special_requirements_010",
+        "ielts_special_requirements_011",
+        "ielts_special_requirements_012",
+        "ielts_special_requirements_013",
+        "ielts_special_requirements_014",
+        "ielts_special_requirements_015",
+        "ielts_special_requirements_016",
+        "ielts_special_requirements_017",
+        "ielts_special_requirements_018"
+      ],
+      "section": "Vision"
     },
     {
       "id": "accessibility-04",
-      "section": "Hearing and speech",
-      "heading": "Hearing support",
-      "text": "Candidates who are deaf or hard of hearing can request information about specific test arrangements.",
-      "original_topic_ids": [
-        "ielts_special_requirements_019"
+      "heading": "Hearing and speech support arrangements",
+      "text": "Candidates who are D/deaf or have hearing impairments can access adapted acoustic environments, specialized equipment, and custom test administrations.",
+      "bullets": [
+        "Amplification and hearing systems: Permission to use personal hearing aids, personal wireless/FM listening systems, or specialized headphones with custom volume controls.",
+        "Separate testing room: Candidates using amplification sit in an individual private room to prevent feedback and acoustic disturbance.",
+        "Lip-reading Listening version: An examiner reads the recorded Listening script aloud face-to-face, speaking each passage twice and pausing during the second reading for the candidate to record answers.",
+        "Speaking assistance: Sign language interpreters permitted exclusively for administrative questions and examiner instructions (candidates must speak their answers in English).",
+        "Extra time: Up to 25% extra time permitted in Reading and Writing depending on medical assessment."
       ],
       "source_urls": [
-        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
         "https://ielts.org/take-a-test/booking-your-test/special-requirements"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_special_requirements_019",
+        "ielts_special_requirements_020",
+        "ielts_special_requirements_021",
+        "ielts_special_requirements_022",
+        "ielts_special_requirements_023",
+        "ielts_special_requirements_024",
+        "ielts_special_requirements_025",
+        "ielts_special_requirements_026",
+        "ielts_special_requirements_027",
+        "ielts_special_requirements_028",
+        "ielts_special_requirements_029",
+        "ielts_special_requirements_030",
+        "ielts_special_requirements_031"
+      ],
+      "section": "Hearing and speech"
     },
     {
       "id": "accessibility-05",
-      "section": "Learning differences",
-      "heading": "Learning-related support",
-      "text": "Candidates with a documented learning difference may ask the centre about appropriate access arrangements.",
-      "original_topic_ids": [
-        "ielts_special_requirements_032"
+      "heading": "Learning differences support (Dyslexia, ADHD)",
+      "text": "Candidates diagnosed with specific learning differences such as dyslexia, dyscalculia, dyspraxia, or attention deficit conditions can receive structured test-taking support.",
+      "bullets": [
+        "Extra time: Typically 25% extra time per section (and up to 50% with specialist recommendation) to allow adequate reading and processing time.",
+        "Rest breaks: Supervised rest breaks where the examination clock is stopped, allowing the candidate to rest without reviewing test materials.",
+        "Word processor use: Approved use of a computer or typewriter for Writing tasks (with all spell-checking, grammar checking, thesaurus, and predictive text strictly disabled).",
+        "Environment and materials: Sitting in an individual separate room; permission to use transparent coloured plastic overlays or tinted reading sheets; transcriber assistance for severely illegible handwriting."
       ],
       "source_urls": [
-        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
         "https://ielts.org/take-a-test/booking-your-test/special-requirements"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_special_requirements_032",
+        "ielts_special_requirements_033",
+        "ielts_special_requirements_034",
+        "ielts_special_requirements_035",
+        "ielts_special_requirements_036",
+        "ielts_special_requirements_037",
+        "ielts_special_requirements_038",
+        "ielts_special_requirements_039",
+        "ielts_special_requirements_040",
+        "ielts_special_requirements_041",
+        "ielts_special_requirements_042"
+      ],
+      "section": "Learning differences"
     },
     {
       "id": "accessibility-06",
-      "section": "Exemptions",
-      "heading": "Specific exemptions",
-      "text": "Official arrangements may include an exemption in limited approved circumstances; contact the test centre for eligibility.",
-      "original_topic_ids": [
-        "ielts_special_requirements_043"
+      "heading": "Component exemptions and temporary medical conditions",
+      "text": "When severe long-term disability prevents a candidate from completing a specific component even with all available access arrangements, or when an acute injury occurs close to test day, official exemption and postponement procedures apply.",
+      "bullets": [
+        "Component exemption criteria: In exceptional cases of severe, permanent disability (e.g. profound deafness where a candidate cannot complete Listening), exemption from one or two components can be granted in advance.",
+        "Exemption scoring: If an exemption is approved, the score for the missing skill is calculated based on the candidate's average performance on the remaining completed components to produce a valid Overall Band Score.",
+        "TRF explanatory statement: The official Test Report Form includes a formal explanatory endorsement stating that the missing band score was calculated from performance across the other skills.",
+        "Temporary conditions: For temporary injuries (such as a broken arm or hospitalization), candidates can request adapted seating, scribes, extra time, or a free test date postponement."
       ],
       "source_urls": [
-        "https://www.ielts.org/take-a-test/booking-your-test/access-arrangements",
         "https://ielts.org/take-a-test/booking-your-test/special-requirements"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_special_requirements_043",
+        "ielts_special_requirements_044",
+        "ielts_special_requirements_045",
+        "ielts_special_requirements_046"
+      ],
+      "section": "Exemptions"
     }
-  ],
-  "sourceRecordCount": 46,
-  "sourceArchiveFile": "01_by_card/08_accessibility/SOURCE_FACTS_FOR_REVIEW.csv",
-  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+  ]
 }

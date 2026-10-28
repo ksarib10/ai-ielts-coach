@@ -1,12 +1,15 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.2.0",
   "cardId": "sections-duration",
-  "route": "/ielts-about/sections-duration",
   "title": "Test sections and duration",
-  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
-  "lastCompiled": "2026-10-28",
+  "slug": "sections-duration",
+  "route": "/ielts-about/sections-duration",
+  "source_review_count": 17,
+  "lastReviewed": "2026-10-28",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
   "display": {
-    "layout": "four duration tiles + journey timeline + delivery-mode note",
+    "primary_guidance": "https://ielts.org/take-a-test/test-types/ielts-academic-test/academic-test-format-in-detail",
+    "primary_guidance_label": "Official test timing details",
     "section_groups": [
       "Core durations",
       "Test sequence",
@@ -16,98 +19,160 @@
   "highlights": [
     {
       "id": "sections-duration-01",
-      "section": "Core durations",
-      "heading": "Listening",
-      "text": "Listening takes approximately 30 minutes, with exact administration details depending on delivery mode.",
-      "original_topic_ids": [
-        "ielts_academic_format_016"
+      "heading": "Listening duration and answer transfer",
+      "text": "The Listening component lasts approximately 30 minutes. In the paper-based format (where still offered until mid-2026), candidates receive an extra 10 minutes at the end of the recording to transfer answers from their question booklet to the official answer sheet. In the computer-delivered format, candidates type answers directly as they listen, followed by 2 minutes at the end to review their work.",
+      "bullets": [
+        "Audio playback: ~30 minutes of continuous audio across 4 sections.",
+        "Computer-delivered review: 2 minutes at the end to check and review responses.",
+        "Paper transfer (legacy): 10 minutes provided at the end to transfer pencil answers onto the machine-read answer sheet.",
+        "One-time playback: Audio tracks are played once only; pauses and repeats are never permitted."
       ],
       "source_urls": [
-        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION",
-      "note": "Do not automatically add the historical paper-only 10-minute answer transfer to computer-based IELTS."
+      "original_topic_ids": [
+        "ielts_academic_format_016",
+        "ielts_general_training_006"
+      ],
+      "section": "Core durations"
     },
     {
       "id": "sections-duration-02",
-      "section": "Core durations",
-      "heading": "Reading",
-      "text": "Reading lasts 60 minutes.",
-      "original_topic_ids": [
-        "ielts_academic_format_046"
+      "heading": "Reading duration (no transfer time)",
+      "text": "The Reading test lasts exactly 60 minutes for both Academic and General Training. Unlike the paper Listening test, NO extra transfer time is provided at the end of Reading. All 40 answers must be entered directly onto your answer sheet or typed into your computer workspace within the 60-minute limit.",
+      "bullets": [
+        "Time allowed: 60 minutes total for 3 reading passages and 40 questions.",
+        "Pacing recommendation: Allocate approximately 20 minutes per passage.",
+        "Strict deadline: When time expires, test invigilators immediately halt testing; untransferred notes receive zero marks."
       ],
       "source_urls": [
-        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_046",
+        "ielts_general_training_007"
+      ],
+      "section": "Core durations"
     },
     {
       "id": "sections-duration-03",
-      "section": "Core durations",
-      "heading": "Writing",
-      "text": "Writing lasts 60 minutes across two tasks.",
-      "original_topic_ids": [
-        "ielts_general_training_008"
+      "heading": "Writing duration (60 minutes)",
+      "text": "The Writing component lasts exactly 60 minutes and requires candidates to complete two separate writing tasks. Candidates have complete discretion over how they divide the 60 minutes between Task 1 and Task 2, but following the recommended time split is vital.",
+      "bullets": [
+        "Total duration: 60 minutes for both tasks.",
+        "Recommended allocation: ~20 minutes for Task 1, ~40 minutes for Task 2.",
+        "No enforced break: Time flows continuously between the two tasks."
       ],
       "source_urls": [
-        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+        "https://ielts.org/take-a-test/test-types/ielts-general-training",
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_general_training_008",
+        "ielts_test_day_011"
+      ],
+      "section": "Core durations"
     },
     {
       "id": "sections-duration-04",
-      "section": "Core durations",
-      "heading": "Speaking",
-      "text": "Speaking lasts approximately 11–14 minutes.",
-      "original_topic_ids": [
-        "ielts_general_training_009"
+      "heading": "Speaking duration (11–14 minutes)",
+      "text": "The Speaking test lasts between 11 and 14 minutes. The session is strictly timed by the examiner using a digital stopwatch, ensuring every candidate receives identical interview opportunities.",
+      "bullets": [
+        "Part 1: 4 to 5 minutes (personal introduction and everyday familiar questions).",
+        "Part 2: 3 to 4 minutes (1 minute preparation + 1 to 2 minutes speaking).",
+        "Part 3: 4 to 5 minutes (in-depth discussion on broader abstract themes)."
       ],
       "source_urls": [
         "https://ielts.org/take-a-test/test-types/ielts-general-training"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_general_training_009"
+      ],
+      "section": "Core durations"
     },
     {
       "id": "sections-duration-05",
-      "section": "Core durations",
-      "heading": "Task 1 planning",
-      "text": "Candidates are usually advised to spend about 20 minutes on Writing Task 1.",
-      "original_topic_ids": [
-        "ielts_academic_writing_004"
+      "heading": "Writing Task 1 recommended time (~20 minutes)",
+      "text": "Candidates are strongly advised to spend no more than 20 minutes on Task 1. Because Task 1 requires a minimum of 150 words and carries only one-third of the total Writing marks, spending more than 20 minutes jeopardizes your performance on the higher-weighted Task 2.",
+      "bullets": [
+        "Target word count: At least 150 words.",
+        "Time management: 3–4 minutes analyzing the prompt/visual, 12–14 minutes writing, 2–3 minutes proofreading.",
+        "Discipline: Conclude Task 1 promptly after 20 minutes even if you feel you could add more detail."
       ],
       "source_urls": [
-        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training/general-training-writing"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_095",
+        "ielts_academic_writing_004",
+        "ielts_general_writing_004"
+      ],
+      "section": "Core durations"
     },
     {
       "id": "sections-duration-06",
-      "section": "Core durations",
-      "heading": "Task 2 planning",
-      "text": "Candidates are usually advised to spend around 40 minutes on Writing Task 2.",
-      "original_topic_ids": [
-        "ielts_academic_writing_017"
+      "heading": "Writing Task 2 recommended time (~40 minutes)",
+      "text": "Candidates should allocate approximately 40 minutes to Task 2. Task 2 requires at least 250 words and contributes twice as much as Task 1 toward your Writing band score. A strong Task 2 can significantly raise your overall Writing result, whereas a weak or incomplete Task 2 will severely limit your score.",
+      "bullets": [
+        "Target word count: At least 250 words.",
+        "Weighting: Carries 2/3 of the total Writing assessment mark.",
+        "Recommended breakdown: 5 minutes brainstorming and planning, 30 minutes drafting paragraph by paragraph, 5 minutes checking grammar, vocabulary, and punctuation."
       ],
       "source_urls": [
-        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training/general-training-writing"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_102",
+        "ielts_academic_writing_017",
+        "ielts_general_writing_031"
+      ],
+      "section": "Core durations"
     },
     {
       "id": "sections-duration-07",
-      "section": "Test sequence",
-      "heading": "At the test centre",
-      "text": "Listening, Reading and Writing generally run as one session; Speaking scheduling can differ.",
-      "original_topic_ids": [
-        "ielts_how_it_works_016"
+      "heading": "Test sequence and scheduling rules",
+      "text": "The Listening, Reading, and Writing sections are always administered in that exact sequence on the same day in one continuous sitting lasting approximately 2 hours and 40 minutes, with NO breaks between sections. The Speaking test is scheduled separately.",
+      "bullets": [
+        "Unbroken test sitting: Listening (30–40 min), immediately followed by Reading (60 min), immediately followed by Writing (60 min). No pauses or restroom breaks are scheduled between components.",
+        "In-centre Speaking window: The Speaking test may take place on the same day (either before or after the written sitting) or within a window of up to 7 days before or after your written exam date.",
+        "Total test day time: Approximately 2 hours and 45 minutes of total testing time, plus check-in, identity checks, and security procedures."
       ],
       "source_urls": [
-        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format",
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_how_it_works_016",
+        "ielts_how_it_works_017",
+        "ielts_test_day_010",
+        "ielts_test_day_011"
+      ],
+      "section": "Test sequence"
+    },
+    {
+      "id": "sections-duration-08",
+      "heading": "Delivery mode scheduling and timing nuances",
+      "text": "Different delivery modes (computer, paper, and IELTS Online) involve distinct scheduling and on-screen timing considerations.",
+      "bullets": [
+        "Computer-delivered in-centre: A visible countdown clock displays remaining time on screen, with automated visual reminders at 10 minutes and 5 minutes remaining in Reading and Writing.",
+        "IELTS Online: The Speaking test is usually scheduled before the Listening, Reading, and Writing sections, either earlier on the same day or on a separate date.",
+        "Strict session windows: In IELTS Online, each section has a rigid timer managed by the Inspera Exam Portal; unsubmitted work is automatically locked when time expires."
+      ],
+      "source_urls": [
+        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format",
+        "https://ielts.org/take-a-test/booking-your-test/test-day"
+      ],
+      "original_topic_ids": [
+        "ielts_how_it_works_018",
+        "ielts_test_day_011"
+      ],
+      "section": "Delivery-specific timing"
     }
-  ],
-  "sourceRecordCount": 17,
-  "sourceArchiveFile": "01_by_card/04_sections-duration/SOURCE_FACTS_FOR_REVIEW.csv",
-  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+  ]
 }

@@ -29,7 +29,14 @@ const locked=render(React.createElement(x.CatalogCard,{item:x.localCatalogSource
 const disclosure=render(React.createElement(x.DevelopmentPreview));assert.ok(disclosure.includes('<summary>Development Preview</summary>'));assert.ok(disclosure.includes('shared device'));assert.ok(disclosure.includes('not validated'));
 assert.deepEqual(x.validateAboutContent(),[]);
 const aboutCards=x.allAboutCards();assert.equal(aboutCards.length,9);
-assert.equal(aboutCards.reduce((sum,c)=>sum+c.highlights.length,0),66);
+assert.equal(aboutCards.reduce((sum,c)=>sum+c.highlights.length,0),83);
+const starterIds=['what-is-ielts-01','what-is-ielts-02','what-is-ielts-03','what-is-ielts-04','what-is-ielts-05','what-is-ielts-06','academic-general-01','academic-general-02','academic-general-03','academic-general-04','academic-general-05','academic-general-06','test-format-01','test-format-02','test-format-03','test-format-04','test-format-05','test-format-06','test-format-07','test-format-08','test-format-09','test-format-10','sections-duration-01','sections-duration-02','sections-duration-03','sections-duration-04','sections-duration-05','sections-duration-06','sections-duration-07','bands-01','bands-02','bands-03','bands-04','bands-05','bands-06','bands-07','bands-08','registration-test-day-01','registration-test-day-02','registration-test-day-03','registration-test-day-04','registration-test-day-05','registration-test-day-06','registration-test-day-07','computer-paper-01','computer-paper-02','computer-paper-03','computer-paper-04','computer-paper-05','computer-paper-06','accessibility-01','accessibility-02','accessibility-03','accessibility-04','accessibility-05','accessibility-06','faqs-01','faqs-02','faqs-03','faqs-04','faqs-05','faqs-06','faqs-07','faqs-08','faqs-09','faqs-10'];
+assert.equal(starterIds.length,66);for(const sid of starterIds)assert.ok(aboutCards.some(c=>c.highlights.some(h=>h.id===sid)),`Missing starter highlight ${sid}`);
+assert.equal(x.SOURCE_COVERAGE_SUMMARY.totalRecords,458);assert.equal(x.SOURCE_COVERAGE_SUMMARY.included,439);assert.equal(x.SOURCE_COVERAGE_SUMMARY.consolidated,14);assert.equal(x.SOURCE_COVERAGE_SUMMARY.withheld,5);assert.equal(x.sourceCoverageMap.length,458);
+const faqCard=aboutCards.find(c=>c.cardId==='faqs');assert.equal(faqCard.highlights.length,18);
+for(const q of ['What is the IELTS test format?','In what order will I take the test sections?','What accents will I hear in the Listening section?','What accents will I hear in the Speaking section?']){
+ assert.ok(faqCard.highlights.some(h=>h.heading===q),`Missing screenshot FAQ: ${q}`);
+}
 assert.equal(x.questionTypeContent.sections.find(s=>s.skillId==='listening').questionTypes.length,6);
 assert.equal(x.questionTypeContent.sections.find(s=>s.skillId==='academic-reading').questionTypes.length,11);
 const aboutOverview=render(React.createElement(x.CatalogCard,{item:x.localCatalogSource.about()[0],href:x.aboutHref('what-is-ielts'),statusLabel:x.aboutCardSummary['what-is-ielts'],actionLabel:'Open guide'}));assert.ok(aboutOverview.includes('What is IELTS?'));assert.ok(aboutOverview.includes('Open guide'));
@@ -46,4 +53,4 @@ assert.ok(tfHtml.includes('Task 1')&&tfHtml.includes('Task 2'));assert.ok(tfHtml
 console.error=oldError;
 const app=fs.readFileSync('src/App.tsx','utf8');for(const oldRoute of ['/practice','/mock-tests','/saved','/vocabulary','/ai-coach','/readiness','/exam-simulation','/learn/:id'])assert.ok(app.includes(`path="${oldRoute}"`),oldRoute);
 assert.ok(app.includes('discoveryRoutes.readiness'));assert.ok(app.includes('ModuleLibrary'));
-console.log('PASS: ten Learn categories, 24 skill cards, nine IELTS About pages (66 highlights + 6 Listening & 11 Academic Reading question types), existing resource targets, track-specific Task1, compact sidebar, availability semantics, preview disclosure and preserved legacy routes.');
+console.log('PASS: ten Learn categories, 24 skill cards, nine IELTS About pages (83 highlights covering 458 source records + 6 Listening & 11 Academic Reading question types + 18 FAQs), existing resource targets, track-specific Task1, compact sidebar, availability semantics, preview disclosure and preserved legacy routes.');

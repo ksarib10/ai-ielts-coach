@@ -1,6 +1,8 @@
 import { useId, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
-import { ChevronDown, ExternalLink, Info } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, ChevronDown, ExternalLink, Info } from 'lucide-react';
 import { sourceHost, uniqueSources, type AboutHighlight } from '../../../content/ielts-about';
+import { aboutHref } from '../routes';
 
 /** External official-source links. Visually distinct from internal navigation (icon, host label, new tab). */
 export function SourceLinks({ urls, label = 'Official source' }: { urls: readonly string[]; label?: string }) {
@@ -20,12 +22,43 @@ export function SourceLinks({ urls, label = 'Official source' }: { urls: readonl
   );
 }
 
-/** One cited highlight: heading, plain-text body, optional caveat and sources. */
+/** One cited highlight: heading, plain-text body, optional bullets, table, internal link, caveat and sources. */
 export function HighlightCard({ item, className = '', children }: { item: AboutHighlight; className?: string; children?: ReactNode }) {
   return (
     <article className={`about-highlight ${className}`} data-highlight-id={item.id}>
       <h3>{item.heading}</h3>
-      <p>{item.text}</p>
+      {item.paragraphs && item.paragraphs.length > 0 ? (
+        item.paragraphs.map((p, i) => <p key={i}>{p}</p>)
+      ) : (
+        <p>{item.text}</p>
+      )}
+      {item.bullets && item.bullets.length > 0 && (
+        <ul className="about-bullets">
+          {item.bullets.map((b, i) => <li key={i}>{b}</li>)}
+        </ul>
+      )}
+      {item.table && (
+        <div className="about-table-wrap">
+          <table className="about-table">
+            {item.table.caption && <caption className="sr-only">{item.table.caption}</caption>}
+            <thead>
+              <tr>{item.table.headers.map((h, i) => <th key={i}>{h}</th>)}</tr>
+            </thead>
+            <tbody>
+              {item.table.rows.map((row, i) => (
+                <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+      {item.internal_link && (
+        <div className="about-internal-link">
+          <Link className="about-related-link" to={aboutHref(item.internal_link.to)}>
+            {item.internal_link.label} <ArrowRight size={14} aria-hidden="true" />
+          </Link>
+        </div>
+      )}
       {children}
       {item.note && <p className="about-caveat"><Info size={15} aria-hidden="true" /><span>{item.note}</span></p>}
       <SourceLinks urls={item.source_urls} />
@@ -34,18 +67,21 @@ export function HighlightCard({ item, className = '', children }: { item: AboutH
 }
 
 /** Accessible disclosure: heading > button[aria-expanded] controlling a labelled region. Collapsed by default. */
-export function AccordionItem({ title, headingLevel = 3, children, defaultOpen = false, highlightId }: {
-  title: ReactNode; headingLevel?: 3 | 4; children: ReactNode; defaultOpen?: boolean; highlightId?: string;
+export function AccordionItem({ title, headingLevel = 3, children, defaultOpen = false, highlightId, showToggleText = false, className = '' }: {
+  title: ReactNode; headingLevel?: 3 | 4; children: ReactNode; defaultOpen?: boolean; highlightId?: string; showToggleText?: boolean; className?: string;
 }) {
   const [open, setOpen] = useState(defaultOpen);
   const id = useId();
   const Heading = headingLevel === 3 ? 'h3' : 'h4';
   return (
-    <div className={`about-accordion-item ${open ? 'open' : ''}`} data-highlight-id={highlightId}>
+    <div className={`about-accordion-item ${open ? 'open' : ''} ${className}`.trim()} data-highlight-id={highlightId}>
       <Heading className="about-accordion-heading">
         <button type="button" id={`${id}-button`} aria-expanded={open} aria-controls={`${id}-panel`} onClick={() => setOpen(value => !value)}>
           <span>{title}</span>
-          <ChevronDown className="about-accordion-chevron" size={22} aria-hidden="true" />
+          <span className="about-accordion-action">
+            {showToggleText && <span className="about-accordion-toggle-text">{open ? 'Hide' : 'Show'}</span>}
+            <ChevronDown className="about-accordion-chevron" size={20} aria-hidden="true" />
+          </span>
         </button>
       </Heading>
       <div id={`${id}-panel`} role="region" aria-labelledby={`${id}-button`} className="about-accordion-panel" hidden={!open}>

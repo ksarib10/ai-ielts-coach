@@ -11,6 +11,7 @@ import faqs from './faqs.json';
 import questionTypesJson from './test-format-question-types.json';
 
 export type { AboutCardContent, AboutHighlight, AboutTopicId, QuestionType, QuestionTypeContent, QuestionTypeSection } from './types';
+export { SOURCE_COVERAGE_SUMMARY, sourceCoverageMap, type SourceCoverageRecord, type CoverageStatus } from './coverage';
 
 /** Content pack version as delivered in IELTS_ABOUT_9_CARD_CONTENT_PACK_V1_1. */
 export const ABOUT_CONTENT_PACK_VERSION = '1.1';

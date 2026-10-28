@@ -1,12 +1,15 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.2.0",
   "cardId": "test-format",
-  "route": "/ielts-about/test-format",
   "title": "Test format",
-  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
-  "lastCompiled": "2026-10-28",
+  "slug": "test-format",
+  "route": "/ielts-about/test-format",
+  "source_review_count": 178,
+  "lastReviewed": "2026-10-28",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
   "display": {
-    "layout": "four skill tabs, expandable question-type examples, track-aware Writing panel",
+    "primary_guidance": "https://ielts.org/take-a-test/test-types/ielts-academic-test/academic-test-format-in-detail",
+    "primary_guidance_label": "Official test format in detail",
     "section_groups": [
       "Listening",
       "Reading",
@@ -17,136 +20,314 @@
   "highlights": [
     {
       "id": "test-format-01",
-      "section": "Listening",
-      "heading": "Four parts",
-      "text": "The Listening test contains four parts, with contexts ranging from everyday situations to educational discussions.",
-      "original_topic_ids": [
-        "ielts_academic_format_004"
+      "heading": "Listening section structure and recordings",
+      "text": "The Listening test lasts approximately 30 minutes (plus 10 minutes transfer on paper or 2 minutes review on computer) and contains four recorded parts with 10 questions each, for a total of 40 questions. Each recording is played ONCE only. The recordings feature a variety of native English accents (British, Australian, North American, and New Zealand).",
+      "bullets": [
+        "Part 1: A conversation between two speakers set in an everyday social context (e.g. booking accommodation or inquiring about travel).",
+        "Part 2: A monologue set in an everyday social context (e.g. a speech about local community facilities or a guided museum tour).",
+        "Part 3: A conversation among up to four people in an educational or training context (e.g. university students discussing a tutor assignment).",
+        "Part 4: A monologue on an academic subject (e.g. a university lecture on history, psychology, or environmental science)."
       ],
       "source_urls": [
         "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_004",
+        "ielts_academic_format_005",
+        "ielts_academic_format_006",
+        "ielts_academic_format_007",
+        "ielts_academic_format_008",
+        "ielts_academic_format_009",
+        "ielts_academic_format_010",
+        "ielts_academic_format_011",
+        "ielts_academic_format_012",
+        "ielts_academic_format_013"
+      ],
+      "section": "Listening"
     },
     {
       "id": "test-format-02",
-      "section": "Listening",
-      "heading": "Question types",
-      "text": "Listening tasks may include multiple choice, matching, completion and map or diagram labels.",
-      "original_topic_ids": [
-        "ielts_academic_format_018"
+      "heading": "Listening question types and delivery",
+      "text": "IELTS Listening uses six official question types designed to assess a wide spectrum of listening skills, from understanding main ideas and specific factual details to recognizing speaker opinions and following complex development of ideas.",
+      "bullets": [
+        "Question Type 1: Multiple choice (single answer or multiple selections from a list).",
+        "Question Type 2: Matching (linking spoken items to options on a list).",
+        "Question Type 3: Plan, map, or diagram labelling (identifying parts or locations on a visual layout).",
+        "Question Type 4: Form, note, table, flow-chart, or summary completion (filling gaps in structured outlines).",
+        "Question Type 5: Sentence completion (filling missing words into grammatically correct sentences).",
+        "Question Type 6: Short-answer questions (providing concise factual answers based directly on spoken details)."
       ],
       "source_urls": [
         "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_018",
+        "ielts_academic_format_022",
+        "ielts_academic_format_024",
+        "ielts_academic_format_030",
+        "ielts_academic_format_040"
+      ],
+      "section": "Listening"
     },
     {
       "id": "test-format-03",
-      "section": "Reading",
-      "heading": "Academic reading materials",
-      "text": "Academic Reading uses texts intended to assess reading for higher education contexts.",
-      "original_topic_ids": [
-        "ielts_academic_format_040"
+      "heading": "Reading section structure and text styles",
+      "text": "The Academic Reading test lasts 60 minutes and consists of three long texts with a combined length of 2,150 to 2,750 words, accompanied by 40 questions. Texts are taken from books, journals, magazines, and newspapers, written for a non-specialist audience but containing authentic intellectual content suited for university candidates.",
+      "bullets": [
+        "Text styles: Range from descriptive and factual to discursive, analytical, and argumentative.",
+        "Visual elements: Passages may include diagrams, graphs, charts, or illustrations.",
+        "Terminology: If technical vocabulary is essential, a short glossary is provided at the bottom of the passage.",
+        "Timing rule: There is NO additional transfer time in Reading. All answers must be entered directly within the 60 minutes."
       ],
       "source_urls": [
         "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_046",
+        "ielts_academic_format_047",
+        "ielts_academic_format_048",
+        "ielts_academic_format_049",
+        "ielts_academic_format_050",
+        "ielts_academic_format_051",
+        "ielts_academic_format_052"
+      ],
+      "section": "Reading"
     },
     {
       "id": "test-format-04",
-      "section": "Reading",
-      "heading": "Reading response types",
-      "text": "Reading can involve identifying information, matching headings and completing sentences or summaries.",
-      "original_topic_ids": [
-        "ielts_academic_format_053"
+      "heading": "Academic Reading question types and skills",
+      "text": "Academic Reading assesses a wide variety of reading sub-skills across 11 official question categories. Candidates are tested on skimming (reading quickly for general meaning), scanning (locating specific details), understanding logical arguments, and recognizing a writer's purpose, attitudes, and unstated assumptions.",
+      "bullets": [
+        "11 Question Types: Multiple choice, Identifying information (True/False/Not Given), Identifying writer views (Yes/No/Not Given), Matching information, Matching headings, Matching features, Matching sentence endings, Sentence completion, Summary/note/table/flow-chart completion, Diagram label completion, and Short-answer questions.",
+        "True/False/Not Given vs Yes/No/Not Given: True/False statements assess factual claims against the text; Yes/No statements evaluate whether statements reflect the author's opinions or arguments.",
+        "Not Given distinction: 'Not Given' means the passage neither confirms nor contradicts the statement."
       ],
       "source_urls": [
         "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_057",
+        "ielts_academic_format_061",
+        "ielts_academic_format_064",
+        "ielts_academic_format_069",
+        "ielts_academic_format_072"
+      ],
+      "section": "Reading"
     },
     {
       "id": "test-format-05",
-      "section": "Writing",
-      "heading": "Two tasks",
-      "text": "Both IELTS Writing formats contain two tasks.",
-      "original_topic_ids": [
-        "ielts_academic_writing_001"
+      "heading": "Writing section structure and weighting",
+      "text": "The Writing test lasts 60 minutes and consists of two mandatory tasks: Task 1 and Task 2. Task 2 carries TWICE the weighting of Task 1 toward your overall Writing band score. Candidates are strongly advised to divide their time accordingly: approximately 20 minutes for Task 1 and 40 minutes for Task 2.",
+      "bullets": [
+        "Task 1: At least 150 words. Spend approximately 20 minutes. Contributes 1/3 of the Writing score.",
+        "Task 2: At least 250 words. Spend approximately 40 minutes. Contributes 2/3 of the Writing score.",
+        "Format rule: All answers must be written in full, continuous prose paragraphs. Answers written in note form or bullet points will receive severe penalty."
       ],
       "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
         "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_094",
+        "ielts_academic_format_101",
+        "ielts_academic_format_112",
+        "ielts_academic_writing_001",
+        "ielts_academic_writing_023"
+      ],
+      "section": "Writing"
     },
     {
       "id": "test-format-06",
-      "section": "Writing",
-      "heading": "Task 2",
-      "text": "Writing Task 2 requires an essay responding to a viewpoint, argument or problem.",
-      "original_topic_ids": [
-        "ielts_academic_writing_014"
+      "heading": "Task 2 essay requirements (both tracks)",
+      "text": "In both Academic and General Training, Task 2 requires candidates to write a discursive essay of at least 250 words in response to a prompt presenting an argument, point of view, or social problem. The essay assesses your ability to present a clear thesis position, develop coherent supporting arguments, provide relevant examples, and conclude logically.",
+      "bullets": [
+        "Word count: Must be at least 250 words. Writing fewer than 250 words incurs an under-length penalty.",
+        "Essay types: Opinion essays (Agree/Disagree), Discussion essays (Discuss both views and give your opinion), Problem-Solution essays, and Advantage-Disadvantage essays.",
+        "Academic style: Formal or semi-formal academic tone, clear paragraph progression, cohesive linking devices, and sophisticated vocabulary.",
+        "General Training style: Slightly more personal tone permitted, but requires the same structural clarity and argumentative rigor."
       ],
       "source_urls": [
-        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing",
+        "https://ielts.org/take-a-test/test-types/ielts-general-training/general-training-writing"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_101",
+        "ielts_academic_format_103",
+        "ielts_academic_writing_015",
+        "ielts_academic_writing_018",
+        "ielts_general_writing_032"
+      ],
+      "section": "Writing"
     },
     {
       "id": "test-format-07",
-      "section": "Writing",
-      "heading": "Task 1 minimum",
-      "text": "Writing Task 1 generally requires at least 150 words.",
-      "original_topic_ids": [
-        "ielts_academic_writing_003"
+      "heading": "Academic Task 1 visual report",
+      "text": "Academic Task 1 requires candidates to describe visual data in at least 150 words within approximately 20 minutes. You will be presented with a graph, chart, table, diagram of a process, or map comparison. Your objective is to identify the main features, describe significant trends, compare key figures, and write a clear factual overview without expressing personal opinions.",
+      "bullets": [
+        "Visual formats: Line graphs, bar charts, pie charts, data tables, process flow diagrams, or chronological maps.",
+        "Essential requirement: A clear, well-phrased Overview summarizing the main trends or stages is compulsory to achieve Band 6 or higher in Task Achievement.",
+        "Objective register: Describe solely what the visual evidence displays; do not extrapolate speculative causes or offer personal opinions."
       ],
       "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
         "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_094",
+        "ielts_academic_format_096",
+        "ielts_academic_format_097",
+        "ielts_academic_writing_003",
+        "ielts_academic_writing_006"
+      ],
+      "section": "Writing"
     },
     {
       "id": "test-format-08",
-      "section": "Writing",
-      "heading": "Task 2 minimum",
-      "text": "Writing Task 2 generally requires at least 250 words.",
-      "original_topic_ids": [
-        "ielts_academic_writing_016"
-      ],
-      "source_urls": [
-        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing"
-      ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
-    },
-    {
-      "id": "test-format-09",
-      "section": "Speaking",
-      "heading": "Three parts",
-      "text": "The Speaking test has three parts: an interview, an individual long turn and a discussion.",
-      "original_topic_ids": [
-        "ielts_academic_format_114"
+      "heading": "Writing assessment criteria",
+      "text": "Examiners evaluate your writing using four standardized assessment criteria, each carrying equal 25% weighting towards the task band score: Task Achievement (Task 1) or Task Response (Task 2), Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy.",
+      "bullets": [
+        "Task Achievement / Task Response (25%): Fully addressing all parts of the prompt, providing a clear overview (Task 1) or sustained position (Task 2), and presenting well-developed ideas.",
+        "Coherence and Cohesion (25%): Logical organization of ideas, clear progression throughout the text, effective paragraphing, and seamless use of cohesive linking devices.",
+        "Lexical Resource (25%): Range and precision of vocabulary, awareness of collocation, style and register, with correct spelling and word formation.",
+        "Grammatical Range and Accuracy (25%): Flexible use of complex sentence structures (conditionals, relative clauses, passive voice) alongside grammatical accuracy and proper punctuation."
       ],
       "source_urls": [
         "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_105",
+        "ielts_academic_format_106",
+        "ielts_academic_format_107",
+        "ielts_academic_format_108",
+        "ielts_academic_format_109"
+      ],
+      "section": "Writing"
+    },
+    {
+      "id": "test-format-09",
+      "heading": "Speaking section structure (3 parts)",
+      "text": "The Speaking test is an interactive, face-to-face or video-call interview with a certified IELTS examiner lasting 11 to 14 minutes. The session is audio recorded for quality assurance and re-marking. It is divided into three distinct parts designed to elicit a natural sample of spoken English across a range of communicative contexts.",
+      "bullets": [
+        "Part 1: Introduction and interview (4–5 minutes). The examiner verifies your identity and asks familiar questions about your home, family, job, studies, hobbies, and everyday routines.",
+        "Part 2: Individual long turn (3–4 minutes). You receive a task card with prompts on a specific topic. You have 1 minute to prepare and make notes using paper and pencil provided. You then speak uninterrupted for 1 to 2 minutes.",
+        "Part 3: Two-way discussion (4–5 minutes). The examiner leads an in-depth conversation discussing abstract, analytical themes thematically linked to your Part 2 topic."
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_113",
+        "ielts_academic_format_114",
+        "ielts_academic_format_117",
+        "ielts_academic_format_118",
+        "ielts_academic_format_119"
+      ],
+      "section": "Speaking"
     },
     {
       "id": "test-format-10",
-      "section": "Speaking",
-      "heading": "Human examiner",
-      "text": "The official Speaking test is conducted as an interview with an IELTS examiner.",
-      "original_topic_ids": [
-        "ielts_how_it_works_014"
+      "heading": "Speaking assessment criteria",
+      "text": "Certified examiners evaluate your spoken performance throughout the interview using four equally weighted criteria (25% each): Fluency and Coherence, Lexical Resource, Grammatical Range and Accuracy, and Pronunciation.",
+      "bullets": [
+        "Fluency and Coherence (25%): Ability to speak at length with natural flow, minimal hesitation, logical sequencing, and appropriate discourse markers.",
+        "Lexical Resource (25%): Variety and precision of vocabulary, ability to use idioms and collocations appropriately, and effective paraphrasing when words are unfamiliar.",
+        "Grammatical Range and Accuracy (25%): Accurate and varied use of both simple and complex sentence forms without persistent systemic grammatical errors.",
+        "Pronunciation (25%): Intelligibility, use of natural phonological features (stress, rhythm, intonation, sentence linkage), enabling effortless comprehension."
       ],
       "source_urls": [
-        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_115",
+        "ielts_assessment_criteria_007",
+        "ielts_assessment_criteria_008",
+        "ielts_assessment_criteria_009",
+        "ielts_assessment_criteria_010"
+      ],
+      "section": "Speaking"
+    },
+    {
+      "id": "test-format-11",
+      "heading": "General Training Task 1 letter types and conventions",
+      "text": "General Training Task 1 requires writing a letter of at least 150 words in approximately 20 minutes in response to a practical scenario. The prompt always includes three specific bullet points that must each be thoroughly addressed.",
+      "bullets": [
+        "Letter registers: Personal/informal (writing to a friend or relative), Semi-formal (writing to a landlord, colleague, or club secretary), or Formal (writing to an unknown manager, bank, or university officer).",
+        "Salutation and sign-off conventions: Must match the chosen register (e.g. 'Dear Sir/Madam ... Yours faithfully' for unknown formal recipients; 'Dear John ... Best wishes' for informal friends).",
+        "Content coverage: Every bullet point in the question prompt must be clearly and fully expanded to achieve Band 6+ in Task Achievement."
+      ],
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-general-training/general-training-writing"
+      ],
+      "original_topic_ids": [
+        "ielts_general_writing_001",
+        "ielts_general_writing_005",
+        "ielts_general_writing_010",
+        "ielts_general_writing_014"
+      ],
+      "section": "Writing"
+    },
+    {
+      "id": "test-format-12",
+      "heading": "Listening answer rules: word limits, numbers, and spelling",
+      "text": "Success in IELTS Listening requires rigorous adherence to answer formatting instructions. Careless spelling mistakes or exceeding stated word limits result in zero marks for that question, even if the candidate's meaning was clear.",
+      "bullets": [
+        "Word limit instructions: If instructions state 'NO MORE THAN TWO WORDS AND/OR A NUMBER', writing three words is marked incorrect.",
+        "Numbers: Can be written as words (e.g. 'twenty-four') or numerals (e.g. '24'). Writing numerals saves precious time.",
+        "Hyphenated words: Words with hyphens (e.g. 'part-time', 'well-known') count as a single word.",
+        "Spelling and capitalization: Both standard British and American spellings are accepted. Answers can be written in ALL CAPS, lowercase, or mixed case."
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_027",
+        "ielts_academic_format_028",
+        "ielts_academic_format_029",
+        "ielts_academic_format_043"
+      ],
+      "section": "Listening"
+    },
+    {
+      "id": "test-format-13",
+      "heading": "Reading strategies: True/False/Not Given vs Yes/No/Not Given",
+      "text": "One of the most frequent sources of candidate error in IELTS Reading is confusing 'False' with 'Not Given', or mixing up factual statements with writer opinions.",
+      "bullets": [
+        "True / False / Not Given: Assesses factual statements against the text. 'True' agrees with facts; 'False' contradicts factual information; 'Not Given' means the passage neither confirms nor denies the fact.",
+        "Yes / No / Not Given: Assesses author claims or views. 'Yes' reflects the writer's stated opinion; 'No' opposes the writer's view; 'Not Given' means the author expresses no clear opinion on that specific claim.",
+        "No prior knowledge: You must answer based solely on the text provided, never based on your outside knowledge or personal opinions."
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_061",
+        "ielts_academic_format_062",
+        "ielts_academic_format_063",
+        "ielts_academic_format_064",
+        "ielts_academic_format_065"
+      ],
+      "section": "Reading"
+    },
+    {
+      "id": "test-format-14",
+      "heading": "Speaking Part 2 preparation and delivery techniques",
+      "text": "In Speaking Part 2, candidates receive a prompt card and have exactly 1 minute to plan their response before speaking continuously for 1 to 2 minutes.",
+      "bullets": [
+        "1-minute note taking: Use the paper and pencil provided. Jot down keywords, collocations, and sequential bullet points rather than attempting to write full sentences.",
+        "Structure your response: Follow the bullet points on the task card as a natural chronological narrative outline.",
+        "Aim for 2 minutes: Speak until the examiner politely stops you with a hand gesture or comment; being stopped does not lower your score and indicates you sustained fluent discourse."
+      ],
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/test-types/ielts-academic-test/academic-test-format-in-detail",
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_118",
+        "ielts_assessment_criteria_008"
+      ],
+      "section": "Speaking"
     }
-  ],
-  "sourceRecordCount": 178,
-  "sourceArchiveFile": "01_by_card/03_test-format/SOURCE_FACTS_FOR_REVIEW.csv",
-  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+  ]
 }

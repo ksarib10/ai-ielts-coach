@@ -21,7 +21,13 @@ export interface AboutHighlight {
   note?: string;
   original_topic_ids: readonly string[];
   source_urls: readonly string[];
-  editorial_status: string;
+  editorial_status?: string;
+  bullets?: readonly string[];
+  paragraphs?: readonly string[];
+  subsections?: readonly { title: string; text: string; bullets?: readonly string[] }[];
+  table?: { caption?: string; headers: readonly string[]; rows: readonly (readonly string[])[] };
+  internal_link?: { to: AboutTopicId; label: string };
+  status?: 'CONFIRMED' | 'CONDITIONAL' | 'HISTORICAL_POLICY';
 }
 
 export interface AboutCardContent {
@@ -29,13 +35,22 @@ export interface AboutCardContent {
   cardId: AboutTopicId;
   route: string;
   title: string;
-  status: string;
-  lastCompiled: string;
-  display: { layout: string; section_groups: readonly string[] };
+  slug?: string;
+  status?: string;
+  editorialStatus?: string;
+  lastCompiled?: string;
+  lastReviewed?: string;
+  display: {
+    layout?: string;
+    section_groups: readonly string[];
+    primary_guidance?: string;
+    primary_guidance_label?: string;
+  };
   highlights: readonly AboutHighlight[];
-  sourceRecordCount: number;
-  sourceArchiveFile: string;
-  rightsNote: string;
+  sourceRecordCount?: number;
+  source_review_count?: number;
+  sourceArchiveFile?: string;
+  rightsNote?: string;
 }
 
 export interface QuestionType {

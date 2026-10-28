@@ -12,6 +12,8 @@
   --brand-50:#f2eafa; --brand-100:#e6d5f6; --brand-400:#9560cf; --brand-500:#8951c7; --brand-600:#6933b5; --brand-700:#53248f;
   --ai-50:#f2eafa; --ai-100:#e6d5f6; --ai-500:#8951c7; --ai-600:#6933b5; --ai-700:#53248f;
   --shadow-sm:0 2px 6px #39124d08; --shadow-md:0 18px 44px #39124d12;
+  --faq-button-bg:var(--brand-600); --faq-button-text:var(--color-on-action);
+  --faq-button-open-bg:var(--brand-700); --faq-button-open-text:var(--color-on-action);
   --radius:16px; --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-6:24px; --space-8:32px;
 }
 :root[data-theme=dark] {
@@ -27,6 +29,8 @@
   --brand-50:#312044; --brand-100:#4a2f64; --brand-400:#c5a3ff; --brand-500:#b992f3; --brand-600:#c5a3ff; --brand-700:#dbc4ff;
   --ai-50:#312044; --ai-100:#4a2f64; --ai-500:#b992f3; --ai-600:#c5a3ff; --ai-700:#dbc4ff;
   --shadow-sm:0 2px 8px #0002; --shadow-md:0 18px 44px #0004;
+  --faq-button-bg:var(--color-soft); --faq-button-text:var(--color-text);
+  --faq-button-open-bg:var(--color-surface-subtle); --faq-button-open-text:var(--color-action);
 }
 /* Legacy palette names are compatibility aliases, not independent light-only colors.
    Define surfaces and their foreground roles together; component sources consume these roles. */
@@ -422,6 +426,12 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
   font-size:18px; font-weight:700; font-family:inherit; text-align:left; cursor:pointer;
 }
 .about-accordion-heading button:hover { color:var(--color-action); }
+.about-accordion-action {
+  display:inline-flex; align-items:center; gap:8px; flex-shrink:0; font-size:14px; font-weight:600;
+}
+.about-accordion-toggle-text {
+  font-size:14px; font-weight:600;
+}
 .about-accordion-chevron {
   flex-shrink:0; color:var(--color-text);
   transition:transform 160ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -437,6 +447,58 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
 .about-accordion-panel h4 { font-size:21px; font-weight:500; margin:14px 0 2px; color:var(--color-text); }
 .about-accordion-panel h4:first-child { margin-top:2px; }
 .about-accordion-panel p { margin:0; line-height:1.65; max-width:78ch; }
+.about-bullets {
+  display:flex; flex-direction:column; gap:6px;
+  padding-inline-start:20px; margin:6px 0;
+  font-size:14px; line-height:1.6;
+}
+.about-bullets li { color:var(--color-text); }
+.about-table-wrap {
+  overflow-x:auto; margin:10px 0; border:1px solid var(--color-border);
+  border-radius:10px; background:var(--color-surface);
+}
+.about-table {
+  width:100%; border-collapse:collapse; font-size:13px; text-align:left;
+}
+.about-table th, .about-table td {
+  padding:10px 14px; border-bottom:1px solid var(--color-border); vertical-align:top;
+}
+.about-table th {
+  background:var(--color-soft); font-weight:700; color:var(--color-text);
+}
+.about-table tr:last-child td { border-bottom:0; }
+.about-internal-link { margin-top:6px; }
+
+/* FAQ distinct purple pill accordions matching user visual reference */
+.about-faq-accordion {
+  background:transparent; border:0; padding:0;
+  display:flex; flex-direction:column; gap:12px;
+}
+.about-faq-accordion .about-faq-item {
+  border:0; border-radius:10px; overflow:hidden;
+  background:var(--color-surface);
+  border:1px solid var(--color-border);
+}
+.about-faq-accordion .about-faq-item .about-accordion-heading button {
+  background:var(--faq-button-bg); color:var(--faq-button-text);
+  border-radius:9px; padding:16px 20px; min-height:56px;
+}
+.about-faq-accordion .about-faq-item .about-accordion-heading button:hover {
+  background:var(--faq-button-open-bg); color:var(--faq-button-open-text);
+}
+.about-faq-accordion .about-faq-item.open .about-accordion-heading button {
+  background:var(--faq-button-open-bg); color:var(--faq-button-open-text);
+  border-bottom-left-radius:0; border-bottom-right-radius:0;
+}
+.about-faq-accordion .about-faq-item .about-accordion-chevron {
+  color:inherit;
+}
+.about-faq-accordion .about-faq-item.open .about-accordion-chevron {
+  color:inherit;
+}
+.about-faq-accordion .about-faq-item .about-accordion-panel {
+  padding:18px 20px 22px; background:var(--color-surface);
+}
 .about-parts,.about-timeline {
   display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px;
   list-style:none; padding:0; margin:8px 0;

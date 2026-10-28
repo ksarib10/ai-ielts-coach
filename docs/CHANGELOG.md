@@ -1,11 +1,12 @@
 # Changelog
 
-## 2026-10-28 — IELTS About frontend content integration (v1.1)
+## 2026-10-28 — IELTS About complete content enrichment (v1.1)
 
-- Integrated `IELTS_ABOUT_9_CARD_CONTENT_PACK_V1_1` static JSON into `src/content/ielts-about/` (9 card JSON files + `test-format-question-types.json`, typed loader, URL safety checks and structural validator). Excluded raw 458-row CSV archive, `01_by_card` and `03_manifests` from client assets.
-- Implemented all nine `/ielts-about/:topicId` pages in `src/features/discovery/about/AboutPages.tsx` and shared accessible primitives in `src/features/discovery/about/AboutComponents.tsx`, rendering all 66 starter highlights with traceable `data-highlight-id` attributes and external `https:` official source links.
-- Implemented the four-tab `Test Format` screen (`Listening | Reading | Writing | Speaking`) with 6 expandable Listening question types and 11 expandable Academic Reading question types, plus explicit General Training Reading pending-verification disclosure.
-- Extended `qa/discovery.test.mjs` to validate all 9 cards, 66 highlights, 6+11 question types and rendered markup. All 9 test suites (`npm test`), TypeScript (`npx tsc -b`), production build (`npm run build`), and 1440px (dark/light) + 390px browser checks PASS with zero contrast or overflow failures. Owner visual and editorial acceptance pending.
+- Ingested, analyzed and mapped all 458 records from the 13 original source CSVs in `src/content/ielts-about/coverage.ts`: 439 included in candidate-facing educational explanations, 14 consolidated duplicates (Task 2 criteria overlap across Academic and General Training Writing), and 5 withheld for documented policy/promotional reasons (March 2026 paper phaseout and marketing reach claims).
+- Substantially expanded all nine `/ielts-about/:topicId` guides into self-contained educational resources with 83 rich highlights (preserving all 66 original starter IDs), bulleted breakdowns, comparison tables, and inter-topic navigation links.
+- Expanded the FAQ guide to 18 comprehensive entries (10 preserved + 4 visual reference questions under Format with inline explanations and internal links + 4 high-value CSV additions). Implemented custom purple block buttons with dynamic Show/Hide toggle indicators matching reference screenshots in dark and light themes.
+- Enriched `/ielts-about/test-format` with detailed question-type explanations for all 6 Listening and 11 Academic Reading types, word limit rules, and scoring notes.
+- Updated `qa/discovery.test.mjs` to assert 83 highlights, 458 records coverage, and screenshot FAQs. All 9 test suites (`npm test`), TypeScript checking (`npx tsc -b`), production build (`npm run build`), and headless Chrome 16-point contrast/viewport audits PASS with zero errors, zero contrast failures, and zero horizontal overflow at 390px. Owner review pending; no push, merge, or deployment.
 
 ---
 

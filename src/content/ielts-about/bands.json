@@ -1,12 +1,15 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.2.0",
   "cardId": "bands",
-  "route": "/ielts-about/bands",
   "title": "Band-score overview",
-  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
-  "lastCompiled": "2026-10-28",
+  "slug": "bands",
+  "route": "/ielts-about/bands",
+  "source_review_count": 73,
+  "lastReviewed": "2026-10-28",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
   "display": {
-    "layout": "band ladder + calculation explainer + criterion accordions + raw-to-band caveat",
+    "primary_guidance": "https://ielts.org/organisations/ielts-for-organisations/ielts-scoring-in-detail",
+    "primary_guidance_label": "Official IELTS scoring guide",
     "section_groups": [
       "Band scale",
       "Overall score calculation",
@@ -17,110 +20,315 @@
   "highlights": [
     {
       "id": "bands-01",
-      "section": "Band scale",
-      "heading": "0 to 9",
-      "text": "IELTS reports scores on a band scale from 0 to 9.",
-      "original_topic_ids": [
-        "ielts_assessment_criteria_014"
+      "heading": "The 0–9 band scale",
+      "text": "IELTS results are reported on a 9-band scale from Band 1 (Non-user) to Band 9 (Expert user). If a candidate does not attempt the test or answers zero questions, they receive Band 0. Each band corresponds to a clearly defined level of English proficiency. Scores are reported in whole bands (e.g. 6.0, 7.0) and half bands (e.g. 6.5, 7.5).",
+      "bullets": [
+        "9-band scale: A universal proficiency scale aligned to the Common European Framework of Reference (CEFR).",
+        "Whole and half bands: Candidates can score e.g. 6.0, 6.5, 7.0, 7.5 across each skill and overall.",
+        "Band 0: Assigned only if a candidate does not attend the test or makes no attempt at any questions."
       ],
       "source_urls": [
-        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+        "https://ielts.org/take-a-test/your-results/ielts-band-scores",
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_band_scores_001",
+        "ielts_scoring_detail_002"
+      ],
+      "section": "Band scale"
     },
     {
       "id": "bands-02",
-      "section": "Overall score calculation",
-      "heading": "Four section scores",
-      "text": "The reported overall band is calculated from Listening, Reading, Writing and Speaking section bands.",
-      "original_topic_ids": [
-        "ielts_scoring_detail_002"
+      "heading": "Band scale descriptors (summary)",
+      "text": "The official IELTS band descriptors provide clear summaries of candidate capability at each score level:",
+      "bullets": [
+        "Band 9 (Expert user): Has fully operational command of the language; appropriate, fluent, accurate with complete understanding.",
+        "Band 8 (Very good user): Has operational command with only occasional unsystematic inaccuracies; handles complex detailed argumentation well.",
+        "Band 7 (Good user): Has operational command though with occasional inaccuracies, inappropriacies and misunderstandings in some situations; generally handles complex language well and understands detailed reasoning.",
+        "Band 6 (Competent user): Has generally effective command despite inaccuracies, inappropriacies and misunderstandings; can use and understand fairly complex language, particularly in familiar situations.",
+        "Band 5 (Modest user): Has partial command of the language, coping with overall meaning in most situations, though is likely to make many mistakes; can handle basic communication in own field.",
+        "Band 4 (Limited user): Basic competence is limited to familiar situations; frequent problems in understanding and expression; unable to use complex language.",
+        "Band 3 (Extremely limited user): Conveys and understands only general meaning in very familiar situations; frequent breakdowns in communication occur.",
+        "Band 2 (Intermittent user): No real communication is possible except for the most basic information using isolated words or short formulae in familiar situations; great difficulty understanding spoken and written English.",
+        "Band 1 (Non-user): Essentially has no ability to use the language beyond possibly a few isolated words.",
+        "Band 0 (Did not attempt): Did not answer the questions or attend the test."
       ],
       "source_urls": [
-        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+        "https://ielts.org/take-a-test/your-results/ielts-band-scores"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_band_scores_001",
+        "ielts_band_scores_002",
+        "ielts_band_scores_003",
+        "ielts_band_scores_004",
+        "ielts_band_scores_005",
+        "ielts_band_scores_006",
+        "ielts_band_scores_007",
+        "ielts_band_scores_008",
+        "ielts_band_scores_009",
+        "ielts_band_scores_010",
+        "ielts_band_scores_011",
+        "ielts_band_scores_012",
+        "ielts_band_scores_013",
+        "ielts_band_scores_014",
+        "ielts_band_scores_015",
+        "ielts_band_scores_016",
+        "ielts_band_scores_017",
+        "ielts_band_scores_018",
+        "ielts_band_scores_019",
+        "ielts_band_scores_020"
+      ],
+      "section": "Band scale"
     },
     {
       "id": "bands-03",
-      "section": "Overall score calculation",
-      "heading": "Averaging",
-      "text": "The four section bands are averaged, then rounded to the nearest half band according to IELTS rules.",
-      "original_topic_ids": [
-        "ielts_scoring_detail_003"
+      "heading": "Four section scores and reporting",
+      "text": "Every test taker receives an individual band score for each of the four components: Listening, Reading, Writing, and Speaking, reported alongside their Overall Band Score on the official Test Report Form (TRF).",
+      "bullets": [
+        "Listening and Reading scores: Converted from a raw mark out of 40 into the 9-band scale.",
+        "Writing and Speaking scores: Awarded by trained examiners using official 4-criterion analytical rubrics.",
+        "Transparent profile: Universities and visa authorities often stipulate both an overall minimum and sub-score minimums (e.g. 'Overall 7.0 with no band less than 6.5')."
       ],
       "source_urls": [
         "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_scoring_detail_001",
+        "ielts_scoring_detail_009",
+        "ielts_scoring_detail_010"
+      ],
+      "section": "Overall score calculation"
     },
     {
       "id": "bands-04",
-      "section": "Overall score calculation",
-      "heading": "Quarter boundary",
-      "text": "An average ending in .25 is rounded upward to the next half band.",
-      "original_topic_ids": [
-        "ielts_scoring_detail_004"
+      "heading": "Overall band calculation and rounding rules",
+      "text": "The Overall Band Score is calculated by finding the arithmetic average (mean) of the four individual component scores (Listening + Reading + Writing + Speaking divided by 4) and rounding to the nearest whole or half band according to standardized mathematical rounding rules:",
+      "bullets": [
+        "Ends in .25 -> Rounds UP to the next half band (e.g. 6.25 rounds up to 6.5).",
+        "Ends in .75 -> Rounds UP to the next whole band (e.g. 6.75 rounds up to 7.0).",
+        "Ends in .125 -> Rounds DOWN to the nearest whole band (e.g. 6.125 rounds down to 6.0).",
+        "Ends in .375 -> Rounds UP to the half band (e.g. 6.375 rounds up to 6.5).",
+        "Ends in .625 -> Rounds DOWN to the half band (e.g. 6.625 rounds down to 6.5).",
+        "Ends in .875 -> Rounds UP to the next whole band (e.g. 6.875 rounds up to 7.0)."
       ],
+      "table": {
+        "caption": "Illustrative overall band calculation examples",
+        "headers": [
+          "Candidate",
+          "Listening",
+          "Reading",
+          "Writing",
+          "Speaking",
+          "Average",
+          "Final Overall Band"
+        ],
+        "rows": [
+          [
+            "Candidate A",
+            "6.5",
+            "6.5",
+            "5.5",
+            "6.0",
+            "6.125",
+            "6.0 (rounds down)"
+          ],
+          [
+            "Candidate B",
+            "4.0",
+            "3.5",
+            "4.0",
+            "4.0",
+            "3.875",
+            "4.0 (rounds up)"
+          ],
+          [
+            "Candidate C",
+            "6.5",
+            "6.5",
+            "6.0",
+            "6.0",
+            "6.250",
+            "6.5 (rounds up)"
+          ],
+          [
+            "Candidate D",
+            "6.5",
+            "7.0",
+            "7.0",
+            "7.0",
+            "6.875",
+            "7.0 (rounds up)"
+          ]
+        ]
+      },
       "source_urls": [
         "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_scoring_detail_003",
+        "ielts_scoring_detail_004",
+        "ielts_scoring_detail_005",
+        "ielts_scoring_detail_006",
+        "ielts_scoring_detail_007",
+        "ielts_scoring_detail_008"
+      ],
+      "section": "Overall score calculation"
     },
     {
       "id": "bands-05",
-      "section": "Section scoring",
-      "heading": "Objective sections",
-      "text": "Listening and Reading normally contain 40 scored questions each; exact band conversions can vary by test version.",
-      "original_topic_ids": [
-        "ielts_scoring_detail_011"
+      "heading": "Writing assessment criteria",
+      "text": "Writing performance is assessed using four criteria, each carrying equal 25% weighting towards each task. Task 2 contributes twice as much as Task 1 toward the overall Writing band score.",
+      "bullets": [
+        "Task Achievement (Task 1) / Task Response (Task 2) (25%): Quality of overview, addressing all prompt parts, depth of position.",
+        "Coherence and Cohesion (25%): Logical paragraph sequencing, clear progression of arguments, cohesive connectors.",
+        "Lexical Resource (25%): Vocabulary breadth, precision, collocation, natural phrasing, spelling accuracy.",
+        "Grammatical Range and Accuracy (25%): Variety of complex grammatical forms, control of tenses, punctuation accuracy."
       ],
       "source_urls": [
-        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_assessment_criteria_001",
+        "ielts_assessment_criteria_002",
+        "ielts_assessment_criteria_003",
+        "ielts_assessment_criteria_004",
+        "ielts_assessment_criteria_005",
+        "ielts_assessment_criteria_006",
+        "ielts_scoring_detail_033",
+        "ielts_scoring_detail_034",
+        "ielts_scoring_detail_035"
+      ],
+      "section": "Writing and Speaking criteria"
     },
     {
       "id": "bands-06",
-      "section": "Writing and Speaking criteria",
-      "heading": "Writing weighting",
-      "text": "Writing Task 2 contributes more to the Writing band than Task 1.",
-      "original_topic_ids": [
-        "ielts_assessment_criteria_001"
+      "heading": "Speaking assessment criteria",
+      "text": "Speaking performance is assessed across the three interview parts using four equally weighted criteria (25% each):",
+      "bullets": [
+        "Fluency and Coherence (25%): Smooth flow of speech, natural rhythm, minimal hesitation, cohesive structure.",
+        "Lexical Resource (25%): Range of vocabulary, idiomatic expressions, paraphrasing, precision of word choice.",
+        "Grammatical Range and Accuracy (25%): Range of simple and complex sentence structures, grammatical accuracy.",
+        "Pronunciation (25%): Intelligibility, word and sentence stress, intonation patterns, individual sound clarity."
       ],
       "source_urls": [
         "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_assessment_criteria_007",
+        "ielts_assessment_criteria_008",
+        "ielts_assessment_criteria_009",
+        "ielts_assessment_criteria_010",
+        "ielts_assessment_criteria_011",
+        "ielts_scoring_detail_036",
+        "ielts_scoring_detail_037",
+        "ielts_scoring_detail_038"
+      ],
+      "section": "Writing and Speaking criteria"
     },
     {
       "id": "bands-07",
-      "section": "Writing and Speaking criteria",
-      "heading": "Speaking criteria",
-      "text": "Fluency/coherence, vocabulary, grammar and pronunciation are each part of Speaking assessment.",
-      "original_topic_ids": [
-        "ielts_assessment_criteria_007"
-      ],
-      "source_urls": [
-        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
-      ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
-    },
-    {
-      "id": "bands-08",
-      "section": "Writing and Speaking criteria",
-      "heading": "Not an automated grade",
-      "text": "This page explains official score reporting; it does not validate scores produced by this platform.",
-      "original_topic_ids": [
-        "ielts_scoring_detail_001"
+      "heading": "Score validity and institutional acceptance",
+      "text": "There is NO pass or fail mark in IELTS. Performance is evaluated strictly on a proficiency scale. Receiving institutions (universities, employers, immigration authorities) independently set the score levels they require.",
+      "bullets": [
+        "No pass/fail: Every candidate receives an accurate proficiency rating reflecting their demonstrated English level.",
+        "Two-year validity: Test Report Forms are valid for 2 years from the date of the test. Recognizing organizations generally do not accept scores older than 2 years unless the applicant provides proof of continuous maintenance of English proficiency.",
+        "Institutional autonomy: A score accepted by one university department may be insufficient for another faculty."
       ],
       "source_urls": [
         "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_scoring_detail_001",
+        "ielts_scoring_detail_003",
+        "ielts_scoring_detail_004"
+      ],
+      "section": "Section scoring"
+    },
+    {
+      "id": "bands-08",
+      "heading": "Informational reference status",
+      "text": "This section is provided purely as an educational guide explaining the official IELTS scoring model, band descriptors, and calculation rules. It does not validate, certify, or grade any learner performance produced by this platform.",
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/ielts-scoring-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_scoring_detail_001"
+      ],
+      "section": "Section scoring"
+    },
+    {
+      "id": "bands-09",
+      "heading": "Illustrative raw score to band conversions (Listening and Reading)",
+      "text": "In Listening and Reading, each correct answer receives 1 mark (raw score out of 40). Because different test versions have slight differences in passage complexity, raw-to-band conversions are calibrated to maintain consistent standards. The table below displays illustrative average raw scores required for key band thresholds:",
+      "bullets": [
+        "Listening: ~16/40 for Band 5.0; ~23/40 for Band 6.0; ~30/40 for Band 7.0; ~35/40 for Band 8.0.",
+        "Academic Reading: ~15/40 for Band 5.0; ~23/40 for Band 6.0; ~30/40 for Band 7.0; ~35/40 for Band 8.0.",
+        "General Training Reading: Because General Training texts are more accessible, candidates need more correct answers for the same band: ~15/40 for Band 4.0; ~23/40 for Band 5.0; ~30/40 for Band 6.0; ~34/40 for Band 7.0.",
+        "Conversion variation: Exact conversion boundaries vary slightly between test versions to ensure fairness."
+      ],
+      "table": {
+        "caption": "Average illustrative raw scores out of 40 required for key band scores",
+        "headers": [
+          "Target Band",
+          "Listening (out of 40)",
+          "Academic Reading (out of 40)",
+          "General Training Reading (out of 40)"
+        ],
+        "rows": [
+          [
+            "Band 5.0",
+            "~16 marks",
+            "~15 marks",
+            "~23 marks"
+          ],
+          [
+            "Band 6.0",
+            "~23 marks",
+            "~23 marks",
+            "~30 marks"
+          ],
+          [
+            "Band 7.0",
+            "~30 marks",
+            "~30 marks",
+            "~34 marks"
+          ],
+          [
+            "Band 8.0",
+            "~35 marks",
+            "~35 marks",
+            "~38 marks"
+          ]
+        ]
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_scoring_detail_011",
+        "ielts_scoring_detail_012",
+        "ielts_scoring_detail_013",
+        "ielts_scoring_detail_014",
+        "ielts_scoring_detail_015",
+        "ielts_scoring_detail_016",
+        "ielts_scoring_detail_017",
+        "ielts_scoring_detail_018",
+        "ielts_scoring_detail_019",
+        "ielts_scoring_detail_020",
+        "ielts_scoring_detail_021",
+        "ielts_scoring_detail_022",
+        "ielts_scoring_detail_023",
+        "ielts_scoring_detail_024",
+        "ielts_scoring_detail_025",
+        "ielts_scoring_detail_026",
+        "ielts_scoring_detail_027",
+        "ielts_scoring_detail_028",
+        "ielts_scoring_detail_029",
+        "ielts_scoring_detail_030",
+        "ielts_scoring_detail_031",
+        "ielts_scoring_detail_032"
+      ],
+      "section": "Section scoring"
     }
-  ],
-  "sourceRecordCount": 73,
-  "sourceArchiveFile": "01_by_card/05_bands/SOURCE_FACTS_FOR_REVIEW.csv",
-  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+  ]
 }

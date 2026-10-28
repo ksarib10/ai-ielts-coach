@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AlertTriangle, ArrowRight, CalendarCheck, CheckCircle2, Clock3, Ear, Eye, FileCheck2, Laptop, Monitor, Search, Brain, ShieldCheck, Wifi } from 'lucide-react';
+import { AlertTriangle, ArrowRight, CalendarCheck, CheckCircle2, Clock3, Ear, Eye, FileCheck2, Info, Laptop, Monitor, Search, Brain, ShieldCheck, Wifi } from 'lucide-react';
 import { aboutCard, highlightsIn, questionTypeContent, type AboutCardContent, type AboutHighlight, type AboutTopicId, type QuestionTypeSection } from '../../../content/ielts-about';
 import { differingSkills, durationDisplay, fourSkills, primaryGuidance, sharedSkills } from '../../../content/ielts-about/presentation';
 import { aboutHref } from '../routes';
@@ -42,7 +42,13 @@ function WhatIsIelts() {
       <div className="about-accordion">
         {partners.map(item => (
           <AccordionItem key={item.id} title={`History and IELTS partners — ${item.heading}`} highlightId={item.id}>
-            <p>{item.text}</p><SourceLinks urls={item.source_urls} />
+            <p>{item.text}</p>
+            {item.bullets && item.bullets.length > 0 && (
+              <ul className="about-bullets">
+                {item.bullets.map((b, i) => <li key={i}>{b}</li>)}
+              </ul>
+            )}
+            <SourceLinks urls={item.source_urls} />
           </AccordionItem>
         ))}
       </div>
@@ -73,6 +79,9 @@ function AcademicGeneral() {
         <HighlightCard item={byId(card, 'academic-general-04')}><Chips items={differingSkills} label="Sections that differ" /></HighlightCard>
       </div>
     </AboutSection>
+    <AboutSection title="Choosing your test &amp; UKVI requirements">
+      <HighlightCard item={byId(card, 'academic-general-07')} className="about-feature" />
+    </AboutSection>
     <div className="about-related"><RelatedLink to="test-format">See each section in detail</RelatedLink></div>
   </>;
 }
@@ -99,16 +108,15 @@ function TestFormat() {
   const durations = aboutCard('sections-duration');
   const listening = questionTypeContent.sections.find(s => s.skillId === 'listening');
   const reading = questionTypeContent.sections.find(s => s.skillId === 'academic-reading');
-  const summary = (section: string) => <div className="about-grid about-grid-2">{highlightsIn(card, section).map(item => <HighlightCard key={item.id} item={item} />)}</div>;
   const tabs = [
     { id: 'listening', label: 'Listening', content: <>
       <div className="about-tab-head"><h2>Listening</h2><span className="about-track-label">Academic &amp; General Training</span></div>
-      {summary('Listening')}
+      <div className="about-grid about-grid-3">{highlightsIn(card, 'Listening').map(item => <HighlightCard key={item.id} item={item} />)}</div>
       {listening && <section className="about-types"><h3 className="about-types-title">Types of question</h3><QuestionTypeList section={listening} /><SourceLinks urls={[listening.officialReference]} label="Official Listening format" /></section>}
     </> },
     { id: 'reading', label: 'Reading', content: <>
       <div className="about-tab-head"><h2>Reading</h2><span className="about-track-label">Academic Reading</span></div>
-      {summary('Reading')}
+      <div className="about-grid about-grid-3">{highlightsIn(card, 'Reading').map(item => <HighlightCard key={item.id} item={item} />)}</div>
       <AboutNotice title="General Training Reading">
         <p>The question types below describe <strong>Academic Reading</strong>. Detailed General Training Reading question-type information is pending verification and is not shown here.</p>
       </AboutNotice>
@@ -118,8 +126,11 @@ function TestFormat() {
       <div className="about-tab-head"><h2>Writing</h2><span className="about-track-label">Track-specific Task 1</span></div>
       <HighlightCard item={byId(card, 'test-format-05')} className="about-feature" />
       <h3 className="about-subheading">Task 1</h3>
-      <div className="about-grid about-grid-3">
+      <div className="about-grid about-grid-2">
         <HighlightCard item={byId(card, 'test-format-07')} />
+        <HighlightCard item={byId(card, 'test-format-11')} />
+      </div>
+      <div className="about-grid about-grid-2">
         <HighlightCard item={byId(tracks, 'academic-general-05')}><span className="about-track-label">Academic</span></HighlightCard>
         <HighlightCard item={byId(tracks, 'academic-general-06')}><span className="about-track-label">General Training</span></HighlightCard>
       </div>
@@ -132,7 +143,11 @@ function TestFormat() {
       <HighlightCard item={byId(card, 'test-format-09')} className="about-feature">
         <ol className="about-parts" aria-label="Speaking parts"><li><span>Part 1</span>Interview</li><li><span>Part 2</span>Individual long turn</li><li><span>Part 3</span>Discussion</li></ol>
       </HighlightCard>
-      <div className="about-grid about-grid-2"><HighlightCard item={byId(card, 'test-format-10')} /><HighlightCard item={byId(durations, 'sections-duration-04')} /></div>
+      <div className="about-grid about-grid-3">
+        <HighlightCard item={byId(card, 'test-format-10')} />
+        <HighlightCard item={byId(card, 'test-format-14')} />
+        <HighlightCard item={byId(durations, 'sections-duration-04')} />
+      </div>
     </> },
   ];
   return <>
@@ -155,7 +170,13 @@ function SectionsDuration() {
         <h3>{item.heading}</h3>
         {display && <p className="about-duration-value"><strong>{display.value}</strong> {display.unit}</p>}
         {display?.qualifier && <span className="about-track-label">{display.qualifier}</span>}
-        <p>{item.text}</p><SourceLinks urls={item.source_urls} />
+        <p>{item.text}</p>
+        {item.bullets && item.bullets.length > 0 && (
+          <ul className="about-bullets">
+            {item.bullets.map((b, i) => <li key={i}>{b}</li>)}
+          </ul>
+        )}
+        <SourceLinks urls={item.source_urls} />
       </article>
     );
   };
@@ -172,9 +193,7 @@ function SectionsDuration() {
       {sequence.map(item => <HighlightCard key={item.id} item={item} />)}
     </AboutSection>
     <AboutSection title="Delivery-specific timing">
-      <AboutNotice title="Timings can differ by delivery mode" icon={<Clock3 size={20} />} tone="warning">
-        <p>Administration details, such as how answers are recorded, depend on whether you take the test on computer, on paper where still offered, or online. Confirm details with your test provider.</p>
-      </AboutNotice>
+      <HighlightCard item={byId(card, 'sections-duration-08')} className="about-feature" />
       <div className="about-related"><RelatedLink to="computer-paper">Current delivery options</RelatedLink></div>
     </AboutSection>
   </>;
@@ -183,26 +202,44 @@ function SectionsDuration() {
 /* 5. Band scores */
 function Bands() {
   const card = aboutCard('bands');
-  const [scale] = highlightsIn(card, 'Band scale');
+  const disclaimer = byId(card, 'bands-08');
+  const scale01 = byId(card, 'bands-01');
+  const scale02 = byId(card, 'bands-02');
   const calc = highlightsIn(card, 'Overall score calculation');
-  const [objective] = highlightsIn(card, 'Section scoring');
   const criteria = highlightsIn(card, 'Writing and Speaking criteria');
-  const disclaimer = criteria.find(h => h.id === 'bands-08');
+  const scoring07 = byId(card, 'bands-07');
+  const conversions09 = byId(card, 'bands-09');
   return <>
-    {disclaimer && <AboutNotice title={disclaimer.heading} icon={<ShieldCheck size={20} />} tone="warning"><p data-highlight-id={disclaimer.id}>{disclaimer.text}</p><SourceLinks urls={disclaimer.source_urls} /></AboutNotice>}
+    <AboutNotice title={disclaimer.heading} icon={<ShieldCheck size={20} />} tone="warning">
+      <p data-highlight-id={disclaimer.id}>{disclaimer.text}</p>
+      {disclaimer.bullets && <ul className="about-bullets">{disclaimer.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>}
+      <SourceLinks urls={disclaimer.source_urls} />
+    </AboutNotice>
     <AboutSection title="Band scale">
-      <HighlightCard item={scale} className="about-feature">
+      <HighlightCard item={scale01} className="about-feature">
         <ol className="about-band-ladder" aria-label="Band scale from 0 to 9">{Array.from({ length: 10 }, (_, band) => <li key={band}>{band}</li>)}</ol>
         <p className="about-muted-note">Detailed band descriptors are published by IELTS; follow the official source for their wording.</p>
       </HighlightCard>
+      <HighlightCard item={scale02} />
     </AboutSection>
     <AboutSection title="How the overall band is calculated">
       <ol className="about-steps">{calc.map((item, index) => <li key={item.id}><span className="about-step-number" aria-hidden="true">{index + 1}</span><HighlightCard item={item} /></li>)}</ol>
     </AboutSection>
-    <AboutSection title="Section scoring"><HighlightCard item={objective} /></AboutSection>
     <AboutSection title="Writing and Speaking criteria">
       <div className="about-accordion">
-        {criteria.filter(h => h.id !== 'bands-08').map(item => <AccordionItem key={item.id} title={item.heading} highlightId={item.id}><p>{item.text}</p><SourceLinks urls={item.source_urls} /></AccordionItem>)}
+        {criteria.map(item => (
+          <AccordionItem key={item.id} title={item.heading} highlightId={item.id}>
+            <p>{item.text}</p>
+            {item.bullets && <ul className="about-bullets">{item.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>}
+            <SourceLinks urls={item.source_urls} />
+          </AccordionItem>
+        ))}
+      </div>
+    </AboutSection>
+    <AboutSection title="Section scoring &amp; score validity">
+      <div className="about-grid about-grid-2">
+        <HighlightCard item={scoring07} />
+        <HighlightCard item={conversions09} />
       </div>
     </AboutSection>
   </>;
@@ -217,7 +254,17 @@ function RegistrationTestDay() {
       <ul>{highlightsIn(card, title).map(item => (
         <li key={item.id} data-highlight-id={item.id}>
           <CheckCircle2 size={18} aria-hidden="true" />
-          <div><h3>{item.heading}</h3><p>{item.text}</p>{item.note && <p className="about-caveat">{item.note}</p>}<SourceLinks urls={item.source_urls} /></div>
+          <div>
+            <h3>{item.heading}</h3>
+            <p>{item.text}</p>
+            {item.bullets && item.bullets.length > 0 && (
+              <ul className="about-bullets">
+                {item.bullets.map((b, i) => <li key={i}>{b}</li>)}
+              </ul>
+            )}
+            {item.note && <p className="about-caveat"><Info size={15} aria-hidden="true" /><span>{item.note}</span></p>}
+            <SourceLinks urls={item.source_urls} />
+          </div>
         </li>
       ))}</ul>
     </section>
@@ -233,23 +280,44 @@ function RegistrationTestDay() {
 /* 7. Computer / paper */
 function ComputerPaper() {
   const card = aboutCard('computer-paper');
-  const [update] = highlightsIn(card, '2026 update');
-  const centre = highlightsIn(card, 'Test centre computer delivery');
-  const online = highlightsIn(card, 'IELTS Online');
+  const update = byId(card, 'computer-paper-01');
+  const centre = [byId(card, 'computer-paper-02'), byId(card, 'computer-paper-04')];
+  const online = [byId(card, 'computer-paper-03'), byId(card, 'computer-paper-05'), byId(card, 'computer-paper-06')];
+  const security = [byId(card, 'computer-paper-07'), byId(card, 'computer-paper-08')];
   return <>
     <AboutNotice title="2026 update: paper-based IELTS is being phased out" tone="warning" icon={<AlertTriangle size={20} />}>
       <p data-highlight-id={update.id}>{update.text}</p>
+      {update.bullets && <ul className="about-bullets">{update.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>}
       <p className="about-muted-note">Announced in March 2026. Timelines differ by country; check your local options before booking.</p>
       <SourceLinks urls={update.source_urls} /><Guidance id="computer-paper" />
     </AboutNotice>
     <AboutSection title="Delivery options compared">
       <div className="about-compare">
         <article className="about-compare-column"><span className="about-track-label"><Monitor size={14} aria-hidden="true" /> At a test centre</span><h3>Computer-delivered IELTS</h3>
-          {centre.map(item => <div key={item.id} className="about-compare-detail" data-highlight-id={item.id}><h4>{item.heading}</h4><p>{item.text}</p><SourceLinks urls={item.source_urls} /></div>)}
+          {centre.map(item => (
+            <div key={item.id} className="about-compare-detail" data-highlight-id={item.id}>
+              <h4>{item.heading}</h4>
+              <p>{item.text}</p>
+              {item.bullets && <ul className="about-bullets">{item.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>}
+              <SourceLinks urls={item.source_urls} />
+            </div>
+          ))}
         </article>
         <article className="about-compare-column"><span className="about-track-label"><Wifi size={14} aria-hidden="true" /> Remote · Academic only</span><h3>IELTS Online</h3>
-          {online.map(item => <div key={item.id} className="about-compare-detail" data-highlight-id={item.id}><h4>{item.heading}</h4><p>{item.text}</p><SourceLinks urls={item.source_urls} /></div>)}
+          {online.map(item => (
+            <div key={item.id} className="about-compare-detail" data-highlight-id={item.id}>
+              <h4>{item.heading}</h4>
+              <p>{item.text}</p>
+              {item.bullets && <ul className="about-bullets">{item.bullets.map((b, i) => <li key={i}>{b}</li>)}</ul>}
+              <SourceLinks urls={item.source_urls} />
+            </div>
+          ))}
         </article>
+      </div>
+    </AboutSection>
+    <AboutSection title="Test security, proctoring &amp; data privacy">
+      <div className="about-grid about-grid-2">
+        {security.map(item => <HighlightCard key={item.id} item={item} />)}
       </div>
     </AboutSection>
     <AboutSection title="Legacy paper guidance">
@@ -299,8 +367,30 @@ function Faqs() {
       </div>
     </div>
     <p className="about-result-count" role="status" aria-live="polite">{results.length} of {card.highlights.length} questions</p>
-    {results.length ? <div className="about-accordion">
-      {results.map(item => <AccordionItem key={item.id} title={item.heading} highlightId={item.id}><span className="about-track-label">{item.section}</span><p>{item.text}</p><SourceLinks urls={item.source_urls} /></AccordionItem>)}
+    {results.length ? <div className="about-accordion about-faq-accordion">
+      {results.map(item => (
+        <AccordionItem key={item.id} title={item.heading} highlightId={item.id} showToggleText className="about-faq-item">
+          <span className="about-track-label">{item.section}</span>
+          {item.paragraphs && item.paragraphs.length > 0 ? (
+            item.paragraphs.map((p, i) => <p key={i}>{p}</p>)
+          ) : (
+            <p>{item.text}</p>
+          )}
+          {item.bullets && item.bullets.length > 0 && (
+            <ul className="about-bullets">
+              {item.bullets.map((b, i) => <li key={i}>{b}</li>)}
+            </ul>
+          )}
+          {item.internal_link && (
+            <div className="about-internal-link">
+              <Link className="about-related-link" to={aboutHref(item.internal_link.to)}>
+                {item.internal_link.label} <ArrowRight size={14} aria-hidden="true" />
+              </Link>
+            </div>
+          )}
+          <SourceLinks urls={item.source_urls} />
+        </AccordionItem>
+      ))}
     </div> : <p className="about-empty">No questions match. Try another word or choose “All”.</p>}
   </>;
 }
@@ -314,4 +404,3 @@ export function AboutTopicBody({ id }: { id: AboutTopicId }) {
   const Page = pages[id];
   return <Page />;
 }
-

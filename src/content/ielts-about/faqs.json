@@ -1,12 +1,15 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.2.0",
   "cardId": "faqs",
-  "route": "/ielts-about/faqs",
   "title": "FAQs",
-  "status": "EDITORIAL_DRAFT_NOT_AUTOMATICALLY_APPROVED",
-  "lastCompiled": "2026-10-28",
+  "slug": "faqs",
+  "route": "/ielts-about/faqs",
+  "source_review_count": 18,
+  "lastReviewed": "2026-10-28",
+  "editorialStatus": "DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED",
   "display": {
-    "layout": "searchable category-filtered FAQ accordion + source links",
+    "primary_guidance": "https://ielts.org/about-ielts",
+    "primary_guidance_label": "Official IELTS FAQs",
     "section_groups": [
       "Basics",
       "Format",
@@ -18,137 +21,407 @@
   "highlights": [
     {
       "id": "faqs-01",
-      "section": "Basics",
       "heading": "What does IELTS stand for?",
-      "text": "International English Language Testing System.",
-      "original_topic_ids": [
-        "ielts_about_001"
+      "text": "IELTS stands for the International English Language Testing System. Developed in 1989 by an international partnership of language assessment experts, IELTS is designed to evaluate communicative language proficiency across practical academic, professional, and daily life scenarios.",
+      "bullets": [
+        "Co-owned and managed by the British Council, IDP: IELTS Australia, and Cambridge University Press & Assessment.",
+        "Recognised by over 12,500 institutions in more than 140 countries worldwide.",
+        "Over 3 million candidates take IELTS every year for higher education, licensing, and migration."
       ],
+      "internal_link": {
+        "to": "what-is-ielts",
+        "label": "Read more in What is IELTS?"
+      },
       "source_urls": [
         "https://ielts.org/about-ielts"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_about_001"
+      ],
+      "section": "Basics"
     },
     {
       "id": "faqs-02",
-      "section": "Basics",
       "heading": "Which four skills are tested?",
-      "text": "Listening, Reading, Writing and Speaking.",
+      "text": "The test evaluates four fundamental language skills: Listening, Reading, Writing, and Speaking. Every candidate completes all four components to provide an accurate, balanced profile of their English proficiency.",
+      "bullets": [
+        "Listening (~30 mins): 4 parts, 40 questions covering social and academic audio.",
+        "Reading (60 mins): 3 passages, 40 questions testing skimming, scanning, and analytical comprehension.",
+        "Writing (60 mins): 2 tasks (Task 1 report/letter in 150 words, Task 2 discursive essay in 250 words).",
+        "Speaking (11–14 mins): 3-part interactive interview with a certified human examiner."
+      ],
+      "internal_link": {
+        "to": "test-format",
+        "label": "Explore the four skill formats in detail"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test"
+      ],
       "original_topic_ids": [
         "ielts_how_it_works_002"
       ],
-      "source_urls": [
-        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
-      ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "section": "Basics"
     },
     {
       "id": "faqs-03",
-      "section": "Format",
       "heading": "How are Academic and General Training different?",
-      "text": "Listening and Speaking are shared; Reading and Writing differ.",
-      "original_topic_ids": [
-        "ielts_general_training_005"
+      "text": "IELTS Academic and General Training share identical Listening and Speaking components, but differ completely in their Reading and Writing materials. Academic is designed for university admissions and professional licensing, while General Training is designed for migration, vocational training, and everyday employment.",
+      "bullets": [
+        "Listening and Speaking: Exactly identical in content, audio, questions, and scoring across both tracks.",
+        "Reading difference: Academic uses 3 complex scholarly passages; General Training features everyday notices, workplace materials, and one general article.",
+        "Writing difference: Academic Task 1 analyzes visual data; General Training Task 1 writes a practical letter. Both require a 250-word Task 2 essay."
       ],
+      "internal_link": {
+        "to": "academic-general",
+        "label": "Compare Academic and General Training side-by-side"
+      },
       "source_urls": [
-        "https://ielts.org/take-a-test/test-types/ielts-general-training"
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_academic_format_003"
+      ],
+      "section": "Format"
     },
     {
       "id": "faqs-04",
-      "section": "Format",
       "heading": "How long is the Speaking test?",
-      "text": "About 11–14 minutes.",
+      "text": "The Speaking test lasts between 11 and 14 minutes. It is structured into three distinct parts and is strictly timed by the examiner using a digital stopwatch:",
+      "bullets": [
+        "Part 1 (4–5 minutes): Introduction and familiar interview questions (home, family, work, hobbies).",
+        "Part 2 (3–4 minutes): Individual long turn. You receive a task card, have 1 minute to plan with pencil and paper, and speak for 1 to 2 minutes.",
+        "Part 3 (4–5 minutes): In-depth discussion exploring abstract analytical issues connected to your Part 2 topic."
+      ],
+      "internal_link": {
+        "to": "test-format",
+        "label": "View Speaking format and assessment criteria"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking"
+      ],
       "original_topic_ids": [
         "ielts_general_training_009"
       ],
-      "source_urls": [
-        "https://ielts.org/take-a-test/test-types/ielts-general-training"
-      ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "section": "Format"
     },
     {
       "id": "faqs-05",
-      "section": "Scoring",
       "heading": "What is the highest IELTS band?",
-      "text": "Band 9.",
-      "original_topic_ids": [
-        "ielts_assessment_criteria_014"
+      "text": "The highest possible IELTS score is Band 9, designated as an 'Expert user'. Band 9 indicates that the candidate has fully operational command of English: fluent, highly accurate, entirely appropriate in register, and demonstrating complete and effortless comprehension.",
+      "bullets": [
+        "Score scale: 0 to 9 in whole and half band increments (e.g. 6.5, 7.0, 7.5, 8.0, 8.5, 9.0).",
+        "No pass/fail: IELTS does not designate a universal passing mark; institutions set their own target requirements."
       ],
+      "internal_link": {
+        "to": "bands",
+        "label": "See the complete 0–9 band scale descriptors"
+      },
       "source_urls": [
-        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+        "https://ielts.org/organisations/ielts-for-organisations/ielts-scoring-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_band_scores_001"
+      ],
+      "section": "Scoring"
     },
     {
       "id": "faqs-06",
-      "section": "Scoring",
       "heading": "How is the overall band calculated?",
-      "text": "The four component bands are averaged, then rounded according to IELTS rules.",
-      "original_topic_ids": [
-        "ielts_scoring_detail_002"
+      "text": "The Overall Band Score is the arithmetic average (mean) of the four individual component scores (Listening + Reading + Writing + Speaking divided by 4), rounded to the nearest half or whole band using official rounding thresholds:",
+      "bullets": [
+        "Ends in .25 -> Rounds UP to the next half band (e.g. 6.25 becomes 6.5).",
+        "Ends in .75 -> Rounds UP to the next whole band (e.g. 6.75 becomes 7.0).",
+        "Ends in .125 -> Rounds DOWN to the lower whole band (e.g. 6.125 becomes 6.0).",
+        "Ends in .875 -> Rounds UP to the higher whole band (e.g. 6.875 becomes 7.0)."
       ],
+      "internal_link": {
+        "to": "bands",
+        "label": "See worked calculation examples in Band-score overview"
+      },
       "source_urls": [
-        "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail"
+        "https://ielts.org/organisations/ielts-for-organisations/ielts-scoring-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_scoring_detail_003"
+      ],
+      "section": "Scoring"
     },
     {
       "id": "faqs-07",
-      "section": "Test day",
       "heading": "What ID should I bring?",
-      "text": "Generally the same ID document used during registration; confirm your test-provider instructions.",
+      "text": "You must bring the exact same physical identification document (current, valid national passport or approved national identity card) that you registered with when booking the test. Photocopies, expired IDs, or student identity cards are strictly rejected.",
+      "bullets": [
+        "Physical original ID required: Must be valid on test day and match your booking confirmation exactly.",
+        "Strict penalty: Candidates who forget their physical ID will be denied entry and will forfeit their test fee."
+      ],
+      "internal_link": {
+        "to": "registration-test-day",
+        "label": "Review the full test-day checklist"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day-advice"
+      ],
       "original_topic_ids": [
         "ielts_test_day_003"
       ],
-      "source_urls": [
-        "https://ielts.org/take-a-test/booking-your-test/test-day"
-      ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "section": "Test day"
     },
     {
       "id": "faqs-08",
-      "section": "Test day",
       "heading": "Is there one universal minimum score?",
-      "text": "No. Each institution or receiving authority determines its own requirement.",
-      "original_topic_ids": [
-        "ielts_assessment_criteria_015"
+      "text": "No. IELTS does not have a single universal minimum passing score. Each university faculty, employer, professional licensing council, and immigration authority independently determines its own required minimum overall and component band scores.",
+      "bullets": [
+        "Undergraduate admissions: Typically require between 6.0 and 6.5 overall.",
+        "Postgraduate admissions: Often require 6.5 to 7.5 overall with component minimums (e.g. 6.5 in Writing).",
+        "Professional licensing (GMC, NMC, law): Frequently demand 7.0 or 7.5 minimums across Speaking and Writing."
       ],
+      "internal_link": {
+        "to": "what-is-ielts",
+        "label": "Learn how organizations use IELTS scores"
+      },
       "source_urls": [
-        "https://takeielts.britishcouncil.org/results/how-is-ielts-assessed"
+        "https://ielts.org/organisations/ielts-for-organisations/ielts-scoring-in-detail"
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "original_topic_ids": [
+        "ielts_why_choose_014"
+      ],
+      "section": "Test day"
     },
     {
       "id": "faqs-09",
-      "section": "Access and delivery",
       "heading": "Can I request access arrangements?",
-      "text": "Yes. Contact the official test centre early to discuss eligibility and available support.",
+      "text": "Yes. IELTS provides extensive access arrangements for candidates with permanent disabilities, visual or hearing impairments, specific learning differences (such as dyslexia or ADHD), and temporary medical conditions.",
+      "bullets": [
+        "Available support: Braille papers, modified large print, extra time (25% to 100%), rest breaks, separate testing rooms, scribe assistance, and amplification equipment.",
+        "Advance notice: Contact your local test centre at least 6 weeks before your intended test date (up to 3 months for Braille or custom modified papers) with supporting medical documentation."
+      ],
+      "internal_link": {
+        "to": "accessibility",
+        "label": "Explore accessibility support categories and procedures"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/access-arrangements"
+      ],
       "original_topic_ids": [
         "ielts_special_requirements_001"
       ],
-      "source_urls": [
-        "https://ielts.org/take-a-test/booking-your-test/special-requirements"
-      ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "section": "Access and delivery"
     },
     {
       "id": "faqs-10",
-      "section": "Access and delivery",
       "heading": "Is IELTS still available entirely on paper?",
-      "text": "IELTS announced a transition away from traditional paper-based testing beginning mid-2026. Check local delivery options; some markets may offer Writing on Paper.",
+      "text": "IELTS is transitioning away from standard paper-based delivery. Following the March 5, 2026 announcement, standard paper testing is being phased out progressively across global markets from mid-2026. The primary test delivery mode worldwide is now IELTS on Computer.",
+      "bullets": [
+        "Global transition: Most test centers now deliver testing on computer.",
+        "Writing on Paper option: A hybrid option allowing handwritten essays alongside computer Listening and Reading is retained in select markets.",
+        "Faster results: IELTS on Computer provides results in 1 to 5 days compared to 13 days on paper."
+      ],
+      "internal_link": {
+        "to": "computer-paper",
+        "label": "Read the full 2026 delivery transition update"
+      },
+      "source_urls": [
+        "https://ielts.org/news-and-insights/updates-to-ielts-test-delivery"
+      ],
       "original_topic_ids": [
         "ielts_how_it_works_006"
       ],
-      "source_urls": [
-        "https://ielts.org/news-and-insights/updates-to-ielts-test-delivery",
-        "https://takeielts.britishcouncil.org/what-is-ielts/how-it-works/test-format"
+      "section": "Access and delivery"
+    },
+    {
+      "id": "faqs-11",
+      "heading": "What is the IELTS test format?",
+      "text": "The IELTS test assesses four key language skills: Listening, Reading, Writing, and Speaking. Each component evaluates specific communication capabilities:",
+      "paragraphs": [
+        "The IELTS test assesses four key language skills: Listening, Reading, Writing and Speaking.",
+        "IELTS Listening: This component tests how well you understand spoken English across four recorded sections covering everyday social interactions, educational dialogues, and academic lectures.",
+        "IELTS Reading: This component assesses your English reading comprehension through 40 questions covering skimming, scanning, logical reasoning, and recognizing author viewpoints.",
+        "IELTS Writing: This component assesses how well you can write in English across two mandatory tasks, evaluating task achievement, coherence, vocabulary, and grammatical accuracy.",
+        "IELTS Speaking: This component tests your spoken English via a live, interactive conversation with an official certified IELTS examiner in three structured stages."
       ],
-      "editorial_status": "DRAFT_PARAPHRASE_REVIEW_BEFORE_PUBLICATION"
+      "bullets": [
+        "IELTS Listening: Tests comprehension of spoken English in everyday conversations, discussions, and lectures.",
+        "IELTS Reading: Tests reading skills through 40 questions on factual, descriptive, and analytical texts.",
+        "IELTS Writing: Evaluates written communication through two structured writing tasks (150 and 250 words).",
+        "IELTS Speaking: Tests spoken fluency, vocabulary, grammar, and pronunciation in an interactive interview."
+      ],
+      "internal_link": {
+        "to": "test-format",
+        "label": "Visit our comprehensive Test format guide"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/academic-test-format-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_002",
+        "ielts_how_it_works_002"
+      ],
+      "section": "Format"
+    },
+    {
+      "id": "faqs-12",
+      "heading": "In what order will I take the test sections?",
+      "text": "You will take the Listening, Reading and Writing sections of the test on the same day with no breaks between the test sections. You will take your Speaking test either 1) on the same day, or 2) within 7 days before or after the other test sections. The exact date of your Speaking test will depend on your local test centre and booking arrangements. If you take IELTS Online, your Speaking test will usually be scheduled before your Listening, Reading, and Writing, either on the same day or a different day.",
+      "paragraphs": [
+        "You will take the Listening, Reading and Writing sections of the test on the same day with no breaks between the test sections.",
+        "You will take your Speaking test either: 1) on the same day (before or after the written sitting), or 2) within 7 days before or after the other test sections. The exact date and time of your Speaking test will depend on your local test centre and scheduling arrangements.",
+        "If you take IELTS Online, your Speaking test will usually be scheduled before your Listening, Reading and Writing sections, either earlier on the same day or on a different day."
+      ],
+      "bullets": [
+        "Written test sitting: Listening, Reading, and Writing take place back-to-back in an unbroken session lasting ~2 hours and 40 minutes.",
+        "In-centre Speaking scheduling: Conducted on the same day or within a 7-day window before or after the written exam.",
+        "IELTS Online scheduling: The Speaking video interview is typically scheduled prior to the written components."
+      ],
+      "internal_link": {
+        "to": "sections-duration",
+        "label": "Check full test scheduling and duration rules"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day-advice"
+      ],
+      "original_topic_ids": [
+        "ielts_how_it_works_016",
+        "ielts_how_it_works_017",
+        "ielts_how_it_works_018"
+      ],
+      "section": "Format"
+    },
+    {
+      "id": "faqs-13",
+      "heading": "What accents will I hear in the Listening section?",
+      "text": "As IELTS is an international English test, you will hear a variety of native English accents from different English-speaking countries, including the UK, the United States, Australia, Ireland, New Zealand, and Canada. Because audio recordings are played ONCE only, practicing with varied accents is a key part of preparation.",
+      "paragraphs": [
+        "As IELTS is an international test, you will hear a variety of accents from different English-speaking countries, like the UK, USA, Australia, Ireland or New Zealand.",
+        "The recordings are played once only, so developing familiarity with diverse accents, colloquial pronunciations, and different speech cadences is an essential part of listening preparation."
+      ],
+      "bullets": [
+        "International English accents: British, Australian, North American, New Zealand, and Irish accents are regularly featured.",
+        "Heard once only: Audio is never repeated; answers must be recorded in real time as you listen."
+      ],
+      "internal_link": {
+        "to": "test-format",
+        "label": "Read more on Listening format and audio rules"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-listening"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_010"
+      ],
+      "section": "Format"
+    },
+    {
+      "id": "faqs-14",
+      "heading": "What accents will I hear in the Speaking section?",
+      "text": "The accent you hear in the Speaking test will depend on your examiner's nationality and where you take the test. You may hear an accent from an English-speaking country, like the UK, USA, Australia, Ireland or New Zealand. However, non-native speakers can also be certified IELTS examiners if they demonstrate an exceptionally high level of English proficiency, so you may hear an accent from another country. You are evaluated on the clarity of your communication, not on imitating a specific accent.",
+      "paragraphs": [
+        "The accent you hear in the Speaking test will depend on your examiner's nationality and where you take the test. You may hear an accent from an English-speaking country, like the UK, USA, Australia, Ireland or New Zealand.",
+        "However, non-native speakers can also be certified IELTS examiners if they possess an exceptionally high level of English proficiency, so you may hear an accent from another country.",
+        "Remember that IELTS assesses your pronunciation based on clarity, intelligibility, stress, rhythm, and intonation. You are not penalized for having a foreign accent as long as your speech is clear and easy to understand."
+      ],
+      "bullets": [
+        "Examiner diversity: Examiners reflect international English speakers from native and proficient multilingual backgrounds.",
+        "Assessment principle: You are assessed on how clearly you speak and how easy you are to understand, not on adopting a British or American accent."
+      ],
+      "internal_link": {
+        "to": "test-format",
+        "label": "Review Speaking assessment criteria and pronunciation standards"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking"
+      ],
+      "original_topic_ids": [
+        "ielts_academic_format_115"
+      ],
+      "section": "Format"
+    },
+    {
+      "id": "faqs-15",
+      "heading": "Can I retake just one skill if I need a higher score?",
+      "text": "Yes, through IELTS One Skill Retake (OSR). If you took IELTS on Computer at an official test centre, you can retake any single component (Listening, Reading, Writing, or Speaking) within 60 days of your original test date without having to retake the other three skills.",
+      "bullets": [
+        "Available on computer: Exclusively available for computer-delivered IELTS taken at an official test centre.",
+        "60-day window: You must sit the retake within 60 days of the original test date.",
+        "New TRF issued: You receive an updated Test Report Form showing your improved score alongside your original scores.",
+        "Check recognition: Verify whether your university or immigration authority accepts One Skill Retake scores."
+      ],
+      "internal_link": {
+        "to": "computer-paper",
+        "label": "Learn more about One Skill Retake"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/one-skill-retake"
+      ],
+      "original_topic_ids": [
+        "ielts_online_058"
+      ],
+      "section": "Access and delivery"
+    },
+    {
+      "id": "faqs-16",
+      "heading": "How long are IELTS test results valid?",
+      "text": "IELTS test results are valid for 2 years from the date of the test. Recognizing organizations generally will not accept results that are older than 2 years unless you can provide verifiable proof that you have actively maintained or improved your English proficiency in the interim.",
+      "bullets": [
+        "Standard validity: 24 months from test date.",
+        "Expiration policy: Once 2 years pass, test centers cannot verify expired TRFs online.",
+        "Immigration validity: Always check the specific validity rules of your immigration program (e.g. Canadian Express Entry requires scores valid at invitation)."
+      ],
+      "internal_link": {
+        "to": "bands",
+        "label": "Check score validity in Band-score overview"
+      },
+      "source_urls": [
+        "https://ielts.org/organisations/ielts-for-organisations/ielts-scoring-in-detail"
+      ],
+      "original_topic_ids": [
+        "ielts_scoring_detail_004"
+      ],
+      "section": "Scoring"
+    },
+    {
+      "id": "faqs-17",
+      "heading": "What happens if I believe my score is incorrect?",
+      "text": "If you feel your score does not reflect your true performance, you can apply for an Enquiry on Results (EOR) within 6 weeks of your test date. Your test will be independently re-marked by senior Cambridge-trained examiners.",
+      "bullets": [
+        "6-week deadline: Must be submitted within 6 weeks of your test date.",
+        "Select sections: You can request re-marking for any combination of sections (e.g. Writing only, or all 4).",
+        "Full fee refund: If your band score increases in any section, your entire EOR fee is refunded.",
+        "Turnaround: Results typically take between 2 to 21 days."
+      ],
+      "internal_link": {
+        "to": "registration-test-day",
+        "label": "See complete Enquiry on Results procedures"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/booking-your-test/test-day-advice"
+      ],
+      "original_topic_ids": [
+        "ielts_assessment_criteria_018",
+        "ielts_assessment_criteria_021"
+      ],
+      "section": "Test day"
+    },
+    {
+      "id": "faqs-18",
+      "heading": "Can I take IELTS Online for migration or university admissions?",
+      "text": "IELTS Online is accepted by thousands of universities worldwide for higher education admissions, but it is NOT accepted for visa or immigration purposes by the UK, Australia, Canada, or New Zealand.",
+      "bullets": [
+        "Academic only: IELTS Online is offered exclusively for IELTS Academic, not General Training.",
+        "Higher education acceptance: Widely accepted by universities; check your specific university's admissions page before booking.",
+        "Immigration exclusion: Visa authorities require test centre delivery with biometric supervision (such as IELTS for UKVI)."
+      ],
+      "internal_link": {
+        "to": "computer-paper",
+        "label": "Review IELTS Online policies and technical rules"
+      },
+      "source_urls": [
+        "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online"
+      ],
+      "original_topic_ids": [
+        "ielts_online_004",
+        "ielts_online_005"
+      ],
+      "section": "Access and delivery"
     }
-  ],
-  "sourceRecordCount": 0,
-  "sourceArchiveFile": "01_by_card/09_faqs/SOURCE_FACTS_FOR_REVIEW.csv",
-  "rightsNote": "Paraphrased starter summaries for owner review; cited facts are not licensing clearance for original website wording."
+  ]
 }
