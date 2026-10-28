@@ -1,0 +1,7 @@
+# Slice 2 pre-change scope — 2026-10-28
+
+Owner-authorized Stage1B UI restructuring only. Base `65a25bbacc97a021d728946839da5404d262924e`; branch `feat/stage-1b-slice-2-navigation`. Tracked tree clean; four known untracked GitHub/Vercel handoff reports preserved and excluded from this slice's commit. No unexpected modifications.
+
+Affected: shell navigation/disclosure; Learn landing and category information; four skill landing pages while retaining existing module libraries/workspaces; IELTS About and distinct pending scoring-reference screens; Progress/Readiness navigation; Exam display label only. Preserve all existing route guards, aliases, saved records, scoring, audio/capture, question sources, candidate banks and service/lockfile bytes. New route metadata and shared catalog cards are separate from rendering. No CSV/Excel data import or backend/provider implementation.
+
+Relevant files read: App, AppShell, SidebarNavigation/navigation types/service, Learning, Modules, Insights, Exam presentation, shared UI, current seven living documents and continuity rule. Tests: focused catalog/route/card semantics, updated foundation navigation expectations, existing full suite, TypeScript/build, actual desktop/mobile/both-theme browser checks and skip/resume. New informational routes will explicitly state content unavailable; existing short samples will never be labeled full tests. No merge, push, deploy, dependency install or Stage2 work.

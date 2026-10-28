@@ -1,0 +1,12 @@
+
+> ai-ielts-coach@1.0.0 test
+> node qa/domain.test.mjs && node qa/state.test.mjs && node qa/diagnostic.test.mjs && node qa/readiness.test.mjs && node qa/ielts-reference.test.mjs && node qa/exam.test.mjs && node qa/foundation.test.mjs && node qa/discovery.test.mjs
+
+PASS: scoring, mode restrictions, persistence/retry, vocabulary, mastery, recommendations and canonical learner.
+PASS: state migration preserves complete and partial learner progress.
+PASS: diagnostic results derive from saved evidence and remain provisional.
+PASS: readiness is gated by a baseline and derives from saved evidence.
+PASS: IELTS reference model preserves supplied timing, order, and type differences.
+PASS: standalone exam order, shared module timing, completion, and history are consistent.
+PASS: appearance persistence/system/failure, read-only evidence/null gating, all metric IDs, navigation/unavailable states, strict shell, component semantics and provisional token contrast.
+PASS: ten Learn categories,24 skill cards, nine information topics, existing resource targets, track-specific Task1, compact sidebar, availability semantics, preview disclosure and preserved legacy routes.

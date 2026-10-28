@@ -45,12 +45,12 @@ store.set('ielts-learning-v2', '{bad'); assert.equal(p.readSavedHistory(storage)
 store.set('ielts-learning-v2', JSON.stringify({ attempts: [{id:'a',module:'Reading',mode:'test',submittedAt:'2026-10-26T10:00:00Z',answers:{private:'do not expose'}},{id:'a',module:'Reading',mode:'test',submittedAt:'2026-10-26T10:00:00Z'},{id:'b',module:'Reading',mode:'test',submittedAt:'bad'}] }));
 const history = p.readSavedHistory(storage); assert.equal(history.entries.length, 1); assert.equal(JSON.stringify(history).includes('do not expose'), false);
 const available = p.navigationGroups.flatMap(group => group.items).filter(x => x.availability === 'AVAILABLE');
-assert.equal(new Set(available.map(x => x.path)).size, 14); assert.ok(available.some(x => x.path === '/exam'));
-const future = p.navigationGroups.flatMap(group => group.items).filter(x => x.availability === 'COMING_SOON'); assert.equal(future.length, 4); assert.ok(future.every(x => x.path === null));
+assert.equal(new Set(available.map(x => x.path)).size, 10); assert.ok(available.some(x => x.path === '/exam'));
+const future = p.navigationGroups.flatMap(group => group.items).filter(x => x.availability === 'COMING_SOON'); assert.equal(future.length, 0); assert.ok(future.every(x => x.path === null));
 const h = React.createElement; const render = element => renderToStaticMarkup(h(MemoryRouter, { initialEntries: ['/dashboard'] }, h(p.AppearanceProvider, null, element)));
 // Router emits its documented SSR layout-effect warning; rendering is only a structural assertion.
 const originalError = console.error; console.error = (message, ...args) => { if (!String(message).includes('useLayoutEffect does nothing on the server')) originalError(message, ...args); };
-const nav = render(h(p.SidebarNavigation, { onNavigate() {} })); assert.equal((nav.match(/aria-disabled="true"/g) || []).length, 4); assert.ok(!nav.includes('href="/ted"')); assert.ok(nav.includes('aria-current="page"'));
+const nav = render(h(p.SidebarNavigation, { onNavigate() {} })); assert.equal((nav.match(/aria-disabled="true"/g) || []).length, 0); assert.ok(!nav.includes('href="/ted"')); assert.ok(nav.includes('aria-current="page"'));
 const metric = render(h(p.AvailabilityCard, { metric: p.futurePresentations[0] })); assert.ok(metric.includes('data-state="UNSUPPORTED"')); assert.ok(!metric.includes('0%'));
 const appearance = render(h(p.AppearanceControl)); assert.ok(appearance.includes('aria-label="Appearance"')); assert.ok(appearance.includes('value="system"'));
 const strict = render(h(p.AppShell, {mode:'test'}, h('p',null,'Independent'))); assert.ok(!strict.includes('Main navigation')); assert.ok(!strict.includes('Ask your coach')); assert.ok(strict.includes('assistance disabled'));

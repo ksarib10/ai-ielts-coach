@@ -1,5 +1,17 @@
 # AI IELTS Coach — project overview
 
+## Current checkpoint — 2026-10-28, Stage 1B Slice 2
+
+Owner-authorized UI restructuring is implemented and locally validated; **Slice 2 human acceptance PENDING**. This dated entry supersedes affected current summaries below, preserving their historical evidence. Work continued from `65a25bbacc97a021d728946839da5404d262924e` on `feat/stage-1b-slice-2-navigation`. The existing private GitHub origin and Vercel frontend are acknowledged from the handoff; this slice makes no remote change, push, merge or deployment.
+
+React/TypeScript/Vite/HashRouter and the purple theme remain. `features/discovery` separates UI catalog types, metadata service, route builders, shared cards and screen components. Ten Learn categories, six cards per skill, nine pending information topics, four pending scoring references and Progress/Readiness subnavigation are implemented. Original module libraries/workspaces remain accessible. Dashboard content, diagnostic/scoring/persistence/media and Exam engine are preserved; Exam display names alone become Complete IELTS Exam.
+
+Eight suites (seven retained plus discovery), TypeScript and production build passed. Actual local-browser evidence covers affected routes, both themes at 1440/390/320px, all category/card/topic destinations, legacy deep links, drawer keyboard/resize behavior, appearance reload persistence and original diagnostic G1 B skip/save/resume. The mobile preview disclosure overflow found during QA was corrected. See [Slice 2 report](reviews/stage-1b/slice-2/SLICE_2_IMPLEMENTATION_REPORT.md) and its exact file/route/evidence manifests. No independent assistive-technology certification or full Exam browser completion is claimed.
+
+The 23 audited datasets are not integrated. Diagnostic V1 remains unapproved; all 15 M01–M11 metrics still need genuine implementation, verification and human acceptance; M12–M17 remain unavailable. D06/D07 remain open. No packages, skill installation, learner migration, resource ingestion, backend or AI integration occurred. The existing seven-document continuity rule remains in force; historical Memory.md and previous audits are unchanged.
+
+---
+
 ## Current checkpoint — 2026-10-27, Stage 1B Slice 1
 
 Owner authorization: D01 plus D03-S1 only. Slice 1 implementation and bounded automated/browser validation are complete; **owner acceptance is pending**. Full Stage 1B is incomplete, Diagnostic V1 remains unapproved and Stage 2 remains blocked. No remote, push, deployment, backend, skill installation or dependency upgrade occurred.
