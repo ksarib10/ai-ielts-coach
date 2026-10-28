@@ -75,7 +75,7 @@ h1,h2,h3,h4,strong { color:inherit; }
 .btn-ghost,.text-link,.brand-btn { color:var(--color-action); }
 .btn:disabled,button:disabled { opacity:1; color:var(--color-disabled-text); background:var(--color-disabled-bg); border-color:var(--color-control-border); }
 :focus-visible { outline:3px solid var(--color-focus); outline-offset:3px; }
-.input,.select,.textarea,textarea,.choice-card,.question-choice,.option-row,.search,.appearance-control label { background:var(--color-surface); border-color:var(--color-control-border); color:var(--color-text); }
+.input,.select,.textarea,textarea,.choice-card,.question-choice,.option-row,.search,.appearance-control label,.appearance-trigger { background:var(--color-surface); border-color:var(--color-control-border); color:var(--color-text); }
 input,select,textarea { color:var(--color-text); }
 input[type=radio],input[type=checkbox] { accent-color:var(--color-action); }
 mark { color:var(--color-on-highlight); }
@@ -93,10 +93,78 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
 .topbar .brand-btn { color:var(--color-text); }
 .demo-notice { margin:0 0 20px; padding:9px 12px; border:1px solid var(--color-border); border-radius:9px; font-size:12px; color:var(--color-muted); background:var(--color-surface); }
 .demo-label { color:var(--color-muted); white-space:nowrap; }
-.appearance-control { position:relative; flex:none; }
+.appearance-control { position:relative; flex:none; display:inline-flex; align-items:center; }
 .appearance-control label { display:flex; align-items:center; gap:4px; padding:0 7px; border:1px solid var(--color-control-border); border-radius:10px; min-height:44px; }
 .appearance-control select { min-height:42px; width:82px; background:transparent; color:var(--color-text); border:0; padding:0 3px; font-size:13px; }
 .appearance-control option { background:var(--color-surface); color:var(--color-text); }
+.appearance-trigger {
+  display:inline-flex; align-items:center; gap:6px;
+  height:38px; min-height:38px; padding:0 10px;
+  border:1px solid var(--color-control-border); border-radius:10px;
+  background:var(--color-surface); color:var(--color-text);
+  font-size:13px; font-weight:500; font-family:inherit;
+  line-height:1; cursor:pointer; user-select:none; box-sizing:border-box;
+}
+.appearance-trigger:hover,
+.appearance-trigger.open,
+.appearance-trigger[aria-expanded="true"] {
+  background:var(--color-soft); border-color:var(--color-action); color:var(--color-text);
+}
+.appearance-trigger:focus-visible {
+  outline:3px solid var(--color-focus); outline-offset:2px;
+}
+.appearance-trigger-icon { flex-shrink:0; color:var(--color-action); }
+.appearance-trigger-text { font-size:13px; font-weight:500; }
+.appearance-chevron {
+  color:var(--color-muted); flex-shrink:0;
+  transition:transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.appearance-trigger:hover .appearance-chevron,
+.appearance-trigger[aria-expanded="true"] .appearance-chevron,
+.appearance-chevron.open {
+  transform:rotate(180deg); color:var(--color-text);
+}
+.appearance-popover {
+  position:absolute; top:calc(100% + 6px); right:0; z-index:100;
+  min-width:148px; padding:6px;
+  border:1px solid var(--color-border); border-radius:12px;
+  background:var(--color-surface); box-shadow:var(--shadow-md);
+  display:flex; flex-direction:column; gap:2px;
+  opacity:0; visibility:hidden;
+  transform:translateY(-4px) scale(0.97); pointer-events:none;
+  transition:opacity 150ms cubic-bezier(0.16, 1, 0.3, 1),
+             transform 150ms cubic-bezier(0.16, 1, 0.3, 1),
+             visibility 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.appearance-popover.open {
+  opacity:1; visibility:visible;
+  transform:translateY(0) scale(1); pointer-events:auto;
+}
+.appearance-option {
+  display:flex; align-items:center; gap:9px; width:100%;
+  min-height:38px; padding:8px 10px; border:0; border-radius:8px;
+  background:transparent; color:var(--color-text);
+  font-size:13px; font-weight:500; font-family:inherit;
+  text-align:left; cursor:pointer; user-select:none; box-sizing:border-box;
+}
+.appearance-option:hover,
+.appearance-option:focus-visible {
+  background:var(--color-soft); color:var(--color-text);
+}
+.appearance-option:focus-visible {
+  outline:2px solid var(--color-focus); outline-offset:-2px;
+}
+.appearance-option[aria-selected="true"],
+.appearance-option.selected {
+  background:var(--color-soft); color:var(--color-action); font-weight:600;
+}
+.appearance-option-icon { color:var(--color-muted); flex-shrink:0; }
+.appearance-option:hover .appearance-option-icon,
+.appearance-option:focus-visible .appearance-option-icon { color:var(--color-text); }
+.appearance-option[aria-selected="true"] .appearance-option-icon,
+.appearance-option.selected .appearance-option-icon { color:var(--color-action); }
+.appearance-option-label { flex:1; white-space:nowrap; }
+.appearance-option-check { margin-inline-start:auto; color:var(--color-action); flex-shrink:0; }
 .appearance-error { position:absolute; top:calc(100% + 8px); right:0; width:220px; padding:12px; border:1px solid var(--color-control-border); border-radius:9px; background:var(--color-surface); color:var(--color-text); box-shadow:var(--shadow-md); font-size:12px; z-index:100; }
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 .public-appearance { display:flex; justify-content:flex-end; margin-bottom:16px; }
@@ -170,6 +238,7 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
   .appearance-control label { padding:0 4px; }
   .appearance-control select { width:70px; }
   .appearance-control label>svg { display:none; }
+  .appearance-trigger { padding:0 8px; gap:4px; }
   .topbar .profile-btn { gap:2px; padding:0; }
   .foundation-dashboard .button-row { align-items:stretch; }
   .foundation-dashboard .button-row .btn { width:100%; }
@@ -177,10 +246,13 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
 }
 @media(prefers-reduced-motion:reduce) {
   *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+  .appearance-popover,.appearance-chevron { transition:none!important; transform:none!important; }
 }
 @media(forced-colors:active) {
-  html,body,#root,.app-shell,.sidebar,.topbar,.card,.appearance-control label { background:Canvas; color:CanvasText; backdrop-filter:none; }
-  .card,.btn,.nav-link.active,.appearance-control label { border:1px solid ButtonText; }
+  html,body,#root,.app-shell,.sidebar,.topbar,.card,.appearance-control label,.appearance-trigger,.appearance-popover,.appearance-option { background:Canvas; color:CanvasText; backdrop-filter:none; }
+  .card,.btn,.nav-link.active,.appearance-control label,.appearance-trigger,.appearance-popover { border:1px solid ButtonText; }
+  .appearance-option[aria-selected="true"],.appearance-option.selected { background:Highlight; color:HighlightText; }
+  .appearance-option-check { color:HighlightText; }
   :focus-visible { outline:3px solid Highlight; }
 }
 
@@ -250,25 +322,4 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
   .preview-disclosure { position:fixed; top:66px; left:16px; right:16px; width:auto; max-height:calc(100dvh - 90px); overflow:auto; }
 }
 
-/* Appearance picker: progressive enhancement; unsupported browsers keep native UI. */
-@supports (appearance:base-select) {
-  .appearance-control select,
-  .appearance-control select::picker(select) { appearance:base-select; }
-  .appearance-control select::picker(select) {
-    background:var(--color-surface); color:var(--color-text);
-    border:1px solid var(--color-control-border); border-radius:12px;
-    padding:6px; margin-block-start:6px; box-shadow:var(--shadow-md);
-    min-width:120px;
-  }
-  .appearance-control option {
-    padding:9px 12px; border-radius:7px; min-height:40px;
-  }
-  .appearance-control option:hover,
-  .appearance-control option:checked { background:var(--color-soft); color:var(--color-text); }
-  .appearance-control option:focus-visible { outline:2px solid var(--color-focus); outline-offset:-2px; }
-  .appearance-control option::checkmark { color:var(--color-action); }
-}
-@media(forced-colors:active) {
-  .appearance-control select::picker(select),.appearance-control option { background:Canvas; color:CanvasText; border-color:ButtonText; }
-  .appearance-control option:checked { background:Highlight; color:HighlightText; }
-}
+
