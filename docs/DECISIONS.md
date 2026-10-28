@@ -1,5 +1,11 @@
 # Decisions
 
+## Theme remediation execution — 2026-10-28
+
+Owner authorized styling/theme architecture/accessibility presentation fixes and focused tests only. Executed on `fix/theme-consistency-contrast` from current clean main `f548c54d2c916e7bfcc18d0e62231f0d8bf83e3c`, preserving the completed Slice 2. Decision: fix hard-coded legacy colors at source, resolve palette aliases centrally, pair informational and action foregrounds correctly, prevent cross-theme color interpolation and retain layout/behavior. A small light border-token adjustment addresses measured contrast; purple identity remains provisional pending owner inspection. No JS/TSX application logic, routes, questions, scoring, timing, media, storage schema, dependencies or candidates changed. No remote/config/security change, merge/push/deploy. This authorization does not release Diagnostic V1, Stage2 or resource ingestion. [Actual evidence/report](reviews/stage-1b/theme-consistency/THEME_CONSISTENCY_REMEDIATION_REPORT.md).
+
+---
+
 ## Owner-authorized Slice 2 UI architecture — 2026-10-28
 
 - **APPROVED SCOPE / IMPLEMENTED_AND_TESTED, HUMAN ACCEPTANCE PENDING:** Stage 1B Slice 2 frontend navigation/catalog restructuring only, per the owner's pasted instruction. This is not Stage 2 authorization.

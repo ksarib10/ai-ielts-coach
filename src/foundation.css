@@ -2,9 +2,12 @@
 :root {
   --color-bg:#faf7ff; --color-surface:#fff; --color-glass:rgba(255,255,255,.91);
   --color-text:#291b36; --color-muted:#665473; --color-border:#d6c6e3;
-  --color-control-border:#967ca9; --color-action:#6933b5; --color-action-hover:#53248f;
+  --color-control-border:#856b98; --color-action:#6933b5; --color-action-hover:#53248f;
   --color-on-action:#fff; --color-focus:#763bb7; --color-soft:#eee4f8;
   --color-danger:#a52847; --color-success:#176348;
+  --color-warning:#784508; --color-danger-soft:#fce8ee; --color-success-soft:#e5f7ef; --color-warning-soft:#fff2d5;
+  --color-surface-subtle:#f7f2fc; --color-disabled-bg:#eee4f8; --color-disabled-text:#665473;
+  --color-highlight:#f8e6a0; --color-on-highlight:#3b2b09;
   --page-gradient:radial-gradient(ellipse at 85% 0%,#e8dcfa 0%,transparent 55%),linear-gradient(135deg,#fff 0%,#faf7ff 50%,#f0e7fa 100%);
   --brand-50:#f2eafa; --brand-100:#e6d5f6; --brand-400:#9560cf; --brand-500:#8951c7; --brand-600:#6933b5; --brand-700:#53248f;
   --ai-50:#f2eafa; --ai-100:#e6d5f6; --ai-500:#8951c7; --ai-600:#6933b5; --ai-700:#53248f;
@@ -17,14 +20,29 @@
   --color-control-border:#9f86b5; --color-action:#c5a3ff; --color-action-hover:#dbc4ff;
   --color-on-action:#20112e; --color-focus:#dec8ff; --color-soft:#38264c;
   --color-danger:#ffb0c3; --color-success:#91e5bf;
+  --color-warning:#ffd597; --color-danger-soft:#482238; --color-success-soft:#173e30; --color-warning-soft:#4a341c;
+  --color-surface-subtle:#291d39; --color-disabled-bg:#38264c; --color-disabled-text:#c6b6d7;
+  --color-highlight:#66501e; --color-on-highlight:#fff0b4;
   --page-gradient:radial-gradient(ellipse at 80% 0%,#38204f66 0%,transparent 60%),linear-gradient(135deg,#0b0716 0%,#1a1030 50%,#2c184f 100%);
-  --slate-50:#181020; --slate-100:#30223f; --slate-200:#4b385d; --slate-300:#715984; --slate-400:#b8a6ca; --slate-500:#c6b6d7; --slate-600:#d3c5e2; --slate-700:#e2d6ee; --slate-800:#f5edff; --slate-900:#fff;
   --brand-50:#312044; --brand-100:#4a2f64; --brand-400:#c5a3ff; --brand-500:#b992f3; --brand-600:#c5a3ff; --brand-700:#dbc4ff;
   --ai-50:#312044; --ai-100:#4a2f64; --ai-500:#b992f3; --ai-600:#c5a3ff; --ai-700:#dbc4ff;
-  --emerald-50:#15332a; --emerald-100:#214c3a; --emerald-600:#91e5bf; --emerald-700:#a8f0cf;
-  --amber-50:#3a2c1e; --amber-100:#514022; --amber-600:#f4ce8c; --amber-700:#ffdb9f;
-  --rose-50:#3b1f30; --rose-100:#563044; --rose-600:#ffb0c3;
   --shadow-sm:0 2px 8px #0002; --shadow-md:0 18px 44px #0004;
+}
+/* Legacy palette names are compatibility aliases, not independent light-only colors.
+   Define surfaces and their foreground roles together; component sources consume these roles. */
+:root {
+  --surface-gradient:linear-gradient(135deg,var(--color-surface) 0%,var(--color-soft) 100%);
+  --slate-50:var(--color-surface-subtle); --slate-100:var(--color-soft); --slate-200:var(--color-border);
+  --slate-300:var(--color-control-border); --slate-400:var(--color-muted); --slate-500:var(--color-muted);
+  --slate-600:var(--color-muted); --slate-700:var(--color-text); --slate-800:var(--color-text); --slate-900:var(--color-text);
+  --brand-200:var(--color-border); --brand-300:var(--color-control-border); --brand-800:var(--color-text);
+  --green-50:var(--color-success-soft); --green-100:var(--color-success-soft); --green-700:var(--color-success);
+  --emerald-50:var(--color-success-soft); --emerald-100:var(--color-success-soft); --emerald-400:var(--color-success);
+  --emerald-600:var(--color-success); --emerald-700:var(--color-success);
+  --amber-50:var(--color-warning-soft); --amber-100:var(--color-warning-soft); --amber-400:var(--color-warning);
+  --amber-600:var(--color-warning); --amber-700:var(--color-warning);
+  --rose-50:var(--color-danger-soft); --rose-100:var(--color-danger-soft); --rose-200:var(--color-danger);
+  --rose-400:var(--color-danger); --rose-600:var(--color-danger); --rose-700:var(--color-danger);
 }
 html,body,#root { color:var(--color-text); background:transparent; }
 html { background:var(--color-bg); }
@@ -55,10 +73,12 @@ h1,h2,h3,h4,strong { color:inherit; }
 .btn-danger { color:var(--color-danger); }
 .btn-secondary:hover,.btn-ghost:hover { background:var(--color-soft); color:var(--color-text); }
 .btn-ghost,.text-link,.brand-btn { color:var(--color-action); }
-.btn:disabled { opacity:.7; }
+.btn:disabled,button:disabled { opacity:1; color:var(--color-disabled-text); background:var(--color-disabled-bg); border-color:var(--color-control-border); }
 :focus-visible { outline:3px solid var(--color-focus); outline-offset:3px; }
 .input,.select,.textarea,textarea,.choice-card,.question-choice,.option-row,.search,.appearance-control label { background:var(--color-surface); border-color:var(--color-control-border); color:var(--color-text); }
 input,select,textarea { color:var(--color-text); }
+input[type=radio],input[type=checkbox] { accent-color:var(--color-action); }
+mark { color:var(--color-on-highlight); }
 input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; }
 .search:focus-within,.input:focus,.select:focus,textarea:focus { outline:3px solid var(--color-focus); outline-offset:2px; box-shadow:none; }
 .choice-card:hover,.choice-card.selected { background:var(--color-soft); color:var(--color-text); border-color:var(--color-action); }

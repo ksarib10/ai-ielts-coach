@@ -1,5 +1,11 @@
 # Feature registry
 
+## Presentation quality delta — 2026-10-28, theme remediation
+
+Theme-only correction for F03/F05–F10/F12/F13/F16 and shared public/onboarding/settings surfaces: legacy colors now consume semantic roles; existing routes, actions, engines, data and feature availability are unchanged. Full disposable Exam setup/seven sections/combined result and diagnostic/shared states were browser-inspected in dark/light at 1440/390/320px. Nine-suite regression, TypeScript and production build PASS. This is tested presentation, not new assessment validity, secure identity, calibrated readiness, content availability or owner acceptance. Exact boundaries/limitations: [report](reviews/stage-1b/theme-consistency/THEME_CONSISTENCY_REMEDIATION_REPORT.md). M01–M11 gate unchanged, M12–M17 unavailable, Stage2 blocked.
+
+---
+
 ## Current implementation-status delta — 2026-10-28, Slice 2
 
 This dated entry supersedes the affected Slice 1 descriptions below. **Implemented/tested does not mean owner-accepted; Slice 2 acceptance PENDING.**

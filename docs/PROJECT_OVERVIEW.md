@@ -1,5 +1,13 @@
 # AI IELTS Coach — project overview
 
+## Theme-only checkpoint — 2026-10-28
+
+Owner-authorized comprehensive theme/contrast remediation continues current main base `f548c54d2c916e7bfcc18d0e62231f0d8bf83e3c` on local `fix/theme-consistency-contrast`. Slice 2 architecture/routes remain intact. Root causes corrected in the two legacy stylesheets and semantic foundation, with focused regression protection and actual computed browser evidence. Nine suites, TypeScript and production build pass. All versioned non-CSS application source, media, lockfile/config and 36 candidate files remain unchanged; no assessment/learner schema/engine/backend/content changes. Diagnostic and Exam disposable UI journeys were used for presentation testing only.
+
+Ready for owner visual review; no merge/push/deployment in this task. [Theme remediation report](reviews/stage-1b/theme-consistency/THEME_CONSISTENCY_REMEDIATION_REPORT.md). Human visual acceptance, Diagnostic V1, D06/D07 and all 15 baseline metric acceptance remain outstanding; Stage2 remains blocked.
+
+---
+
 ## Current checkpoint — 2026-10-28, Stage 1B Slice 2
 
 Owner-authorized UI restructuring is implemented and locally validated; **Slice 2 human acceptance PENDING**. This dated entry supersedes affected current summaries below, preserving their historical evidence. Work continued from `65a25bbacc97a021d728946839da5404d262924e` on `feat/stage-1b-slice-2-navigation`. The existing private GitHub origin and Vercel frontend are acknowledged from the handoff; this slice makes no remote change, push, merge or deployment.
