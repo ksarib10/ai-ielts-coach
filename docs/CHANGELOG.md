@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-28 — Comprehensive theme consistency and contrast remediation
+
+- Corrected legacy hard-coded pale/white surfaces and fixed blue-gray text at source in styles.css/prototype.css; semantic surface/text/action/status/disabled/highlight roles and eleven missing compatibility aliases in foundation.css. Exam hero/stepper/choices/timers/audio/table/footer/results and diagnostic/shared surfaces now follow the active theme; existing layouts preserved.
+- Removed independent color/background interpolation, corrected a measured2.97:1 Light control border with #856b98, retained opaque workspaces and readable disabled labels. Fixed PDF canvas pixels and deferred decorative progress gradients remain explicit exceptions.
+- Added read-only computed browser audit and focused surface/alias/transition regression suite. Actual checks include full disposable Exam journey and diagnostic/shared states, both themes/three widths, persistence/focus/cancel. Initial contrast observations and tool/helper recovery errors retained honestly; no full WCAG or microphone certification.
+- Final full npm test once: nine suites PASS; TypeScript exit0; production build PASS. Protected non-CSS application/media/config/lockfile and 36 candidate files unchanged. Five relevant living docs updated; ROUTES_AND_STATES and DATA_CONTRACTS unchanged because neither contract changed. [Theme report and evidence](reviews/stage-1b/theme-consistency/THEME_CONSISTENCY_REMEDIATION_REPORT.md). Local feature commit only; owner acceptance pending, no merge/push/deploy.
+
+---
+
 ## 2026-10-28 — Stage 1B Slice 2 navigation and learning architecture
 
 - Continued base `65a25bbacc97a021d728946839da5404d262924e` on `feat/stage-1b-slice-2-navigation`; preserved four pre-existing untracked handoff reports and prior corrections. No restoration or earlier QA repeated.
@@ -48,3 +57,7 @@ Stage 1A: PASS_WITH_REVIEW. STAGE_2_ENTRY = BLOCKED. Documentation-only delivery
 No migration, breaking runtime change, backend work, source-data change, deployment or new feature is included. Historical implementation evidence remains in the original root documents; it is not rewritten as new-stage acceptance.
 
 [Manifest](reviews/stage-1a/STAGE_1A_VALIDATION_AND_CHANGE_MANIFEST.json) · [report](reviews/stage-1a/STAGE_1A_READINESS_REPORT.md) · [owner decisions](reviews/stage-1a/DECISION_REQUIRED.md).
+
+## 2026-10-28 — Appearance picker progressive enhancement
+
+Scoped CSS uses customizable native select support where available: rounded popup, semantic purple surfaces, hover/checked/focus and checkmark styling, plus forced-colors handling. Unsupported browsers retain their usable OS-native popup, whose selected highlight may remain system-controlled. No JS control, preference/persistence, dependency or unrelated style changes. Focused foundation/theme checks and TypeScript validation recorded in the local fix handoff; no browser audit or deployment.
