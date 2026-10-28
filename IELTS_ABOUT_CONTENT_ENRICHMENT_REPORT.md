@@ -147,7 +147,7 @@ PASS: semantic legacy surfaces, defined aliases, no pale-gradient/footer regress
 
 ### 5.3 Headless Chrome Computed-Contrast & Viewport Audit
 
-Audited via Chrome DevTools Protocol (`qa/computed-theme-audit.mjs`) across 16 states:
+Audited via Chrome DevTools Protocol (`qa/computed-theme-audit.mjs`) across 18 states:
 - **Contrast:** 0 failures in dark theme, 0 failures in light theme across all 9 pages.
 - **Mobile Reflow:** Zero horizontal overflow (`document.documentElement.scrollWidth <= innerWidth`) verified at 390px mobile viewport and 1440px desktop viewport.
 - **Visual Evidence:** Captured high-resolution screenshots:
@@ -159,6 +159,28 @@ Audited via Chrome DevTools Protocol (`qa/computed-theme-audit.mjs`) across 16 s
   - `test-format-listening-expanded-dark.png`
   - `test-format-reading-academic-dark.png`
   - `ielts-about-hub-light.png` / `ielts-about-hub-dark.png`
+  - `final-about-bands-dark.png`
+  - `final-about-faqs-light.png` / `final-about-faqs-dark.png`
+
+### 5.4 Excessive Bottom Scroll Root Cause Diagnosis & Resolution
+
+**Symptom:** On tall IELTS About pages (`/ielts-about/bands`, `/ielts-about/computer-paper`, `/ielts-about/sections-duration`), users could scroll far past the last content card, exposing a large empty purple area.
+
+**Root Cause:**
+1. In `src/foundation.css`, the accessibility utility class `.sr-only` defined `position: absolute;` without explicit positioning coordinates (`top`/`left`).
+2. Its scrolling ancestor `.main-scroll` had default static positioning (`position: static`).
+3. Under CSS layout specifications, statically positioned parents do not establish containing blocks for absolute children. As a result, `.sr-only` elements inside source link cards attached to the initial containing block on `<html>`. On long pages, off-screen coordinates inflated `document.documentElement.scrollHeight` from 900px up to 3649px, generating an unintended secondary window scrollbar.
+
+**Resolution:**
+- In `src/foundation.css`:
+  - Added `position: relative;` to `.main-scroll`, establishing a local containing block for all scrolling elements.
+  - Added `top: 0; left: 0;` to `.sr-only`, ensuring visually hidden accessibility spans never inflate dimensions.
+
+**Verification Results:**
+- `document.documentElement.scrollHeight` is strictly clamped to `window.innerHeight` (900px) across all 9 IELTS About routes.
+- Outer window scroll (`window.scrollY`) is 0 (outer window cannot scroll at all).
+- Page content ends naturally with clean ~88px breathing room above the floating AI Coach launcher.
+- Reflow and overflow smoke checks passed across all app routes (`/dashboard`, `/learn`, `/listening`, `/reading`, `/writing`, `/speaking`, `/progress`, `/progress/readiness`, `/exam`, `/settings`) at both 1440px desktop and 390px mobile viewports.
 
 ---
 
@@ -179,9 +201,9 @@ Audited via Chrome DevTools Protocol (`qa/computed-theme-audit.mjs`) across 16 s
 13. `src/content/ielts-about/index.ts` — Exports for coverage models and card contents.
 14. `src/features/discovery/about/AboutComponents.tsx` — Added rich rendering for paragraphs, bullets, tables, internal links, and toggle text.
 15. `src/features/discovery/about/AboutPages.tsx` — Aligned all 9 page layouts to render all 83 highlights.
-16. `src/foundation.css` — Added styles for `.about-faq-accordion`, `.about-bullets`, `.about-table`, and semantic variables.
+16. `src/foundation.css` — Added styles for `.about-faq-accordion`, `.about-bullets`, `.about-table`, and scroll containment fix (`.main-scroll { position: relative; }`, `.sr-only { top: 0; left: 0; }`).
 17. `qa/discovery.test.mjs` — Updated assertions to verify 83 highlights, 458 records coverage, and screenshot FAQs.
 18. `docs/FEATURE_REGISTRY.md` — Updated feature registry for IELTS About enrichment.
 19. `docs/ROUTES_AND_STATES.md` — Updated routes documentation.
-20. `docs/UI_DESIGN_SYSTEM.md` — Updated design system documentation for FAQ styling.
+20. `docs/UI_DESIGN_SYSTEM.md` — Updated design system documentation for FAQ styling and viewport scroll containment.
 21. `docs/CHANGELOG.md` — Updated changelog.
