@@ -15,7 +15,7 @@ export function AppShell({ children, mode = 'learn' }: { children: ReactNode; mo
   const navigate = useNavigate(); const location = useLocation();
   const { open, setOpen, compact, drawer, trigger, content } = useNavigationDrawer(location.pathname);
   const actualMode = normalMode(mode); const policy = policies[actualMode];
-  const overview = ['/dashboard', '/progress', '/progress/readiness', '/readiness', '/diagnostic/results'].includes(location.pathname);
+  const overview = ['/dashboard', '/progress', '/progress/readiness', '/readiness', '/diagnostic/results', '/ai-coach'].includes(location.pathname);
   const showCoach = !policy.strict && !overview;
   return <div className={`app-shell ${policy.strict ? 'focused-shell' : ''} ${actualMode === 'exam' ? 'exam-shell' : ''}`}>
     <a className="skip-link" href="#main-content" onClick={event => { event.preventDefault(); document.getElementById('main-content')?.focus(); }}>Skip to content</a>

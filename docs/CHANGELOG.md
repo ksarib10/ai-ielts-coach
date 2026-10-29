@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-10-30 — Focused UI fixes: AI Coach backdrop, Saved Words actions & Alphabet navigation
+
+- **AI Coach blank-background bug**:
+  - Root Cause: `.coach-backdrop` in `src/prototype.css` utilized `background: var(--color-soft)`, which is a 100% opaque dark purple (`#38264c`) in dark mode and lavender (`#eee4f8`) in light mode. Combined with `position: fixed; inset: 0; z-index: 95;`, it completely covered the application when opened.
+  - Fix: Added `--color-backdrop` (`rgba(15, 23, 42, 0.45)` in light theme and `rgba(11, 7, 22, 0.65)` in dark theme) to `src/foundation.css`, and updated `.coach-backdrop` in `src/prototype.css` to use `background: var(--color-backdrop)` with `backdrop-filter: blur(2px)`.
+  - Added `'/ai-coach'` to `overview` route checks in `src/components/AppShell.tsx` to prevent redundant floating Coach launcher mounting on the dedicated `/ai-coach` screen.
+- **Saved Vocabulary improvements**:
+  - Added visible `Back to Vocabulary` navigation link on `/saved` leading to `/learn/vocabulary`.
+  - Added `Remove Saved Word` button on every saved-word card in `src/features/Account.tsx`.
+  - Wired removal directly to `mutateLearning()`, instantly updating UI, word count, persistent `localStorage` (`ielts-learning-v2`), and reflecting unsaved state ("Save word") in the Vocabulary Explorer immediately and across page reloads.
+- **Alphabet A–Z navigation single horizontal row**:
+  - Root Cause: `.vocab-alpha-bar` had `flex-wrap: wrap; gap: 6px;` and `.vocab-alpha-btn` had `min-width: 36px; padding: 4px 10px;`, requiring ~1136px total width and forcing the 27th button ('Z') to wrap onto a second row on desktop screens.
+  - Fix: Updated `.vocab-alpha-bar` to `flex-wrap: nowrap; overflow-x: auto; gap: clamp(2px, 0.35vw, 5px);` and `.vocab-alpha-btn` to compact `min-width: 28px; min-height: 32px; padding: 3px 6px; border-radius: 6px; white-space: nowrap;`.
+  - All 27 buttons (`All` + A–Z) render on **exactly ONE horizontal row** on desktop, with zero wrapping. On narrow viewports, the bar scrolls horizontally without causing page-level overflow. Empty-letter X state and active button highlights remain fully preserved.
+- **Verification**: `npm test` (all 11 test suites PASS), `npx tsc -b` (0 errors), `npm run build` (clean asset guard PASS), and automated headless desktop/mobile browser audit with captured screenshots.
+
+---
+
 ## 2026-10-29 — Full Real Resource Bank normalized vocabulary integration
 
 - Implemented `RealResourceBankProvider` in `src/types/realResourceBankProvider.ts` implementing `IResourceBankProvider` to connect all 6 Stage 3/4 canonical collections (11,797 canonical records) from `Learning-data-preprocessing-automation/OUTPUTS`:

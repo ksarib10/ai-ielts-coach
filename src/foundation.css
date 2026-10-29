@@ -7,7 +7,7 @@
   --color-danger:#a52847; --color-success:#176348;
   --color-warning:#784508; --color-danger-soft:#fce8ee; --color-success-soft:#e5f7ef; --color-warning-soft:#fff2d5;
   --color-surface-subtle:#f7f2fc; --color-disabled-bg:#eee4f8; --color-disabled-text:#665473;
-  --color-highlight:#f8e6a0; --color-on-highlight:#3b2b09;
+  --color-highlight:#f8e6a0; --color-on-highlight:#3b2b09; --color-backdrop:rgba(15,23,42,.45);
   --page-gradient:radial-gradient(ellipse at 85% 0%,#e8dcfa 0%,transparent 55%),linear-gradient(135deg,#fff 0%,#faf7ff 50%,#f0e7fa 100%);
   --brand-50:#f2eafa; --brand-100:#e6d5f6; --brand-400:#9560cf; --brand-500:#8951c7; --brand-600:#6933b5; --brand-700:#53248f;
   --ai-50:#f2eafa; --ai-100:#e6d5f6; --ai-500:#8951c7; --ai-600:#6933b5; --ai-700:#53248f;
@@ -24,7 +24,7 @@
   --color-danger:#ffb0c3; --color-success:#91e5bf;
   --color-warning:#ffd597; --color-danger-soft:#482238; --color-success-soft:#173e30; --color-warning-soft:#4a341c;
   --color-surface-subtle:#291d39; --color-disabled-bg:#38264c; --color-disabled-text:#c6b6d7;
-  --color-highlight:#66501e; --color-on-highlight:#fff0b4;
+  --color-highlight:#66501e; --color-on-highlight:#fff0b4; --color-backdrop:rgba(11,7,22,.65);
   --page-gradient:radial-gradient(ellipse at 80% 0%,#38204f66 0%,transparent 60%),linear-gradient(135deg,#0b0716 0%,#1a1030 50%,#2c184f 100%);
   --brand-50:#312044; --brand-100:#4a2f64; --brand-400:#c5a3ff; --brand-500:#b992f3; --brand-600:#c5a3ff; --brand-700:#dbc4ff;
   --ai-50:#312044; --ai-100:#4a2f64; --ai-500:#b992f3; --ai-600:#c5a3ff; --ai-700:#dbc4ff;
@@ -642,15 +642,17 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
   font-size:13px; font-weight:700; color:var(--color-text);
 }
 .vocab-alpha-bar {
-  display:flex; flex-wrap:wrap; gap:6px;
+  display:flex; flex-wrap:nowrap; align-items:center; gap:clamp(2px, 0.35vw, 5px);
+  overflow-x:auto; overflow-y:hidden; padding:4px 2px 6px;
+  scrollbar-width:thin; -webkit-overflow-scrolling:touch;
 }
 .vocab-alpha-btn {
   display:inline-flex; align-items:center; justify-content:center;
-  min-width:36px; min-height:36px; padding:4px 10px;
-  border-radius:8px; border:1px solid var(--color-control-border);
+  flex:0 0 auto; min-width:28px; min-height:32px; padding:3px 6px;
+  border-radius:6px; border:1px solid var(--color-control-border);
   background:var(--color-surface); color:var(--color-text);
   font-size:13px; font-weight:700; font-family:inherit;
-  text-decoration:none; cursor:pointer;
+  text-decoration:none; cursor:pointer; white-space:nowrap;
 }
 .vocab-alpha-btn:hover {
   background:var(--color-soft); color:var(--color-action);

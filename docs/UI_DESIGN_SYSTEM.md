@@ -1,5 +1,24 @@
 # UI design system
 
+## Focused UI fixes: AI Coach backdrop, Saved Vocabulary actions & Alphabet navigation — 2026-10-30
+
+- **AI Coach Translucent Backdrop**:
+  - Replaced the opaque `background: var(--color-soft)` on `.coach-backdrop` in `src/prototype.css` with semantic `--color-backdrop` (`rgba(15, 23, 42, 0.45)` in light theme and `rgba(11, 7, 22, 0.65)` in dark theme) paired with `backdrop-filter: blur(2px)`.
+  - When the contextual AI Coach opens (via `.ai-fab` floating button or contextual action triggers), the underlying application remains visible and readable beneath the Coach panel.
+  - Added `'/ai-coach'` to `overview` in `src/components/AppShell.tsx` to prevent redundant floating Coach launcher mounting on the dedicated Coach page.
+
+- **Saved Vocabulary Improvements**:
+  - Added visible `.discovery-back` link (`Back to Vocabulary`) on the `/saved` screen above the page header.
+  - Added `Remove Saved Word` action buttons to each saved-word card in `.three-grid` and the practice card, wired to `handleRemoveWord()` via `mutateLearning()`. Removal immediately updates the active UI, decrements the saved count, updates `localStorage` ('ielts-learning-v2'), and marks the card in Vocabulary Explorer as unsaved ("Save word").
+
+- **Alphabet A–Z Navigation (Single Horizontal Row)**:
+  - Updated `.vocab-alpha-bar` in `src/foundation.css`: `display: flex; flex-wrap: nowrap; align-items: center; gap: clamp(2px, 0.35vw, 5px); overflow-x: auto; overflow-y: hidden; padding: 4px 2px 6px; scrollbar-width: thin; -webkit-overflow-scrolling: touch;`.
+  - Compacted `.vocab-alpha-btn`: `flex: 0 0 auto; min-width: 28px; min-height: 32px; padding: 3px 6px; border-radius: 6px; white-space: nowrap; font-size: 13px; font-weight: 700;`.
+  - On desktop viewports (≥1050px), all 27 items (`All` + letters A through Z) fit on **exactly one horizontal row** with identical top coordinates, eliminating the previous wrapping of letter 'Z'.
+  - On narrow/mobile screens (<800px), the bar enables smooth horizontal scrolling without creating page-level horizontal overflow (`hasPageHorizontalOverflow: false`).
+
+---
+
 ## IELTS About reference components, question-type accordions, FAQ design and scroll containment — 2026-10-28
 
 `src/features/discovery/about/AboutComponents.tsx` and `.about-*` rules in `src/foundation.css` add reusable semantic-token components for the nine IELTS About guides: `HighlightCard` (supporting multi-paragraph text, structured bullets, comparison tables, caveat badges, and internal navigation links), `SourceLinks` (host-badged external pill links distinguished from internal navigation), `AboutTabs` (roving-tabindex WAI-ARIA `tablist`/`tab`/`tabpanel`), `AccordionItem` (`h3`/`h4 > button[aria-expanded]` controlling a labelled `role="region"` panel with subtle chevron rotation, optional `showToggleText` showing Show/Hide states, respecting `prefers-reduced-motion`), `AboutSection` and `AboutNotice` (info/warning semantic surfaces). `.about-question-types` matches the clean separator-row layout and typography for the 6 Listening and 11 Academic Reading question types (`What's involved?`, `What skills are tested?`, `How many questions are there?`, `Practical note`, and official sources). `.about-faq-accordion` styles FAQ items as distinct full-width purple pill blocks with semantic `--faq-button-bg` and `--faq-button-open-bg` tokens in light and dark modes, matching user reference screenshots. Responsive grids collapse cleanly at `≤1050px` and `≤760px`, with `forced-colors` support and zero horizontal overflow verified at 1440px (dark/light) and 390px.
