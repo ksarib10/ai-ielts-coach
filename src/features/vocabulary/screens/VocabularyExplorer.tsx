@@ -22,6 +22,7 @@ import {
   type CEFRLevel,
   type CompactSearchItem,
   type IResourceBankProvider,
+  type OxfordPOSCode,
   type SearchFilters,
   type SearchResultPage,
   type UIOxfordCard
@@ -31,6 +32,7 @@ import {
   SYNTHETIC_CREDITS_ENTRY,
   SYNTHETIC_OXFORD_ENTRIES
 } from '../services/syntheticCatalog';
+import { useResourceBank } from '../services/resourceBankHooks';
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const CEFR_OPTIONS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
@@ -78,6 +80,8 @@ function isBrowserTTSSupported(): boolean {
 export function VocabularyHubScreen() {
   const state = useLearning();
   const savedCount = state.vocabulary.length;
+  const { mode } = useResourceBank();
+  const isRealData = mode === 'PRIVATE_DEV_REAL_DATA';
 
   return (
     <AppShell>
@@ -85,9 +89,13 @@ export function VocabularyHubScreen() {
         Back to Learn
       </Link>
       <PageHeader
-        eyebrow="Learn · Vocabulary"
+        eyebrow={isRealData ? "Learn · Vocabulary · Oxford 3000/5000" : "Learn · Vocabulary"}
         title="Vocabulary Hub"
-        description="Build academic and general IELTS lexical range. Explore our interactive Vocabulary Explorer with synthetic development fixtures, or practise the words you have saved."
+        description={
+          isRealData
+            ? "Build academic and general IELTS lexical range. Explore all 10,270 Oxford entries powered by the real data provider, or practise the words you have saved."
+            : "Build academic and general IELTS lexical range. Explore our interactive Vocabulary Explorer with synthetic development fixtures, or practise the words you have saved."
+        }
       />
 
       <section
@@ -96,12 +104,30 @@ export function VocabularyHubScreen() {
         aria-label="Dataset governance and mock mode notice"
       >
         <div className="vocab-governance-header">
-          <Badge tone="blue">MOCK_DATA_ONLY</Badge>
-          <Badge tone="amber">OWNER_REPORTED_PENDING_PRIVATE_SIGNOFF</Badge>
-          <span className="vocab-governance-tag">Synthetic Development Fixtures Active</span>
+          {isRealData ? (
+            <>
+              <Badge tone="ai">REAL_RESOURCE_BANK_ACTIVE</Badge>
+              <Badge tone="blue">10,270 Oxford Entries (44 Shards)</Badge>
+              <span className="vocab-governance-tag">Local Development Shards Active (/api/private-data/)</span>
+            </>
+          ) : (
+            <>
+              <Badge tone="blue">MOCK_DATA_ONLY</Badge>
+              <Badge tone="amber">OWNER_REPORTED_PENDING_PRIVATE_SIGNOFF</Badge>
+              <span className="vocab-governance-tag">Synthetic Development Fixtures Active</span>
+            </>
+          )}
         </div>
         <p className="vocab-governance-text">
-          This public preview runs in <strong>fail-closed mock mode</strong> using 20 original synthetic lexical entries (<code>MOCK_OXF_001</code>–<code>MOCK_OXF_020</code>). Proprietary source CSVs, the 10,270-record Oxford dataset, 570 AWL families, and the quarantined grouped-idiom concordance corpus remain strictly isolated outside client bundles pending private licensing clearance.
+          {isRealData ? (
+            <>
+              Connected to the <strong>Real Resource Bank Provider</strong> serving 10,270 normalized Oxford lexical entries across 44 detail shards and 41 search index shards. Public builds remain strictly guarded by fail-closed <code>MOCK_DATA_ONLY</code> isolation.
+            </>
+          ) : (
+            <>
+              This public preview runs in <strong>fail-closed mock mode</strong> using 20 original synthetic lexical entries (<code>MOCK_OXF_001</code>–<code>MOCK_OXF_020</code>). Proprietary source CSVs, the 10,270-record Oxford dataset, 570 AWL families, and the quarantined grouped-idiom concordance corpus remain strictly isolated outside client bundles pending private licensing clearance.
+            </>
+          )}
         </p>
       </section>
 
@@ -111,11 +137,15 @@ export function VocabularyHubScreen() {
             <span className="discovery-icon">
               <BookOpen size={22} aria-hidden="true" />
             </span>
-            <span className="availability-label">Synthetic Demo (20 entries)</span>
+            <span className="availability-label">
+              {isRealData ? 'Real Oxford Bank (10,270 entries)' : 'Synthetic Demo (20 entries)'}
+            </span>
           </div>
           <h2>All Vocabulary Explorer</h2>
           <p>
-            Search headwords and aliases, browse A–Z (including explicit empty-letter X handling), filter by CEFR level (A1–C1), Part of Speech, UK/US edition, and IELTS skill, sort alphabetically or by CEFR, and expand cards for collocations and examples.
+            {isRealData
+              ? 'Search 10,270 Oxford headwords, browse A–Z (including explicit empty-letter X handling), filter by CEFR level (A1–C1), Part of Speech, UK/US edition, and IELTS skill, sort alphabetically or by CEFR, and inspect complete word definitions, collocations, and examples.'
+              : 'Search headwords and aliases, browse A–Z (including explicit empty-letter X handling), filter by CEFR level (A1–C1), Part of Speech, UK/US edition, and IELTS skill, sort alphabetically or by CEFR, and expand cards for collocations and examples.'}
           </p>
           <div className="vocab-hub-card-actions">
             <Link
@@ -210,8 +240,14 @@ export function VocabularyHubScreen() {
               <tr>
                 <td><strong>Vocabulary Explorer (CARD_01)</strong></td>
                 <td><code>adaptCanonicalOxfordToUI</code></td>
-                <td>Active Synthetic Explorer (20 mock entries)</td>
-                <td><code>MOCK_DATA_ONLY</code> (10,270 source entries gated)</td>
+                <td>{isRealData ? 'Active Real Explorer (10,270 entries)' : 'Active Synthetic Explorer (20 mock entries)'}</td>
+                <td>
+                  <code>
+                    {isRealData
+                      ? 'PRIVATE_DEV_REAL_DATA (10,270 entries connected; fail-closed MOCK_DATA_ONLY in prod)'
+                      : 'MOCK_DATA_ONLY (10,270 source entries gated)'}
+                  </code>
+                </td>
               </tr>
               <tr>
                 <td><strong>Academic Word List (CARD_02)</strong></td>
@@ -284,7 +320,10 @@ export function AllVocabularyExplorerScreen({
 }: AllVocabularyExplorerProps = {}) {
   const [searchParams, setSearchParams] = useSearchParams();
   const state = useLearning();
-  const provider = customProvider ?? defaultMockResourceBankProvider;
+  const resourceBank = useResourceBank();
+  const provider = customProvider ?? resourceBank.provider;
+  const isRealData = !customProvider && resourceBank.mode === 'PRIVATE_DEV_REAL_DATA';
+  const isMockMode = !isRealData;
 
   const [queryTerm, setQueryTerm] = useState<string>(
     initialQuery ?? searchParams.get('q') ?? ''
@@ -357,6 +396,18 @@ export function AllVocabularyExplorerScreen({
 
   // Compute initial synchronous result for deterministic SSR and zero-flicker initial render
   const initialSyncResult = useMemo<SearchResultPage<CompactSearchItem>>(() => {
+    if (!isMockMode) {
+      return {
+        items: [],
+        totalMatches: 0,
+        page: 1,
+        pageSize,
+        totalPages: 0,
+        hasMore: false,
+        facets: { cefr: {}, difficulty: {}, pos: {}, skills: {}, entityTypes: {} }
+      };
+    }
+
     const normalizedQuery = queryTerm.trim().toLowerCase();
     if (selectedLetter === 'X') {
       const emptyX: SearchResultPage<CompactSearchItem> = {
@@ -478,6 +529,7 @@ export function AllVocabularyExplorerScreen({
       }
     };
   }, [
+    isMockMode,
     queryTerm,
     selectedLetter,
     selectedCefr,
@@ -498,7 +550,7 @@ export function AllVocabularyExplorerScreen({
     }
     return map;
   });
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(!isMockMode);
   const [providerError, setProviderError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -617,10 +669,28 @@ export function AllVocabularyExplorerScreen({
   const effectiveError =
     simulatedState === 'error'
       ? 'Simulated Resource Bank provider connection error: Shard fetch timed out in mock resilience check.'
-      : providerError;
+      : providerError ?? (isRealData && resourceBank.error ? resourceBank.error.message : null);
 
   const startIndex = resultPage.totalMatches === 0 ? 0 : (resultPage.page - 1) * resultPage.pageSize + 1;
   const endIndex = Math.min(resultPage.page * resultPage.pageSize, resultPage.totalMatches);
+
+  const pageWindow = useMemo(() => {
+    const current = resultPage.page;
+    const total = resultPage.totalPages;
+    if (total <= 7) {
+      return Array.from({ length: total }, (_, i) => i + 1);
+    }
+    const pages: (number | 'ellipsis')[] = [1];
+    const start = Math.max(2, current - 2);
+    const end = Math.min(total - 1, current + 2);
+    if (start > 2) pages.push('ellipsis');
+    for (let i = start; i <= end; i++) {
+      pages.push(i);
+    }
+    if (end < total - 1) pages.push('ellipsis');
+    pages.push(total);
+    return pages;
+  }, [resultPage.page, resultPage.totalPages]);
 
   return (
     <AppShell>
@@ -635,9 +705,13 @@ export function AllVocabularyExplorerScreen({
       </div>
 
       <PageHeader
-        eyebrow="Learn · Vocabulary · Synthetic Fixtures"
+        eyebrow={isRealData ? "Learn · Vocabulary · Oxford 3000/5000" : "Learn · Vocabulary · Synthetic Fixtures"}
         title="All Vocabulary Explorer"
-        description="Search, filter, sort, and inspect structured vocabulary cards powered by the Stage 4B Resource Bank adapter and publication-safe synthetic fixtures."
+        description={
+          isRealData
+            ? "Search, filter, sort, and inspect 10,270 Oxford 3000/5000 vocabulary cards powered by the Real Resource Bank Provider."
+            : "Search, filter, sort, and inspect structured vocabulary cards powered by the Stage 4B Resource Bank adapter and publication-safe synthetic fixtures."
+        }
         actions={
           <Link className="btn btn-secondary" to="/saved">
             My Saved Words ({state.vocabulary.length})
@@ -648,11 +722,21 @@ export function AllVocabularyExplorerScreen({
       <section
         className="vocab-governance-banner vocab-explorer-banner"
         role="region"
-        aria-label="Mock mode and audio provenance notice"
+        aria-label="Dataset governance and audio provenance notice"
       >
         <div className="vocab-governance-header">
-          <Badge tone="blue">MOCK_DATA_ONLY</Badge>
-          <Badge tone="gray">20 Synthetic Entries (MOCK_OXF_001–020)</Badge>
+          {isRealData ? (
+            <>
+              <Badge tone="ai">REAL_RESOURCE_BANK_ACTIVE</Badge>
+              <Badge tone="blue">10,270 Oxford Entries (44 Shards)</Badge>
+              <Badge tone="green">LRU Shard Cache Active (Max 5)</Badge>
+            </>
+          ) : (
+            <>
+              <Badge tone="blue">MOCK_DATA_ONLY</Badge>
+              <Badge tone="gray">20 Synthetic Entries (MOCK_OXF_001–020)</Badge>
+            </>
+          )}
           <Badge tone={ttsSupported ? 'green' : 'amber'}>
             {ttsSupported
               ? 'Pronunciation: Browser TTS Active (No Recorded Lexicon Audio)'
@@ -754,6 +838,7 @@ export function AllVocabularyExplorerScreen({
               <Filter size={13} aria-hidden="true" /> CEFR Level
             </span>
             <select
+              id="vocab-filter-cefr"
               className="select"
               aria-label="Filter by CEFR level"
               value={selectedCefr}
@@ -774,6 +859,7 @@ export function AllVocabularyExplorerScreen({
           <label className="field vocab-filter-field">
             <span>Part of Speech</span>
             <select
+              id="vocab-filter-pos"
               className="select"
               aria-label="Filter by Part of Speech"
               value={selectedPos}
@@ -793,6 +879,7 @@ export function AllVocabularyExplorerScreen({
           <label className="field vocab-filter-field">
             <span>English Edition</span>
             <select
+              id="vocab-filter-edition"
               className="select"
               aria-label="Filter by English edition"
               value={selectedEdition}
@@ -812,6 +899,7 @@ export function AllVocabularyExplorerScreen({
           <label className="field vocab-filter-field">
             <span>IELTS Skill Tag</span>
             <select
+              id="vocab-filter-skill"
               className="select"
               aria-label="Filter by IELTS skill"
               value={selectedSkill}
@@ -831,6 +919,7 @@ export function AllVocabularyExplorerScreen({
           <label className="field vocab-filter-field">
             <span>Sort Order</span>
             <select
+              id="vocab-filter-sort"
               className="select"
               aria-label="Sort vocabulary entries"
               value={sortOption}
@@ -850,6 +939,7 @@ export function AllVocabularyExplorerScreen({
           <label className="field vocab-filter-field">
             <span>Page Size</span>
             <select
+              id="vocab-filter-pagesize"
               className="select"
               aria-label="Entries per page"
               value={pageSize}
@@ -938,7 +1028,7 @@ export function AllVocabularyExplorerScreen({
       ) : resultPage.items.length === 0 ? (
         /* STATE 4: GENERAL EMPTY FILTER / SEARCH STATE */
         <EmptyState
-          title="No synthetic vocabulary entries match your active filters"
+          title={isRealData ? "No Oxford vocabulary entries match your active filters" : "No synthetic vocabulary entries match your active filters"}
           detail={`No words matched ${[
             queryTerm ? `query "${queryTerm}"` : null,
             selectedLetter !== 'ALL' ? `letter "${selectedLetter}"` : null,
@@ -948,7 +1038,7 @@ export function AllVocabularyExplorerScreen({
             selectedSkill !== 'ALL' ? `Skill ${selectedSkill}` : null
           ]
             .filter(Boolean)
-            .join(', ')}. Try broadening your filters or resetting to the full synthetic catalog.`}
+            .join(', ')}. Try broadening your filters or resetting to the full ${isRealData ? 'vocabulary catalog' : 'synthetic catalog'}.`}
           action="Clear all filters"
           onAction={resetAllFilters}
         />
@@ -958,7 +1048,7 @@ export function AllVocabularyExplorerScreen({
           <div className="vocab-results-summary-bar" role="status" aria-live="polite">
             <span>
               Showing <strong>{startIndex}–{endIndex}</strong> of{' '}
-              <strong>{resultPage.totalMatches}</strong> matching synthetic entries (Page{' '}
+              <strong>{resultPage.totalMatches}</strong> matching {isRealData ? 'Oxford vocabulary' : 'synthetic'} entries (Page{' '}
               <strong>{resultPage.page}</strong> of <strong>{resultPage.totalPages}</strong>)
             </span>
             <div className="vocab-facet-pills">
@@ -984,8 +1074,19 @@ export function AllVocabularyExplorerScreen({
 
           <div className="vocab-cards-grid">
             {resultPage.items.map((item) => {
-              const card = resolvedCards[item.id] ?? SYNCHRONOUS_OXFORD_UI_MAP.get(item.id);
-              if (!card) return null;
+              const card: UIOxfordCard = resolvedCards[item.id] ?? SYNCHRONOUS_OXFORD_UI_MAP.get(item.id) ?? {
+                id: item.id,
+                word: item.term,
+                edition: (item.edition === 'USEnglish' ? 'USEnglish' : 'UKEnglish') as 'UKEnglish' | 'USEnglish',
+                part_of_speech: item.pos || 'Word',
+                pos_code: (item.pos_code || 'n') as OxfordPOSCode,
+                cefr_level: (item.cefr_level || 'B2') as CEFRLevel,
+                definition: 'Loading definition from detail shard...',
+                example_sentences: [],
+                collocations: [],
+                ielts_skills: item.skills || [],
+                audio_status: 'none'
+              };
               const isExpanded = Boolean(expandedIds[item.id]);
               const isSaved = state.vocabulary.some(
                 (w) => w.word.toLowerCase() === card.word.toLowerCase()
@@ -1171,8 +1272,8 @@ export function AllVocabularyExplorerScreen({
                           <strong>Audio Status:</strong> <code>audio_status: "{card.audio_status}"</code> (Recorded audio omitted in public mock build; browser TTS optional).
                         </span>
                         <span>
-                          <strong>Attribution:</strong> {SYNTHETIC_CREDITS_ENTRY.provider_name} (
-                          <code>{SYNTHETIC_CREDITS_ENTRY.verification_status}</code>)
+                          <strong>Attribution:</strong> {isRealData ? 'Oxford 3000/5000 & Educational Lexicon' : SYNTHETIC_CREDITS_ENTRY.provider_name} (
+                          <code>{isRealData ? 'CANONICAL_SOURCE_VERIFIED' : SYNTHETIC_CREDITS_ENTRY.verification_status}</code>)
                         </span>
                       </div>
                     </div>
@@ -1192,18 +1293,24 @@ export function AllVocabularyExplorerScreen({
                 Previous Page
               </Button>
               <div className="vocab-page-numbers">
-                {Array.from({ length: resultPage.totalPages }, (_, i) => i + 1).map((pageNum) => (
-                  <button
-                    key={pageNum}
-                    type="button"
-                    className={`vocab-page-btn ${resultPage.page === pageNum ? 'active' : ''}`}
-                    aria-current={resultPage.page === pageNum ? 'page' : undefined}
-                    aria-label={`Page ${pageNum}`}
-                    onClick={() => setPage(pageNum)}
-                  >
-                    {pageNum}
-                  </button>
-                ))}
+                {pageWindow.map((p, idx) =>
+                  p === 'ellipsis' ? (
+                    <span key={`ellipsis-${idx}`} className="vocab-pagination-ellipsis" aria-hidden="true">
+                      …
+                    </span>
+                  ) : (
+                    <button
+                      key={p}
+                      type="button"
+                      className={`vocab-page-btn ${resultPage.page === p ? 'active' : ''}`}
+                      aria-current={resultPage.page === p ? 'page' : undefined}
+                      aria-label={`Page ${p}`}
+                      onClick={() => setPage(p)}
+                    >
+                      {p}
+                    </button>
+                  )
+                )}
               </div>
               <Button
                 kind="secondary"

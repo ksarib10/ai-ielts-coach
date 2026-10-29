@@ -837,6 +837,9 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
 .vocab-page-numbers {
   display:flex; flex-wrap:wrap; align-items:center; gap:6px;
 }
+.vocab-pagination-ellipsis {
+  padding:0 6px; font-weight:700; color:var(--color-muted); user-select:none;
+}
 .vocab-page-btn {
   min-width:38px; min-height:38px; padding:4px 10px; border-radius:8px;
   border:1px solid var(--color-control-border);

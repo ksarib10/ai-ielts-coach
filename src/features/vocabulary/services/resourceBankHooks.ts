@@ -62,7 +62,11 @@ function resolveDefaultDataMode(): ResourceBankDataMode {
         return stored;
       }
     }
-    if (metaEnv?.VITE_RESOURCE_BANK_MODE === 'PRIVATE_DEV_REAL_DATA') {
+    if (metaEnv?.VITE_RESOURCE_BANK_MODE === 'MOCK_DATA_ONLY') {
+      return 'MOCK_DATA_ONLY';
+    }
+    // In local development browser, default to PRIVATE_DEV_REAL_DATA
+    if (typeof window !== 'undefined') {
       return 'PRIVATE_DEV_REAL_DATA';
     }
   } catch {
@@ -442,3 +446,4 @@ export function useAttributionRegistry() {
 
   return { registry, isLoading, error };
 }
+

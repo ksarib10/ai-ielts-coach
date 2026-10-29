@@ -10,6 +10,7 @@ import { LearningHub, LessonPage } from './features/Learning';
 import { ModuleLibrary, WorkspaceRoute } from './features/Modules';
 import { LearnCatalog, LearnCategoryPage } from './features/discovery/screens/LearnCatalog';
 import { AllVocabularyExplorerScreen, VocabularyHubScreen } from './features/vocabulary/screens/VocabularyExplorer';
+import { ResourceBankContextProvider } from './features/vocabulary/services/resourceBankHooks';
 import { SkillHub, SkillInformation } from './features/discovery/screens/SkillHub';
 import { IELTSAbout, IELTSAboutTopic } from './features/discovery/screens/IELTSAbout';
 import { discoveryRoutes } from './features/discovery/routes';
@@ -47,7 +48,7 @@ function LegacyTask({ module }: { module: 'writing' | 'speaking' }) {
   const allowed = module === 'writing' ? ['1', '2', 'letter'] : ['1', '2', '3'];
   return <Navigate to={`/${module}/practice/${module}-${allowed.includes(id) ? id : '2'}`} replace/>;
 }
-export default function App() { return <HashRouter><RoutePolicy><LoadingPreview><PageErrorBoundary><Routes>
+export default function App() { return <HashRouter><RoutePolicy><LoadingPreview><PageErrorBoundary><ResourceBankContextProvider><Routes>
   <Route path="/" element={<Landing/>}/><Route path="/login" element={<Auth kind="login"/>}/><Route path="/signup" element={<Auth kind="signup"/>}/><Route path="/register" element={<Navigate to="/signup" replace/>}/><Route path="/forgot-password" element={<Auth kind="forgot"/>}/>
   <Route path="/onboarding" element={<Onboarding/>}/><Route path="/diagnostic" element={<Diagnostic/>}/><Route path="/diagnostic/results" element={<DiagnosticStatus/>}/><Route path="/dashboard" element={<Dashboard/>}/>
   <Route path={discoveryRoutes.learn} element={<LearnCatalog/>}/><Route path={discoveryRoutes.vocabularyHub} element={<VocabularyHubScreen/>}/><Route path={discoveryRoutes.vocabularyExplorer} element={<AllVocabularyExplorerScreen/>}/><Route path={discoveryRoutes.vocabularyCategoryExplorer} element={<AllVocabularyExplorerScreen/>}/><Route path={discoveryRoutes.category} element={<LearnCategoryPage/>}/><Route path={discoveryRoutes.lessons} element={<LearningHub/>}/><Route path={discoveryRoutes.about} element={<IELTSAbout/>}/><Route path={discoveryRoutes.aboutTopic} element={<IELTSAboutTopic/>}/><Route path="/learn/:id" element={<LessonPage/>}/><Route path="/practice" element={<LearningHub practice/>}/><Route path="/practice/activity-library" element={<ActivityLibrary/>}/>
@@ -62,7 +63,7 @@ export default function App() { return <HashRouter><RoutePolicy><LoadingPreview>
   <Route path="/results/:id" element={<AttemptResults/>}/><Route path="/progress" element={<Progress/>}/><Route path={discoveryRoutes.readiness} element={<Readiness/>}/><Route path="/readiness" element={<Navigate to={discoveryRoutes.readiness} replace/>}/><Route path="/mock-tests" element={<MockTests/>}/><Route path="/exam" element={<ExamCenter/>}/><Route path="/exam/setup" element={<ExamSetup/>}/><Route path="/exam/attempt/:attemptId" element={<ExamAttempt/>}/><Route path="/exam/result/:attemptId" element={<ExamResult/>}/><Route path="/exam-simulation" element={<Navigate to="/exam" replace/>}/>
   <Route path="/ai-coach" element={<CoachPage/>}/><Route path="/saved" element={<Vocabulary/>}/><Route path="/vocabulary" element={<Vocabulary/>}/><Route path="/settings" element={<Settings/>}/><Route path="/profile" element={<Navigate to="/settings" replace/>}/><Route path="/mistakes" element={<Navigate to="/progress" replace/>}/>
   <Route path="*" element={<AppShell><EmptyState title="This page isn’t available" detail="Use the navigation to continue learning, or return to your dashboard." action="Go to dashboard" onAction={() => { window.location.hash = '/dashboard'; }}/></AppShell>}/>
-</Routes></PageErrorBoundary></LoadingPreview></RoutePolicy></HashRouter>; }
+</Routes></ResourceBankContextProvider></PageErrorBoundary></LoadingPreview></RoutePolicy></HashRouter>; }
 
 
 
