@@ -1,5 +1,24 @@
 # Routes and states
 
+## Learn Category Collections & Real Resource Bank Delta — 2026-10-29
+
+The `/learn/category/:categoryId` family is fully expanded to render tailored collection exploration screens powered by the real normalized vocabulary provider (`src/features/discovery/screens/LearnCategoryCollections.tsx` wired into `LearnCatalog.tsx`):
+
+| Category Slug | Screen Name & Behavior | Data Provider Connection |
+|---|---|---|
+| `/learn/category/vocabulary` | Vocabulary Hub & All Vocabulary Explorer | Oxford 3000/5000: 10,270 entries, 44 detail shards, 41 search index shards. A–Z bar, CEFR/POS filters, search, word cards with definitions & examples |
+| `/learn/category/awl` | Academic Word Families Screen | 570 canonical AWL word families across 10 sublists and 57 ten-family study groups (`AWL_GRP_01`–`AWL_GRP_57`), with 3,112 verified morphological headwords and inflected forms |
+| `/learn/category/phrasal-verbs` | Phrasal Verbs Topic Decks | 129 curated phrasal verbs across 14 topic decks (Education, Work, Technology, Environment, etc.), with transitivity, separability, and collocations |
+| `/learn/category/idioms` | Idioms Handbook Screen | 122 curated idioms categorized across 3 difficulty tiers (57 Easy, 55 Intermediate, 10 Advanced) with literal/figurative definitions, IELTS speaking context, and example sentences |
+| `/learn/category/linking-words` | Linking Words & Connectors Screen | 100 connectors across 5 functional categories (20 each: Cause/Effect, Concession, Concluding/Summarising, Contrast, Exemplifying/Illustrating) with grammatical types and register guidance |
+| `/learn/category/british-american` | British vs American Variations Screen | 606 regional variant pairs across 16 categories with split provenance resolver (`provenance_resolver_part1.json` for pairs 1–303, `provenance_resolver_part2.json` for pairs 304–606) providing UK/US spelling, vocabulary, and phonetic differences with IELTS band scoring guidance |
+| `/learn/category/collocations` | Academic Collocations Screen | Filtered view surfacing verified source-backed collocations from Oxford entries |
+| `/learn/category/ted`, `/grammar-tenses`, `/irregular-verbs` | Truthful Category Fallback | Explicit `PLANNED` or `SAMPLE` state with contextual guidance, preserving truthful availability states without fabricating unverified content |
+
+All collection screens use the accessible dual-purple theme, support responsive desktop/mobile viewports, and include empty/error fallback states.
+
+---
+
 ## IELTS About route content delta — 2026-10-28, Content Pack v1.1
 
 All nine `/ielts-about/:topicId` slugs (`what-is-ielts`, `academic-general`, `test-format`, `sections-duration`, `bands`, `registration-test-day`, `computer-paper`, `accessibility`, `faqs`) remain unchanged and render comprehensive, self-contained educational reference guides via `AboutTopicBody` (`src/features/discovery/about/AboutPages.tsx`). Unknown `/ielts-about/:topicId` paths continue to recover safely via `UnknownDiscoveryScreen`. `/ielts-about/test-format` provides client-side skill tabs (`Listening`, `Reading`, `Writing`, `Speaking`) and keyboard-accessible question-type accordions (6 Listening, 11 Academic Reading). `/ielts-about/faqs` provides client-side search and topic-chip filtering across 18 FAQ items (categorized under Basics, Format, Scoring, Test day, Access and delivery) with distinct purple block buttons and Show/Hide toggle indicators. Internal navigation links connect related About guides (e.g. from Format FAQs to Test format and Duration). All external source links are validated as `https:` and open with `target="_blank" rel="noopener noreferrer"`.

@@ -2,7 +2,7 @@ import type { Module } from '../../../domain';
 import type { CatalogEntry, CatalogSource, LearnCategory, SkillActivity, SkillTarget, CatalogIcon } from '../types';
 const planned=(id:string,title:string,description:string,icon:CatalogIcon):LearnCategory=>({id,title,description,icon,availability:'PLANNED',actions:[]});
 const learn:readonly LearnCategory[]=[
- {id:'vocabulary',title:'Vocabulary',description:'Build useful word choices and revisit the words you save.',icon:'words',availability:'SAMPLE',actions:[{label:'My saved vocabulary',href:'/saved'},{label:'Vocabulary sample lessons',href:'/learn/lessons?category=Vocabulary'}]},
+ {id:'vocabulary',title:'Vocabulary',description:'Build useful word choices and revisit the words you save.',icon:'words',availability:'SAMPLE',actions:[{label:'All Vocabulary Explorer',href:'/learn/vocabulary/all'},{label:'My saved vocabulary',href:'/saved'},{label:'Vocabulary sample lessons',href:'/learn/lessons?category=Vocabulary'}]},
  planned('awl','Academic Word List (AWL)','Explore academic word families in a future verified collection.','book'),
  planned('ted','TED Talk Learning','Develop listening and language skills with future reviewed talks.','video'),
  {id:'grammar-tenses',title:'Grammar & Tenses',description:'Practise clear sentence patterns with the existing grammar samples.',icon:'grammar',availability:'SAMPLE',actions:[{label:'Grammar sample lessons',href:'/learn/lessons?category=Grammar'}]},

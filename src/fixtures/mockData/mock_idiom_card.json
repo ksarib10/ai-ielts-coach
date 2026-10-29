@@ -1,0 +1,20 @@
+{
+  "idiom_id": "MOCK_IDI_001_synthetic_break_the_ice",
+  "raw_source_id": 901,
+  "idiom": "Break the ice",
+  "category": "Communication",
+  "difficulty": "Intermediate",
+  "ielts_usage_raw": "Speaking Part 1, Speaking Part 2",
+  "ielts_usage_tags": [
+    "Speaking Part 1",
+    "Speaking Part 2"
+  ],
+  "definition": "To initiate conversation and help people feel relaxed in an unfamiliar setting.",
+  "example_sentence": "The introductory speaking activity was designed to break the ice among candidates.",
+  "provenance": {
+    "source_file": "synthetic_mock_idioms.json",
+    "source_sha256": "mock_fixture_non_proprietary",
+    "transform_version": "stage_4b_v2.1",
+    "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+  }
+}

@@ -1,5 +1,22 @@
 # Feature registry
 
+## Real Resource Bank Normalized Vocabulary Integration — 2026-10-29
+
+Full real-data provider implementation across all six canonical vocabulary collections (11,797 records) on branch `feat/resource-bank-real-provider`.
+
+| Feature / Collection | Real Provider Implementation | Evidence / Remaining Boundary | Status |
+|---|---|---|---|
+| F12 Learn / Vocabulary (Oxford 3000/5000) | 10,270 canonical entries across 44 detail shards and 41 search index shards; A–Z navigation, CEFR (A1–C1), POS, Oxford 3000/5000 filters, definition/example drawer | Lazy first-page load (<500 KB, 2 requests); letter 'X' shortcut (0 requests); Bounded 5-shard LRU cache | IMPLEMENTED_AND_TESTED, OWNER REVIEW PENDING |
+| F12 Learn / AWL | 570 canonical word families across 10 sublists and 57 ten-family study groups (`AWL_GRP_01`–`AWL_GRP_57`); 3,112 morphological headwords and forms | Tested against `awl_families.json` and `awl_manifest.json` | IMPLEMENTED_AND_TESTED, OWNER REVIEW PENDING |
+| F12 Learn / Idioms Handbook | 122 curated idioms across 3 difficulty tiers (57 Easy, 55 Intermediate, 10 Advanced); definitions, context, and examples | Filterable by difficulty; CEFR strictly separated | IMPLEMENTED_AND_TESTED, OWNER REVIEW PENDING |
+| F12 Learn / Phrasal Verbs | 129 entries across 14 topic decks; separability and transitivity filters | Tested against `phrasal_verbs.json` and topic index | IMPLEMENTED_AND_TESTED, OWNER REVIEW PENDING |
+| F12 Learn / Linking Words | 100 connectors across 5 functional categories (20 each: Cause/Effect, Concession, Concluding, Contrast, Exemplifying) | Category tabs, grammatical types, and register notes | IMPLEMENTED_AND_TESTED, OWNER REVIEW PENDING |
+| F12 Learn / British & American | 606 regional variant pairs across 16 categories with split provenance resolver (`part1` & `part2`); UK/US spelling & IELTS scoring notes | Full pair resolution tested; zero missing cards | IMPLEMENTED_AND_TESTED, OWNER REVIEW PENDING |
+| F12 Learn / Collocations | Academic Collocations Screen surfacing verified Oxford entries | Dynamic collocation chips from verified source records | IMPLEMENTED_AND_TESTED, OWNER REVIEW PENDING |
+| Resource Bank Provider Core | `RealResourceBankProvider` with Bounded LRU cache (max 5 shards), AbortSignal cancellation, dev-only Vite middleware (`privateDataDevPlugin`), fail-closed production builds (`MOCK_DATA_ONLY`) | `qa/resource-bank-provider.test.mjs` (11 suites PASS), `verify_build_assets.py` passes | IMPLEMENTED_AND_TESTED, OWNER REVIEW PENDING |
+
+---
+
 ## IELTS About complete content enrichment — 2026-10-28, Content Pack v1.1
 
 All nine `/ielts-about/:topicId` routes (`what-is-ielts`, `academic-general`, `test-format`, `sections-duration`, `bands`, `registration-test-day`, `computer-paper`, `accessibility`, `faqs`) now render comprehensive, self-contained educational reference guides from static versioned JSON (`src/content/ielts-about/`). All 458 source records from the 13 original CSV sources are systematically accounted for in `src/content/ielts-about/coverage.ts`: 439 included in candidate-facing explanations, 14 consolidated duplicates, and 5 withheld for documented policy reasons (March 2026 paper phaseout and promotional marketing claims). The content is structured into 83 rich highlights (preserving all 66 original starter IDs) with bulleted breakdowns, comparison tables, and internal discovery links. `/ielts-about/test-format` includes four WAI-ARIA skill tabs (`Listening | Reading | Writing | Speaking`) with six expandable Listening question types and eleven expandable Academic Reading question types matching visual interaction specifications. `/ielts-about/faqs` contains 18 comprehensive FAQs, including the four visual-reference questions under Format with inline explanations, internal guide links, and distinct purple pill accordion buttons with Show/Hide toggle indicators. Content remains tagged `DRAFT_PARAPHRASE_OWNER_REVIEW_REQUIRED`; `REFERENCE_PENDING` catalog metadata is preserved until owner editorial acceptance. No raw CSV archive or manifests are bundled into client assets.

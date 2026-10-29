@@ -1,0 +1,30 @@
+{
+  "source_id": "MOCK_SRC_OPEN_ACADEMIC_01",
+  "provider_name": "Mock Academic Lexical Resource Project",
+  "associated_collections": [
+    "COLL_MOCK_VOCAB"
+  ],
+  "usage_scope": "Educational Development Mock Fixture (Non-production UI testing)",
+  "verification_status": "OWNER_REPORTED_PENDING_PRIVATE_SIGNOFF",
+  "acknowledgment_text": "Sample lexical resource fixture modeled for local UI development. Terms pending private owner review and formal licensing signoff.",
+  "source_links": [
+    {
+      "label": "Mock Project Specification",
+      "url": "https://example.org/mock-academic-resource",
+      "access_mode": "EXTERNAL_LINK_OUT_ONLY"
+    }
+  ],
+  "video_links": [
+    {
+      "label": "Mock Project Overview Video (External)",
+      "url": "https://example.org/mock-academic-resource/overview-video",
+      "access_mode": "EXTERNAL_LINK_OUT_ONLY"
+    }
+  ],
+  "display_zones": [
+    "/credits",
+    "LearnCardModal"
+  ],
+  "media_policy": "EXTERNAL_LINK_ONLY",
+  "launch_review_notes": "Unbranded mock fixture. No trademark or commercial rights claimed. Real provider attributions are maintained off-agent in private launch registry."
+}

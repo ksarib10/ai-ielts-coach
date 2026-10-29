@@ -1,0 +1,148 @@
+{
+  "items": [
+    {
+      "id": "MOCK_OXF_001_synthetic_achieve",
+      "term": "achieve",
+      "normalized_term": "achieve",
+      "search_aliases": [
+        "achieve",
+        "attain",
+        "reach"
+      ],
+      "entity_type": "oxford",
+      "cefr_level": "B1",
+      "difficulty": null,
+      "pos": "Verb",
+      "pos_code": "v",
+      "edition": "UKEnglish",
+      "category": null,
+      "topic_code": null,
+      "skills": [
+        "Writing Task 1",
+        "Writing Task 2",
+        "Speaking"
+      ],
+      "direct_skills": [
+        "Writing Task 1",
+        "Writing Task 2",
+        "Speaking"
+      ],
+      "skill_mappings": [
+        {
+          "skill": "Writing Task 1",
+          "evidence": "source_tagged",
+          "approval_status": "SOURCE_VERIFIED"
+        },
+        {
+          "skill": "Writing Task 2",
+          "evidence": "source_tagged",
+          "approval_status": "SOURCE_VERIFIED"
+        },
+        {
+          "skill": "Speaking",
+          "evidence": "source_tagged",
+          "approval_status": "SOURCE_VERIFIED"
+        }
+      ],
+      "target_file": "DEVELOPMENT_FIXTURES/mock_oxford_card.json"
+    },
+    {
+      "id": "MOCK_AWL_FAM_01_analyze_demo",
+      "term": "analyze_demo",
+      "normalized_term": "analyze_demo",
+      "search_aliases": [
+        "analysis_demo",
+        "analyst_demo"
+      ],
+      "entity_type": "awl",
+      "cefr_level": null,
+      "difficulty": null,
+      "pos": "Family",
+      "pos_code": "awl",
+      "edition": "Both",
+      "category": "Sublist 1",
+      "topic_code": "s01",
+      "skills": [
+        "Writing Task 2"
+      ],
+      "direct_skills": [],
+      "skill_mappings": [
+        {
+          "skill": "Writing Task 2",
+          "evidence": "proposed_unreviewed",
+          "approval_status": "PROPOSED_UNREVIEWED",
+          "pedagogical_rationale": "High-frequency academic family recommended for Academic Writing Task 2."
+        }
+      ],
+      "target_file": "DEVELOPMENT_FIXTURES/mock_awl_group.json"
+    },
+    {
+      "id": "MOCK_IDI_001_synthetic_break_the_ice",
+      "term": "Break the ice",
+      "normalized_term": "break the ice",
+      "search_aliases": [
+        "break ice"
+      ],
+      "entity_type": "idiom",
+      "cefr_level": null,
+      "difficulty": "Intermediate",
+      "pos": "Idiom",
+      "pos_code": "idiom",
+      "edition": "Both",
+      "category": "Communication",
+      "topic_code": null,
+      "skills": [
+        "Speaking Part 1",
+        "Speaking Part 2"
+      ],
+      "direct_skills": [
+        "Speaking Part 1",
+        "Speaking Part 2"
+      ],
+      "skill_mappings": [
+        {
+          "skill": "Speaking Part 1",
+          "evidence": "source_tagged",
+          "approval_status": "SOURCE_VERIFIED"
+        },
+        {
+          "skill": "Speaking Part 2",
+          "evidence": "source_tagged",
+          "approval_status": "SOURCE_VERIFIED"
+        }
+      ],
+      "target_file": "DEVELOPMENT_FIXTURES/mock_idiom_card.json"
+    }
+  ],
+  "totalMatches": 3,
+  "page": 1,
+  "pageSize": 20,
+  "totalPages": 1,
+  "hasMore": false,
+  "facets": {
+    "cefr": {
+      "B1": 1,
+      "unassigned": 2
+    },
+    "difficulty": {
+      "Intermediate": 1
+    },
+    "pos": {
+      "Verb": 1,
+      "Family": 1,
+      "Idiom": 1
+    },
+    "skills": {
+      "Writing Task 1": 1,
+      "Writing Task 2": 2,
+      "Speaking": 1,
+      "Speaking Part 1": 1,
+      "Speaking Part 2": 1
+    },
+    "entityTypes": {
+      "oxford": 1,
+      "awl": 1,
+      "idiom": 1
+    }
+  }
+}

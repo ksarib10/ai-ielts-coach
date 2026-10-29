@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/run_build_guard.mjs",
+    "predeploy": "node scripts/run_build_guard.mjs",
     "preview": "vite preview",
-    "test": "node qa/domain.test.mjs && node qa/state.test.mjs && node qa/diagnostic.test.mjs && node qa/readiness.test.mjs && node qa/ielts-reference.test.mjs && node qa/exam.test.mjs && node qa/foundation.test.mjs && node qa/discovery.test.mjs && node qa/theme.test.mjs"
+    "test": "node qa/domain.test.mjs && node qa/state.test.mjs && node qa/diagnostic.test.mjs && node qa/readiness.test.mjs && node qa/ielts-reference.test.mjs && node qa/exam.test.mjs && node qa/foundation.test.mjs && node qa/discovery.test.mjs && node qa/theme.test.mjs && node qa/vocabulary.test.mjs && node qa/resource-bank-provider.test.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
