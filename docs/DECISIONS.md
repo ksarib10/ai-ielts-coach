@@ -1,5 +1,17 @@
 # Decisions
 
+## Real Resource Bank & Normalized Vocabulary Provider Architecture — 2026-10-29
+
+- **APPROVED SCOPE / IMPLEMENTED_AND_TESTED, HUMAN ACCEPTANCE PENDING:** Integration of the real normalized vocabulary collections (11,797 canonical records across 6 collections) on branch `feat/resource-bank-real-provider`, per the owner's instruction.
+- **Provider Architecture Decision:** Implemented `RealResourceBankProvider` adhering strictly to `IResourceBankProvider`. Replaced static mock arrays with an asynchronous shard-based loader that fetches JSON slices on demand.
+- **Dev Middleware vs Bundle Decision:** Shard datasets reside in `Learning-data-preprocessing-automation/OUTPUTS/` (outside Vite's bundle root). A custom Vite plugin `privateDataDevPlugin` (`apply: 'serve'` only) serves these files during local development at `/api/private-data/*`. The private folder is strictly excluded from production builds and git tracking, avoiding shipping a 13 MB JSON payload in the client bundle.
+- **Security & Asset Quarantine Decision:** In `vite.config.ts`, `server.fs.deny` blocks access to `Learning-data-preprocessing-automation/**`, while `scripts/verify_build_assets.py` enforces zero leakage of canonical IDs or raw CSV filenames in compiled `dist/` files. Requests for `quarantine` or `idioms_grouped` return HTTP 403 Forbidden. Public production deployments fail-closed to `MockResourceBankProvider` (`MOCK_DATA_ONLY`).
+- **Memory Management Decision:** Governed by `BoundedShardLRUCache`, which limits resident shards to 5 in memory, invalidating old entries on LRU eviction and managing TTL and `syncVersion` consistency. First-page loading is restricted to <500 KB across at most 2 initial shard requests.
+- **Honest Availability Decision:** Letter 'X' has 0 words in the source Oxford bank and resolves immediately with zero network requests. Unavailable categories (`ted`, `grammar-tenses`, `irregular-verbs`) maintain truthful `PLANNED` and `SAMPLE` availability indicators without fabricating non-existent content.
+- **Branch & Gate Decision:** Work performed on `feat/resource-bank-real-provider`. STOP after local verification; no push, merge, or deployment without explicit owner review.
+
+---
+
 ## Theme remediation execution — 2026-10-28
 
 Owner authorized styling/theme architecture/accessibility presentation fixes and focused tests only. Executed on `fix/theme-consistency-contrast` from current clean main `f548c54d2c916e7bfcc18d0e62231f0d8bf83e3c`, preserving the completed Slice 2. Decision: fix hard-coded legacy colors at source, resolve palette aliases centrally, pair informational and action foregrounds correctly, prevent cross-theme color interpolation and retain layout/behavior. A small light border-token adjustment addresses measured contrast; purple identity remains provisional pending owner inspection. No JS/TSX application logic, routes, questions, scoring, timing, media, storage schema, dependencies or candidates changed. No remote/config/security change, merge/push/deploy. This authorization does not release Diagnostic V1, Stage2 or resource ingestion. [Actual evidence/report](reviews/stage-1b/theme-consistency/THEME_CONSISTENCY_REMEDIATION_REPORT.md).

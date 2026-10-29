@@ -213,14 +213,18 @@ export interface CanonicalBritishAmericanPair {
   raw_source_id: number;
   category: string;
   category_slug: string;
-  british_word_raw: string;
-  british_word_primary: string;
-  british_word_variants: string[];
-  american_word_raw: string;
-  american_word_primary: string;
-  american_word_variants: string[];
+  british_word_raw?: string;
+  british_word_primary?: string;
+  british_primary?: string;
+  british_word_variants?: string[];
+  british_variants?: string[];
+  american_word_raw?: string;
+  american_word_primary?: string;
+  american_primary?: string;
+  american_word_variants?: string[];
+  american_variants?: string[];
   is_multivariant: boolean;
-  provenance: CanonicalProvenanceRecord;
+  provenance?: CanonicalProvenanceRecord;
 }
 
 export interface AWLStudyGroupHeader {
@@ -412,14 +416,19 @@ export function adaptCanonicalPhrasalToUI(entry: CanonicalPhrasalVerbEntry): UIP
 }
 
 export function adaptCanonicalVariantToUI(entry: CanonicalBritishAmericanPair): UIVariantCard {
+  const bPrimary = entry.british_primary || entry.british_word_primary || '';
+  const bVariants = entry.british_variants || entry.british_word_variants || (bPrimary ? [bPrimary] : []);
+  const aPrimary = entry.american_primary || entry.american_word_primary || '';
+  const aVariants = entry.american_variants || entry.american_word_variants || (aPrimary ? [aPrimary] : []);
+
   return {
     id: entry.variant_id,
     category: entry.category,
     category_slug: entry.category_slug,
-    british_word: entry.british_word_primary,
-    british_variants: entry.british_word_variants || [entry.british_word_primary],
-    american_word: entry.american_word_primary,
-    american_variants: entry.american_word_variants || [entry.american_word_primary],
+    british_word: bPrimary,
+    british_variants: bVariants,
+    american_word: aPrimary,
+    american_variants: aVariants,
     is_multivariant: entry.is_multivariant,
     regional_variation_notice: 'Regional Terminology & Spelling (Standard English variation, not an error)'
   };
@@ -494,6 +503,7 @@ export interface SearchQuery {
   pageSize?: number;
   sortBy?: 'relevance' | 'alphabetical' | 'cefr' | 'difficulty';
   sortOrder?: 'asc' | 'desc';
+  signal?: AbortSignal;
 }
 
 export interface SearchResultPage<T = CompactSearchItem> {
@@ -524,6 +534,11 @@ export interface DetailResolverResponse<T> {
   error?: string;
 }
 
+export type ShardTransport = (
+  relativePath: string,
+  options?: { signal?: AbortSignal }
+) => Promise<unknown>;
+
 export interface ResourceBankProviderConfig {
   baseUrl: string;
   enableCache?: boolean;
@@ -531,6 +546,8 @@ export interface ResourceBankProviderConfig {
   maxShardsInMemory?: number;
   fallbackToMocksOnError?: boolean;
   accessTier: AccessTier;
+  transport?: ShardTransport;
+  expectedTransformVersion?: string;
 }
 
 export type ResolvedUIDetail =
@@ -543,15 +560,226 @@ export type ResolvedUIDetail =
 
 export interface IResourceBankProvider {
   search(query: SearchQuery): Promise<SearchResultPage<CompactSearchItem>>;
-  resolveWordDetail(entryId: string): Promise<DetailResolverResponse<UIOxfordCard>>;
-  resolveSearchItemDetail(item: CompactSearchItem): Promise<DetailResolverResponse<ResolvedUIDetail>>;
-  getAWLSublist(sublistNumber: number): Promise<CanonicalAWLFamily[]>;
-  getAWLStudyGroup(groupId: string): Promise<UIAWLStudyGroup>;
-  getIdioms(difficulty?: IdiomDifficulty, category?: string): Promise<UIIdiomCard[]>;
-  getLinkingWords(functionCategory?: string): Promise<UILinkingCard[]>;
-  getPhrasalVerbs(topic?: string): Promise<UIPhrasalCard[]>;
-  getRegionalVariants(category?: string): Promise<UIVariantCard[]>;
-  getAttributionRequirements(): Promise<SourceAttributionRegistry>;
+  resolveWordDetail(
+    entryId: string,
+    options?: { signal?: AbortSignal }
+  ): Promise<DetailResolverResponse<UIOxfordCard>>;
+  resolveSearchItemDetail(
+    item: CompactSearchItem,
+    options?: { signal?: AbortSignal }
+  ): Promise<DetailResolverResponse<ResolvedUIDetail>>;
+  getAWLSublist(
+    sublistNumber: number,
+    options?: { signal?: AbortSignal }
+  ): Promise<CanonicalAWLFamily[]>;
+  getAWLStudyGroup(
+    groupId: string,
+    options?: { signal?: AbortSignal }
+  ): Promise<UIAWLStudyGroup>;
+  getIdioms(
+    difficulty?: IdiomDifficulty,
+    category?: string,
+    options?: { signal?: AbortSignal }
+  ): Promise<UIIdiomCard[]>;
+  getLinkingWords(
+    functionCategory?: string,
+    options?: { signal?: AbortSignal }
+  ): Promise<UILinkingCard[]>;
+  getPhrasalVerbs(
+    topic?: string,
+    options?: { signal?: AbortSignal }
+  ): Promise<UIPhrasalCard[]>;
+  getRegionalVariants(
+    category?: string,
+    options?: { signal?: AbortSignal }
+  ): Promise<UIVariantCard[]>;
+  getAttributionRequirements(
+    options?: { signal?: AbortSignal }
+  ): Promise<SourceAttributionRegistry>;
+}
+
+// ============================================================================
+// 7B. MANIFEST & SHARD METADATA SCHEMAS
+// ============================================================================
+
+export interface ResourceBankManifestCollection {
+  collection_id: string;
+  collection_name: string;
+  source_file: string;
+  records_count: number;
+  access_tier: string;
+  rights_status: string;
+  retrieval_eligible?: boolean;
+  [key: string]: unknown;
+}
+
+export interface ResourceBankManifest {
+  metadata: {
+    title: string;
+    stage: string;
+    transform_version: string;
+    access_tier: string;
+    rights_status: string;
+    distribution_policy: string;
+    scope: string;
+  };
+  collections: ResourceBankManifestCollection[];
+}
+
+export interface SearchAlphaShardDescriptor {
+  shard_filename: string;
+  relative_path: string;
+  character: string;
+  part_index: number;
+  total_parts: number;
+  records_count: number;
+  size_bytes: number;
+  sha256: string;
+}
+
+export interface SearchFilterDescriptor {
+  name: string;
+  relative_path: string;
+}
+
+export interface SearchIndexManifest {
+  metadata: {
+    title: string;
+    stage: string;
+    transform_version: string;
+    total_indexed_entities: number;
+    total_alpha_shards: number;
+    total_filter_indexes: number;
+    empty_letters: string[];
+    access_tier: string;
+    rights_status: string;
+  };
+  statistics: {
+    by_entity_type: Record<string, number>;
+    by_character: Record<string, number>;
+  };
+  alpha_shards: SearchAlphaShardDescriptor[];
+  filters: SearchFilterDescriptor[];
+}
+
+export interface OxfordDetailShardDescriptor {
+  shard_filename: string;
+  relative_path: string;
+  letter: string;
+  part_index: number;
+  total_parts: number;
+  records_count: number;
+  size_bytes: number;
+  sha256: string;
+}
+
+export interface OxfordDetailManifest {
+  metadata: {
+    title: string;
+    stage: string;
+    total_canonical_records: number;
+    total_shards: number;
+    access_tier: string;
+    max_file_size_bytes_limit: number;
+  };
+  shards: OxfordDetailShardDescriptor[];
+}
+
+export interface AWLSublistDescriptor {
+  sublist: number;
+  filename: string;
+  relative_path: string;
+  family_count: number;
+  study_group_count: number;
+  first_group_id: string;
+  last_group_id: string;
+  size_bytes: number;
+  sha256: string;
+}
+
+export interface AWLManifest {
+  metadata: {
+    title: string;
+    stage: string;
+    transform_version: string;
+    access_tier: string;
+    total_families: number;
+    total_sublists: number;
+    total_study_groups_10: number;
+    group_sizing_rule: string;
+  };
+  sublists: AWLSublistDescriptor[];
+}
+
+export interface SkillFilterManifestEntry {
+  total_items_count: number;
+  source_tagged_count: number;
+  proposed_unreviewed_count: number;
+  all_shard_file: string;
+  direct_source_shard_file: string;
+  proposed_candidate_shard_file: string;
+  size_bytes: number;
+  sha256: string;
+}
+
+export interface SkillFilterManifest {
+  metadata: {
+    title: string;
+    stage: string;
+    sharding_policy: string;
+  };
+  skills: Record<SkillDomain, SkillFilterManifestEntry>;
+}
+
+export interface ProvenanceResolverEntry {
+  variant_id: string;
+  raw_source_id: number;
+  category: string;
+  category_slug: string;
+  british_word_raw: string;
+  british_word_primary: string;
+  american_word_raw: string;
+  american_word_primary: string;
+  is_multivariant: boolean;
+  canonical_file: string;
+  raw_source_file: string;
+  provenance: CanonicalProvenanceRecord;
+}
+
+export interface ProvenanceResolverShardDescriptor {
+  shard_filename: string;
+  relative_path: string;
+  records_count: number;
+  range_start_id: string;
+  range_end_id: string;
+  size_bytes: number;
+  sha256: string;
+}
+
+export interface ProvenanceResolverManifest {
+  metadata: {
+    title: string;
+    stage: string;
+    transform_version: string;
+    total_projections_indexed: number;
+    access_tier: string;
+    rights_status: string;
+    purpose: string;
+    sharding_policy: string;
+  };
+  canonical_source: {
+    filename: string;
+    path: string;
+    sha256: string;
+    records_count: number;
+  };
+  raw_source_csv: {
+    filename: string;
+    path: string;
+    sha256: string;
+    source_rows: number;
+  };
+  shards: ProvenanceResolverShardDescriptor[];
 }
 
 export interface MockFixtureBundle {

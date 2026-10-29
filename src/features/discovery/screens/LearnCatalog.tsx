@@ -1,11 +1,19 @@
-import { Link,useParams,useSearchParams } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { AppShell } from '../../../components/AppShell';
-import { Card,EmptyState,PageHeader } from '../../../components/UI';
+import { Card, EmptyState, PageHeader } from '../../../components/UI';
 import { LearningHub } from '../../Learning';
 import { VocabularyHubScreen } from '../../vocabulary/screens/VocabularyExplorer';
+import {
+  AWLCollectionScreen,
+  BritishAmericanCollectionScreen,
+  CollocationsCollectionScreen,
+  IdiomsCollectionScreen,
+  LinkingWordsCollectionScreen,
+  PhrasalVerbsCollectionScreen
+} from './LearnCategoryCollections';
 import { CatalogCard } from '../components/CatalogCard';
 import { localCatalogSource } from '../services/catalog';
-import { categoryHref,discoveryRoutes } from '../routes';
+import { categoryHref, discoveryRoutes } from '../routes';
 export function LearnCatalog(){
  const [params]=useSearchParams();
  if(params.get('search'))return <LearningHub/>;
@@ -14,6 +22,12 @@ export function LearnCatalog(){
 export function LearnCategoryPage(){
  const {categoryId}=useParams();
  if(categoryId==='vocabulary')return <VocabularyHubScreen/>;
+ if(categoryId==='awl')return <AWLCollectionScreen/>;
+ if(categoryId==='phrasal-verbs')return <PhrasalVerbsCollectionScreen/>;
+ if(categoryId==='idioms')return <IdiomsCollectionScreen/>;
+ if(categoryId==='linking-words')return <LinkingWordsCollectionScreen/>;
+ if(categoryId==='british-american')return <BritishAmericanCollectionScreen/>;
+ if(categoryId==='collocations')return <CollocationsCollectionScreen/>;
  const item=localCatalogSource.learn().find(c=>c.id===categoryId);
  if(!item)return <AppShell><EmptyState title="Category not found" detail="Choose an area from Learn." action="Back to Learn" onAction={()=>{window.location.hash='/learn';}}/></AppShell>;
  const available=item.availability==='SAMPLE';

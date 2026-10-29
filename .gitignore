@@ -37,5 +37,8 @@ qa/.*-test.cjs
 .DS_Store
 Thumbs.db
 Desktop.ini
+# Private raw datasets, canonical outputs, and preprocessing automation (never commit or bundle)
+/Learning-data-preprocessing-automation/
+
 # docs/**/private is versioned development assessment review content, not credentials.
 # Keep source, lockfiles, sample media, JSON/CSV and legitimate project docs trackable.

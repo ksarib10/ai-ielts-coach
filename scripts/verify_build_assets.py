@@ -99,6 +99,8 @@ FORBIDDEN_FILE_PATTERNS = [
     "*quarantine_record*",
     "*quarantined*",
     "*private_canonical*",
+    "*Learning-data-preprocessing-automation*",
+    "*OUTPUTS*",
     "oxford_detail_shard_*.json",
     "letter_*.json",
     "sublist_*.json",

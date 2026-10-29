@@ -1,5 +1,33 @@
 # Data contracts
 
+## Resource Bank Real Provider & Normalized Vocabulary Boundary — 2026-10-29
+
+`src/types/resourceBank.ts` and `src/types/realResourceBankProvider.ts` define the contract for `IResourceBankProvider` and its asynchronous real-data implementation `RealResourceBankProvider` (`createRealResourceBankProvider`).
+
+### 1. Connected Collections & Canonical Record Counts (11,797 Total)
+All six Stage 3 / Stage 4A normalized canonical collections from `Learning-data-preprocessing-automation/OUTPUTS` are connected and queryable:
+- **Oxford 3000/5000 Vocabulary**: 10,270 canonical entries across 44 detail shards and 41 search index shards. Detail records include phonetic transcription, parts of speech, CEFR level (A1–C1), Oxford 3000/5000 tags, definitions, and attested examples.
+- **Academic Word List (AWL)**: 570 canonical word families across 10 sublists and 57 ten-family study groups (`AWL_GRP_01` to `AWL_GRP_57`), with 3,112 verified morphological headwords and inflected forms.
+- **Idioms Handbook**: 122 curated idioms categorized across 3 difficulty tiers (57 Easy, 55 Intermediate, 10 Advanced) with literal/figurative definitions, IELTS speaking context, and example sentences.
+- **Phrasal Verbs Topic Decks**: 129 phrasal verbs across 14 topic decks (Education, Work, Technology, Environment, etc.) with transitivity, separability, definitions, and collocations.
+- **Linking Words & Discourse Markers**: 100 connectors across 5 functional categories (20 each: Cause/Effect, Concession, Concluding/Summarising, Contrast, Exemplifying/Illustrating) with grammatical types and register guidance.
+- **British vs American Regional Variations**: 606 regional variant pairs across 16 categories with split provenance resolver (`provenance_resolver_part1.json` for pairs 1–303, `provenance_resolver_part2.json` for pairs 304–606) providing UK/US spelling, vocabulary, and phonetic differences with IELTS band scoring guidance.
+
+### 2. Provider Abstraction & Shard Caching
+- **Bounded LRU Cache**: Shard transport is governed by `BoundedShardLRUCache`, strictly capping resident shards at a maximum of 5 in memory to ensure low memory footprint on mobile devices.
+- **Cache Invalidation & TTL**: Shards are cached with time-to-live timestamps and unified `syncVersion` invalidation to guarantee consistency when manifests are refreshed.
+- **Lazy First-Page Loading**: Fast-path first page search results require fewer than 500 KB total transport and at most 2 initial shard network requests (`manifest` + `index_a`), avoiding multi-megabyte bundle payloads.
+- **Letter 'X' Shortcut**: Queries for the letter 'X' immediately resolve to 0 records with zero network requests, reflecting the verified empty source letter distribution.
+- **AbortSignal Support**: All asynchronous search and retrieval methods accept an optional `signal: AbortSignal` parameter for client-side cancellation on keystroke debouncing.
+
+### 3. Separation of Concerns & Integrity
+- **Difficulty Separation**: CEFR levels (A1–C2) apply exclusively to vocabulary words and are never conflated with idiom difficulty tiers (Easy/Intermediate/Advanced).
+- **Skill Provenance Separation**: Source-tagged direct IELTS skills (`source_tagged`) are strictly separated from candidate mappings (`proposed_unreviewed`).
+- **Development-Only Private Endpoint**: During local development, shards are served read-only by Vite dev middleware (`privateDataDevPlugin` in `vite.config.ts`, `apply: 'serve'` only) from `Learning-data-preprocessing-automation/OUTPUTS/` via `/api/private-data/*`. Requests for `quarantine` or `idioms_grouped` return HTTP 403 Forbidden.
+- **Production Asset Isolation**: The entire `Learning-data-preprocessing-automation/` folder is strictly excluded from Git tracking (`.gitignore`), denied from public static asset serving (`server.fs.deny`), and validated against string leaks (`scripts/verify_build_assets.py`). Production builds fail-closed to `MockResourceBankProvider` (`MOCK_DATA_ONLY`) when `/api/private-data` is not present, ensuring zero raw data or 13 MB payloads in production bundles.
+
+---
+
 ## Slice 2 UI metadata boundary — 2026-10-28
 
 `src/features/discovery/types.ts` defines CatalogEntry, LearnCategory/actions, SkillActivity/SkillTarget and CatalogSource. The metadata service supplies only titles, descriptions, icons, local availability and existing-route targets. Routes/builders live separately from rendering. CatalogSource is a **local UI metadata seam**, not a finalized content-record, backend or database contract. No CSV rows, Oxford bank, external media, answer keys or candidate scripts are imported. Future normalized records/API adapters still require their own approved source/schema/provider work.
