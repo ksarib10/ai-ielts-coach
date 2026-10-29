@@ -9,6 +9,7 @@ import { Dashboard } from './features/dashboard/screens/Dashboard';
 import { LearningHub, LessonPage } from './features/Learning';
 import { ModuleLibrary, WorkspaceRoute } from './features/Modules';
 import { LearnCatalog, LearnCategoryPage } from './features/discovery/screens/LearnCatalog';
+import { AllVocabularyExplorerScreen, VocabularyHubScreen } from './features/vocabulary/screens/VocabularyExplorer';
 import { SkillHub, SkillInformation } from './features/discovery/screens/SkillHub';
 import { IELTSAbout, IELTSAboutTopic } from './features/discovery/screens/IELTSAbout';
 import { discoveryRoutes } from './features/discovery/routes';
@@ -49,7 +50,7 @@ function LegacyTask({ module }: { module: 'writing' | 'speaking' }) {
 export default function App() { return <HashRouter><RoutePolicy><LoadingPreview><PageErrorBoundary><Routes>
   <Route path="/" element={<Landing/>}/><Route path="/login" element={<Auth kind="login"/>}/><Route path="/signup" element={<Auth kind="signup"/>}/><Route path="/register" element={<Navigate to="/signup" replace/>}/><Route path="/forgot-password" element={<Auth kind="forgot"/>}/>
   <Route path="/onboarding" element={<Onboarding/>}/><Route path="/diagnostic" element={<Diagnostic/>}/><Route path="/diagnostic/results" element={<DiagnosticStatus/>}/><Route path="/dashboard" element={<Dashboard/>}/>
-  <Route path={discoveryRoutes.learn} element={<LearnCatalog/>}/><Route path={discoveryRoutes.category} element={<LearnCategoryPage/>}/><Route path={discoveryRoutes.lessons} element={<LearningHub/>}/><Route path={discoveryRoutes.about} element={<IELTSAbout/>}/><Route path={discoveryRoutes.aboutTopic} element={<IELTSAboutTopic/>}/><Route path="/learn/:id" element={<LessonPage/>}/><Route path="/practice" element={<LearningHub practice/>}/><Route path="/practice/activity-library" element={<ActivityLibrary/>}/>
+  <Route path={discoveryRoutes.learn} element={<LearnCatalog/>}/><Route path={discoveryRoutes.vocabularyHub} element={<VocabularyHubScreen/>}/><Route path={discoveryRoutes.vocabularyExplorer} element={<AllVocabularyExplorerScreen/>}/><Route path={discoveryRoutes.vocabularyCategoryExplorer} element={<AllVocabularyExplorerScreen/>}/><Route path={discoveryRoutes.category} element={<LearnCategoryPage/>}/><Route path={discoveryRoutes.lessons} element={<LearningHub/>}/><Route path={discoveryRoutes.about} element={<IELTSAbout/>}/><Route path={discoveryRoutes.aboutTopic} element={<IELTSAboutTopic/>}/><Route path="/learn/:id" element={<LessonPage/>}/><Route path="/practice" element={<LearningHub practice/>}/><Route path="/practice/activity-library" element={<ActivityLibrary/>}/>
   {modules.map(module => <Route key={module} path={`/${module.toLowerCase()}`} element={<SkillHub module={module}/>}/>)}
   {modules.map(module => <Route key={`${module}-library`} path={`${'/'}${module.toLowerCase()}/library`} element={<ModuleLibrary module={module}/>}/>)}
   {modules.map(module => <Route key={`${module}-criteria`} path={`${'/'}${module.toLowerCase()}/scoring-criteria`} element={<SkillInformation module={module} criteria/>}/>)}

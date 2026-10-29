@@ -1,0 +1,37 @@
+{
+  "linking_id": "MOCK_LNK_001_synthetic_furthermore",
+  "raw_source_id": "MOCK_LNK_SRC_001",
+  "function_category": "Adding Information",
+  "function_code": "add",
+  "linking_phrase": "furthermore",
+  "linking_phrase_clean": "furthermore",
+  "grammatical_type": "Adverbial Connector",
+  "meaning": "in addition to what has previously been stated",
+  "ielts_usage_raw": "Writing Task 2, Speaking Part 3",
+  "ielts_usage_tags": [
+    "Writing Task 2",
+    "Speaking Part 3"
+  ],
+  "cefr_level": "B2",
+  "formality": "Formal",
+  "sentence_position": "Sentence Initial",
+  "grammar_pattern": "Furthermore, + independent clause",
+  "common_usage": "Used to introduce a stronger or additional supporting point in formal essays.",
+  "similar_connectors_raw": "moreover, additionally, in addition",
+  "similar_connectors": [
+    "moreover",
+    "additionally",
+    "in addition"
+  ],
+  "opposite_function": "Contrast, Concession",
+  "sample_sentence_ielts": "The research was thoroughly documented; furthermore, the results were replicable.",
+  "sample_sentence_additional": "The proposed measure reduced carbon emissions; furthermore, operational costs declined.",
+  "common_mistakes": "Avoid using furthermore to connect short conversational remarks.",
+  "pedagogical_notes": "High-value cohesive device for formal academic essays.",
+  "provenance": {
+    "source_file": "synthetic_mock_linking.json",
+    "source_sha256": "mock_fixture_non_proprietary",
+    "transform_version": "stage_4b_v2.1",
+    "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+  }
+}

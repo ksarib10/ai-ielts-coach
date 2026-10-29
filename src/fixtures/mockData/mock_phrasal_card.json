@@ -1,0 +1,49 @@
+{
+  "pv_id": "MOCK_PV_001_synthetic_carry_out",
+  "raw_source_id": "MOCK_PV_SRC_001",
+  "topic": "Education & Study",
+  "topic_code": "edu",
+  "phrasal_verb": "carry out",
+  "phrasal_verb_clean": "carry out",
+  "meaning": "to conduct or complete a task, experiment, or investigation",
+  "usage_type": "Idiomatic",
+  "ielts_usage_raw": "Writing Task 1, Writing Task 2, Reading",
+  "ielts_usage_tags": [
+    "Writing Task 1",
+    "Writing Task 2",
+    "Reading"
+  ],
+  "cefr_level": "B2",
+  "formality": "Formal",
+  "common_pattern": "carry out + noun phrase",
+  "separable": "Yes",
+  "transitivity": "Transitive",
+  "synonyms_raw": "conduct, execute, implement",
+  "synonyms": [
+    "conduct",
+    "execute",
+    "implement"
+  ],
+  "antonyms_raw": "neglect, abandon",
+  "antonyms": [
+    "neglect",
+    "abandon"
+  ],
+  "collocations_raw": "carry out research, carry out a survey, carry out an experiment",
+  "collocations": [
+    "carry out research",
+    "carry out a survey",
+    "carry out an experiment"
+  ],
+  "sample_sentence_ielts": "Researchers carried out a controlled investigation into language acquisition.",
+  "sample_sentence_additional": "The university committee plans to carry out an annual academic review.",
+  "common_mistakes": "Using it for physical carrying instead of task execution.",
+  "memory_tip": "Think of executing a task and carrying results outward.",
+  "notes": "High-frequency academic phrasal verb.",
+  "provenance": {
+    "source_file": "synthetic_mock_phrasal.json",
+    "source_sha256": "mock_fixture_non_proprietary",
+    "transform_version": "stage_4b_v2.1",
+    "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+  }
+}

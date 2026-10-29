@@ -48,7 +48,7 @@ export function mutateLearning(fn: (state: LearningState) => void, requirePersis
   try { localStorage.setItem(KEY, JSON.stringify(next)); storageError = ''; } catch { storageError = 'Changes could not be saved on this device. Free some browser storage, then try again.'; if (requirePersistence) throw new Error(storageError); }
   cached = next; listeners.forEach(fn => fn()); return next;
 }
-export const useLearning = () => useSyncExternalStore(fn => { listeners.add(fn); return () => { listeners.delete(fn); }; }, getLearning);
+export const useLearning = () => useSyncExternalStore(fn => { listeners.add(fn); return () => { listeners.delete(fn); }; }, getLearning, getLearning);
 export function resetLearning() {
   let failed = false;
   try {

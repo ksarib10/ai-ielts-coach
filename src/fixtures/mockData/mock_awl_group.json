@@ -1,0 +1,304 @@
+{
+  "group_id": "MOCK_AWL_GRP_01",
+  "sublist_number": 1,
+  "group_index": 1,
+  "global_group_index": 1,
+  "title": "Mock Sublist 1 -- Study Group 1",
+  "families_count": 10,
+  "family_ids": [
+    "MOCK_AWL_FAM_01_analyze_demo",
+    "MOCK_AWL_FAM_02_approach_demo",
+    "MOCK_AWL_FAM_03_area_demo",
+    "MOCK_AWL_FAM_04_assess_demo",
+    "MOCK_AWL_FAM_05_assume_demo",
+    "MOCK_AWL_FAM_06_authority_demo",
+    "MOCK_AWL_FAM_07_available_demo",
+    "MOCK_AWL_FAM_08_benefit_demo",
+    "MOCK_AWL_FAM_09_concept_demo",
+    "MOCK_AWL_FAM_10_consist_demo"
+  ],
+  "headwords": [
+    "analyze_demo",
+    "approach_demo",
+    "area_demo",
+    "assess_demo",
+    "assume_demo",
+    "authority_demo",
+    "available_demo",
+    "benefit_demo",
+    "concept_demo",
+    "consist_demo"
+  ],
+  "families": [
+    {
+      "family_id": "MOCK_AWL_FAM_01_analyze_demo",
+      "sublist": 1,
+      "headword": "analyze_demo",
+      "headword_clean": "analyze_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "analyze_demo",
+        "analyze_demod",
+        "analyze_demos",
+        "analyze_demoing",
+        "analyze_demotion"
+      ],
+      "word_family_raw": "analyze_demo|analyze_demod|analyze_demos|analyze_demoing|analyze_demotion",
+      "source_row_ids": [
+        1001
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_02_approach_demo",
+      "sublist": 1,
+      "headword": "approach_demo",
+      "headword_clean": "approach_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "approach_demo",
+        "approach_demod",
+        "approach_demos",
+        "approach_demoing",
+        "approach_demotion"
+      ],
+      "word_family_raw": "approach_demo|approach_demod|approach_demos|approach_demoing|approach_demotion",
+      "source_row_ids": [
+        1002
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_03_area_demo",
+      "sublist": 1,
+      "headword": "area_demo",
+      "headword_clean": "area_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "area_demo",
+        "area_demod",
+        "area_demos",
+        "area_demoing",
+        "area_demotion"
+      ],
+      "word_family_raw": "area_demo|area_demod|area_demos|area_demoing|area_demotion",
+      "source_row_ids": [
+        1003
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_04_assess_demo",
+      "sublist": 1,
+      "headword": "assess_demo",
+      "headword_clean": "assess_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "assess_demo",
+        "assess_demod",
+        "assess_demos",
+        "assess_demoing",
+        "assess_demotion"
+      ],
+      "word_family_raw": "assess_demo|assess_demod|assess_demos|assess_demoing|assess_demotion",
+      "source_row_ids": [
+        1004
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_05_assume_demo",
+      "sublist": 1,
+      "headword": "assume_demo",
+      "headword_clean": "assume_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "assume_demo",
+        "assume_demod",
+        "assume_demos",
+        "assume_demoing",
+        "assume_demotion"
+      ],
+      "word_family_raw": "assume_demo|assume_demod|assume_demos|assume_demoing|assume_demotion",
+      "source_row_ids": [
+        1005
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_06_authority_demo",
+      "sublist": 1,
+      "headword": "authority_demo",
+      "headword_clean": "authority_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "authority_demo",
+        "authority_demod",
+        "authority_demos",
+        "authority_demoing",
+        "authority_demotion"
+      ],
+      "word_family_raw": "authority_demo|authority_demod|authority_demos|authority_demoing|authority_demotion",
+      "source_row_ids": [
+        1006
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_07_available_demo",
+      "sublist": 1,
+      "headword": "available_demo",
+      "headword_clean": "available_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "available_demo",
+        "available_demod",
+        "available_demos",
+        "available_demoing",
+        "available_demotion"
+      ],
+      "word_family_raw": "available_demo|available_demod|available_demos|available_demoing|available_demotion",
+      "source_row_ids": [
+        1007
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_08_benefit_demo",
+      "sublist": 1,
+      "headword": "benefit_demo",
+      "headword_clean": "benefit_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "benefit_demo",
+        "benefit_demod",
+        "benefit_demos",
+        "benefit_demoing",
+        "benefit_demotion"
+      ],
+      "word_family_raw": "benefit_demo|benefit_demod|benefit_demos|benefit_demoing|benefit_demotion",
+      "source_row_ids": [
+        1008
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_09_concept_demo",
+      "sublist": 1,
+      "headword": "concept_demo",
+      "headword_clean": "concept_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "concept_demo",
+        "concept_demod",
+        "concept_demos",
+        "concept_demoing",
+        "concept_demotion"
+      ],
+      "word_family_raw": "concept_demo|concept_demod|concept_demos|concept_demoing|concept_demotion",
+      "source_row_ids": [
+        1009
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    },
+    {
+      "family_id": "MOCK_AWL_FAM_10_consist_demo",
+      "sublist": 1,
+      "headword": "consist_demo",
+      "headword_clean": "consist_demo",
+      "total_forms_count": 5,
+      "word_family_forms": [
+        "consist_demo",
+        "consist_demod",
+        "consist_demos",
+        "consist_demoing",
+        "consist_demotion"
+      ],
+      "word_family_raw": "consist_demo|consist_demod|consist_demos|consist_demoing|consist_demotion",
+      "source_row_ids": [
+        1010
+      ],
+      "reconciliation_note": null,
+      "provenance": [
+        {
+          "source_file": "synthetic_mock_awl.json",
+          "source_sha256": "mock_fixture_non_proprietary",
+          "transform_version": "stage_4b_v2.1",
+          "editorial_status": "MOCK_FIXTURE_FOR_LOCAL_DEVELOPMENT_ONLY"
+        }
+      ]
+    }
+  ]
+}
