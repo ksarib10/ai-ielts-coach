@@ -739,6 +739,7 @@ input::placeholder,textarea::placeholder { color:var(--color-muted); opacity:1; 
 }
 .vocab-cards-grid {
   display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px;
+  align-items:start;
   margin-bottom:24px;
 }
 .vocab-word-card {
