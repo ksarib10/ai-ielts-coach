@@ -8,7 +8,7 @@
   - Added `'/ai-coach'` to `overview` in `src/components/AppShell.tsx` to prevent redundant floating Coach launcher mounting on the dedicated Coach page.
 
 - **Saved Vocabulary Improvements**:
-  - Added visible `.discovery-back` link (`Back to Vocabulary`) on the `/saved` screen above the page header.
+  - Added visible `.vocab-breadcrumb-row` with dual `.discovery-back` links on the `/saved` screen above the page header: `Back to Vocabulary Explorer` (`/learn/vocabulary/all`) and `Learn Catalog` (`/learn`), directing learners directly to their core study workflows without routing to the intermediate Vocabulary Hub.
   - Added `Remove Saved Word` action buttons to each saved-word card in `.three-grid` and the practice card, wired to `handleRemoveWord()` via `mutateLearning()`. Removal immediately updates the active UI, decrements the saved count, updates `localStorage` ('ielts-learning-v2'), and marks the card in Vocabulary Explorer as unsaved ("Save word").
 
 - **Alphabet A–Z Navigation (Single Horizontal Row)**:

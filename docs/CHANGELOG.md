@@ -7,7 +7,7 @@
   - Fix: Added `--color-backdrop` (`rgba(15, 23, 42, 0.45)` in light theme and `rgba(11, 7, 22, 0.65)` in dark theme) to `src/foundation.css`, and updated `.coach-backdrop` in `src/prototype.css` to use `background: var(--color-backdrop)` with `backdrop-filter: blur(2px)`.
   - Added `'/ai-coach'` to `overview` route checks in `src/components/AppShell.tsx` to prevent redundant floating Coach launcher mounting on the dedicated `/ai-coach` screen.
 - **Saved Vocabulary improvements**:
-  - Added visible `Back to Vocabulary` navigation link on `/saved` leading to `/learn/vocabulary`.
+  - Added visible dual breadcrumb navigation on `/saved`: `Back to Vocabulary Explorer` (`/learn/vocabulary/all`) and `Learn Catalog` (`/learn`), completely bypassing the intermediate Vocabulary Hub as requested.
   - Added `Remove Saved Word` button on every saved-word card in `src/features/Account.tsx`.
   - Wired removal directly to `mutateLearning()`, instantly updating UI, word count, persistent `localStorage` (`ielts-learning-v2`), and reflecting unsaved state ("Save word") in the Vocabulary Explorer immediately and across page reloads.
 - **Alphabet A–Z navigation single horizontal row**:
